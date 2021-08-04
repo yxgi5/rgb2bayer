@@ -1,0 +1,263 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x18461C887498DB3A",
+      "device": "xc7z020clg484-1",
+      "name": "video_crop_bd",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "axi_vip_0": "",
+      "rgb2bayer_0": "",
+      "v_tpg_0": "",
+      "xlconstant_0": ""
+    },
+    "ports": {
+      "aclk_50MHz": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "aresetn_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "video_crop_bd_aclk_50MHz",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "50000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_start": {
+        "direction": "I"
+      },
+      "aresetn_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "hsize": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}"
+          }
+        }
+      },
+      "tdata": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "tlast": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "tready": {
+        "direction": "I"
+      },
+      "tuser": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
+      },
+      "tvalid": {
+        "direction": "O"
+      },
+      "vsize": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}"
+          }
+        }
+      }
+    },
+    "components": {
+      "axi_vip_0": {
+        "vlnv": "xilinx.com:ip:axi_vip:1.1",
+        "xci_name": "video_crop_bd_axi_vip_0_0",
+        "parameters": {
+          "ADDR_WIDTH": {
+            "value": "12"
+          },
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "HAS_BRESP": {
+            "value": "1"
+          },
+          "HAS_PROT": {
+            "value": "1"
+          },
+          "HAS_RRESP": {
+            "value": "1"
+          },
+          "HAS_WSTRB": {
+            "value": "1"
+          },
+          "INTERFACE_MODE": {
+            "value": "MASTER"
+          },
+          "PROTOCOL": {
+            "value": "AXI4LITE"
+          },
+          "READ_WRITE_MODE": {
+            "value": "READ_WRITE"
+          }
+        }
+      },
+      "rgb2bayer_0": {
+        "vlnv": "xilinx.com:hls:rgb2bayer:1.0",
+        "xci_name": "video_crop_bd_rgb2bayer_0_0"
+      },
+      "v_tpg_0": {
+        "vlnv": "xilinx.com:ip:v_tpg:8.0",
+        "xci_name": "video_crop_bd_v_tpg_0_0"
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "video_crop_bd_xlconstant_0_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "2"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "axi_vip_0_M_AXI": {
+        "interface_ports": [
+          "axi_vip_0/M_AXI",
+          "v_tpg_0/s_axi_CTRL"
+        ]
+      },
+      "v_tpg_0_m_axis_video": {
+        "interface_ports": [
+          "rgb2bayer_0/s_axis_video",
+          "v_tpg_0/m_axis_video"
+        ]
+      }
+    },
+    "nets": {
+      "aclk_0_1": {
+        "ports": [
+          "aclk_50MHz",
+          "axi_vip_0/aclk",
+          "rgb2bayer_0/ap_clk",
+          "v_tpg_0/ap_clk"
+        ]
+      },
+      "ap_start_1": {
+        "ports": [
+          "ap_start",
+          "rgb2bayer_0/ap_start"
+        ]
+      },
+      "aresetn_0_1": {
+        "ports": [
+          "aresetn_0",
+          "axi_vip_0/aresetn",
+          "rgb2bayer_0/ap_rst_n",
+          "v_tpg_0/ap_rst_n"
+        ]
+      },
+      "hsize_1": {
+        "ports": [
+          "hsize",
+          "rgb2bayer_0/hsize_in"
+        ]
+      },
+      "rgb2bayer_0_m_axis_video_TDATA": {
+        "ports": [
+          "rgb2bayer_0/m_axis_video_TDATA",
+          "tdata"
+        ]
+      },
+      "rgb2bayer_0_m_axis_video_TLAST": {
+        "ports": [
+          "rgb2bayer_0/m_axis_video_TLAST",
+          "tlast"
+        ]
+      },
+      "rgb2bayer_0_m_axis_video_TUSER": {
+        "ports": [
+          "rgb2bayer_0/m_axis_video_TUSER",
+          "tuser"
+        ]
+      },
+      "rgb2bayer_0_m_axis_video_TVALID": {
+        "ports": [
+          "rgb2bayer_0/m_axis_video_TVALID",
+          "tvalid"
+        ]
+      },
+      "tready_1": {
+        "ports": [
+          "tready",
+          "rgb2bayer_0/m_axis_video_TREADY"
+        ]
+      },
+      "vsize_1": {
+        "ports": [
+          "vsize",
+          "rgb2bayer_0/vsize_in"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "rgb2bayer_0/pattern_V"
+        ]
+      }
+    },
+    "addressing": {
+      "/axi_vip_0": {
+        "address_spaces": {
+          "Master_AXI": {
+            "range": "4K",
+            "width": "32",
+            "segments": {
+              "SEG_v_tpg_0_Reg": {
+                "address_block": "/v_tpg_0/s_axi_CTRL/Reg",
+                "offset": "0x000",
+                "range": "4K"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

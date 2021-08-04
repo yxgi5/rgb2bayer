@@ -1,0 +1,10 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+XilinxAXIVIP: Found at Path: tb_video_crop.UUT.video_crop_bd_i.axi_vip_0.inst
+ERROR: 70 ns tb_video_crop.UUT.video_crop_bd_i.axi_vip_0.inst.IF  : XILINX_RESET_PULSE_WIDTH: Holding AXI ARESETN asserted for 16 cycles of the slowest AXI clock is generally a sufficient reset pulse width for Xilinx IP. --UG1037. To downgrade, use <hierarchy_path to VIP>.IF.set_xilinx_reset_check_to_warn(), or filter using clr_xilinx_reset_check().
+WARNING: 70 ns tb_video_crop.UUT.video_crop_bd_i.axi_vip_0.inst.IF.AWREADY_one_cycle_chk : XILINX_AWREADY_RESET: AWREADY must be low for the first clock edge that ARESETn goes high--PG101 XILINX_AWREADY_RESET. To downgrade, use <hierarchy_path to VIP>.IF.clr_xilinx_slave_ready_check().
+WARNING: 70 ns tb_video_crop.UUT.video_crop_bd_i.axi_vip_0.inst.IF.ARREADY_one_cycle_chk : XILINX_ARREADY_RESET: ARREADY must be low for the first clock edge that ARESETn goes high--PG101 XILINX_ARREADY_RESET. To downgrade, use <hierarchy_path to VIP>.IF.clr_xilinx_slave_ready_check().
+Image written
+Configured and output resolution match, test succeeded
+Executing Axi4 End Of Simulation checks
+$finish called at time : 6235030 ns : File "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" Line 3093

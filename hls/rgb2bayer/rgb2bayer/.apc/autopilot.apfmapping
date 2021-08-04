@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="rgb2bayer.cpp" path="/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/src/cpp/rgb2bayer.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="in.png" path="/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/src/img/in.png"/>
+    <originFiles name="rgb2bayer_tb.cpp" path="/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/src/cpp/rgb2bayer_tb.cpp"/>
+    <originFiles name="test.png" path="/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/src/img/test.png"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
