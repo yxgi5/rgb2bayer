@@ -21,34 +21,34 @@ module video_crop_bd_v_tpg_0_0_tpgPatternTemporalRa (
 
 
 output   ap_ready;
-input  [7:0] rampStart;
+input  [9:0] rampStart;
 input  [7:0] color;
-output  [7:0] ap_return_0;
-output  [7:0] ap_return_1;
-output  [7:0] ap_return_2;
-output  [7:0] ap_return_3;
-output  [7:0] ap_return_4;
-output  [7:0] ap_return_5;
+output  [9:0] ap_return_0;
+output  [9:0] ap_return_1;
+output  [9:0] ap_return_2;
+output  [9:0] ap_return_3;
+output  [9:0] ap_return_4;
+output  [9:0] ap_return_5;
 
-wire   [0:0] tmp_fu_24_p2;
-wire   [7:0] Scalar_val_1_V_writ_fu_30_p3;
+wire   [0:0] tmp_s_fu_26_p2;
+wire   [9:0] Scalar_val_1_V_writ_fu_32_p3;
 
-assign Scalar_val_1_V_writ_fu_30_p3 = ((tmp_fu_24_p2[0:0] === 1'b1) ? rampStart : 8'd128);
+assign Scalar_val_1_V_writ_fu_32_p3 = ((tmp_s_fu_26_p2[0:0] === 1'b1) ? rampStart : 10'd512);
 
 assign ap_ready = 1'b1;
 
 assign ap_return_0 = rampStart;
 
-assign ap_return_1 = Scalar_val_1_V_writ_fu_30_p3;
+assign ap_return_1 = Scalar_val_1_V_writ_fu_32_p3;
 
-assign ap_return_2 = Scalar_val_1_V_writ_fu_30_p3;
+assign ap_return_2 = Scalar_val_1_V_writ_fu_32_p3;
 
 assign ap_return_3 = rampStart;
 
-assign ap_return_4 = Scalar_val_1_V_writ_fu_30_p3;
+assign ap_return_4 = Scalar_val_1_V_writ_fu_32_p3;
 
-assign ap_return_5 = Scalar_val_1_V_writ_fu_30_p3;
+assign ap_return_5 = Scalar_val_1_V_writ_fu_32_p3;
 
-assign tmp_fu_24_p2 = ((color == 8'd0) ? 1'b1 : 1'b0);
+assign tmp_s_fu_26_p2 = ((color == 8'd0) ? 1'b1 : 1'b0);
 
 endmodule //video_crop_bd_v_tpg_0_0_tpgPatternTemporalRa

@@ -42,8 +42,8 @@ set SCTraceOption all
 set TargetInfo xc7z020:clg484:-1
 set SourceFiles {sc {} c ../../src/cpp/rgb2bayer.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile /home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/rgb2bayer/solution1/solution1.directive
-set TBFiles {verilog {../../src/img/test.png ../../src/cpp/rgb2bayer_tb.cpp ../../src/img/in.png} bc {../../src/img/test.png ../../src/cpp/rgb2bayer_tb.cpp ../../src/img/in.png} vhdl {../../src/img/test.png ../../src/cpp/rgb2bayer_tb.cpp ../../src/img/in.png} sc {../../src/img/test.png ../../src/cpp/rgb2bayer_tb.cpp ../../src/img/in.png} cas {../../src/img/test.png ../../src/cpp/rgb2bayer_tb.cpp ../../src/img/in.png} c {}}
+set DirectiveFile /home/andy/workdir/figkey/HLS/repo/2SPC/hls/rgb2bayer/rgb2bayer/solution1/solution1.directive
+set TBFiles {verilog {../../src/img/in.png ../../src/cpp/rgb2bayer_tb.cpp ../../src/img/test.png} bc {../../src/img/in.png ../../src/cpp/rgb2bayer_tb.cpp ../../src/img/test.png} vhdl {../../src/img/in.png ../../src/cpp/rgb2bayer_tb.cpp ../../src/img/test.png} sc {../../src/img/in.png ../../src/cpp/rgb2bayer_tb.cpp ../../src/img/test.png} cas {../../src/img/in.png ../../src/cpp/rgb2bayer_tb.cpp ../../src/img/test.png} c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

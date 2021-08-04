@@ -2,35 +2,35 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Aug  4 14:09:11 2021
-# Process ID: 28615
-# Current directory: /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1
+# Start of session at: Wed Aug  4 20:34:51 2021
+# Process ID: 12888
+# Current directory: /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1
 # Command line: vivado -log video_crop_bd_axis_subset_converter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_crop_bd_axis_subset_converter_0_0.tcl
-# Log file: /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/video_crop_bd_axis_subset_converter_0_0.vds
-# Journal file: /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/vivado.jou
+# Log file: /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/video_crop_bd_axis_subset_converter_0_0.vds
+# Journal file: /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source video_crop_bd_axis_subset_converter_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/src/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/src/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
 Command: synth_design -top video_crop_bd_axis_subset_converter_0_0 -part xc7z020clg484-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 28720 
+INFO: Helper process launched with PID 13145 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1471.785 ; gain = 83.723 ; free physical = 2281 ; free virtual = 18989
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1435.594 ; gain = 86.637 ; free physical = 4327 ; free virtual = 9974
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'video_crop_bd_axis_subset_converter_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/synth/video_crop_bd_axis_subset_converter_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'top_video_crop_bd_axis_subset_converter_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/top_video_crop_bd_axis_subset_converter_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'video_crop_bd_axis_subset_converter_0_0' [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/synth/video_crop_bd_axis_subset_converter_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'top_video_crop_bd_axis_subset_converter_0_0' [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/top_video_crop_bd_axis_subset_converter_0_0.v:60]
 	Parameter C_FAMILY bound to: zynq - type: string 
-	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000011111111 
-	Parameter C_M_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
 	Parameter C_M_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000011111111 
@@ -55,9 +55,9 @@ INFO: [Synth 8-6157] synthesizing module 'top_video_crop_bd_axis_subset_converte
 	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
 	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
 	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axis_subset_converter_v1_1_18_core' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/33dd/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'axis_subset_converter_v1_1_18_core' [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/33dd/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
 	Parameter C_FAMILY bound to: zynq - type: string 
-	Parameter C_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
@@ -89,58 +89,66 @@ INFO: [Synth 8-6157] synthesizing module 'axis_subset_converter_v1_1_18_core' [/
 	Parameter P_SIGNAL_SET_ADD bound to: 32'b00000000000000000000000000000000 
 	Parameter P_SIGNAL_SET_REM bound to: 32'b00000000000000000000000000000000 
 	Parameter P_TLAST_CNTR_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axis_subset_converter_v1_1_18_core' (1#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/33dd/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
-INFO: [Synth 8-6157] synthesizing module 'tdata_video_crop_bd_axis_subset_converter_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tdata_video_crop_bd_axis_subset_converter_0_0.v:48]
-	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_subset_converter_v1_1_18_core' (1#1) [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/33dd/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'tdata_video_crop_bd_axis_subset_converter_0_0' [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tdata_video_crop_bd_axis_subset_converter_0_0.v:48]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
-	Parameter C_M_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tdata_video_crop_bd_axis_subset_converter_0_0' (2#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tdata_video_crop_bd_axis_subset_converter_0_0.v:48]
-INFO: [Synth 8-6157] synthesizing module 'tuser_video_crop_bd_axis_subset_converter_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tuser_video_crop_bd_axis_subset_converter_0_0.v:48]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tdata_video_crop_bd_axis_subset_converter_0_0' (2#1) [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tdata_video_crop_bd_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tuser_video_crop_bd_axis_subset_converter_0_0' [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tuser_video_crop_bd_axis_subset_converter_0_0.v:48]
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
-	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tuser_video_crop_bd_axis_subset_converter_0_0' (3#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tuser_video_crop_bd_axis_subset_converter_0_0.v:48]
-INFO: [Synth 8-6157] synthesizing module 'tid_video_crop_bd_axis_subset_converter_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tid_video_crop_bd_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'tuser_video_crop_bd_axis_subset_converter_0_0' (3#1) [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tuser_video_crop_bd_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tid_video_crop_bd_axis_subset_converter_0_0' [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tid_video_crop_bd_axis_subset_converter_0_0.v:48]
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
-	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_TID_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tid_video_crop_bd_axis_subset_converter_0_0' (4#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tid_video_crop_bd_axis_subset_converter_0_0.v:48]
-INFO: [Synth 8-6157] synthesizing module 'tdest_video_crop_bd_axis_subset_converter_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tdest_video_crop_bd_axis_subset_converter_0_0.v:48]
-	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tid_video_crop_bd_axis_subset_converter_0_0' (4#1) [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tid_video_crop_bd_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tdest_video_crop_bd_axis_subset_converter_0_0' [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tdest_video_crop_bd_axis_subset_converter_0_0.v:48]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tdest_video_crop_bd_axis_subset_converter_0_0' (5#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tdest_video_crop_bd_axis_subset_converter_0_0.v:48]
-INFO: [Synth 8-6157] synthesizing module 'tstrb_video_crop_bd_axis_subset_converter_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tstrb_video_crop_bd_axis_subset_converter_0_0.v:48]
-	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tdest_video_crop_bd_axis_subset_converter_0_0' (5#1) [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tdest_video_crop_bd_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tstrb_video_crop_bd_axis_subset_converter_0_0' [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tstrb_video_crop_bd_axis_subset_converter_0_0.v:48]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
-	Parameter C_M_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tstrb_video_crop_bd_axis_subset_converter_0_0' (6#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tstrb_video_crop_bd_axis_subset_converter_0_0.v:48]
-INFO: [Synth 8-6157] synthesizing module 'tkeep_video_crop_bd_axis_subset_converter_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tkeep_video_crop_bd_axis_subset_converter_0_0.v:48]
-	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tstrb_video_crop_bd_axis_subset_converter_0_0' (6#1) [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tstrb_video_crop_bd_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tkeep_video_crop_bd_axis_subset_converter_0_0' [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tkeep_video_crop_bd_axis_subset_converter_0_0.v:48]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
-	Parameter C_M_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tkeep_video_crop_bd_axis_subset_converter_0_0' (7#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tkeep_video_crop_bd_axis_subset_converter_0_0.v:48]
-INFO: [Synth 8-6157] synthesizing module 'tlast_video_crop_bd_axis_subset_converter_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tlast_video_crop_bd_axis_subset_converter_0_0.v:48]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tkeep_video_crop_bd_axis_subset_converter_0_0' (7#1) [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tkeep_video_crop_bd_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tlast_video_crop_bd_axis_subset_converter_0_0' [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tlast_video_crop_bd_axis_subset_converter_0_0.v:48]
 	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
-	Parameter C_S_AXIS_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
 	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'tlast_video_crop_bd_axis_subset_converter_0_0' (8#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tlast_video_crop_bd_axis_subset_converter_0_0.v:48]
-INFO: [Synth 8-6155] done synthesizing module 'top_video_crop_bd_axis_subset_converter_0_0' (9#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/top_video_crop_bd_axis_subset_converter_0_0.v:60]
-INFO: [Synth 8-6155] done synthesizing module 'video_crop_bd_axis_subset_converter_0_0' (10#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/synth/video_crop_bd_axis_subset_converter_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'tlast_video_crop_bd_axis_subset_converter_0_0' (8#1) [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tlast_video_crop_bd_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'top_video_crop_bd_axis_subset_converter_0_0' (9#1) [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/top_video_crop_bd_axis_subset_converter_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'video_crop_bd_axis_subset_converter_0_0' (10#1) [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/synth/video_crop_bd_axis_subset_converter_0_0.v:58]
 WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tid[0]
+WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[23]
+WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[22]
+WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[21]
+WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[20]
+WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[19]
+WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[18]
+WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[17]
+WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[16]
 WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[15]
 WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[14]
 WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[13]
@@ -159,10 +167,20 @@ WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has
 WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[0]
 WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tuser[0]
 WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdest[0]
+WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tkeep[2]
 WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tkeep[1]
 WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tkeep[0]
+WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tstrb[2]
 WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tstrb[1]
 WARNING: [Synth 8-3331] design tlast_video_crop_bd_axis_subset_converter_0_0 has unconnected port tstrb[0]
+WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[23]
+WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[22]
+WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[21]
+WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[20]
+WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[19]
+WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[18]
+WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[17]
+WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[16]
 WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[15]
 WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[14]
 WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[13]
@@ -182,9 +200,18 @@ WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has
 WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tuser[0]
 WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tid[0]
 WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdest[0]
+WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tstrb[2]
 WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tstrb[1]
 WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tstrb[0]
 WARNING: [Synth 8-3331] design tkeep_video_crop_bd_axis_subset_converter_0_0 has unconnected port tlast
+WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[23]
+WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[22]
+WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[21]
+WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[20]
+WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[19]
+WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[18]
+WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[17]
+WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[16]
 WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[15]
 WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[14]
 WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[13]
@@ -204,45 +231,18 @@ WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has
 WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tuser[0]
 WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tid[0]
 WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdest[0]
+WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tkeep[2]
 WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tkeep[1]
 WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tkeep[0]
 WARNING: [Synth 8-3331] design tstrb_video_crop_bd_axis_subset_converter_0_0 has unconnected port tlast
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[15]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[14]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[13]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[12]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[11]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[10]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[9]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[8]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[7]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[6]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[5]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[4]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[3]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[2]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[1]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[0]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tuser[0]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tid[0]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tkeep[1]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tkeep[0]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tstrb[1]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tstrb[0]
-WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tlast
-WARNING: [Synth 8-3331] design tid_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[15]
-WARNING: [Synth 8-3331] design tid_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[14]
-WARNING: [Synth 8-3331] design tid_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[13]
-WARNING: [Synth 8-3331] design tid_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[12]
-WARNING: [Synth 8-3331] design tid_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[11]
-WARNING: [Synth 8-3331] design tid_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[10]
-WARNING: [Synth 8-3331] design tid_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[9]
-WARNING: [Synth 8-3331] design tid_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[8]
-WARNING: [Synth 8-3331] design tid_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[7]
-WARNING: [Synth 8-3331] design tid_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[6]
+WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[23]
+WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[22]
+WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[21]
+WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[20]
+WARNING: [Synth 8-3331] design tdest_video_crop_bd_axis_subset_converter_0_0 has unconnected port tdata[19]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1518.535 ; gain = 130.473 ; free physical = 2216 ; free virtual = 18922
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1482.344 ; gain = 133.387 ; free physical = 4205 ; free virtual = 9852
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -255,47 +255,47 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1518.535 ; gain = 130.473 ; free physical = 2281 ; free virtual = 18988
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1482.344 ; gain = 133.387 ; free physical = 4184 ; free virtual = 9832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1518.535 ; gain = 130.473 ; free physical = 2281 ; free virtual = 18988
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1482.344 ; gain = 133.387 ; free physical = 4184 ; free virtual = 9832
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/video_crop_bd_axis_subset_converter_0_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/video_crop_bd_axis_subset_converter_0_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/video_crop_bd_axis_subset_converter_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/video_crop_bd_axis_subset_converter_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1803.645 ; gain = 0.000 ; free physical = 1471 ; free virtual = 18177
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1766.102 ; gain = 0.000 ; free physical = 3832 ; free virtual = 9481
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1803.645 ; gain = 0.000 ; free physical = 1471 ; free virtual = 18177
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1803.645 ; gain = 0.000 ; free physical = 1469 ; free virtual = 18175
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1766.102 ; gain = 0.000 ; free physical = 3832 ; free virtual = 9481
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1766.102 ; gain = 0.000 ; free physical = 3830 ; free virtual = 9479
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.645 ; gain = 415.582 ; free physical = 1283 ; free virtual = 17989
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1766.102 ; gain = 417.145 ; free physical = 3987 ; free virtual = 9642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.645 ; gain = 415.582 ; free physical = 1282 ; free virtual = 17989
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1766.102 ; gain = 417.145 ; free physical = 3986 ; free virtual = 9642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.645 ; gain = 415.582 ; free physical = 1282 ; free virtual = 17988
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1766.102 ; gain = 417.145 ; free physical = 3987 ; free virtual = 9642
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.645 ; gain = 415.582 ; free physical = 1269 ; free virtual = 17977
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1766.102 ; gain = 417.145 ; free physical = 3978 ; free virtual = 9634
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -331,7 +331,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.645 ; gain = 415.582 ; free physical = 1217 ; free virtual = 17927
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1766.102 ; gain = 417.145 ; free physical = 3944 ; free virtual = 9601
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -343,13 +343,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1814.629 ; gain = 426.566 ; free physical = 791 ; free virtual = 17507
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1778.086 ; gain = 429.129 ; free physical = 3430 ; free virtual = 9089
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1814.629 ; gain = 426.566 ; free physical = 787 ; free virtual = 17502
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1778.086 ; gain = 429.129 ; free physical = 3429 ; free virtual = 9088
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -361,7 +361,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1823.645 ; gain = 435.582 ; free physical = 789 ; free virtual = 17504
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1787.102 ; gain = 438.145 ; free physical = 3424 ; free virtual = 9083
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -385,7 +385,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1823.645 ; gain = 435.582 ; free physical = 1074 ; free virtual = 17791
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1787.102 ; gain = 438.145 ; free physical = 3401 ; free virtual = 9061
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -398,7 +398,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1823.645 ; gain = 435.582 ; free physical = 1127 ; free virtual = 17844
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1787.102 ; gain = 438.145 ; free physical = 3401 ; free virtual = 9060
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -410,25 +410,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1823.645 ; gain = 435.582 ; free physical = 1185 ; free virtual = 17902
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1787.102 ; gain = 438.145 ; free physical = 3401 ; free virtual = 9060
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1823.645 ; gain = 435.582 ; free physical = 1224 ; free virtual = 17941
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1787.102 ; gain = 438.145 ; free physical = 3401 ; free virtual = 9060
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1823.645 ; gain = 435.582 ; free physical = 1270 ; free virtual = 17987
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1787.102 ; gain = 438.145 ; free physical = 3400 ; free virtual = 9060
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1823.645 ; gain = 435.582 ; free physical = 1297 ; free virtual = 18014
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1787.102 ; gain = 438.145 ; free physical = 3400 ; free virtual = 9059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -454,30 +454,30 @@ Report Instance Areas:
 |2     |  inst   |top_video_crop_bd_axis_subset_converter_0_0 |     0|
 +------+---------+--------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1823.645 ; gain = 435.582 ; free physical = 1342 ; free virtual = 18059
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1787.102 ; gain = 438.145 ; free physical = 3400 ; free virtual = 9060
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1823.645 ; gain = 150.473 ; free physical = 1461 ; free virtual = 18179
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1823.652 ; gain = 435.582 ; free physical = 1461 ; free virtual = 18179
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1787.102 ; gain = 154.387 ; free physical = 3445 ; free virtual = 9105
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1787.109 ; gain = 438.145 ; free physical = 3445 ; free virtual = 9105
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1830.645 ; gain = 0.000 ; free physical = 1277 ; free virtual = 17992
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1794.102 ; gain = 0.000 ; free physical = 3920 ; free virtual = 9578
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 33 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1834.645 ; gain = 446.859 ; free physical = 1390 ; free virtual = 18107
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1834.645 ; gain = 0.000 ; free physical = 1390 ; free virtual = 18107
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1798.102 ; gain = 460.961 ; free physical = 3928 ; free virtual = 9586
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1798.102 ; gain = 0.000 ; free physical = 3928 ; free virtual = 9586
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/video_crop_bd_axis_subset_converter_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_crop_bd_axis_subset_converter_0_0, cache-ID = f6ea21a112667044
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1834.645 ; gain = 0.000 ; free physical = 1318 ; free virtual = 18037
+INFO: [Common 17-1381] The checkpoint '/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/video_crop_bd_axis_subset_converter_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_crop_bd_axis_subset_converter_0_0, cache-ID = f052a066db0b8eda
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1798.102 ; gain = 0.000 ; free physical = 4211 ; free virtual = 9871
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/video_crop_bd_axis_subset_converter_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/video_crop_bd_axis_subset_converter_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file video_crop_bd_axis_subset_converter_0_0_utilization_synth.rpt -pb video_crop_bd_axis_subset_converter_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Aug  4 14:09:30 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  4 20:35:31 2021...

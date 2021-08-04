@@ -18,7 +18,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {s_axis_video} \
     metadata {  } \
     op interface \
-    ports { s_axis_video_TDATA { I 48 vector } } \
+    ports { s_axis_video_TDATA { I 64 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 's_axis_video_V_data_V'"
@@ -37,7 +37,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {s_axis_video} \
     metadata {  } \
     op interface \
-    ports { s_axis_video_TKEEP { I 6 vector } } \
+    ports { s_axis_video_TKEEP { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 's_axis_video_V_keep_V'"
@@ -56,7 +56,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {s_axis_video} \
     metadata {  } \
     op interface \
-    ports { s_axis_video_TSTRB { I 6 vector } } \
+    ports { s_axis_video_TSTRB { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 's_axis_video_V_strb_V'"
@@ -151,7 +151,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {m_axis_video} \
     metadata {  } \
     op interface \
-    ports { m_axis_video_TDATA { O 16 vector } m_axis_video_TREADY { I 1 bit } } \
+    ports { m_axis_video_TDATA { O 24 vector } m_axis_video_TREADY { I 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm_axis_video_V_data_V'"
@@ -170,7 +170,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {m_axis_video} \
     metadata {  } \
     op interface \
-    ports { m_axis_video_TKEEP { O 2 vector } } \
+    ports { m_axis_video_TKEEP { O 3 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm_axis_video_V_keep_V'"
@@ -189,7 +189,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {m_axis_video} \
     metadata {  } \
     op interface \
-    ports { m_axis_video_TSTRB { O 2 vector } } \
+    ports { m_axis_video_TSTRB { O 3 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm_axis_video_V_strb_V'"

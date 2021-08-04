@@ -1,8 +1,8 @@
 open_project video_crop_bd_v_demosaic_0_0
 set_top v_demosaic
-add_files -cflags " -I /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/src " /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/src/v_demosaic_config.h
-add_files -cflags " -I /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/src " /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/src/v_demosaic.cpp
-add_files -cflags " -I /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/src " /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/src/v_demosaic.h
+add_files -cflags " -I /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/src " /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/src/v_demosaic_config.h
+add_files -cflags " -I /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/src " /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/src/v_demosaic.cpp
+add_files -cflags " -I /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/src " /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/src/v_demosaic.h
 
 open_solution "prj"
 set_part {xc7z020clg484-1}

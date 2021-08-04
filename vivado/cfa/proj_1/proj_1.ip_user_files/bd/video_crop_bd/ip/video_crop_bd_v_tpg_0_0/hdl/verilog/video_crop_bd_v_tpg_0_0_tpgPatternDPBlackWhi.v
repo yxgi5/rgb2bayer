@@ -21,21 +21,21 @@ module video_crop_bd_v_tpg_0_0_tpgPatternDPBlackWhi (
 
 output   ap_ready;
 input  [15:0] x;
-output  [7:0] ap_return_0;
-output  [7:0] ap_return_1;
-output  [7:0] ap_return_2;
-output  [7:0] ap_return_3;
-output  [7:0] ap_return_4;
-output  [7:0] ap_return_5;
+output  [9:0] ap_return_0;
+output  [9:0] ap_return_1;
+output  [9:0] ap_return_2;
+output  [9:0] ap_return_3;
+output  [9:0] ap_return_4;
+output  [9:0] ap_return_5;
 
 wire   [0:0] tmp_fu_18_p1;
-wire   [0:0] tmp_3564_1_fu_30_p2;
-wire   [7:0] Scalar_val_0_V_writ_fu_22_p3;
-wire   [7:0] Scalar_val_3_V_writ_fu_36_p3;
+wire   [0:0] tmp_3934_1_fu_30_p2;
+wire   [9:0] Scalar_val_0_V_writ_fu_22_p3;
+wire   [9:0] Scalar_val_3_V_writ_fu_36_p3;
 
-assign Scalar_val_0_V_writ_fu_22_p3 = ((tmp_fu_18_p1[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign Scalar_val_0_V_writ_fu_22_p3 = ((tmp_fu_18_p1[0:0] === 1'b1) ? 10'd1023 : 10'd0);
 
-assign Scalar_val_3_V_writ_fu_36_p3 = ((tmp_3564_1_fu_30_p2[0:0] === 1'b1) ? 8'd255 : 8'd0);
+assign Scalar_val_3_V_writ_fu_36_p3 = ((tmp_3934_1_fu_30_p2[0:0] === 1'b1) ? 10'd1023 : 10'd0);
 
 assign ap_ready = 1'b1;
 
@@ -51,7 +51,7 @@ assign ap_return_4 = Scalar_val_3_V_writ_fu_36_p3;
 
 assign ap_return_5 = Scalar_val_3_V_writ_fu_36_p3;
 
-assign tmp_3564_1_fu_30_p2 = (tmp_fu_18_p1 ^ 1'd1);
+assign tmp_3934_1_fu_30_p2 = (tmp_fu_18_p1 ^ 1'd1);
 
 assign tmp_fu_18_p1 = x[0:0];
 

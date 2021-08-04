@@ -241,50 +241,53 @@ enum {
 # 38 "/opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/limits.h" 3
 # 1 "/usr/include/limits.h" 1 3 4
 # 26 "/usr/include/limits.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
-# 33 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
+# 33 "/usr/include/bits/libc-header-start.h" 3 4
 # 1 "/usr/include/features.h" 1 3 4
-# 402 "/usr/include/features.h" 3 4
+# 451 "/usr/include/features.h" 3 4
 # 1 "/usr/include/stdc-predef.h" 1 3 4
-# 403 "/usr/include/features.h" 2 3 4
-# 424 "/usr/include/features.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 1 3 4
-# 427 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 428 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 429 "/usr/include/x86_64-linux-gnu/sys/cdefs.h" 2 3 4
-# 425 "/usr/include/features.h" 2 3 4
-# 448 "/usr/include/features.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 1 3 4
-# 10 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/gnu/stubs-64.h" 1 3 4
-# 11 "/usr/include/x86_64-linux-gnu/gnu/stubs.h" 2 3 4
-# 449 "/usr/include/features.h" 2 3 4
-# 34 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 2 3 4
+# 452 "/usr/include/features.h" 2 3 4
+# 473 "/usr/include/features.h" 3 4
+# 1 "/usr/include/sys/cdefs.h" 1 3 4
+# 462 "/usr/include/sys/cdefs.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 463 "/usr/include/sys/cdefs.h" 2 3 4
+# 1 "/usr/include/bits/long-double.h" 1 3 4
+# 464 "/usr/include/sys/cdefs.h" 2 3 4
+# 474 "/usr/include/features.h" 2 3 4
+# 497 "/usr/include/features.h" 3 4
+# 1 "/usr/include/gnu/stubs.h" 1 3 4
+# 10 "/usr/include/gnu/stubs.h" 3 4
+# 1 "/usr/include/gnu/stubs-64.h" 1 3 4
+# 11 "/usr/include/gnu/stubs.h" 2 3 4
+# 498 "/usr/include/features.h" 2 3 4
+# 34 "/usr/include/bits/libc-header-start.h" 2 3 4
 # 27 "/usr/include/limits.h" 2 3 4
-# 183 "/usr/include/limits.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 1 3 4
-# 160 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 1 3 4
-# 38 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 3 4
+# 195 "/usr/include/limits.h" 3 4
+# 1 "/usr/include/bits/posix1_lim.h" 1 3 4
+# 27 "/usr/include/bits/posix1_lim.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/bits/posix1_lim.h" 2 3 4
+# 161 "/usr/include/bits/posix1_lim.h" 3 4
+# 1 "/usr/include/bits/local_lim.h" 1 3 4
+# 38 "/usr/include/bits/local_lim.h" 3 4
 # 1 "/usr/include/linux/limits.h" 1 3 4
-# 39 "/usr/include/x86_64-linux-gnu/bits/local_lim.h" 2 3 4
-# 161 "/usr/include/x86_64-linux-gnu/bits/posix1_lim.h" 2 3 4
-# 184 "/usr/include/limits.h" 2 3 4
+# 39 "/usr/include/bits/local_lim.h" 2 3 4
+# 162 "/usr/include/bits/posix1_lim.h" 2 3 4
+# 196 "/usr/include/limits.h" 2 3 4
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/posix2_lim.h" 1 3 4
-# 188 "/usr/include/limits.h" 2 3 4
+# 1 "/usr/include/bits/posix2_lim.h" 1 3 4
+# 200 "/usr/include/limits.h" 2 3 4
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 1 3 4
-# 64 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/uio_lim.h" 1 3 4
-# 65 "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" 2 3 4
-# 192 "/usr/include/limits.h" 2 3 4
+# 1 "/usr/include/bits/xopen_lim.h" 1 3 4
+# 64 "/usr/include/bits/xopen_lim.h" 3 4
+# 1 "/usr/include/bits/uio_lim.h" 1 3 4
+# 65 "/usr/include/bits/xopen_lim.h" 2 3 4
+# 204 "/usr/include/limits.h" 2 3 4
 # 39 "/opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/limits.h" 2 3
 # 43 "/opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/climits" 2 3
 # 157 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_common.h" 2
@@ -6518,12 +6521,14 @@ template<int D>
 # 33 "/opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
 # 26 "/usr/include/stdint.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
 # 27 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/types.h" 1 3 4
-# 27 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
-# 28 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 1 "/usr/include/bits/types.h" 1 3 4
+# 27 "/usr/include/bits/types.h" 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
+# 28 "/usr/include/bits/types.h" 2 3 4
+# 1 "/usr/include/bits/timesize.h" 1 3 4
+# 29 "/usr/include/bits/types.h" 2 3 4
 
 
 typedef unsigned char __u_char;
@@ -6547,6 +6552,16 @@ typedef unsigned long int __uint64_t;
 
 
 
+typedef __int8_t __int_least8_t;
+typedef __uint8_t __uint_least8_t;
+typedef __int16_t __int_least16_t;
+typedef __uint16_t __uint_least16_t;
+typedef __int32_t __int_least32_t;
+typedef __uint32_t __uint_least32_t;
+typedef __int64_t __int_least64_t;
+typedef __uint64_t __uint_least64_t;
+
+
 
 typedef long int __quad_t;
 typedef unsigned long int __u_quad_t;
@@ -6559,9 +6574,11 @@ typedef unsigned long int __u_quad_t;
 
 typedef long int __intmax_t;
 typedef unsigned long int __uintmax_t;
-# 130 "/usr/include/x86_64-linux-gnu/bits/types.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/typesizes.h" 1 3 4
-# 131 "/usr/include/x86_64-linux-gnu/bits/types.h" 2 3 4
+# 141 "/usr/include/bits/types.h" 3 4
+# 1 "/usr/include/bits/typesizes.h" 1 3 4
+# 142 "/usr/include/bits/types.h" 2 3 4
+# 1 "/usr/include/bits/time64.h" 1 3 4
+# 143 "/usr/include/bits/types.h" 2 3 4
 
 
 typedef unsigned long int __dev_t;
@@ -6582,6 +6599,7 @@ typedef unsigned int __id_t;
 typedef long int __time_t;
 typedef unsigned int __useconds_t;
 typedef long int __suseconds_t;
+typedef long int __suseconds64_t;
 
 typedef int __daddr_t;
 typedef int __key_t;
@@ -6635,16 +6653,16 @@ typedef unsigned int __socklen_t;
 
 typedef int __sig_atomic_t;
 # 28 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wchar.h" 1 3 4
+# 1 "/usr/include/bits/wchar.h" 1 3 4
 # 29 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/wordsize.h" 1 3 4
+# 1 "/usr/include/bits/wordsize.h" 1 3 4
 # 30 "/usr/include/stdint.h" 2 3 4
 
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-intn.h" 3 4
+# 1 "/usr/include/bits/stdint-intn.h" 1 3 4
+# 24 "/usr/include/bits/stdint-intn.h" 3 4
 typedef __int8_t int8_t;
 typedef __int16_t int16_t;
 typedef __int32_t int32_t;
@@ -6652,8 +6670,8 @@ typedef __int64_t int64_t;
 # 35 "/usr/include/stdint.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h" 3 4
+# 1 "/usr/include/bits/stdint-uintn.h" 1 3 4
+# 24 "/usr/include/bits/stdint-uintn.h" 3 4
 typedef __uint8_t uint8_t;
 typedef __uint16_t uint16_t;
 typedef __uint32_t uint32_t;
@@ -6664,40 +6682,38 @@ typedef __uint64_t uint64_t;
 
 
 
-typedef signed char int_least8_t;
-typedef short int int_least16_t;
-typedef int int_least32_t;
-
-typedef long int int_least64_t;
-
+typedef __int_least8_t int_least8_t;
+typedef __int_least16_t int_least16_t;
+typedef __int_least32_t int_least32_t;
+typedef __int_least64_t int_least64_t;
 
 
+typedef __uint_least8_t uint_least8_t;
+typedef __uint_least16_t uint_least16_t;
+typedef __uint_least32_t uint_least32_t;
+typedef __uint_least64_t uint_least64_t;
 
 
 
-typedef unsigned char uint_least8_t;
-typedef unsigned short int uint_least16_t;
-typedef unsigned int uint_least32_t;
 
-typedef unsigned long int uint_least64_t;
-# 68 "/usr/include/stdint.h" 3 4
+
 typedef signed char int_fast8_t;
 
 typedef long int int_fast16_t;
 typedef long int int_fast32_t;
 typedef long int int_fast64_t;
-# 81 "/usr/include/stdint.h" 3 4
+# 71 "/usr/include/stdint.h" 3 4
 typedef unsigned char uint_fast8_t;
 
 typedef unsigned long int uint_fast16_t;
 typedef unsigned long int uint_fast32_t;
 typedef unsigned long int uint_fast64_t;
-# 97 "/usr/include/stdint.h" 3 4
+# 87 "/usr/include/stdint.h" 3 4
 typedef long int intptr_t;
 
 
 typedef unsigned long int uintptr_t;
-# 111 "/usr/include/stdint.h" 3 4
+# 101 "/usr/include/stdint.h" 3 4
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
@@ -8857,7 +8873,7 @@ template<>
 struct __promote<half> { typedef half type; };
 # 41 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h" 2
 # 1 "/usr/include/assert.h" 1 3 4
-# 66 "/usr/include/assert.h" 3 4
+# 64 "/usr/include/assert.h" 3 4
 extern "C" {
 
 
@@ -9464,7 +9480,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 # 45 "/opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc/lib/gcc/x86_64-unknown-linux-gnu/4.6.3/../../../../include/c++/4.6.3/cmath" 2 3
 # 1 "/usr/include/math.h" 1 3 4
 # 27 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
+# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
 # 28 "/usr/include/math.h" 2 3 4
 
 
@@ -9479,40 +9495,40 @@ extern "C" {
 
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/math-vector.h" 1 3 4
-# 25 "/usr/include/x86_64-linux-gnu/bits/math-vector.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h" 1 3 4
-# 26 "/usr/include/x86_64-linux-gnu/bits/math-vector.h" 2 3 4
+# 1 "/usr/include/bits/math-vector.h" 1 3 4
+# 25 "/usr/include/bits/math-vector.h" 3 4
+# 1 "/usr/include/bits/libm-simd-decl-stubs.h" 1 3 4
+# 26 "/usr/include/bits/math-vector.h" 2 3 4
 # 41 "/usr/include/math.h" 2 3 4
 
 
-# 1 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 1 3 4
-# 120 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 1 3 4
-# 24 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/long-double.h" 1 3 4
-# 25 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 2 3 4
-# 207 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 1 "/usr/include/bits/floatn.h" 1 3 4
+# 119 "/usr/include/bits/floatn.h" 3 4
+# 1 "/usr/include/bits/floatn-common.h" 1 3 4
+# 24 "/usr/include/bits/floatn-common.h" 3 4
+# 1 "/usr/include/bits/long-double.h" 1 3 4
+# 25 "/usr/include/bits/floatn-common.h" 2 3 4
+# 214 "/usr/include/bits/floatn-common.h" 3 4
 typedef float _Float32;
-# 244 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 251 "/usr/include/bits/floatn-common.h" 3 4
 typedef double _Float64;
-# 261 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 268 "/usr/include/bits/floatn-common.h" 3 4
 typedef double _Float32x;
-# 278 "/usr/include/x86_64-linux-gnu/bits/floatn-common.h" 3 4
+# 285 "/usr/include/bits/floatn-common.h" 3 4
 typedef long double _Float64x;
-# 121 "/usr/include/x86_64-linux-gnu/bits/floatn.h" 2 3 4
+# 120 "/usr/include/bits/floatn.h" 2 3 4
 # 44 "/usr/include/math.h" 2 3 4
 # 138 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h" 1 3 4
+# 1 "/usr/include/bits/flt-eval-method.h" 1 3 4
 # 139 "/usr/include/math.h" 2 3 4
 # 149 "/usr/include/math.h" 3 4
 typedef float float_t;
 typedef double double_t;
 # 190 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/fp-logb.h" 1 3 4
+# 1 "/usr/include/bits/fp-logb.h" 1 3 4
 # 191 "/usr/include/math.h" 2 3 4
 # 233 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/fp-fast.h" 1 3 4
+# 1 "/usr/include/bits/fp-fast.h" 1 3 4
 # 234 "/usr/include/math.h" 2 3 4
 
 
@@ -9535,9 +9551,9 @@ enum
 
       4,
   };
-# 289 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
-# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+# 298 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls-helper-functions.h" 1 3 4
+# 20 "/usr/include/bits/mathcalls-helper-functions.h" 3 4
 extern int __fpclassify (double __value) throw ()
      __attribute__ ((__const__));
 
@@ -9547,13 +9563,16 @@ extern int __signbit (double __value) throw ()
 
 
 
-extern int __isinf (double __value) throw () __attribute__ ((__const__));
+extern int __isinf (double __value) throw ()
+  __attribute__ ((__const__));
 
 
-extern int __finite (double __value) throw () __attribute__ ((__const__));
+extern int __finite (double __value) throw ()
+  __attribute__ ((__const__));
 
 
-extern int __isnan (double __value) throw () __attribute__ ((__const__));
+extern int __isnan (double __value) throw ()
+  __attribute__ ((__const__));
 
 
 extern int __iseqsig (double __x, double __y) throw ();
@@ -9561,9 +9580,9 @@ extern int __iseqsig (double __x, double __y) throw ();
 
 extern int __issignaling (double __value) throw ()
      __attribute__ ((__const__));
-# 290 "/usr/include/math.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 299 "/usr/include/math.h" 2 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern double acos (double __x) throw (); extern double __acos (double __x) throw ();
 
 extern double asin (double __x) throw (); extern double __asin (double __x) throw ();
@@ -9680,13 +9699,15 @@ extern double floor (double __x) throw () __attribute__ ((__const__)); extern do
 
 
 extern double fmod (double __x, double __y) throw (); extern double __fmod (double __x, double __y) throw ();
-# 177 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern int isinf (double __value) throw () __attribute__ ((__const__));
+# 177 "/usr/include/bits/mathcalls.h" 3 4
+extern int isinf (double __value) throw ()
+  __attribute__ ((__const__));
 
 
 
 
-extern int finite (double __value) throw () __attribute__ ((__const__));
+extern int finite (double __value) throw ()
+  __attribute__ ((__const__));
 
 
 extern double drem (double __x, double __y) throw (); extern double __drem (double __x, double __y) throw ();
@@ -9705,9 +9726,10 @@ extern double copysign (double __x, double __y) throw () __attribute__ ((__const
 
 
 
-extern double nan (const char *__tagb) throw () __attribute__ ((__const__)); extern double __nan (const char *__tagb) throw () __attribute__ ((__const__));
-# 211 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern int isnan (double __value) throw () __attribute__ ((__const__));
+extern double nan (const char *__tagb) throw (); extern double __nan (const char *__tagb) throw ();
+# 213 "/usr/include/bits/mathcalls.h" 3 4
+extern int isnan (double __value) throw ()
+  __attribute__ ((__const__));
 
 
 
@@ -9867,15 +9889,19 @@ extern double fmaxmag (double __x, double __y) throw () __attribute__ ((__const_
 extern double fminmag (double __x, double __y) throw () __attribute__ ((__const__)); extern double __fminmag (double __x, double __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorder (double __x, double __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermag (double __x, double __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalize (double *__cx, const double *__x) throw ();
+
+
+
+
+extern int totalorder (const double *__x, const double *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermag (const double *__x, const double *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern double getpayload (const double *__x) throw (); extern double __getpayload (const double *__x) throw ();
@@ -9893,10 +9919,10 @@ extern int setpayloadsig (double *__x, double __payload) throw ();
 
 
 extern double scalb (double __x, double __n) throw (); extern double __scalb (double __x, double __n) throw ();
-# 291 "/usr/include/math.h" 2 3 4
-# 306 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
-# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+# 300 "/usr/include/math.h" 2 3 4
+# 315 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls-helper-functions.h" 1 3 4
+# 20 "/usr/include/bits/mathcalls-helper-functions.h" 3 4
 extern int __fpclassifyf (float __value) throw ()
      __attribute__ ((__const__));
 
@@ -9906,13 +9932,16 @@ extern int __signbitf (float __value) throw ()
 
 
 
-extern int __isinff (float __value) throw () __attribute__ ((__const__));
+extern int __isinff (float __value) throw ()
+  __attribute__ ((__const__));
 
 
-extern int __finitef (float __value) throw () __attribute__ ((__const__));
+extern int __finitef (float __value) throw ()
+  __attribute__ ((__const__));
 
 
-extern int __isnanf (float __value) throw () __attribute__ ((__const__));
+extern int __isnanf (float __value) throw ()
+  __attribute__ ((__const__));
 
 
 extern int __iseqsigf (float __x, float __y) throw ();
@@ -9920,9 +9949,9 @@ extern int __iseqsigf (float __x, float __y) throw ();
 
 extern int __issignalingf (float __value) throw ()
      __attribute__ ((__const__));
-# 307 "/usr/include/math.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 316 "/usr/include/math.h" 2 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern float acosf (float __x) throw (); extern float __acosf (float __x) throw ();
 
 extern float asinf (float __x) throw (); extern float __asinf (float __x) throw ();
@@ -10039,13 +10068,15 @@ extern float floorf (float __x) throw () __attribute__ ((__const__)); extern flo
 
 
 extern float fmodf (float __x, float __y) throw (); extern float __fmodf (float __x, float __y) throw ();
-# 177 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern int isinff (float __value) throw () __attribute__ ((__const__));
+# 177 "/usr/include/bits/mathcalls.h" 3 4
+extern int isinff (float __value) throw ()
+  __attribute__ ((__const__));
 
 
 
 
-extern int finitef (float __value) throw () __attribute__ ((__const__));
+extern int finitef (float __value) throw ()
+  __attribute__ ((__const__));
 
 
 extern float dremf (float __x, float __y) throw (); extern float __dremf (float __x, float __y) throw ();
@@ -10064,9 +10095,10 @@ extern float copysignf (float __x, float __y) throw () __attribute__ ((__const__
 
 
 
-extern float nanf (const char *__tagb) throw () __attribute__ ((__const__)); extern float __nanf (const char *__tagb) throw () __attribute__ ((__const__));
-# 211 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern int isnanf (float __value) throw () __attribute__ ((__const__));
+extern float nanf (const char *__tagb) throw (); extern float __nanf (const char *__tagb) throw ();
+# 213 "/usr/include/bits/mathcalls.h" 3 4
+extern int isnanf (float __value) throw ()
+  __attribute__ ((__const__));
 
 
 
@@ -10226,15 +10258,19 @@ extern float fmaxmagf (float __x, float __y) throw () __attribute__ ((__const__)
 extern float fminmagf (float __x, float __y) throw () __attribute__ ((__const__)); extern float __fminmagf (float __x, float __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorderf (float __x, float __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermagf (float __x, float __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalizef (float *__cx, const float *__x) throw ();
+
+
+
+
+extern int totalorderf (const float *__x, const float *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermagf (const float *__x, const float *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern float getpayloadf (const float *__x) throw (); extern float __getpayloadf (const float *__x) throw ();
@@ -10252,10 +10288,10 @@ extern int setpayloadsigf (float *__x, float __payload) throw ();
 
 
 extern float scalbf (float __x, float __n) throw (); extern float __scalbf (float __x, float __n) throw ();
-# 308 "/usr/include/math.h" 2 3 4
-# 349 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 1 3 4
-# 21 "/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h" 3 4
+# 317 "/usr/include/math.h" 2 3 4
+# 384 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls-helper-functions.h" 1 3 4
+# 20 "/usr/include/bits/mathcalls-helper-functions.h" 3 4
 extern int __fpclassifyl (long double __value) throw ()
      __attribute__ ((__const__));
 
@@ -10265,13 +10301,16 @@ extern int __signbitl (long double __value) throw ()
 
 
 
-extern int __isinfl (long double __value) throw () __attribute__ ((__const__));
+extern int __isinfl (long double __value) throw ()
+  __attribute__ ((__const__));
 
 
-extern int __finitel (long double __value) throw () __attribute__ ((__const__));
+extern int __finitel (long double __value) throw ()
+  __attribute__ ((__const__));
 
 
-extern int __isnanl (long double __value) throw () __attribute__ ((__const__));
+extern int __isnanl (long double __value) throw ()
+  __attribute__ ((__const__));
 
 
 extern int __iseqsigl (long double __x, long double __y) throw ();
@@ -10279,9 +10318,9 @@ extern int __iseqsigl (long double __x, long double __y) throw ();
 
 extern int __issignalingl (long double __value) throw ()
      __attribute__ ((__const__));
-# 350 "/usr/include/math.h" 2 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 385 "/usr/include/math.h" 2 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern long double acosl (long double __x) throw (); extern long double __acosl (long double __x) throw ();
 
 extern long double asinl (long double __x) throw (); extern long double __asinl (long double __x) throw ();
@@ -10398,13 +10437,15 @@ extern long double floorl (long double __x) throw () __attribute__ ((__const__))
 
 
 extern long double fmodl (long double __x, long double __y) throw (); extern long double __fmodl (long double __x, long double __y) throw ();
-# 177 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern int isinfl (long double __value) throw () __attribute__ ((__const__));
+# 177 "/usr/include/bits/mathcalls.h" 3 4
+extern int isinfl (long double __value) throw ()
+  __attribute__ ((__const__));
 
 
 
 
-extern int finitel (long double __value) throw () __attribute__ ((__const__));
+extern int finitel (long double __value) throw ()
+  __attribute__ ((__const__));
 
 
 extern long double dreml (long double __x, long double __y) throw (); extern long double __dreml (long double __x, long double __y) throw ();
@@ -10423,9 +10464,10 @@ extern long double copysignl (long double __x, long double __y) throw () __attri
 
 
 
-extern long double nanl (const char *__tagb) throw () __attribute__ ((__const__)); extern long double __nanl (const char *__tagb) throw () __attribute__ ((__const__));
-# 211 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
-extern int isnanl (long double __value) throw () __attribute__ ((__const__));
+extern long double nanl (const char *__tagb) throw (); extern long double __nanl (const char *__tagb) throw ();
+# 213 "/usr/include/bits/mathcalls.h" 3 4
+extern int isnanl (long double __value) throw ()
+  __attribute__ ((__const__));
 
 
 
@@ -10585,15 +10627,19 @@ extern long double fmaxmagl (long double __x, long double __y) throw () __attrib
 extern long double fminmagl (long double __x, long double __y) throw () __attribute__ ((__const__)); extern long double __fminmagl (long double __x, long double __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorderl (long double __x, long double __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermagl (long double __x, long double __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalizel (long double *__cx, const long double *__x) throw ();
+
+
+
+
+extern int totalorderl (const long double *__x, const long double *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermagl (const long double *__x, const long double *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern long double getpayloadl (const long double *__x) throw (); extern long double __getpayloadl (const long double *__x) throw ();
@@ -10611,10 +10657,10 @@ extern int setpayloadsigl (long double *__x, long double __payload) throw ();
 
 
 extern long double scalbl (long double __x, long double __n) throw (); extern long double __scalbl (long double __x, long double __n) throw ();
-# 351 "/usr/include/math.h" 2 3 4
-# 389 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 386 "/usr/include/math.h" 2 3 4
+# 436 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32 acosf32 (_Float32 __x) throw (); extern _Float32 __acosf32 (_Float32 __x) throw ();
 
 extern _Float32 asinf32 (_Float32 __x) throw (); extern _Float32 __asinf32 (_Float32 __x) throw ();
@@ -10731,14 +10777,14 @@ extern _Float32 floorf32 (_Float32 __x) throw () __attribute__ ((__const__)); ex
 
 
 extern _Float32 fmodf32 (_Float32 __x, _Float32 __y) throw (); extern _Float32 __fmodf32 (_Float32 __x, _Float32 __y) throw ();
-# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 198 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32 copysignf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__)); extern _Float32 __copysignf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__));
 
 
 
 
-extern _Float32 nanf32 (const char *__tagb) throw () __attribute__ ((__const__)); extern _Float32 __nanf32 (const char *__tagb) throw () __attribute__ ((__const__));
-# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float32 nanf32 (const char *__tagb) throw (); extern _Float32 __nanf32 (const char *__tagb) throw ();
+# 220 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32 j0f32 (_Float32) throw (); extern _Float32 __j0f32 (_Float32) throw ();
 extern _Float32 j1f32 (_Float32) throw (); extern _Float32 __j1f32 (_Float32) throw ();
 extern _Float32 jnf32 (int, _Float32) throw (); extern _Float32 __jnf32 (int, _Float32) throw ();
@@ -10758,7 +10804,7 @@ extern _Float32 lgammaf32 (_Float32) throw (); extern _Float32 __lgammaf32 (_Flo
 
 
 extern _Float32 tgammaf32 (_Float32) throw (); extern _Float32 __tgammaf32 (_Float32) throw ();
-# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 252 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32 lgammaf32_r (_Float32, int *__signgamp) throw (); extern _Float32 __lgammaf32_r (_Float32, int *__signgamp) throw ();
 
 
@@ -10881,15 +10927,19 @@ extern _Float32 fmaxmagf32 (_Float32 __x, _Float32 __y) throw () __attribute__ (
 extern _Float32 fminmagf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__)); extern _Float32 __fminmagf32 (_Float32 __x, _Float32 __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorderf32 (_Float32 __x, _Float32 __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermagf32 (_Float32 __x, _Float32 __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalizef32 (_Float32 *__cx, const _Float32 *__x) throw ();
+
+
+
+
+extern int totalorderf32 (const _Float32 *__x, const _Float32 *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermagf32 (const _Float32 *__x, const _Float32 *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern _Float32 getpayloadf32 (const _Float32 *__x) throw (); extern _Float32 __getpayloadf32 (const _Float32 *__x) throw ();
@@ -10899,10 +10949,10 @@ extern int setpayloadf32 (_Float32 *__x, _Float32 __payload) throw ();
 
 
 extern int setpayloadsigf32 (_Float32 *__x, _Float32 __payload) throw ();
-# 390 "/usr/include/math.h" 2 3 4
-# 406 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 437 "/usr/include/math.h" 2 3 4
+# 453 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64 acosf64 (_Float64 __x) throw (); extern _Float64 __acosf64 (_Float64 __x) throw ();
 
 extern _Float64 asinf64 (_Float64 __x) throw (); extern _Float64 __asinf64 (_Float64 __x) throw ();
@@ -11019,14 +11069,14 @@ extern _Float64 floorf64 (_Float64 __x) throw () __attribute__ ((__const__)); ex
 
 
 extern _Float64 fmodf64 (_Float64 __x, _Float64 __y) throw (); extern _Float64 __fmodf64 (_Float64 __x, _Float64 __y) throw ();
-# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 198 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64 copysignf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__)); extern _Float64 __copysignf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__));
 
 
 
 
-extern _Float64 nanf64 (const char *__tagb) throw () __attribute__ ((__const__)); extern _Float64 __nanf64 (const char *__tagb) throw () __attribute__ ((__const__));
-# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float64 nanf64 (const char *__tagb) throw (); extern _Float64 __nanf64 (const char *__tagb) throw ();
+# 220 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64 j0f64 (_Float64) throw (); extern _Float64 __j0f64 (_Float64) throw ();
 extern _Float64 j1f64 (_Float64) throw (); extern _Float64 __j1f64 (_Float64) throw ();
 extern _Float64 jnf64 (int, _Float64) throw (); extern _Float64 __jnf64 (int, _Float64) throw ();
@@ -11046,7 +11096,7 @@ extern _Float64 lgammaf64 (_Float64) throw (); extern _Float64 __lgammaf64 (_Flo
 
 
 extern _Float64 tgammaf64 (_Float64) throw (); extern _Float64 __tgammaf64 (_Float64) throw ();
-# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 252 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64 lgammaf64_r (_Float64, int *__signgamp) throw (); extern _Float64 __lgammaf64_r (_Float64, int *__signgamp) throw ();
 
 
@@ -11169,15 +11219,19 @@ extern _Float64 fmaxmagf64 (_Float64 __x, _Float64 __y) throw () __attribute__ (
 extern _Float64 fminmagf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__)); extern _Float64 __fminmagf64 (_Float64 __x, _Float64 __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorderf64 (_Float64 __x, _Float64 __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermagf64 (_Float64 __x, _Float64 __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalizef64 (_Float64 *__cx, const _Float64 *__x) throw ();
+
+
+
+
+extern int totalorderf64 (const _Float64 *__x, const _Float64 *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermagf64 (const _Float64 *__x, const _Float64 *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern _Float64 getpayloadf64 (const _Float64 *__x) throw (); extern _Float64 __getpayloadf64 (const _Float64 *__x) throw ();
@@ -11187,10 +11241,10 @@ extern int setpayloadf64 (_Float64 *__x, _Float64 __payload) throw ();
 
 
 extern int setpayloadsigf64 (_Float64 *__x, _Float64 __payload) throw ();
-# 407 "/usr/include/math.h" 2 3 4
-# 440 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 454 "/usr/include/math.h" 2 3 4
+# 487 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32x acosf32x (_Float32x __x) throw (); extern _Float32x __acosf32x (_Float32x __x) throw ();
 
 extern _Float32x asinf32x (_Float32x __x) throw (); extern _Float32x __asinf32x (_Float32x __x) throw ();
@@ -11307,14 +11361,14 @@ extern _Float32x floorf32x (_Float32x __x) throw () __attribute__ ((__const__));
 
 
 extern _Float32x fmodf32x (_Float32x __x, _Float32x __y) throw (); extern _Float32x __fmodf32x (_Float32x __x, _Float32x __y) throw ();
-# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 198 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32x copysignf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__)); extern _Float32x __copysignf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__));
 
 
 
 
-extern _Float32x nanf32x (const char *__tagb) throw () __attribute__ ((__const__)); extern _Float32x __nanf32x (const char *__tagb) throw () __attribute__ ((__const__));
-# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float32x nanf32x (const char *__tagb) throw (); extern _Float32x __nanf32x (const char *__tagb) throw ();
+# 220 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32x j0f32x (_Float32x) throw (); extern _Float32x __j0f32x (_Float32x) throw ();
 extern _Float32x j1f32x (_Float32x) throw (); extern _Float32x __j1f32x (_Float32x) throw ();
 extern _Float32x jnf32x (int, _Float32x) throw (); extern _Float32x __jnf32x (int, _Float32x) throw ();
@@ -11334,7 +11388,7 @@ extern _Float32x lgammaf32x (_Float32x) throw (); extern _Float32x __lgammaf32x 
 
 
 extern _Float32x tgammaf32x (_Float32x) throw (); extern _Float32x __tgammaf32x (_Float32x) throw ();
-# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 252 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float32x lgammaf32x_r (_Float32x, int *__signgamp) throw (); extern _Float32x __lgammaf32x_r (_Float32x, int *__signgamp) throw ();
 
 
@@ -11457,15 +11511,19 @@ extern _Float32x fmaxmagf32x (_Float32x __x, _Float32x __y) throw () __attribute
 extern _Float32x fminmagf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__)); extern _Float32x __fminmagf32x (_Float32x __x, _Float32x __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorderf32x (_Float32x __x, _Float32x __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermagf32x (_Float32x __x, _Float32x __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalizef32x (_Float32x *__cx, const _Float32x *__x) throw ();
+
+
+
+
+extern int totalorderf32x (const _Float32x *__x, const _Float32x *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermagf32x (const _Float32x *__x, const _Float32x *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern _Float32x getpayloadf32x (const _Float32x *__x) throw (); extern _Float32x __getpayloadf32x (const _Float32x *__x) throw ();
@@ -11475,10 +11533,10 @@ extern int setpayloadf32x (_Float32x *__x, _Float32x __payload) throw ();
 
 
 extern int setpayloadsigf32x (_Float32x *__x, _Float32x __payload) throw ();
-# 441 "/usr/include/math.h" 2 3 4
-# 457 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 488 "/usr/include/math.h" 2 3 4
+# 504 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls.h" 1 3 4
+# 53 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64x acosf64x (_Float64x __x) throw (); extern _Float64x __acosf64x (_Float64x __x) throw ();
 
 extern _Float64x asinf64x (_Float64x __x) throw (); extern _Float64x __asinf64x (_Float64x __x) throw ();
@@ -11595,14 +11653,14 @@ extern _Float64x floorf64x (_Float64x __x) throw () __attribute__ ((__const__));
 
 
 extern _Float64x fmodf64x (_Float64x __x, _Float64x __y) throw (); extern _Float64x __fmodf64x (_Float64x __x, _Float64x __y) throw ();
-# 196 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 198 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64x copysignf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__)); extern _Float64x __copysignf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__));
 
 
 
 
-extern _Float64x nanf64x (const char *__tagb) throw () __attribute__ ((__const__)); extern _Float64x __nanf64x (const char *__tagb) throw () __attribute__ ((__const__));
-# 217 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+extern _Float64x nanf64x (const char *__tagb) throw (); extern _Float64x __nanf64x (const char *__tagb) throw ();
+# 220 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64x j0f64x (_Float64x) throw (); extern _Float64x __j0f64x (_Float64x) throw ();
 extern _Float64x j1f64x (_Float64x) throw (); extern _Float64x __j1f64x (_Float64x) throw ();
 extern _Float64x jnf64x (int, _Float64x) throw (); extern _Float64x __jnf64x (int, _Float64x) throw ();
@@ -11622,7 +11680,7 @@ extern _Float64x lgammaf64x (_Float64x) throw (); extern _Float64x __lgammaf64x 
 
 
 extern _Float64x tgammaf64x (_Float64x) throw (); extern _Float64x __tgammaf64x (_Float64x) throw ();
-# 249 "/usr/include/x86_64-linux-gnu/bits/mathcalls.h" 3 4
+# 252 "/usr/include/bits/mathcalls.h" 3 4
 extern _Float64x lgammaf64x_r (_Float64x, int *__signgamp) throw (); extern _Float64x __lgammaf64x_r (_Float64x, int *__signgamp) throw ();
 
 
@@ -11745,15 +11803,19 @@ extern _Float64x fmaxmagf64x (_Float64x __x, _Float64x __y) throw () __attribute
 extern _Float64x fminmagf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__)); extern _Float64x __fminmagf64x (_Float64x __x, _Float64x __y) throw () __attribute__ ((__const__));
 
 
-extern int totalorderf64x (_Float64x __x, _Float64x __y) throw ()
-     __attribute__ ((__const__));
-
-
-extern int totalordermagf64x (_Float64x __x, _Float64x __y) throw ()
-     __attribute__ ((__const__));
-
-
 extern int canonicalizef64x (_Float64x *__cx, const _Float64x *__x) throw ();
+
+
+
+
+extern int totalorderf64x (const _Float64x *__x, const _Float64x *__y) throw ()
+
+     __attribute__ ((__pure__));
+
+
+extern int totalordermagf64x (const _Float64x *__x, const _Float64x *__y) throw ()
+
+     __attribute__ ((__pure__));
 
 
 extern _Float64x getpayloadf64x (const _Float64x *__x) throw (); extern _Float64x __getpayloadf64x (const _Float64x *__x) throw ();
@@ -11763,10 +11825,136 @@ extern int setpayloadf64x (_Float64x *__x, _Float64x __payload) throw ();
 
 
 extern int setpayloadsigf64x (_Float64x *__x, _Float64x __payload) throw ();
-# 458 "/usr/include/math.h" 2 3 4
-# 489 "/usr/include/math.h" 3 4
+# 505 "/usr/include/math.h" 2 3 4
+# 552 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
+extern float fadd (double __x, double __y) throw ();
+
+
+extern float fdiv (double __x, double __y) throw ();
+
+
+extern float fmul (double __x, double __y) throw ();
+
+
+extern float fsub (double __x, double __y) throw ();
+# 553 "/usr/include/math.h" 2 3 4
+# 571 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
+extern float faddl (long double __x, long double __y) throw ();
+
+
+extern float fdivl (long double __x, long double __y) throw ();
+
+
+extern float fmull (long double __x, long double __y) throw ();
+
+
+extern float fsubl (long double __x, long double __y) throw ();
+# 572 "/usr/include/math.h" 2 3 4
+# 597 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
+extern double daddl (long double __x, long double __y) throw ();
+
+
+extern double ddivl (long double __x, long double __y) throw ();
+
+
+extern double dmull (long double __x, long double __y) throw ();
+
+
+extern double dsubl (long double __x, long double __y) throw ();
+# 598 "/usr/include/math.h" 2 3 4
+# 677 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
+extern _Float32 f32addf32x (_Float32x __x, _Float32x __y) throw ();
+
+
+extern _Float32 f32divf32x (_Float32x __x, _Float32x __y) throw ();
+
+
+extern _Float32 f32mulf32x (_Float32x __x, _Float32x __y) throw ();
+
+
+extern _Float32 f32subf32x (_Float32x __x, _Float32x __y) throw ();
+# 678 "/usr/include/math.h" 2 3 4
+# 687 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
+extern _Float32 f32addf64 (_Float64 __x, _Float64 __y) throw ();
+
+
+extern _Float32 f32divf64 (_Float64 __x, _Float64 __y) throw ();
+
+
+extern _Float32 f32mulf64 (_Float64 __x, _Float64 __y) throw ();
+
+
+extern _Float32 f32subf64 (_Float64 __x, _Float64 __y) throw ();
+# 688 "/usr/include/math.h" 2 3 4
+# 697 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
+extern _Float32 f32addf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float32 f32divf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float32 f32mulf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float32 f32subf64x (_Float64x __x, _Float64x __y) throw ();
+# 698 "/usr/include/math.h" 2 3 4
+# 727 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
+extern _Float32x f32xaddf64 (_Float64 __x, _Float64 __y) throw ();
+
+
+extern _Float32x f32xdivf64 (_Float64 __x, _Float64 __y) throw ();
+
+
+extern _Float32x f32xmulf64 (_Float64 __x, _Float64 __y) throw ();
+
+
+extern _Float32x f32xsubf64 (_Float64 __x, _Float64 __y) throw ();
+# 728 "/usr/include/math.h" 2 3 4
+# 737 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
+extern _Float32x f32xaddf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float32x f32xdivf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float32x f32xmulf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float32x f32xsubf64x (_Float64x __x, _Float64x __y) throw ();
+# 738 "/usr/include/math.h" 2 3 4
+# 767 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
+# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
+extern _Float64 f64addf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float64 f64divf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float64 f64mulf64x (_Float64x __x, _Float64x __y) throw ();
+
+
+extern _Float64 f64subf64x (_Float64x __x, _Float64x __y) throw ();
+# 768 "/usr/include/math.h" 2 3 4
+# 834 "/usr/include/math.h" 3 4
 extern int signgam;
-# 569 "/usr/include/math.h" 3 4
+# 914 "/usr/include/math.h" 3 4
 enum
   {
     FP_NAN =
@@ -11785,12 +11973,12 @@ enum
 
       4
   };
-# 684 "/usr/include/math.h" 3 4
-# 1 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 1 3 4
-# 23 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 3 4
+# 1034 "/usr/include/math.h" 3 4
+# 1 "/usr/include/bits/iscanonical.h" 1 3 4
+# 23 "/usr/include/bits/iscanonical.h" 3 4
 extern int __iscanonicall (long double __x)
      throw () __attribute__ ((__const__));
-# 46 "/usr/include/x86_64-linux-gnu/bits/iscanonical.h" 3 4
+# 46 "/usr/include/bits/iscanonical.h" 3 4
 extern "C++" {
 inline int iscanonical (float __val) { return ((void) (__typeof (__val)) (__val), 1); }
 inline int iscanonical (double __val) { return ((void) (__typeof (__val)) (__val), 1); }
@@ -11799,8 +11987,8 @@ inline int iscanonical (long double __val) { return __iscanonicall (__val); }
 
 
 }
-# 685 "/usr/include/math.h" 2 3 4
-# 696 "/usr/include/math.h" 3 4
+# 1035 "/usr/include/math.h" 2 3 4
+# 1046 "/usr/include/math.h" 3 4
 extern "C++" {
 inline int issignaling (float __val) { return __issignalingf (__val); }
 inline int issignaling (double __val) { return __issignaling (__val); }
@@ -11816,10 +12004,12 @@ issignaling (long double __val)
 
 
 
+
+
 }
-# 725 "/usr/include/math.h" 3 4
+# 1077 "/usr/include/math.h" 3 4
 extern "C++" {
-# 754 "/usr/include/math.h" 3 4
+# 1108 "/usr/include/math.h" 3 4
 template <class __T> inline bool
 iszero (__T __val)
 {
@@ -11827,7 +12017,7 @@ iszero (__T __val)
 }
 
 }
-# 1205 "/usr/include/math.h" 3 4
+# 1326 "/usr/include/math.h" 3 4
 extern "C++" {
 template<typename> struct __iseqsig_type;
 
@@ -11858,7 +12048,7 @@ template<> struct __iseqsig_type<long double>
 
   }
 };
-# 1246 "/usr/include/math.h" 3 4
+# 1369 "/usr/include/math.h" 3 4
 template<typename _T1, typename _T2>
 inline int
 iseqsig (_T1 __x, _T2 __y) throw ()
@@ -12387,6 +12577,27 @@ namespace std __attribute__ ((__visibility__ ("default")))
 # 1 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_fpo.h" 1
 # 62 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_fpo.h"
 # 1 "/usr/include/assert.h" 1 3 4
+# 64 "/usr/include/assert.h" 3 4
+extern "C" {
+
+
+extern void __assert_fail (const char *__assertion, const char *__file,
+      unsigned int __line, const char *__function)
+     throw () __attribute__ ((__noreturn__));
+
+
+extern void __assert_perror_fail (int __errnum, const char *__file,
+      unsigned int __line, const char *__function)
+     throw () __attribute__ ((__noreturn__));
+
+
+
+
+extern void __assert (const char *__assertion, const char *__file, int __line)
+     throw () __attribute__ ((__noreturn__));
+
+
+}
 # 63 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_fpo.h" 2
 # 38 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_math.h" 2
 
@@ -34183,9 +34394,9 @@ _ssdm_op_SpecDataflowPipeline(-1, 0, "");
 }
 # 70 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_video.h" 2
 # 5 "src/cpp/rgb2bayer.h" 2
-# 44 "src/cpp/rgb2bayer.h"
- typedef hls::stream<ap_axiu<48,1,1,1> > AXI_STREAM1;
- typedef hls::stream<ap_axiu<16,1,1,1> > AXI_STREAM2;
+# 146 "src/cpp/rgb2bayer.h"
+ typedef hls::stream<ap_axiu<((2*10*3 +7)/8)*8,1,1,1> > AXI_STREAM1;
+ typedef hls::stream<ap_axiu<((2*10 +7)/8) * 8,1,1,1> > AXI_STREAM2;
 
 
 
@@ -34200,8 +34411,8 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
 #pragma HLS INTERFACE axis register both port=&m_axis_video
 #pragma HLS interface ap_ctrl_none port=return
 
- ap_axiu<48, 1, 1, 1> video_i;
- ap_axiu<16, 1, 1, 1> video_o;
+ ap_axiu<((2*10*3 +7)/8)*8, 1, 1, 1> video_i;
+ ap_axiu<((2*10 +7)/8) * 8, 1, 1, 1> video_o;
 # 21 "src/cpp/rgb2bayer.cpp"
  for(int j = 0; j < vsize_in ; j ++)
  {
@@ -34219,13 +34430,17 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
        case 0b00:
     if(j%2==0)
     {
-     video_o.data(7,0) = video_i.data(23,16);
-     video_o.data(15,8) = video_i.data(31,24);
+
+     video_o.data(1*10 -1,0*10) = video_i.data(3*10 -1,2*10);
+
+     video_o.data(2*10 -1,1*10) = video_i.data(4*10 -1,3*10);
     }
     else
     {
-     video_o.data(7,0) = video_i.data(7,0);
-     video_o.data(15,8) = video_i.data(39,32);
+
+     video_o.data(1*10 -1,0*10) = video_i.data(1*10 -1,0*10);
+
+     video_o.data(2*10 -1,1*10) = video_i.data(5*10 -1,4*10);
     }
 
     break;
@@ -34233,13 +34448,17 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
        case 0b01:
     if(j%2==0)
     {
-     video_o.data(7,0) = video_i.data(7,0);
-     video_o.data(15,8) = video_i.data(47,40);
+
+     video_o.data(1*10 -1,0*10) = video_i.data(1*10 -1,0*10);
+
+     video_o.data(2*10 -1,1*10) = video_i.data(6*10 -1,5*10);
     }
     else
     {
-     video_o.data(7,0) = video_i.data(15,8);
-     video_o.data(15,8) = video_i.data(31,24);
+
+     video_o.data(1*10 -1,0*10) = video_i.data(2*10 -1,1*10);
+
+     video_o.data(2*10 -1,1*10) = video_i.data(4*10 -1,3*10);
     }
 
     break;
@@ -34248,13 +34467,17 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
        case 0b10:
     if(j%2==0)
     {
-     video_o.data(7,0) = video_i.data(15,8);
-     video_o.data(15,8) = video_i.data(31,24);
+
+     video_o.data(1*10 -1,0*10) = video_i.data(2*10 -1,1*10);
+
+     video_o.data(2*10 -1,1*10) = video_i.data(4*10 -1,3*10);
     }
     else
     {
-     video_o.data(7,0) = video_i.data(7,0);
-     video_o.data(15,8) = video_i.data(47,40);
+
+     video_o.data(1*10 -1,0*10) = video_i.data(1*10 -1,0*10);
+
+     video_o.data(2*10 -1,1*10) = video_i.data(6*10 -1,5*10);
     }
 
     break;
@@ -34263,13 +34486,17 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
        case 0b11:
     if(j%2==0)
     {
-     video_o.data(7,0) = video_i.data(7,0);
-     video_o.data(15,8) = video_i.data(39,32);
+
+     video_o.data(1*10 -1,0*10) = video_i.data(1*10 -1,0*10);
+
+     video_o.data(2*10 -1,1*10) = video_i.data(5*10 -1,4*10);
     }
     else
     {
-     video_o.data(7,0) = video_i.data(23,16);
-     video_o.data(15,8) = video_i.data(31,24);
+
+     video_o.data(1*10 -1,0*10) = video_i.data(3*10 -1,2*10);
+
+     video_o.data(2*10 -1,1*10) = video_i.data(4*10 -1,3*10);
     }
 
     break;

@@ -58,29 +58,29 @@ output   ap_done;
 input   ap_continue;
 output   ap_idle;
 output   ap_ready;
-input  [7:0] imgUnzip_V_val_0_V_dout;
+input  [9:0] imgUnzip_V_val_0_V_dout;
 input   imgUnzip_V_val_0_V_empty_n;
 output   imgUnzip_V_val_0_V_read;
-input  [7:0] imgUnzip_V_val_1_V_dout;
+input  [9:0] imgUnzip_V_val_1_V_dout;
 input   imgUnzip_V_val_1_V_empty_n;
 output   imgUnzip_V_val_1_V_read;
-input  [7:0] imgUnzip_V_val_2_V_dout;
+input  [9:0] imgUnzip_V_val_2_V_dout;
 input   imgUnzip_V_val_2_V_empty_n;
 output   imgUnzip_V_val_2_V_read;
-input  [7:0] imgUnzip_V_val_3_V_dout;
+input  [9:0] imgUnzip_V_val_3_V_dout;
 input   imgUnzip_V_val_3_V_empty_n;
 output   imgUnzip_V_val_3_V_read;
-input  [7:0] imgUnzip_V_val_4_V_dout;
+input  [9:0] imgUnzip_V_val_4_V_dout;
 input   imgUnzip_V_val_4_V_empty_n;
 output   imgUnzip_V_val_4_V_read;
-input  [7:0] imgUnzip_V_val_5_V_dout;
+input  [9:0] imgUnzip_V_val_5_V_dout;
 input   imgUnzip_V_val_5_V_empty_n;
 output   imgUnzip_V_val_5_V_read;
-output  [47:0] m_axis_video_TDATA;
+output  [63:0] m_axis_video_TDATA;
 output   m_axis_video_TVALID;
 input   m_axis_video_TREADY;
-output  [5:0] m_axis_video_TKEEP;
-output  [5:0] m_axis_video_TSTRB;
+output  [7:0] m_axis_video_TKEEP;
+output  [7:0] m_axis_video_TSTRB;
 output  [0:0] m_axis_video_TUSER;
 output  [0:0] m_axis_video_TLAST;
 output  [0:0] m_axis_video_TID;
@@ -95,13 +95,13 @@ reg ap_ready;
 reg    ap_done_reg;
 (* fsm_encoding = "none" *) reg   [3:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-reg   [47:0] m_axis_video_V_data_V_1_data_out;
+reg   [63:0] m_axis_video_V_data_V_1_data_out;
 reg    m_axis_video_V_data_V_1_vld_in;
 wire    m_axis_video_V_data_V_1_vld_out;
 wire    m_axis_video_V_data_V_1_ack_in;
 wire    m_axis_video_V_data_V_1_ack_out;
-reg   [47:0] m_axis_video_V_data_V_1_payload_A;
-reg   [47:0] m_axis_video_V_data_V_1_payload_B;
+reg   [63:0] m_axis_video_V_data_V_1_payload_A;
+reg   [63:0] m_axis_video_V_data_V_1_payload_B;
 reg    m_axis_video_V_data_V_1_sel_rd;
 reg    m_axis_video_V_data_V_1_sel_wr;
 wire    m_axis_video_V_data_V_1_sel;
@@ -109,7 +109,7 @@ wire    m_axis_video_V_data_V_1_load_A;
 wire    m_axis_video_V_data_V_1_load_B;
 reg   [1:0] m_axis_video_V_data_V_1_state;
 wire    m_axis_video_V_data_V_1_state_cmp_full;
-wire   [5:0] m_axis_video_V_keep_V_1_data_out;
+wire   [7:0] m_axis_video_V_keep_V_1_data_out;
 reg    m_axis_video_V_keep_V_1_vld_in;
 wire    m_axis_video_V_keep_V_1_vld_out;
 wire    m_axis_video_V_keep_V_1_ack_in;
@@ -117,7 +117,7 @@ wire    m_axis_video_V_keep_V_1_ack_out;
 reg    m_axis_video_V_keep_V_1_sel_rd;
 wire    m_axis_video_V_keep_V_1_sel;
 reg   [1:0] m_axis_video_V_keep_V_1_state;
-wire   [5:0] m_axis_video_V_strb_V_1_data_out;
+wire   [7:0] m_axis_video_V_strb_V_1_data_out;
 reg    m_axis_video_V_strb_V_1_vld_in;
 wire    m_axis_video_V_strb_V_1_vld_out;
 wire    m_axis_video_V_strb_V_1_ack_in;
@@ -173,7 +173,7 @@ reg    imgUnzip_V_val_0_V_blk_n;
 wire    ap_CS_fsm_pp0_stage0;
 reg    ap_enable_reg_pp0_iter1;
 wire    ap_block_pp0_stage0;
-reg   [0:0] exitcond_i_reg_392;
+reg   [0:0] exitcond_i_reg_396;
 reg    imgUnzip_V_val_1_V_blk_n;
 reg    imgUnzip_V_val_2_V_blk_n;
 reg    imgUnzip_V_val_3_V_blk_n;
@@ -181,7 +181,7 @@ reg    imgUnzip_V_val_4_V_blk_n;
 reg    imgUnzip_V_val_5_V_blk_n;
 reg    m_axis_video_TDATA_blk_n;
 reg    ap_enable_reg_pp0_iter2;
-reg   [0:0] exitcond_i_reg_392_pp0_iter1_reg;
+reg   [0:0] exitcond_i_reg_396_pp0_iter1_reg;
 reg   [10:0] t_V_1_reg_240;
 wire   [11:0] rows_V_fu_251_p1;
 reg    ap_block_state1;
@@ -191,7 +191,7 @@ wire   [0:0] exitcond3_i_i_fu_280_p2;
 wire    ap_CS_fsm_state2;
 reg    ap_block_state2;
 wire   [11:0] i_V_fu_285_p2;
-reg   [11:0] i_V_reg_387;
+reg   [11:0] i_V_reg_391;
 wire   [0:0] exitcond_i_fu_291_p2;
 wire    ap_block_state3_pp0_stage0_iter0;
 wire    imgUnzip_V_val_0_V0_status;
@@ -203,8 +203,8 @@ reg    ap_block_pp0_stage0_11001;
 wire   [10:0] j_V_fu_296_p2;
 reg    ap_enable_reg_pp0_iter0;
 wire   [0:0] tmp_last_V_fu_306_p2;
-reg   [0:0] tmp_last_V_reg_401;
-wire   [47:0] tmp_data_V_fu_339_p7;
+reg   [0:0] tmp_last_V_reg_405;
+wire   [63:0] cast_i_fu_355_p1;
 reg    ap_block_pp0_stage0_subdone;
 reg    ap_condition_pp0_exit_iter0_state3;
 reg   [11:0] t_V_reg_229;
@@ -214,6 +214,7 @@ reg   [0:0] tmp_user_V_fu_168;
 reg    ap_block_pp0_stage0_01001;
 wire   [11:0] tmp_i_fu_265_p1;
 wire   [11:0] tmp_3_cast_i_i_fu_302_p1;
+wire   [59:0] tmp_data_V_fu_339_p7;
 reg   [3:0] ap_NS_fsm;
 reg    ap_idle_pp0;
 wire    ap_enable_pp0;
@@ -524,14 +525,14 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state6)) begin
-        t_V_reg_229 <= i_V_reg_387;
+        t_V_reg_229 <= i_V_reg_391;
     end else if ((~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1))) begin
         t_V_reg_229 <= 12'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         tmp_user_V_fu_168 <= 1'd0;
     end else if ((~((ap_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1))) begin
         tmp_user_V_fu_168 <= 1'd1;
@@ -540,38 +541,38 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        exitcond_i_reg_392 <= exitcond_i_fu_291_p2;
-        exitcond_i_reg_392_pp0_iter1_reg <= exitcond_i_reg_392;
+        exitcond_i_reg_396 <= exitcond_i_fu_291_p2;
+        exitcond_i_reg_396_pp0_iter1_reg <= exitcond_i_reg_396;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((~((m_axis_video_V_data_V_1_ack_in == 1'b0) | (m_axis_video_V_dest_V_1_ack_in == 1'b0) | (m_axis_video_V_id_V_1_ack_in == 1'b0) | (m_axis_video_V_last_V_1_ack_in == 1'b0) | (m_axis_video_V_user_V_1_ack_in == 1'b0) | (m_axis_video_V_strb_V_1_ack_in == 1'b0) | (m_axis_video_V_keep_V_1_ack_in == 1'b0)) & (1'b1 == ap_CS_fsm_state2))) begin
-        i_V_reg_387 <= i_V_fu_285_p2;
+        i_V_reg_391 <= i_V_fu_285_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((m_axis_video_V_data_V_1_load_A == 1'b1)) begin
-        m_axis_video_V_data_V_1_payload_A <= tmp_data_V_fu_339_p7;
+        m_axis_video_V_data_V_1_payload_A <= cast_i_fu_355_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((m_axis_video_V_data_V_1_load_B == 1'b1)) begin
-        m_axis_video_V_data_V_1_payload_B <= tmp_data_V_fu_339_p7;
+        m_axis_video_V_data_V_1_payload_B <= cast_i_fu_355_p1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((m_axis_video_V_last_V_1_load_A == 1'b1)) begin
-        m_axis_video_V_last_V_1_payload_A <= tmp_last_V_reg_401;
+        m_axis_video_V_last_V_1_payload_A <= tmp_last_V_reg_405;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((m_axis_video_V_last_V_1_load_B == 1'b1)) begin
-        m_axis_video_V_last_V_1_payload_B <= tmp_last_V_reg_401;
+        m_axis_video_V_last_V_1_payload_B <= tmp_last_V_reg_405;
     end
 end
 
@@ -589,7 +590,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((exitcond_i_fu_291_p2 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        tmp_last_V_reg_401 <= tmp_last_V_fu_306_p2;
+        tmp_last_V_reg_405 <= tmp_last_V_fu_306_p2;
     end
 end
 
@@ -634,7 +635,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         imgUnzip_V_val_0_V0_update = 1'b1;
     end else begin
         imgUnzip_V_val_0_V0_update = 1'b0;
@@ -642,7 +643,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         imgUnzip_V_val_0_V_blk_n = imgUnzip_V_val_0_V_empty_n;
     end else begin
         imgUnzip_V_val_0_V_blk_n = 1'b1;
@@ -650,7 +651,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         imgUnzip_V_val_1_V_blk_n = imgUnzip_V_val_1_V_empty_n;
     end else begin
         imgUnzip_V_val_1_V_blk_n = 1'b1;
@@ -658,7 +659,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         imgUnzip_V_val_2_V_blk_n = imgUnzip_V_val_2_V_empty_n;
     end else begin
         imgUnzip_V_val_2_V_blk_n = 1'b1;
@@ -666,7 +667,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         imgUnzip_V_val_3_V_blk_n = imgUnzip_V_val_3_V_empty_n;
     end else begin
         imgUnzip_V_val_3_V_blk_n = 1'b1;
@@ -674,7 +675,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         imgUnzip_V_val_4_V_blk_n = imgUnzip_V_val_4_V_empty_n;
     end else begin
         imgUnzip_V_val_4_V_blk_n = 1'b1;
@@ -682,7 +683,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         imgUnzip_V_val_5_V_blk_n = imgUnzip_V_val_5_V_empty_n;
     end else begin
         imgUnzip_V_val_5_V_blk_n = 1'b1;
@@ -690,7 +691,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((((exitcond_i_reg_392_pp0_iter1_reg == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
+    if ((((exitcond_i_reg_396_pp0_iter1_reg == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0)))) begin
         m_axis_video_TDATA_blk_n = m_axis_video_V_data_V_1_state[1'd1];
     end else begin
         m_axis_video_TDATA_blk_n = 1'b1;
@@ -706,7 +707,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         m_axis_video_V_data_V_1_vld_in = 1'b1;
     end else begin
         m_axis_video_V_data_V_1_vld_in = 1'b0;
@@ -714,7 +715,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         m_axis_video_V_dest_V_1_vld_in = 1'b1;
     end else begin
         m_axis_video_V_dest_V_1_vld_in = 1'b0;
@@ -722,7 +723,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         m_axis_video_V_id_V_1_vld_in = 1'b1;
     end else begin
         m_axis_video_V_id_V_1_vld_in = 1'b0;
@@ -730,7 +731,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         m_axis_video_V_keep_V_1_vld_in = 1'b1;
     end else begin
         m_axis_video_V_keep_V_1_vld_in = 1'b0;
@@ -746,7 +747,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         m_axis_video_V_last_V_1_vld_in = 1'b1;
     end else begin
         m_axis_video_V_last_V_1_vld_in = 1'b0;
@@ -754,7 +755,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         m_axis_video_V_strb_V_1_vld_in = 1'b1;
     end else begin
         m_axis_video_V_strb_V_1_vld_in = 1'b0;
@@ -770,7 +771,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((exitcond_i_reg_392 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((exitcond_i_reg_396 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         m_axis_video_V_user_V_1_vld_in = 1'b1;
     end else begin
         m_axis_video_V_user_V_1_vld_in = 1'b0;
@@ -824,15 +825,15 @@ assign ap_CS_fsm_state6 = ap_CS_fsm[32'd3];
 assign ap_block_pp0_stage0 = ~(1'b1 == 1'b1);
 
 always @ (*) begin
-    ap_block_pp0_stage0_01001 = ((exitcond_i_reg_392 == 1'd0) & (imgUnzip_V_val_0_V0_status == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b1));
+    ap_block_pp0_stage0_01001 = ((exitcond_i_reg_396 == 1'd0) & (imgUnzip_V_val_0_V0_status == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b1));
 end
 
 always @ (*) begin
-    ap_block_pp0_stage0_11001 = (((1'b1 == ap_block_state5_io) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((ap_enable_reg_pp0_iter1 == 1'b1) & ((1'b1 == ap_block_state4_io) | ((exitcond_i_reg_392 == 1'd0) & (imgUnzip_V_val_0_V0_status == 1'b0)))));
+    ap_block_pp0_stage0_11001 = (((1'b1 == ap_block_state5_io) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((ap_enable_reg_pp0_iter1 == 1'b1) & ((1'b1 == ap_block_state4_io) | ((exitcond_i_reg_396 == 1'd0) & (imgUnzip_V_val_0_V0_status == 1'b0)))));
 end
 
 always @ (*) begin
-    ap_block_pp0_stage0_subdone = (((1'b1 == ap_block_state5_io) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((ap_enable_reg_pp0_iter1 == 1'b1) & ((1'b1 == ap_block_state4_io) | ((exitcond_i_reg_392 == 1'd0) & (imgUnzip_V_val_0_V0_status == 1'b0)))));
+    ap_block_pp0_stage0_subdone = (((1'b1 == ap_block_state5_io) & (ap_enable_reg_pp0_iter2 == 1'b1)) | ((ap_enable_reg_pp0_iter1 == 1'b1) & ((1'b1 == ap_block_state4_io) | ((exitcond_i_reg_396 == 1'd0) & (imgUnzip_V_val_0_V0_status == 1'b0)))));
 end
 
 always @ (*) begin
@@ -846,20 +847,22 @@ end
 assign ap_block_state3_pp0_stage0_iter0 = ~(1'b1 == 1'b1);
 
 always @ (*) begin
-    ap_block_state4_io = ((exitcond_i_reg_392 == 1'd0) & (m_axis_video_V_data_V_1_ack_in == 1'b0));
+    ap_block_state4_io = ((exitcond_i_reg_396 == 1'd0) & (m_axis_video_V_data_V_1_ack_in == 1'b0));
 end
 
 always @ (*) begin
-    ap_block_state4_pp0_stage0_iter1 = ((exitcond_i_reg_392 == 1'd0) & (imgUnzip_V_val_0_V0_status == 1'b0));
+    ap_block_state4_pp0_stage0_iter1 = ((exitcond_i_reg_396 == 1'd0) & (imgUnzip_V_val_0_V0_status == 1'b0));
 end
 
 always @ (*) begin
-    ap_block_state5_io = ((exitcond_i_reg_392_pp0_iter1_reg == 1'd0) & (m_axis_video_V_data_V_1_ack_in == 1'b0));
+    ap_block_state5_io = ((exitcond_i_reg_396_pp0_iter1_reg == 1'd0) & (m_axis_video_V_data_V_1_ack_in == 1'b0));
 end
 
 assign ap_block_state5_pp0_stage0_iter2 = ~(1'b1 == 1'b1);
 
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
+
+assign cast_i_fu_355_p1 = tmp_data_V_fu_339_p7;
 
 assign exitcond3_i_i_fu_280_p2 = ((t_V_reg_229 == rows_V_fu_251_p1) ? 1'b1 : 1'b0);
 
@@ -937,7 +940,7 @@ assign m_axis_video_V_keep_V_1_ack_in = m_axis_video_V_keep_V_1_state[1'd1];
 
 assign m_axis_video_V_keep_V_1_ack_out = m_axis_video_TREADY;
 
-assign m_axis_video_V_keep_V_1_data_out = 6'd63;
+assign m_axis_video_V_keep_V_1_data_out = 8'd255;
 
 assign m_axis_video_V_keep_V_1_sel = m_axis_video_V_keep_V_1_sel_rd;
 
@@ -961,7 +964,7 @@ assign m_axis_video_V_strb_V_1_ack_in = m_axis_video_V_strb_V_1_state[1'd1];
 
 assign m_axis_video_V_strb_V_1_ack_out = m_axis_video_TREADY;
 
-assign m_axis_video_V_strb_V_1_data_out = 6'd0;
+assign m_axis_video_V_strb_V_1_data_out = 8'd0;
 
 assign m_axis_video_V_strb_V_1_sel = m_axis_video_V_strb_V_1_sel_rd;
 

@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Aug 04 14:10:22 CST 2021
+// File generated on Wed Aug 04 20:37:08 CST 2021
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -8,7 +8,7 @@
 `timescale 1 ns / 1 ps
 module video_crop_bd_v_demosaic_0_0_DebayerRatBorBatR_lineBuffer_val_0_V_ram (addr0, ce0, q0, addr1, ce1, d1, we1,  clk);
 
-parameter DWIDTH = 48;
+parameter DWIDTH = 60;
 parameter AWIDTH = 11;
 parameter MEM_SIZE = 1921;
 
@@ -61,7 +61,7 @@ module video_crop_bd_v_demosaic_0_0_DebayerRatBorBatR_lineBuffer_val_0_V(
     we1,
     d1);
 
-parameter DataWidth = 32'd48;
+parameter DataWidth = 32'd60;
 parameter AddressRange = 32'd1921;
 parameter AddressWidth = 32'd11;
 input reset;

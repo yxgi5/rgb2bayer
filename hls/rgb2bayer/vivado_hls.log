@@ -1,9 +1,9 @@
 INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'andreas' on host 'Vostro-5880' (Linux_x86_64 version 5.4.0-80-generic) on Wed Aug 04 13:54:33 CST 2021
-INFO: [HLS 200-10] On os Ubuntu 18.04.4 LTS
-INFO: [HLS 200-10] In directory '/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer'
-INFO: [HLS 200-10] Opening project '/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/rgb2bayer'.
-INFO: [HLS 200-10] Opening solution '/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/rgb2bayer/solution1'.
+INFO: [HLS 200-10] For user 'andy' on host 'archlinux' (Linux_x86_64 version 5.13.6-arch1-1) on Wed Aug 04 20:22:40 CST 2021
+INFO: [HLS 200-10] On os "Arch Linux"
+INFO: [HLS 200-10] In directory '/home/andy/workdir/figkey/HLS/repo/2SPC/hls/rgb2bayer'
+INFO: [HLS 200-10] Opening project '/home/andy/workdir/figkey/HLS/repo/2SPC/hls/rgb2bayer/rgb2bayer'.
+INFO: [HLS 200-10] Opening solution '/home/andy/workdir/figkey/HLS/repo/2SPC/hls/rgb2bayer/rgb2bayer/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
 INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
@@ -17,4 +17,4 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Wed Aug  4 13:54:40 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  4 20:22:55 2021...

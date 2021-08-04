@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Aug 04 14:10:29 CST 2021
+// File generated on Wed Aug 04 20:37:23 CST 2021
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -9,7 +9,7 @@
 (* rom_style = "distributed" *) module video_crop_bd_v_tpg_0_0_tpgPatternSolidBlue_bluYuv_rom (
 addr0, ce0, q0, addr1, ce1, q1, clk);
 
-parameter DWIDTH = 8;
+parameter DWIDTH = 10;
 parameter AWIDTH = 2;
 parameter MEM_SIZE = 3;
 
@@ -62,7 +62,7 @@ module video_crop_bd_v_tpg_0_0_tpgPatternSolidBlue_bluYuv(
     ce1,
     q1);
 
-parameter DataWidth = 32'd8;
+parameter DataWidth = 32'd10;
 parameter AddressRange = 32'd3;
 parameter AddressWidth = 32'd2;
 input reset;

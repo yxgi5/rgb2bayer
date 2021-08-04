@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Wed Aug  4 14:09:30 2021
--- Host        : Vostro-5880 running 64-bit Ubuntu 18.04.4 LTS
+-- Date        : Wed Aug  4 20:35:31 2021
+-- Host        : archlinux running 64-bit Arch Linux
 -- Command     : write_vhdl -force -mode funcsim
---               /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/video_crop_bd_axis_subset_converter_0_0_sim_netlist.vhdl
+--               /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/video_crop_bd_axis_subset_converter_0_0_sim_netlist.vhdl
 -- Design      : video_crop_bd_axis_subset_converter_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,18 +21,18 @@ entity video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_con
     aclken : in STD_LOGIC;
     s_axis_tvalid : in STD_LOGIC;
     s_axis_tready : out STD_LOGIC;
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    s_axis_tstrb : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axis_tkeep : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    s_axis_tstrb : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axis_tkeep : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axis_tlast : in STD_LOGIC;
     s_axis_tid : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tdest : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tvalid : out STD_LOGIC;
     m_axis_tready : in STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    m_axis_tstrb : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axis_tkeep : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    m_axis_tstrb : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axis_tkeep : out STD_LOGIC_VECTOR ( 2 downto 0 );
     m_axis_tlast : out STD_LOGIC;
     m_axis_tid : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tdest : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -47,7 +47,7 @@ entity video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_con
   attribute C_M_AXIS_SIGNAL_SET : string;
   attribute C_M_AXIS_SIGNAL_SET of video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_converter_0_0 : entity is "32'b00000000000000000000000011111111";
   attribute C_M_AXIS_TDATA_WIDTH : integer;
-  attribute C_M_AXIS_TDATA_WIDTH of video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_converter_0_0 : entity is 16;
+  attribute C_M_AXIS_TDATA_WIDTH of video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_converter_0_0 : entity is 24;
   attribute C_M_AXIS_TDEST_WIDTH : integer;
   attribute C_M_AXIS_TDEST_WIDTH of video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_converter_0_0 : entity is 1;
   attribute C_M_AXIS_TID_WIDTH : integer;
@@ -57,7 +57,7 @@ entity video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_con
   attribute C_S_AXIS_SIGNAL_SET : string;
   attribute C_S_AXIS_SIGNAL_SET of video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_converter_0_0 : entity is "32'b00000000000000000000000011111111";
   attribute C_S_AXIS_TDATA_WIDTH : integer;
-  attribute C_S_AXIS_TDATA_WIDTH of video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_converter_0_0 : entity is 16;
+  attribute C_S_AXIS_TDATA_WIDTH of video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_converter_0_0 : entity is 24;
   attribute C_S_AXIS_TDEST_WIDTH : integer;
   attribute C_S_AXIS_TDEST_WIDTH of video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_converter_0_0 : entity is 1;
   attribute C_S_AXIS_TID_WIDTH : integer;
@@ -109,30 +109,30 @@ end video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_conver
 architecture STRUCTURE of video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_converter_0_0 is
   signal \<const0>\ : STD_LOGIC;
   signal \^m_axis_tready\ : STD_LOGIC;
-  signal \^s_axis_tdata\ : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal \^s_axis_tdata\ : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal \^s_axis_tdest\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^s_axis_tid\ : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal \^s_axis_tkeep\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \^s_axis_tkeep\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \^s_axis_tlast\ : STD_LOGIC;
-  signal \^s_axis_tstrb\ : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal \^s_axis_tstrb\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \^s_axis_tuser\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^s_axis_tvalid\ : STD_LOGIC;
 begin
   \^m_axis_tready\ <= m_axis_tready;
-  \^s_axis_tdata\(15 downto 0) <= s_axis_tdata(15 downto 0);
+  \^s_axis_tdata\(23 downto 0) <= s_axis_tdata(23 downto 0);
   \^s_axis_tdest\(0) <= s_axis_tdest(0);
   \^s_axis_tid\(0) <= s_axis_tid(0);
-  \^s_axis_tkeep\(1 downto 0) <= s_axis_tkeep(1 downto 0);
+  \^s_axis_tkeep\(2 downto 0) <= s_axis_tkeep(2 downto 0);
   \^s_axis_tlast\ <= s_axis_tlast;
-  \^s_axis_tstrb\(1 downto 0) <= s_axis_tstrb(1 downto 0);
+  \^s_axis_tstrb\(2 downto 0) <= s_axis_tstrb(2 downto 0);
   \^s_axis_tuser\(0) <= s_axis_tuser(0);
   \^s_axis_tvalid\ <= s_axis_tvalid;
-  m_axis_tdata(15 downto 0) <= \^s_axis_tdata\(15 downto 0);
+  m_axis_tdata(23 downto 0) <= \^s_axis_tdata\(23 downto 0);
   m_axis_tdest(0) <= \^s_axis_tdest\(0);
   m_axis_tid(0) <= \^s_axis_tid\(0);
-  m_axis_tkeep(1 downto 0) <= \^s_axis_tkeep\(1 downto 0);
+  m_axis_tkeep(2 downto 0) <= \^s_axis_tkeep\(2 downto 0);
   m_axis_tlast <= \^s_axis_tlast\;
-  m_axis_tstrb(1 downto 0) <= \^s_axis_tstrb\(1 downto 0);
+  m_axis_tstrb(2 downto 0) <= \^s_axis_tstrb\(2 downto 0);
   m_axis_tuser(0) <= \^s_axis_tuser\(0);
   m_axis_tvalid <= \^s_axis_tvalid\;
   s_axis_tready <= \^m_axis_tready\;
@@ -153,18 +153,18 @@ entity video_crop_bd_axis_subset_converter_0_0 is
     aresetn : in STD_LOGIC;
     s_axis_tvalid : in STD_LOGIC;
     s_axis_tready : out STD_LOGIC;
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    s_axis_tstrb : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    s_axis_tkeep : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    s_axis_tstrb : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axis_tkeep : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axis_tlast : in STD_LOGIC;
     s_axis_tid : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tdest : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tvalid : out STD_LOGIC;
     m_axis_tready : in STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    m_axis_tstrb : out STD_LOGIC_VECTOR ( 1 downto 0 );
-    m_axis_tkeep : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    m_axis_tstrb : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axis_tkeep : out STD_LOGIC_VECTOR ( 2 downto 0 );
     m_axis_tlast : out STD_LOGIC;
     m_axis_tid : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tdest : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -190,7 +190,7 @@ architecture STRUCTURE of video_crop_bd_axis_subset_converter_0_0 is
   attribute C_M_AXIS_SIGNAL_SET : string;
   attribute C_M_AXIS_SIGNAL_SET of inst : label is "32'b00000000000000000000000011111111";
   attribute C_M_AXIS_TDATA_WIDTH : integer;
-  attribute C_M_AXIS_TDATA_WIDTH of inst : label is 16;
+  attribute C_M_AXIS_TDATA_WIDTH of inst : label is 24;
   attribute C_M_AXIS_TDEST_WIDTH : integer;
   attribute C_M_AXIS_TDEST_WIDTH of inst : label is 1;
   attribute C_M_AXIS_TID_WIDTH : integer;
@@ -200,7 +200,7 @@ architecture STRUCTURE of video_crop_bd_axis_subset_converter_0_0 is
   attribute C_S_AXIS_SIGNAL_SET : string;
   attribute C_S_AXIS_SIGNAL_SET of inst : label is "32'b00000000000000000000000011111111";
   attribute C_S_AXIS_TDATA_WIDTH : integer;
-  attribute C_S_AXIS_TDATA_WIDTH of inst : label is 16;
+  attribute C_S_AXIS_TDATA_WIDTH of inst : label is 24;
   attribute C_S_AXIS_TDEST_WIDTH : integer;
   attribute C_S_AXIS_TDEST_WIDTH of inst : label is 1;
   attribute C_S_AXIS_TID_WIDTH : integer;
@@ -263,36 +263,36 @@ architecture STRUCTURE of video_crop_bd_axis_subset_converter_0_0 is
   attribute X_INTERFACE_INFO of m_axis_tkeep : signal is "xilinx.com:interface:axis:1.0 M_AXIS TKEEP";
   attribute X_INTERFACE_INFO of m_axis_tstrb : signal is "xilinx.com:interface:axis:1.0 M_AXIS TSTRB";
   attribute X_INTERFACE_INFO of m_axis_tuser : signal is "xilinx.com:interface:axis:1.0 M_AXIS TUSER";
-  attribute X_INTERFACE_PARAMETER of m_axis_tuser : signal is "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 2, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN video_crop_bd_aclk_50MHz, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of m_axis_tuser : signal is "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN video_crop_bd_aclk_50MHz, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_tdata : signal is "xilinx.com:interface:axis:1.0 S_AXIS TDATA";
   attribute X_INTERFACE_INFO of s_axis_tdest : signal is "xilinx.com:interface:axis:1.0 S_AXIS TDEST";
   attribute X_INTERFACE_INFO of s_axis_tid : signal is "xilinx.com:interface:axis:1.0 S_AXIS TID";
   attribute X_INTERFACE_INFO of s_axis_tkeep : signal is "xilinx.com:interface:axis:1.0 S_AXIS TKEEP";
   attribute X_INTERFACE_INFO of s_axis_tstrb : signal is "xilinx.com:interface:axis:1.0 S_AXIS TSTRB";
   attribute X_INTERFACE_INFO of s_axis_tuser : signal is "xilinx.com:interface:axis:1.0 S_AXIS TUSER";
-  attribute X_INTERFACE_PARAMETER of s_axis_tuser : signal is "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 2, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN video_crop_bd_aclk_50MHz, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TDATA_WIDTH 8 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TUSER_WIDTH 1}, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of s_axis_tuser : signal is "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN video_crop_bd_aclk_50MHz, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TDATA_WIDTH 24 TUSER {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TUSER_WIDTH 1}, INSERT_VIP 0";
 begin
 inst: entity work.video_crop_bd_axis_subset_converter_0_0_top_video_crop_bd_axis_subset_converter_0_0
      port map (
       aclk => aclk,
       aclken => '1',
       aresetn => aresetn,
-      m_axis_tdata(15 downto 0) => m_axis_tdata(15 downto 0),
+      m_axis_tdata(23 downto 0) => m_axis_tdata(23 downto 0),
       m_axis_tdest(0) => m_axis_tdest(0),
       m_axis_tid(0) => m_axis_tid(0),
-      m_axis_tkeep(1 downto 0) => m_axis_tkeep(1 downto 0),
+      m_axis_tkeep(2 downto 0) => m_axis_tkeep(2 downto 0),
       m_axis_tlast => m_axis_tlast,
       m_axis_tready => m_axis_tready,
-      m_axis_tstrb(1 downto 0) => m_axis_tstrb(1 downto 0),
+      m_axis_tstrb(2 downto 0) => m_axis_tstrb(2 downto 0),
       m_axis_tuser(0) => m_axis_tuser(0),
       m_axis_tvalid => m_axis_tvalid,
-      s_axis_tdata(15 downto 0) => s_axis_tdata(15 downto 0),
+      s_axis_tdata(23 downto 0) => s_axis_tdata(23 downto 0),
       s_axis_tdest(0) => s_axis_tdest(0),
       s_axis_tid(0) => s_axis_tid(0),
-      s_axis_tkeep(1 downto 0) => s_axis_tkeep(1 downto 0),
+      s_axis_tkeep(2 downto 0) => s_axis_tkeep(2 downto 0),
       s_axis_tlast => s_axis_tlast,
       s_axis_tready => s_axis_tready,
-      s_axis_tstrb(1 downto 0) => s_axis_tstrb(1 downto 0),
+      s_axis_tstrb(2 downto 0) => s_axis_tstrb(2 downto 0),
       s_axis_tuser(0) => s_axis_tuser(0),
       s_axis_tvalid => s_axis_tvalid,
       sparse_tkeep_removed => NLW_inst_sparse_tkeep_removed_UNCONNECTED,

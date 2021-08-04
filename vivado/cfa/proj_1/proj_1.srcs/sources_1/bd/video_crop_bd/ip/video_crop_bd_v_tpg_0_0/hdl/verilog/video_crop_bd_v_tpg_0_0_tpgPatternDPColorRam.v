@@ -37,12 +37,12 @@ output   ap_ready;
 input  [15:0] y;
 input  [15:0] x;
 input  [7:0] color;
-output  [7:0] ap_return_0;
-output  [7:0] ap_return_1;
-output  [7:0] ap_return_2;
-output  [7:0] ap_return_3;
-output  [7:0] ap_return_4;
-output  [7:0] ap_return_5;
+output  [9:0] ap_return_0;
+output  [9:0] ap_return_1;
+output  [9:0] ap_return_2;
+output  [9:0] ap_return_3;
+output  [9:0] ap_return_4;
+output  [9:0] ap_return_5;
 input   ap_ce;
 
 reg ap_done;
@@ -52,42 +52,48 @@ reg ap_ready;
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg   [15:0] rampVal_2;
-wire   [15:0] tmp_354_1_fu_310_p2;
-wire   [0:0] tmp_s_fu_64_p2;
-wire   [7:0] tmp_97_fu_60_p1;
-wire   [6:0] tmp_98_fu_92_p4;
-wire   [6:0] tmp_99_fu_108_p4;
-wire   [15:0] p_rampVal_2_load_fu_74_p3;
-wire   [1:0] Sel_fu_82_p4;
-wire   [0:0] sel_tmp_fu_132_p2;
-wire   [7:0] tmp_val_1_V_fu_128_p1;
-wire   [0:0] sel_tmp2_fu_146_p2;
-wire   [7:0] sel_tmp1_fu_138_p3;
-wire   [0:0] sel_tmp4_fu_160_p2;
-wire   [7:0] sel_tmp3_fu_152_p3;
-wire   [0:0] tmp_fu_174_p2;
-wire   [7:0] sel_tmp8_fu_188_p3;
-wire   [0:0] icmp6_fu_118_p2;
-wire   [0:0] tmp_100_fu_124_p1;
-wire   [0:0] tmp_71_not_fu_204_p2;
-wire   [0:0] icmp_fu_102_p2;
-wire   [0:0] brmerge_fu_210_p2;
-wire   [0:0] sel_tmp9_fu_216_p2;
-wire   [0:0] sel_tmp5_fu_222_p2;
-wire   [7:0] tmp_val_2_V_fu_180_p3;
-wire   [7:0] tmp_val_V_1_fu_166_p3;
-wire   [7:0] tmp_val_4_V_fu_236_p2;
-wire   [7:0] sel_tmp6_fu_242_p3;
-wire   [7:0] sel_tmp7_fu_250_p3;
-wire   [7:0] sel_tmp10_fu_274_p3;
-wire   [0:0] brmerge3_demorgan_fu_290_p2;
-wire   [0:0] or_cond_fu_296_p2;
-wire   [7:0] tmp_val_V_4_fu_258_p3;
-wire   [7:0] tmp_val_5_V_fu_266_p3;
-wire   [7:0] Scalar_val_0_V_writ_fu_196_p3;
-wire   [7:0] Scalar_val_1_V_writ_fu_228_p3;
-wire   [7:0] Scalar_val_3_V_writ_fu_282_p3;
-wire   [7:0] Scalar_val_5_V_writ_fu_302_p3;
+wire   [15:0] storemerge_1_fu_368_p2;
+wire   [7:0] tmp_102_fu_90_p1;
+wire   [0:0] tmp_70_fu_94_p2;
+wire   [0:0] tmp_fu_82_p3;
+wire   [15:0] p_rampVal_2_load1_fu_112_p3;
+wire   [15:0] p_rampVal_2_load_fu_104_p3;
+wire   [6:0] tmp_103_fu_128_p4;
+wire   [6:0] tmp_104_fu_144_p4;
+wire   [15:0] rampVal_2_loc_2_fu_120_p3;
+wire   [1:0] colorSel_fu_72_p4;
+wire   [0:0] sel_tmp_fu_168_p2;
+wire   [9:0] tmp_val_1_V_fu_164_p1;
+wire   [0:0] sel_tmp2_fu_182_p2;
+wire   [9:0] sel_tmp1_fu_174_p3;
+wire   [0:0] sel_tmp4_fu_196_p2;
+wire   [9:0] sel_tmp3_fu_188_p3;
+wire   [0:0] tmp_s_fu_210_p2;
+wire   [9:0] sel_tmp8_fu_224_p3;
+wire   [0:0] icmp7_fu_154_p2;
+wire   [0:0] tmp_105_fu_160_p1;
+wire   [0:0] tmp_72_not_fu_240_p2;
+wire   [0:0] icmp_fu_138_p2;
+wire   [0:0] brmerge_fu_246_p2;
+wire   [0:0] sel_tmp9_fu_252_p2;
+wire   [0:0] sel_tmp5_fu_258_p2;
+wire   [9:0] tmp_val_2_V_fu_216_p3;
+wire   [9:0] tmp_val_V_1_fu_202_p3;
+wire   [9:0] tmp_75_cast_cast_fu_280_p3;
+wire   [9:0] tmp_val_4_V_fu_288_p2;
+wire   [9:0] sel_tmp6_fu_294_p3;
+wire   [9:0] sel_tmp7_fu_302_p3;
+wire   [9:0] sel_tmp10_fu_326_p3;
+wire   [0:0] brmerge5_demorgan_fu_342_p2;
+wire   [0:0] or_cond_fu_348_p2;
+wire   [9:0] tmp_val_V_4_fu_310_p3;
+wire   [9:0] tmp_val_5_V_fu_318_p3;
+wire   [15:0] storemerge_0_v_cast_s_fu_272_p3;
+wire   [15:0] tmp39_fu_362_p2;
+wire   [9:0] Scalar_val_0_V_writ_fu_232_p3;
+wire   [9:0] Scalar_val_1_V_writ_fu_264_p3;
+wire   [9:0] Scalar_val_3_V_writ_fu_334_p3;
+wire   [9:0] Scalar_val_5_V_writ_fu_354_p3;
 reg   [0:0] ap_NS_fsm;
 
 // power-on initialization
@@ -106,7 +112,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((ap_start == 1'b1) & (1'b1 == ap_ce) & (1'b1 == ap_CS_fsm_state1))) begin
-        rampVal_2 <= tmp_354_1_fu_310_p2;
+        rampVal_2 <= storemerge_1_fu_368_p2;
     end
 end
 
@@ -145,90 +151,102 @@ always @ (*) begin
     endcase
 end
 
-assign Scalar_val_0_V_writ_fu_196_p3 = ((sel_tmp4_fu_160_p2[0:0] === 1'b1) ? tmp_val_1_V_fu_128_p1 : sel_tmp8_fu_188_p3);
+assign Scalar_val_0_V_writ_fu_232_p3 = ((sel_tmp4_fu_196_p2[0:0] === 1'b1) ? tmp_val_1_V_fu_164_p1 : sel_tmp8_fu_224_p3);
 
-assign Scalar_val_1_V_writ_fu_228_p3 = ((sel_tmp5_fu_222_p2[0:0] === 1'b1) ? tmp_val_2_V_fu_180_p3 : tmp_val_V_1_fu_166_p3);
+assign Scalar_val_1_V_writ_fu_264_p3 = ((sel_tmp5_fu_258_p2[0:0] === 1'b1) ? tmp_val_2_V_fu_216_p3 : tmp_val_V_1_fu_202_p3);
 
-assign Scalar_val_3_V_writ_fu_282_p3 = ((sel_tmp4_fu_160_p2[0:0] === 1'b1) ? tmp_val_4_V_fu_236_p2 : sel_tmp10_fu_274_p3);
+assign Scalar_val_3_V_writ_fu_334_p3 = ((sel_tmp4_fu_196_p2[0:0] === 1'b1) ? tmp_val_4_V_fu_288_p2 : sel_tmp10_fu_326_p3);
 
-assign Scalar_val_5_V_writ_fu_302_p3 = ((or_cond_fu_296_p2[0:0] === 1'b1) ? tmp_val_V_4_fu_258_p3 : tmp_val_5_V_fu_266_p3);
-
-assign Sel_fu_82_p4 = {{y[7:6]}};
+assign Scalar_val_5_V_writ_fu_354_p3 = ((or_cond_fu_348_p2[0:0] === 1'b1) ? tmp_val_V_4_fu_310_p3 : tmp_val_5_V_fu_318_p3);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
-assign ap_return_0 = Scalar_val_0_V_writ_fu_196_p3;
+assign ap_return_0 = Scalar_val_0_V_writ_fu_232_p3;
 
-assign ap_return_1 = Scalar_val_1_V_writ_fu_228_p3;
+assign ap_return_1 = Scalar_val_1_V_writ_fu_264_p3;
 
-assign ap_return_2 = tmp_val_2_V_fu_180_p3;
+assign ap_return_2 = tmp_val_2_V_fu_216_p3;
 
-assign ap_return_3 = Scalar_val_3_V_writ_fu_282_p3;
+assign ap_return_3 = Scalar_val_3_V_writ_fu_334_p3;
 
-assign ap_return_4 = Scalar_val_5_V_writ_fu_302_p3;
+assign ap_return_4 = Scalar_val_5_V_writ_fu_354_p3;
 
-assign ap_return_5 = tmp_val_5_V_fu_266_p3;
+assign ap_return_5 = tmp_val_5_V_fu_318_p3;
 
-assign brmerge3_demorgan_fu_290_p2 = (tmp_100_fu_124_p1 & icmp6_fu_118_p2);
+assign brmerge5_demorgan_fu_342_p2 = (tmp_105_fu_160_p1 & icmp7_fu_154_p2);
 
-assign brmerge_fu_210_p2 = (tmp_71_not_fu_204_p2 | tmp_100_fu_124_p1);
+assign brmerge_fu_246_p2 = (tmp_72_not_fu_240_p2 | tmp_105_fu_160_p1);
 
-assign icmp6_fu_118_p2 = ((tmp_99_fu_108_p4 != 7'd0) ? 1'b1 : 1'b0);
+assign colorSel_fu_72_p4 = {{y[7:6]}};
 
-assign icmp_fu_102_p2 = ((tmp_98_fu_92_p4 == 7'd0) ? 1'b1 : 1'b0);
+assign icmp7_fu_154_p2 = ((tmp_104_fu_144_p4 != 7'd0) ? 1'b1 : 1'b0);
 
-assign or_cond_fu_296_p2 = (icmp_fu_102_p2 | brmerge3_demorgan_fu_290_p2);
+assign icmp_fu_138_p2 = ((tmp_103_fu_128_p4 == 7'd0) ? 1'b1 : 1'b0);
 
-assign p_rampVal_2_load_fu_74_p3 = ((tmp_s_fu_64_p2[0:0] === 1'b1) ? 16'd0 : rampVal_2);
+assign or_cond_fu_348_p2 = (icmp_fu_138_p2 | brmerge5_demorgan_fu_342_p2);
 
-assign sel_tmp10_fu_274_p3 = ((sel_tmp2_fu_146_p2[0:0] === 1'b1) ? 8'd0 : sel_tmp6_fu_242_p3);
+assign p_rampVal_2_load1_fu_112_p3 = ((tmp_70_fu_94_p2[0:0] === 1'b1) ? 16'd0 : rampVal_2);
 
-assign sel_tmp1_fu_138_p3 = ((sel_tmp_fu_132_p2[0:0] === 1'b1) ? 8'd0 : tmp_val_1_V_fu_128_p1);
+assign p_rampVal_2_load_fu_104_p3 = ((tmp_70_fu_94_p2[0:0] === 1'b1) ? 16'd384 : rampVal_2);
 
-assign sel_tmp2_fu_146_p2 = ((Sel_fu_82_p4 == 2'd1) ? 1'b1 : 1'b0);
+assign rampVal_2_loc_2_fu_120_p3 = ((tmp_fu_82_p3[0:0] === 1'b1) ? p_rampVal_2_load1_fu_112_p3 : p_rampVal_2_load_fu_104_p3);
 
-assign sel_tmp3_fu_152_p3 = ((sel_tmp2_fu_146_p2[0:0] === 1'b1) ? tmp_val_1_V_fu_128_p1 : sel_tmp1_fu_138_p3);
+assign sel_tmp10_fu_326_p3 = ((sel_tmp2_fu_182_p2[0:0] === 1'b1) ? 10'd0 : sel_tmp6_fu_294_p3);
 
-assign sel_tmp4_fu_160_p2 = ((Sel_fu_82_p4 == 2'd0) ? 1'b1 : 1'b0);
+assign sel_tmp1_fu_174_p3 = ((sel_tmp_fu_168_p2[0:0] === 1'b1) ? 10'd0 : tmp_val_1_V_fu_164_p1);
 
-assign sel_tmp5_fu_222_p2 = (sel_tmp9_fu_216_p2 & brmerge_fu_210_p2);
+assign sel_tmp2_fu_182_p2 = ((colorSel_fu_72_p4 == 2'd1) ? 1'b1 : 1'b0);
 
-assign sel_tmp6_fu_242_p3 = ((sel_tmp_fu_132_p2[0:0] === 1'b1) ? 8'd0 : tmp_val_4_V_fu_236_p2);
+assign sel_tmp3_fu_188_p3 = ((sel_tmp2_fu_182_p2[0:0] === 1'b1) ? tmp_val_1_V_fu_164_p1 : sel_tmp1_fu_174_p3);
 
-assign sel_tmp7_fu_250_p3 = ((sel_tmp2_fu_146_p2[0:0] === 1'b1) ? tmp_val_4_V_fu_236_p2 : sel_tmp6_fu_242_p3);
+assign sel_tmp4_fu_196_p2 = ((colorSel_fu_72_p4 == 2'd0) ? 1'b1 : 1'b0);
 
-assign sel_tmp8_fu_188_p3 = ((sel_tmp2_fu_146_p2[0:0] === 1'b1) ? 8'd0 : sel_tmp1_fu_138_p3);
+assign sel_tmp5_fu_258_p2 = (sel_tmp9_fu_252_p2 & brmerge_fu_246_p2);
 
-assign sel_tmp9_fu_216_p2 = (icmp_fu_102_p2 ^ 1'd1);
+assign sel_tmp6_fu_294_p3 = ((sel_tmp_fu_168_p2[0:0] === 1'b1) ? 10'd0 : tmp_val_4_V_fu_288_p2);
 
-assign sel_tmp_fu_132_p2 = ((Sel_fu_82_p4 == 2'd2) ? 1'b1 : 1'b0);
+assign sel_tmp7_fu_302_p3 = ((sel_tmp2_fu_182_p2[0:0] === 1'b1) ? tmp_val_4_V_fu_288_p2 : sel_tmp6_fu_294_p3);
 
-assign tmp_100_fu_124_p1 = x[0:0];
+assign sel_tmp8_fu_224_p3 = ((sel_tmp2_fu_182_p2[0:0] === 1'b1) ? 10'd0 : sel_tmp1_fu_174_p3);
 
-assign tmp_354_1_fu_310_p2 = (16'd2 + p_rampVal_2_load_fu_74_p3);
+assign sel_tmp9_fu_252_p2 = (icmp_fu_138_p2 ^ 1'd1);
 
-assign tmp_71_not_fu_204_p2 = (icmp6_fu_118_p2 ^ 1'd1);
+assign sel_tmp_fu_168_p2 = ((colorSel_fu_72_p4 == 2'd2) ? 1'b1 : 1'b0);
 
-assign tmp_97_fu_60_p1 = x[7:0];
+assign storemerge_0_v_cast_s_fu_272_p3 = ((tmp_fu_82_p3[0:0] === 1'b1) ? 16'd4 : 16'd1);
 
-assign tmp_98_fu_92_p4 = {{color[7:1]}};
+assign storemerge_1_fu_368_p2 = (tmp39_fu_362_p2 + storemerge_0_v_cast_s_fu_272_p3);
 
-assign tmp_99_fu_108_p4 = {{color[7:1]}};
+assign tmp39_fu_362_p2 = (rampVal_2_loc_2_fu_120_p3 + storemerge_0_v_cast_s_fu_272_p3);
 
-assign tmp_fu_174_p2 = (sel_tmp4_fu_160_p2 | sel_tmp2_fu_146_p2);
+assign tmp_102_fu_90_p1 = x[7:0];
 
-assign tmp_s_fu_64_p2 = ((tmp_97_fu_60_p1 == 8'd0) ? 1'b1 : 1'b0);
+assign tmp_103_fu_128_p4 = {{color[7:1]}};
 
-assign tmp_val_1_V_fu_128_p1 = p_rampVal_2_load_fu_74_p3[7:0];
+assign tmp_104_fu_144_p4 = {{color[7:1]}};
 
-assign tmp_val_2_V_fu_180_p3 = ((tmp_fu_174_p2[0:0] === 1'b1) ? 8'd0 : tmp_val_1_V_fu_128_p1);
+assign tmp_105_fu_160_p1 = x[0:0];
 
-assign tmp_val_4_V_fu_236_p2 = (8'd1 + tmp_val_1_V_fu_128_p1);
+assign tmp_70_fu_94_p2 = ((tmp_102_fu_90_p1 == 8'd0) ? 1'b1 : 1'b0);
 
-assign tmp_val_5_V_fu_266_p3 = ((tmp_fu_174_p2[0:0] === 1'b1) ? 8'd0 : tmp_val_4_V_fu_236_p2);
+assign tmp_72_not_fu_240_p2 = (icmp7_fu_154_p2 ^ 1'd1);
 
-assign tmp_val_V_1_fu_166_p3 = ((sel_tmp4_fu_160_p2[0:0] === 1'b1) ? 8'd0 : sel_tmp3_fu_152_p3);
+assign tmp_75_cast_cast_fu_280_p3 = ((tmp_fu_82_p3[0:0] === 1'b1) ? 10'd4 : 10'd1);
 
-assign tmp_val_V_4_fu_258_p3 = ((sel_tmp4_fu_160_p2[0:0] === 1'b1) ? 8'd0 : sel_tmp7_fu_250_p3);
+assign tmp_fu_82_p3 = y[32'd5];
+
+assign tmp_s_fu_210_p2 = (sel_tmp4_fu_196_p2 | sel_tmp2_fu_182_p2);
+
+assign tmp_val_1_V_fu_164_p1 = rampVal_2_loc_2_fu_120_p3[9:0];
+
+assign tmp_val_2_V_fu_216_p3 = ((tmp_s_fu_210_p2[0:0] === 1'b1) ? 10'd0 : tmp_val_1_V_fu_164_p1);
+
+assign tmp_val_4_V_fu_288_p2 = (tmp_75_cast_cast_fu_280_p3 + tmp_val_1_V_fu_164_p1);
+
+assign tmp_val_5_V_fu_318_p3 = ((tmp_s_fu_210_p2[0:0] === 1'b1) ? 10'd0 : tmp_val_4_V_fu_288_p2);
+
+assign tmp_val_V_1_fu_202_p3 = ((sel_tmp4_fu_196_p2[0:0] === 1'b1) ? 10'd0 : sel_tmp3_fu_188_p3);
+
+assign tmp_val_V_4_fu_310_p3 = ((sel_tmp4_fu_196_p2[0:0] === 1'b1) ? 10'd0 : sel_tmp7_fu_302_p3);
 
 endmodule //video_crop_bd_v_tpg_0_0_tpgPatternDPColorRam

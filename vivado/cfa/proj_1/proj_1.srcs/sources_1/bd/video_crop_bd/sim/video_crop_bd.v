@@ -1,8 +1,8 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Wed Aug  4 14:09:09 2021
-//Host        : Vostro-5880 running 64-bit Ubuntu 18.04.4 LTS
+//Date        : Wed Aug  4 20:34:47 2021
+//Host        : archlinux running 64-bit Arch Linux
 //Command     : generate_target video_crop_bd.bd
 //Design      : video_crop_bd
 //Purpose     : IP block netlist
@@ -25,7 +25,7 @@ module video_crop_bd
   input ap_start;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.ARESETN_0 RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.ARESETN_0, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input aresetn_0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 DATA.HSIZE DATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME DATA.HSIZE, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}" *) input [31:0]hsize;
-  output [47:0]tdata;
+  output [63:0]tdata;
   output [0:0]tlast;
   input tready;
   output [0:0]tuser;
@@ -69,37 +69,37 @@ module video_crop_bd
   wire axi_vip_1_M_AXI_WREADY;
   wire [3:0]axi_vip_1_M_AXI_WSTRB;
   wire axi_vip_1_M_AXI_WVALID;
-  wire [15:0]axis_subset_converter_0_M_AXIS_TDATA;
+  wire [23:0]axis_subset_converter_0_M_AXIS_TDATA;
   wire [0:0]axis_subset_converter_0_M_AXIS_TDEST;
   wire [0:0]axis_subset_converter_0_M_AXIS_TID;
-  wire [1:0]axis_subset_converter_0_M_AXIS_TKEEP;
+  wire [2:0]axis_subset_converter_0_M_AXIS_TKEEP;
   wire axis_subset_converter_0_M_AXIS_TLAST;
   wire axis_subset_converter_0_M_AXIS_TREADY;
-  wire [1:0]axis_subset_converter_0_M_AXIS_TSTRB;
+  wire [2:0]axis_subset_converter_0_M_AXIS_TSTRB;
   wire [0:0]axis_subset_converter_0_M_AXIS_TUSER;
   wire axis_subset_converter_0_M_AXIS_TVALID;
   wire [31:0]hsize_1;
-  wire [15:0]rgb2bayer_0_m_axis_video_TDATA;
+  wire [23:0]rgb2bayer_0_m_axis_video_TDATA;
   wire [0:0]rgb2bayer_0_m_axis_video_TDEST;
   wire [0:0]rgb2bayer_0_m_axis_video_TID;
-  wire [1:0]rgb2bayer_0_m_axis_video_TKEEP;
+  wire [2:0]rgb2bayer_0_m_axis_video_TKEEP;
   wire [0:0]rgb2bayer_0_m_axis_video_TLAST;
   wire rgb2bayer_0_m_axis_video_TREADY;
-  wire [1:0]rgb2bayer_0_m_axis_video_TSTRB;
+  wire [2:0]rgb2bayer_0_m_axis_video_TSTRB;
   wire [0:0]rgb2bayer_0_m_axis_video_TUSER;
   wire rgb2bayer_0_m_axis_video_TVALID;
   wire tready_1;
-  wire [47:0]v_demosaic_0_m_axis_video_TDATA;
+  wire [63:0]v_demosaic_0_m_axis_video_TDATA;
   wire [0:0]v_demosaic_0_m_axis_video_TLAST;
   wire [0:0]v_demosaic_0_m_axis_video_TUSER;
   wire v_demosaic_0_m_axis_video_TVALID;
-  wire [47:0]v_tpg_0_m_axis_video_TDATA;
+  wire [63:0]v_tpg_0_m_axis_video_TDATA;
   wire [0:0]v_tpg_0_m_axis_video_TDEST;
   wire [0:0]v_tpg_0_m_axis_video_TID;
-  wire [5:0]v_tpg_0_m_axis_video_TKEEP;
+  wire [7:0]v_tpg_0_m_axis_video_TKEEP;
   wire [0:0]v_tpg_0_m_axis_video_TLAST;
   wire v_tpg_0_m_axis_video_TREADY;
-  wire [5:0]v_tpg_0_m_axis_video_TSTRB;
+  wire [7:0]v_tpg_0_m_axis_video_TSTRB;
   wire [0:0]v_tpg_0_m_axis_video_TUSER;
   wire v_tpg_0_m_axis_video_TVALID;
   wire [31:0]vsize_1;
@@ -109,7 +109,7 @@ module video_crop_bd
   assign ap_start_1 = ap_start;
   assign aresetn_0_1 = aresetn_0;
   assign hsize_1 = hsize[31:0];
-  assign tdata[47:0] = v_demosaic_0_m_axis_video_TDATA;
+  assign tdata[63:0] = v_demosaic_0_m_axis_video_TDATA;
   assign tlast[0] = v_demosaic_0_m_axis_video_TLAST;
   assign tready_1 = tready;
   assign tuser[0] = v_demosaic_0_m_axis_video_TUSER;

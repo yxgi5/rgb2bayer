@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_v_demosaic_0_0_synth_1'
+HD_PWD='/home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_v_demosaic_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

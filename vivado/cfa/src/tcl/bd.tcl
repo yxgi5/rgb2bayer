@@ -169,7 +169,7 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 32} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}} \
  ] $hsize
-  set tdata [ create_bd_port -dir O -from 47 -to 0 tdata ]
+  set tdata [ create_bd_port -dir O -from 63 -to 0 tdata ]
   set tlast [ create_bd_port -dir O -from 0 -to 0 tlast ]
   set tready [ create_bd_port -dir I tready ]
   set tuser [ create_bd_port -dir O -from 0 -to 0 tuser ]
@@ -244,14 +244,14 @@ proc create_root_design { parentCell } {
   # Create instance: v_demosaic_0, and set properties
   set v_demosaic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:v_demosaic:1.0 v_demosaic_0 ]
   set_property -dict [ list \
-   CONFIG.MAX_DATA_WIDTH {8} \
+   CONFIG.MAX_DATA_WIDTH {10} \
    CONFIG.SAMPLES_PER_CLOCK {2} \
  ] $v_demosaic_0
 
   # Create instance: v_tpg_0, and set properties
   set v_tpg_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:v_tpg:8.0 v_tpg_0 ]
   set_property -dict [ list \
-   CONFIG.MAX_DATA_WIDTH {8} \
+   CONFIG.MAX_DATA_WIDTH {10} \
    CONFIG.SAMPLES_PER_CLOCK {2} \
  ] $v_tpg_0
 

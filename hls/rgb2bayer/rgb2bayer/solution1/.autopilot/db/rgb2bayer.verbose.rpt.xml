@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'rgb2bayer'" level="0">
-<item name = "Date">Wed Aug  4 13:52:41 2021
+<item name = "Date">Wed Aug  4 20:17:27 2021
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">rgb2bayer</item>
@@ -49,12 +49,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, -, 0, 541</column>
+<column name="Expression">-, -, 0, 605</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, -, -</column>
 <column name="Memory">-, -, -, -</column>
 <column name="Multiplexer">-, -, -, 282</column>
-<column name="Register">-, -, 363, -</column>
+<column name="Register">-, -, 419, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, 1</specialColumn>
 </table>
@@ -79,10 +79,10 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="hsize_in_op_op_fu_311_p2">+, 0, 0, 39, 1, 32</column>
-<column name="i_1_fu_536_p2">+, 0, 0, 39, 2, 32</column>
-<column name="j_1_fu_248_p2">+, 0, 0, 38, 31, 1</column>
-<column name="p_neg_t_fu_339_p2">-, 0, 0, 38, 1, 31</column>
+<column name="hsize_in_op_op_fu_315_p2">+, 0, 0, 39, 1, 32</column>
+<column name="i_1_fu_588_p2">+, 0, 0, 39, 2, 32</column>
+<column name="j_1_fu_252_p2">+, 0, 0, 38, 31, 1</column>
+<column name="p_neg_t_fu_343_p2">-, 0, 0, 38, 1, 31</column>
 <column name="ap_block_state3">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state3_io">and, 0, 0, 2, 1, 1</column>
 <column name="m_axis_video_V_data_V_1_load_A">and, 0, 0, 2, 1, 1</column>
@@ -97,48 +97,48 @@
 <column name="s_axis_video_V_last_V_0_load_B">and, 0, 0, 2, 1, 1</column>
 <column name="s_axis_video_V_user_V_0_load_A">and, 0, 0, 2, 1, 1</column>
 <column name="s_axis_video_V_user_V_0_load_B">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp10_fu_294_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp11_fu_299_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp1_fu_264_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp2_fu_279_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp5_fu_269_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp6_fu_284_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp8_fu_274_p2">and, 0, 0, 2, 1, 1</column>
-<column name="sel_tmp9_fu_289_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp10_fu_298_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp11_fu_303_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp1_fu_268_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp2_fu_283_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp5_fu_273_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp6_fu_288_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp8_fu_278_p2">and, 0, 0, 2, 1, 1</column>
+<column name="sel_tmp9_fu_293_p2">and, 0, 0, 2, 1, 1</column>
 <column name="m_axis_video_V_data_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="m_axis_video_V_last_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="m_axis_video_V_user_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="s_axis_video_V_data_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="s_axis_video_V_last_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
 <column name="s_axis_video_V_user_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
-<column name="sel_tmp3_fu_233_p2">icmp, 0, 0, 8, 2, 2</column>
-<column name="sel_tmp4_fu_227_p2">icmp, 0, 0, 9, 2, 3</column>
-<column name="sel_tmp7_fu_221_p2">icmp, 0, 0, 8, 2, 1</column>
-<column name="sel_tmp_fu_215_p2">icmp, 0, 0, 8, 2, 1</column>
-<column name="tmp_10_fu_379_p2">icmp, 0, 0, 18, 32, 32</column>
-<column name="tmp_1_fu_243_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="sel_tmp3_fu_237_p2">icmp, 0, 0, 8, 2, 2</column>
+<column name="sel_tmp4_fu_231_p2">icmp, 0, 0, 9, 2, 3</column>
+<column name="sel_tmp7_fu_225_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="sel_tmp_fu_219_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="tmp_14_fu_383_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="tmp_1_fu_247_p2">icmp, 0, 0, 18, 32, 32</column>
 <column name="ap_block_state2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_7_fu_355_p3">select, 0, 0, 31, 1, 31</column>
-<column name="tmp_8_fu_363_p3">select, 0, 0, 31, 1, 1</column>
-<column name="video_o_data_V_11_fu_521_p3">select, 0, 0, 16, 1, 16</column>
-<column name="video_o_data_V_4_fu_479_p3">select, 0, 0, 16, 1, 16</column>
-<column name="video_o_data_V_5_fu_486_p3">select, 0, 0, 16, 1, 16</column>
-<column name="video_o_data_V_6_fu_493_p3">select, 0, 0, 16, 1, 16</column>
-<column name="video_o_data_V_7_fu_500_p3">select, 0, 0, 16, 1, 16</column>
-<column name="video_o_data_V_8_fu_507_p3">select, 0, 0, 16, 1, 16</column>
-<column name="video_o_data_V_9_fu_514_p3">select, 0, 0, 16, 1, 16</column>
-<column name="video_o_data_V_fu_528_p3">select, 0, 0, 16, 1, 16</column>
-<column name="p_neg_fu_324_p2">xor, 0, 0, 32, 32, 2</column>
-<column name="tmp_3_fu_258_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="tmp_11_fu_359_p3">select, 0, 0, 31, 1, 31</column>
+<column name="tmp_12_fu_367_p3">select, 0, 0, 31, 1, 1</column>
+<column name="video_o_data_V_11_fu_573_p3">select, 0, 0, 24, 1, 24</column>
+<column name="video_o_data_V_4_fu_531_p3">select, 0, 0, 24, 1, 24</column>
+<column name="video_o_data_V_5_fu_538_p3">select, 0, 0, 24, 1, 24</column>
+<column name="video_o_data_V_6_fu_545_p3">select, 0, 0, 24, 1, 24</column>
+<column name="video_o_data_V_7_fu_552_p3">select, 0, 0, 24, 1, 24</column>
+<column name="video_o_data_V_8_fu_559_p3">select, 0, 0, 24, 1, 24</column>
+<column name="video_o_data_V_9_fu_566_p3">select, 0, 0, 24, 1, 24</column>
+<column name="video_o_data_V_fu_580_p3">select, 0, 0, 24, 1, 24</column>
+<column name="p_neg_fu_328_p2">xor, 0, 0, 32, 32, 2</column>
+<column name="tmp_3_fu_262_p2">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">27, 5, 1, 5</column>
-<column name="i_reg_204">9, 2, 32, 64</column>
-<column name="j_reg_193">9, 2, 31, 62</column>
+<column name="i_reg_208">9, 2, 32, 64</column>
+<column name="j_reg_197">9, 2, 31, 62</column>
 <column name="m_axis_video_TDATA_blk_n">9, 2, 1, 2</column>
-<column name="m_axis_video_V_data_V_1_data_out">9, 2, 16, 32</column>
+<column name="m_axis_video_V_data_V_1_data_out">9, 2, 24, 48</column>
 <column name="m_axis_video_V_data_V_1_state">15, 3, 2, 6</column>
 <column name="m_axis_video_V_dest_V_1_state">15, 3, 2, 6</column>
 <column name="m_axis_video_V_id_V_1_state">15, 3, 2, 6</column>
@@ -149,7 +149,7 @@
 <column name="m_axis_video_V_user_V_1_data_out">9, 2, 1, 2</column>
 <column name="m_axis_video_V_user_V_1_state">15, 3, 2, 6</column>
 <column name="s_axis_video_TDATA_blk_n">9, 2, 1, 2</column>
-<column name="s_axis_video_V_data_V_0_data_out">9, 2, 48, 96</column>
+<column name="s_axis_video_V_data_V_0_data_out">9, 2, 64, 128</column>
 <column name="s_axis_video_V_data_V_0_state">15, 3, 2, 6</column>
 <column name="s_axis_video_V_dest_V_0_state">15, 3, 2, 6</column>
 <column name="s_axis_video_V_last_V_0_data_out">9, 2, 1, 2</column>
@@ -161,12 +161,12 @@
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">4, 0, 4, 0</column>
-<column name="i_1_reg_660">32, 0, 32, 0</column>
-<column name="i_reg_204">32, 0, 32, 0</column>
-<column name="j_1_reg_592">31, 0, 31, 0</column>
-<column name="j_reg_193">31, 0, 31, 0</column>
-<column name="m_axis_video_V_data_V_1_payload_A">16, 0, 16, 0</column>
-<column name="m_axis_video_V_data_V_1_payload_B">16, 0, 16, 0</column>
+<column name="i_1_reg_712">32, 0, 32, 0</column>
+<column name="i_reg_208">32, 0, 32, 0</column>
+<column name="j_1_reg_644">31, 0, 31, 0</column>
+<column name="j_reg_197">31, 0, 31, 0</column>
+<column name="m_axis_video_V_data_V_1_payload_A">24, 0, 24, 0</column>
+<column name="m_axis_video_V_data_V_1_payload_B">24, 0, 24, 0</column>
 <column name="m_axis_video_V_data_V_1_sel_rd">1, 0, 1, 0</column>
 <column name="m_axis_video_V_data_V_1_sel_wr">1, 0, 1, 0</column>
 <column name="m_axis_video_V_data_V_1_state">2, 0, 2, 0</column>
@@ -188,9 +188,9 @@
 <column name="m_axis_video_V_user_V_1_sel_rd">1, 0, 1, 0</column>
 <column name="m_axis_video_V_user_V_1_sel_wr">1, 0, 1, 0</column>
 <column name="m_axis_video_V_user_V_1_state">2, 0, 2, 0</column>
-<column name="p_Val2_s_fu_124">16, 0, 16, 0</column>
-<column name="s_axis_video_V_data_V_0_payload_A">48, 0, 48, 0</column>
-<column name="s_axis_video_V_data_V_0_payload_B">48, 0, 48, 0</column>
+<column name="p_Val2_s_fu_128">24, 0, 24, 0</column>
+<column name="s_axis_video_V_data_V_0_payload_A">64, 0, 64, 0</column>
+<column name="s_axis_video_V_data_V_0_payload_B">64, 0, 64, 0</column>
 <column name="s_axis_video_V_data_V_0_sel_rd">1, 0, 1, 0</column>
 <column name="s_axis_video_V_data_V_0_sel_wr">1, 0, 1, 0</column>
 <column name="s_axis_video_V_data_V_0_state">2, 0, 2, 0</column>
@@ -205,19 +205,19 @@
 <column name="s_axis_video_V_user_V_0_sel_rd">1, 0, 1, 0</column>
 <column name="s_axis_video_V_user_V_0_sel_wr">1, 0, 1, 0</column>
 <column name="s_axis_video_V_user_V_0_state">2, 0, 2, 0</column>
-<column name="sel_tmp10_reg_627">1, 0, 1, 0</column>
-<column name="sel_tmp11_reg_632">1, 0, 1, 0</column>
-<column name="sel_tmp1_reg_597">1, 0, 1, 0</column>
-<column name="sel_tmp2_reg_612">1, 0, 1, 0</column>
-<column name="sel_tmp3_reg_583">1, 0, 1, 0</column>
-<column name="sel_tmp4_reg_577">1, 0, 1, 0</column>
-<column name="sel_tmp5_reg_602">1, 0, 1, 0</column>
-<column name="sel_tmp6_reg_617">1, 0, 1, 0</column>
-<column name="sel_tmp7_reg_571">1, 0, 1, 0</column>
-<column name="sel_tmp8_reg_607">1, 0, 1, 0</column>
-<column name="sel_tmp9_reg_622">1, 0, 1, 0</column>
-<column name="sel_tmp_reg_565">1, 0, 1, 0</column>
-<column name="tmp_9_reg_637">31, 0, 32, 1</column>
+<column name="sel_tmp10_reg_679">1, 0, 1, 0</column>
+<column name="sel_tmp11_reg_684">1, 0, 1, 0</column>
+<column name="sel_tmp1_reg_649">1, 0, 1, 0</column>
+<column name="sel_tmp2_reg_664">1, 0, 1, 0</column>
+<column name="sel_tmp3_reg_635">1, 0, 1, 0</column>
+<column name="sel_tmp4_reg_629">1, 0, 1, 0</column>
+<column name="sel_tmp5_reg_654">1, 0, 1, 0</column>
+<column name="sel_tmp6_reg_669">1, 0, 1, 0</column>
+<column name="sel_tmp7_reg_623">1, 0, 1, 0</column>
+<column name="sel_tmp8_reg_659">1, 0, 1, 0</column>
+<column name="sel_tmp9_reg_674">1, 0, 1, 0</column>
+<column name="sel_tmp_reg_617">1, 0, 1, 0</column>
+<column name="tmp_13_reg_689">31, 0, 32, 1</column>
 </table>
 </item>
 </section>
@@ -229,21 +229,21 @@
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
 <column name="ap_clk">in, 1, ap_ctrl_none, rgb2bayer, return value</column>
 <column name="ap_rst_n">in, 1, ap_ctrl_none, rgb2bayer, return value</column>
-<column name="s_axis_video_TDATA">in, 48, axis, s_axis_video_V_data_V, pointer</column>
+<column name="s_axis_video_TDATA">in, 64, axis, s_axis_video_V_data_V, pointer</column>
 <column name="s_axis_video_TVALID">in, 1, axis, s_axis_video_V_dest_V, pointer</column>
 <column name="s_axis_video_TREADY">out, 1, axis, s_axis_video_V_dest_V, pointer</column>
 <column name="s_axis_video_TDEST">in, 1, axis, s_axis_video_V_dest_V, pointer</column>
-<column name="s_axis_video_TKEEP">in, 6, axis, s_axis_video_V_keep_V, pointer</column>
-<column name="s_axis_video_TSTRB">in, 6, axis, s_axis_video_V_strb_V, pointer</column>
+<column name="s_axis_video_TKEEP">in, 8, axis, s_axis_video_V_keep_V, pointer</column>
+<column name="s_axis_video_TSTRB">in, 8, axis, s_axis_video_V_strb_V, pointer</column>
 <column name="s_axis_video_TUSER">in, 1, axis, s_axis_video_V_user_V, pointer</column>
 <column name="s_axis_video_TLAST">in, 1, axis, s_axis_video_V_last_V, pointer</column>
 <column name="s_axis_video_TID">in, 1, axis, s_axis_video_V_id_V, pointer</column>
-<column name="m_axis_video_TDATA">out, 16, axis, m_axis_video_V_data_V, pointer</column>
+<column name="m_axis_video_TDATA">out, 24, axis, m_axis_video_V_data_V, pointer</column>
 <column name="m_axis_video_TREADY">in, 1, axis, m_axis_video_V_data_V, pointer</column>
 <column name="m_axis_video_TVALID">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
 <column name="m_axis_video_TDEST">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
-<column name="m_axis_video_TKEEP">out, 2, axis, m_axis_video_V_keep_V, pointer</column>
-<column name="m_axis_video_TSTRB">out, 2, axis, m_axis_video_V_strb_V, pointer</column>
+<column name="m_axis_video_TKEEP">out, 3, axis, m_axis_video_V_keep_V, pointer</column>
+<column name="m_axis_video_TSTRB">out, 3, axis, m_axis_video_V_strb_V, pointer</column>
 <column name="m_axis_video_TUSER">out, 1, axis, m_axis_video_V_user_V, pointer</column>
 <column name="m_axis_video_TLAST">out, 1, axis, m_axis_video_V_last_V, pointer</column>
 <column name="m_axis_video_TID">out, 1, axis, m_axis_video_V_id_V, pointer</column>

@@ -1,8 +1,8 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Wed Aug  4 14:09:09 2021
-//Host        : Vostro-5880 running 64-bit Ubuntu 18.04.4 LTS
+//Date        : Wed Aug  4 20:34:47 2021
+//Host        : archlinux running 64-bit Arch Linux
 //Command     : generate_target video_crop_bd_wrapper.bd
 //Design      : video_crop_bd_wrapper
 //Purpose     : IP block netlist
@@ -24,7 +24,7 @@ module video_crop_bd_wrapper
   input ap_start;
   input aresetn_0;
   input [31:0]hsize;
-  output [47:0]tdata;
+  output [63:0]tdata;
   output [0:0]tlast;
   input tready;
   output [0:0]tuser;
@@ -35,7 +35,7 @@ module video_crop_bd_wrapper
   wire ap_start;
   wire aresetn_0;
   wire [31:0]hsize;
-  wire [47:0]tdata;
+  wire [63:0]tdata;
   wire [0:0]tlast;
   wire tready;
   wire [0:0]tuser;

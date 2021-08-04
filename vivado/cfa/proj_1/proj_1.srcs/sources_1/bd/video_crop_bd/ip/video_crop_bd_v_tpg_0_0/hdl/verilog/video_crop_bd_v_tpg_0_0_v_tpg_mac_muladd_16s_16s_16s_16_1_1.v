@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Wed Aug 04 14:10:29 CST 2021
+// File generated on Wed Aug 04 20:37:23 CST 2021
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -7,7 +7,7 @@
 // ==============================================================
 `timescale 1 ns / 1 ps
 
-module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16s_16_1_1_DSP48_8(
+module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16s_16_1_1_DSP48_9(
     input  [16 - 1:0] in0,
     input  [16 - 1:0] in1,
     input  [16 - 1:0] in2,
@@ -49,7 +49,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16s_16_1_1_DSP48_8 video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16s_16_1_1_DSP48_8_U(
+video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16s_16_1_1_DSP48_9 video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16s_16_1_1_DSP48_9_U(
     .in0( din0 ),
     .in1( din1 ),
     .in2( din2 ),

@@ -1,7 +1,7 @@
 
 `timescale 1 ns / 1 ps
 
-  module video_crop_bd_v_tpg_0_0_v_tpg_mul_mul_9ns_20s_28_1_1_DSP48_9(a, b, p);
+  module video_crop_bd_v_tpg_0_0_v_tpg_mul_mul_9ns_20s_28_1_1_DSP48_10(a, b, p);
 input [9 - 1 : 0] a;
 input signed [20 - 1 : 0] b;
 output signed [28 - 1 : 0] p;
@@ -26,7 +26,7 @@ output[dout_WIDTH - 1:0] dout;
 
 
 
-video_crop_bd_v_tpg_0_0_v_tpg_mul_mul_9ns_20s_28_1_1_DSP48_9 video_crop_bd_v_tpg_0_0_v_tpg_mul_mul_9ns_20s_28_1_1_DSP48_9_U(
+video_crop_bd_v_tpg_0_0_v_tpg_mul_mul_9ns_20s_28_1_1_DSP48_10 video_crop_bd_v_tpg_0_0_v_tpg_mul_mul_9ns_20s_28_1_1_DSP48_10_U(
     .a( din0 ),
     .b( din1 ),
     .p( dout ));

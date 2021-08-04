@@ -5,7 +5,7 @@
 #define SAMPLES_PER_CLOCK       2
 #define MAX_COLS                3840
 #define MAX_ROWS                2160
-#define MAX_DATA_WIDTH          8
+#define MAX_DATA_WIDTH          10
 #define INTERPOLATION_ALGORITHM 0
 #define ENABLE_ZIPPER_REMOVAL   true
 #define USE_URAM                0

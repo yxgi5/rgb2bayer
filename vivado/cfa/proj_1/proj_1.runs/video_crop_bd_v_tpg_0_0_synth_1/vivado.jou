@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Aug  4 14:09:11 2021
-# Process ID: 28616
-# Current directory: /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1
+# Start of session at: Wed Aug  4 20:34:51 2021
+# Process ID: 12890
+# Current directory: /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1
 # Command line: vivado -log video_crop_bd_v_tpg_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_crop_bd_v_tpg_0_0.tcl
-# Log file: /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1/video_crop_bd_v_tpg_0_0.vds
-# Journal file: /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1/vivado.jou
+# Log file: /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1/video_crop_bd_v_tpg_0_0.vds
+# Journal file: /home/andy/workdir/figkey/HLS/repo/2SPC/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source video_crop_bd_v_tpg_0_0.tcl -notrace
