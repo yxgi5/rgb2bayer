@@ -34183,8 +34183,7 @@ _ssdm_op_SpecDataflowPipeline(-1, 0, "");
 }
 # 70 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_video.h" 2
 # 5 "src/cpp/rgb2bayer.h" 2
-
-
+# 31 "src/cpp/rgb2bayer.h"
  typedef hls::stream<ap_axiu<24,1,1,1> > AXI_STREAM1;
  typedef hls::stream<ap_axiu<8,1,1,1> > AXI_STREAM2;
 
@@ -34211,37 +34210,125 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
   {
 
    s_axis_video >> video_i;
-# 40 "src/cpp/rgb2bayer.cpp"
-   if(j%2==0)
-   {
-    if(i%2==0)
-    {
-
-     video_o.data = video_i.data(23,16);
-    }
-    else
-    {
-
-     video_o.data = video_i.data(7,0);
-    }
-   }
-   else
-   {
-    if(i%2==0)
-    {
-
-     video_o.data = video_i.data(7,0);
-    }
-    else
-    {
-
-     video_o.data = video_i.data(15,8);
-    }
-   }
 
    video_o.user = video_i.user;
    video_o.last = video_i.last;
-# 179 "src/cpp/rgb2bayer.cpp"
+
+      switch(pattern)
+      {
+       case 0b00:
+    if(j%2==0)
+    {
+     if(i%2==0)
+     {
+
+      video_o.data = video_i.data >> 8*2;
+     }
+     else
+     {
+
+      video_o.data = video_i.data;
+     }
+    }
+    else
+    {
+     if(i%2==0)
+     {
+
+      video_o.data = video_i.data;
+     }
+     else
+     {
+
+      video_o.data = (video_i.data >> 8)&0xff;
+     }
+    }
+
+    break;
+
+       case 0b01:
+    if(j%2==0)
+    {
+     if(i%2==0)
+     {
+      video_o.data = video_i.data;
+     }
+     else
+     {
+      video_o.data = video_i.data >> 8*2;
+     }
+    }
+    else
+    {
+     if(i%2==0)
+     {
+      video_o.data = (video_i.data >> 8)&0xff;
+     }
+     else
+     {
+      video_o.data = video_i.data;
+     }
+    }
+
+    break;
+
+
+       case 0b10:
+    if(j%2==0)
+    {
+     if(i%2==0)
+     {
+      video_o.data = (video_i.data >> 8)&0xff;
+     }
+     else
+     {
+      video_o.data = video_i.data;
+     }
+    }
+    else
+    {
+     if(i%2==0)
+     {
+      video_o.data = video_i.data;
+     }
+     else
+     {
+      video_o.data = video_i.data >> 8*2;
+     }
+    }
+
+    break;
+
+
+       case 0b11:
+    if(j%2==0)
+    {
+     if(i%2==0)
+     {
+      video_o.data = video_i.data;
+     }
+     else
+     {
+      video_o.data = (video_i.data >> 8)&0xff;
+     }
+    }
+    else
+    {
+     if(i%2==0)
+     {
+      video_o.data = video_i.data >> 8*2;
+     }
+     else
+     {
+      video_o.data = video_i.data;
+     }
+    }
+
+    break;
+
+      }
+
+
    m_axis_video << video_o;
   }
  }

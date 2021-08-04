@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Wed Aug  4 13:17:44 2021
+//Date        : Wed Aug  4 18:16:11 2021
 //Host        : Vostro-5880 running 64-bit Ubuntu 18.04.4 LTS
 //Command     : generate_target video_crop_bd_wrapper.bd
 //Design      : video_crop_bd_wrapper

@@ -1,0 +1,87 @@
+Below is the TCL command to change the frequency. You will have to open block design before running this command.
+
+set_property CONFIG.FREQ_HZ 200000000 [get_bd_intf_ports <port_name>]
+
+
+
+
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /rgb2bayer_0/s_axis_video(100000000) and /v_tpg_0/m_axis_video(50000000)
+ERROR: [BD 41-237] Bus Interface property FREQ_HZ does not match between /axis_subset_converter_0/S_AXIS(50000000) and /rgb2bayer_0/m_axis_video(100000000)
+
+set_property CONFIG.FREQ_HZ 50000000 [get_bd_intf_nets v_tpg_0_m_axis_video]
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter FREQ_HZ on /v_tpg_0_m_axis_video. It is read-only.
+
+
+set_property CONFIG.FREQ_HZ 50000000 [get_bd_intf_pins rgb2bayer_0/s_axis_video]
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter FREQ_HZ on /rgb2bayer_0/s_axis_video. It is read-only.
+
+ipx::add_bus_parameter FREQ_HZ [ipx::get_bd_intf_pins rgb2bayer_0/s_axis_video -of_objects [ipx::current_core]] set_property value 50000000 [ipx::get_bus_parameters FREQ_HZ -of_objects [ipx::get_bd_intf_pins rgb2bayer_0/s_axis_video -of_objects [ipx::current_core]]]
+
+
+ipx::add_bus_parameter FREQ_HZ [ipx::get_bd_intf_nets v_tpg_0_m_axis_video -of_objects [ipx::current_core]] set_property value 50000000 [ipx::get_bus_parameters FREQ_HZ -of_objects [ipx::get_bd_intf_nets v_tpg_0_m_axis_video -of_objects [ipx::current_core]]]
+
+
+
+
+set_property CONFIG.FREQ_HZ 100000000 [get_bd_intf_pins /ps7_0_axi_periph/s00_couplers/auto_pc/M_AXI]
+ERROR: [BD 41-738] Exec TCL: the object '/ps7_0_axi_periph/s00_couplers/auto_pc/M_AXI' is part of the appcore 'ps7_0_axi_periph' and cannot be modified directly.
+
+
+
+
+You can open the xbar.xci and xbar.xml files and change the CLKIF.FREQ_HZ from 10_000_000 to 100_000_000 then reopen the block design and regenerate the output products. I tried, it works!
+
+
+To change the CIP port property, you can use below TCL command:
+
+ipx::add_bus_parameter FREQ_HZ [ipx::get_bus_interfaces S00_AXI_CLK -of_objects [ipx::current_core]] set_property value 200 [ipx::get_bus_parameters FREQ_HZ -of_objects [ipx::get_bus_interfaces S00_AXI_CLK -of_objects [ipx::current_core]]]
+
+NOTE: FREQ_HZ is in units of 1 HZ. In order to set 200 MHz you have to type 200000000 instead of 200.
+
+ 
+
+Or follow the GUI flow:
+
+Right click on the CIP --> Edit in IP packager.
+
+IP Ports and Interface --> select port (e.g. S00_AXI_CLK) --> Right click --> Add bus interface.
+
+Go to Parameters --> FREQ_HZ --> Add --> then provide value. --> click OK.
+
+Above equivalent TCL command you can see it in TCL console.
+
+
+
+
+
+
+
+
+还是发现了关键地方 clk的CONFIG.ASSOCIATED_BUSIF是空的就不行
+修改ip的xml配置，比如增加ASSOCIATED_BUSIF
+
+CONFIG.CLK_DOMAIN	video_crop_bd_aclk_50MHz
+CONFIG.ASSOCIATED_BUSIF	s_axi_CTRL:m_axis_video
+
+
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.AP_CLK.ASSOCIATED_BUSIF">s_axis_video:m_axis_video</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.AP_CLK.ASSOCIATED_RESET">ap_rst_n</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>LAYERED_METADATA</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.AP_CLK.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+
+
+
+
+
+
+

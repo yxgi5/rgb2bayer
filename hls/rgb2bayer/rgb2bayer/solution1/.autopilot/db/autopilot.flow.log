@@ -1,4 +1,4 @@
-INFO-FLOW: Workspace /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1 opened at Wed Aug 04 10:37:05 CST 2021
+INFO-FLOW: Workspace /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1 opened at Wed Aug 04 11:08:58 CST 2021
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -77,7 +77,9 @@ Execute       get_default_platform
 Execute     get_default_platform 
 Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.11 sec.
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.12 sec.
 Execute   set_part xc7z020clg484-1 -tool vivado 
 Execute     add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
 Execute       get_default_platform 
@@ -92,6 +94,7 @@ Execute     get_default_platform
 Execute   create_clock -period 10 -name default 
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_export -format ip_catalog -rtl verilog 
 Execute   csynth_design 
 Execute     get_config_compile -effort 
 Execute     get_config_compile -enable_clang39 
@@ -119,33 +122,33 @@ INFO-FLOW: Running: GCC PP
 INFO-FLOW: Source preprocessing
 Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "src/cpp/rgb2bayer.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp" 
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E src/cpp/rgb2bayer.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp
-Command       clang done; 0.85 sec.
+Command       clang done; 0.86 sec.
 Execute       tidy_31 xilinx-xfmat-array-geometry /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp std=gnu++98 
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 2.73 sec.
+Command       tidy_31 done; 2.85 sec.
 INFO-FLOW: Syntax Checking before pre-processing...
 Execute       clang -syntaxcheck -src /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp"  -o "/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/useless.bc"  
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/useless.bc
-Command       clang done; 2.66 sec.
+Command       clang done; 2.58 sec.
 INFO-FLOW: Done: GCC PP time: 6.3 seconds per iteration
 Execute       list_core -type functional_unit 
 Execute       tidy_31 xilinx-systemc-detector /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp std=gnu++98 -directive=/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 2.37 sec.
+Command       tidy_31 done; 2.46 sec.
 INFO-FLOW: Running: tidy-3.1 CDT preprocess
 Execute       tidy_31 xilinx-directive2pragma /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp std=gnu++98 -directive=/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/all.directive.json -quiet -fix-errors /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
 Command       tidy_31 done; 2.39 sec.
 Execute       get_config_dataflow -strict_mode 
 Execute       ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/xilinx-dataflow-lawyer.rgb2bayer.pp.0.cpp.diag.yml /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/xilinx-dataflow-lawyer.rgb2bayer.pp.0.cpp.out.log 2> /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/xilinx-dataflow-lawyer.rgb2bayer.pp.0.cpp.err.log 
-Command       ap_eval done; 2.54 sec.
+Command       ap_eval done; 2.32 sec.
 Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp std=gnu++98 
 Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/tidy-3.1.rgb2bayer.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/tidy-3.1.rgb2bayer.pp.0.cpp.out.log 2> /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/tidy-3.1.rgb2bayer.pp.0.cpp.err.log 
-Command         ap_eval done; 4.59 sec.
+Command         ap_eval done; 4.66 sec.
 Execute         ap_eval exec -ignorestderr /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/xilinx-legacy-rewriter.rgb2bayer.pp.0.cpp.out.log 2> /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/xilinx-legacy-rewriter.rgb2bayer.pp.0.cpp.err.log 
-Command         ap_eval done; 3.98 sec.
-Command       tidy_31 done; 8.82 sec.
-INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 13.8 seconds per iteration
+Command         ap_eval done; 3.31 sec.
+Command       tidy_31 done; 8.23 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 12.9 seconds per iteration
 INFO-FLOW: Pragma Handling...
 Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pragma.1.cpp std=gnu++98 
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
@@ -154,12 +157,12 @@ Execute       get_default_platform
 INFO-FLOW: Processing labels
 Execute       clang -src /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.bc" 
 INFO-FLOW: exec /opt/Xilinx/Vivado/2018.3/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Xilinx/Vivado/2018.3/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot -I /opt/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.bc
-Command       clang done; 2.67 sec.
+Command       clang done; 2.68 sec.
 INFO-FLOW: Linking Debug ...
 Execute       llvm-ld /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.g.bc -hls-opt -except-internalize rgb2bayer -L/opt/Xilinx/Vivado/2018.3/lnx64/lib -lhlsm -lhlsmc++ -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.g 
 Command       llvm-ld done; 0.57 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 441.895 ; gain = 0.277 ; free physical = 6860 ; free virtual = 25859
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 441.895 ; gain = 0.277 ; free physical = 6860 ; free virtual = 25859
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 441.895 ; gain = 0.277 ; free physical = 5656 ; free virtual = 24939
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 441.895 ; gain = 0.277 ; free physical = 5656 ; free virtual = 24939
 Execute       get_config_sdx -target 
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
@@ -169,14 +172,13 @@ Execute         llvm-ld /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer
 Command         llvm-ld done; 0.57 sec.
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top rgb2bayer -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.g.0.bc -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 571.422 ; gain = 129.805 ; free physical = 6812 ; free virtual = 25818
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 571.441 ; gain = 129.824 ; free physical = 5609 ; free virtual = 24899
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.g.1.bc -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.g.2.prechk.bc -f 
-Command         transform done; 0.11 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.g.2.prechk.bc -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 571.422 ; gain = 129.805 ; free physical = 6777 ; free virtual = 25787
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 571.441 ; gain = 129.824 ; free physical = 5573 ; free virtual = 24866
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.g.1.bc to /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -186,17 +188,20 @@ WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (src/cpp/rgb2bayer.cpp:24
 Command         transform done; 0.16 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.o.1.tmp.bc -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/cpp/rgb2bayer.cpp:27:4) to (src/cpp/rgb2bayer.cpp:24:32) in function 'rgb2bayer'... converting 8 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/cpp/rgb2bayer.cpp:37:6) to (src/cpp/rgb2bayer.cpp:62:5) in function 'rgb2bayer'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/cpp/rgb2bayer.cpp:67:6) to (src/cpp/rgb2bayer.cpp:88:5) in function 'rgb2bayer'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/cpp/rgb2bayer.cpp:94:6) to (src/cpp/rgb2bayer.cpp:115:5) in function 'rgb2bayer'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (src/cpp/rgb2bayer.cpp:121:6) to (src/cpp/rgb2bayer.cpp:142:5) in function 'rgb2bayer'... converting 4 basic blocks.
 Command         transform done; 0.13 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 635.316 ; gain = 193.699 ; free physical = 6718 ; free virtual = 25732
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 635.328 ; gain = 193.711 ; free physical = 5515 ; free virtual = 24813
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.o.2.bc -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (src/cpp/rgb2bayer.cpp:21:15) in function 'rgb2bayer'.
-Command         transform done; 0.14 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 635.316 ; gain = 193.699 ; free physical = 6705 ; free virtual = 25721
+Command         transform done; 0.15 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 635.328 ; gain = 193.711 ; free physical = 5504 ; free virtual = 24803
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 1.36 sec.
-Command     elaborate done; 31.16 sec.
+Command       opt_and_import_c done; 1.4 sec.
+Command     elaborate done; 30.54 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -224,7 +229,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 31.48 seconds; current allocated memory: 180.070 MB.
+INFO: [HLS 200-111]  Elapsed time: 30.86 seconds; current allocated memory: 181.614 MB.
 Execute       report -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.verbose.sched.rpt -verbose -f 
 Execute       db_write -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.sched.adb -f 
 INFO-FLOW: Finish scheduling rgb2bayer.
@@ -238,7 +243,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 180.326 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 181.985 MB.
 Execute       report -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.verbose.bind.rpt -verbose -f 
 Execute       db_write -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.bind.adb -f 
 INFO-FLOW: Finish binding rgb2bayer.
@@ -270,10 +275,8 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2bayer/hsize_in' to 'ap
 INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2bayer/vsize_in' to 'ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'rgb2bayer/pattern_V' to 'ap_none'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'rgb2bayer' to 'ap_ctrl_none'.
-WARNING: [RTGEN 206-101] Port 'rgb2bayer/pattern_V' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'rgb2bayer'.
-INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 181.788 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 183.601 MB.
 Execute       source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.rtl_wrap.cfg.tcl 
 Execute       gen_rtl rgb2bayer -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/syn/systemc/rgb2bayer -synmodules rgb2bayer 
 Execute       gen_rtl rgb2bayer -istop -style xilinx -f -lang vhdl -o /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/syn/vhdl/rgb2bayer 
@@ -382,9 +385,9 @@ Execute       source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rg
 Execute       source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.constraint.tcl 
 Execute       source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=32
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=34
 INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=17
-INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=1 #gSsdmPorts=32
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=1 #gSsdmPorts=34
 Execute       source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/global.setting.tcl 
 Execute       source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.tbgen.tcl 
@@ -406,17 +409,17 @@ Execute       get_config_sdx -profile
 Execute       ::config_rtl 
 INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/kernel.internal.xml
 INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 635.316 ; gain = 193.699 ; free physical = 6703 ; free virtual = 25720
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 635.328 ; gain = 193.711 ; free physical = 5500 ; free virtual = 24801
 INFO: [SYSC 207-301] Generating SystemC RTL for rgb2bayer.
 INFO: [VHDL 208-304] Generating VHDL RTL for rgb2bayer.
 INFO: [VLOG 209-307] Generating Verilog RTL for rgb2bayer.
-Command     autosyn done; 0.57 sec.
+Command     autosyn done; 0.64 sec.
 Execute     get_part 
 Execute     get_config_export -sdx_tcl 
-Command   csynth_design done; 31.74 sec.
-Command ap_source done; 31.88 sec.
+Command   csynth_design done; 31.18 sec.
+Command ap_source done; 31.33 sec.
 Execute cleanup_all 
-INFO-FLOW: Workspace /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1 opened at Wed Aug 04 10:37:43 CST 2021
+INFO-FLOW: Workspace /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1 opened at Wed Aug 04 11:09:47 CST 2021
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -495,7 +498,112 @@ Execute       get_default_platform
 Execute     get_default_platform 
 Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.11 sec.
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.12 sec.
+Execute   csim_design -quiet 
+Execute     source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/in.png 
+Execute     is_xip /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/in.png 
+Execute     is_encrypted /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer_tb.cpp 
+Execute     is_xip /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer_tb.cpp 
+Execute     is_encrypted /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/test.png 
+Execute     is_xip /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/test.png 
+Execute     is_encrypted /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer.cpp 
+Execute     is_xip /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer.cpp 
+Execute     get_default_platform 
+Execute     source run_sim.tcl 
+Command     ap_source done; 1.46 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 10.66 sec.
+Command ap_source done; 10.78 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1 opened at Wed Aug 04 11:10:18 CST 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg484-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 0.12 sec.
 Execute   export_design -rtl verilog -format ip_catalog 
 Execute     get_config_export -acc 
 Execute     get_config_export -clock_margin 
@@ -601,8 +709,8 @@ Execute     source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2
 Execute     source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/global.setting.tcl 
 Execute     source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.constraint.tcl 
 Execute     source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.tbgen.tcl 
-INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=32
-INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=32
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=34
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=34
 Execute     source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.tbgen.tcl 
 Execute     source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.tbgen.tcl 
 Execute     source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/rgb2bayer.tbgen.tcl 
@@ -670,212 +778,6 @@ Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common
 Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
 INFO-FLOW: DBG:CMD:     exec /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/impl/ip/pack.sh
-Command   export_design done; 6.47 sec.
-Command ap_source done; 6.58 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1 opened at Wed Aug 04 10:37:54 CST 2021
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_export -format=ip_catalog 
-Execute     config_export -rtl=verilog 
-Command   open_solution done; 0.12 sec.
-Execute   csim_design -quiet 
-Execute     source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/in.png 
-Execute     is_xip /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/in.png 
-Execute     is_encrypted /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer_tb.cpp 
-Execute     is_xip /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer_tb.cpp 
-Execute     is_encrypted /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/test.png 
-Execute     is_xip /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/test.png 
-Execute     is_encrypted /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer.cpp 
-Execute     is_xip /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; 1.46 sec.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 10.49 sec.
-Command ap_source done; 10.61 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1 opened at Wed Aug 04 11:03:18 CST 2021
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
-Execute     open_platform DefaultPlatform 
-Execute     import_lib /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
-Execute             source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source /opt/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Execute     config_export -format=ip_catalog 
-Execute     config_export -rtl=verilog 
-Command   open_solution done; 0.12 sec.
-Execute   csim_design -quiet 
-Execute     source /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.autopilot/db/global.setting.tcl 
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-Execute     source csim/.lst_opt.tcl 
-Execute     is_encrypted /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/in.png 
-Execute     is_xip /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/in.png 
-Execute     is_encrypted /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer_tb.cpp 
-Execute     is_xip /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer_tb.cpp 
-Execute     is_encrypted /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/test.png 
-Execute     is_xip /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/test.png 
-Execute     is_encrypted /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer.cpp 
-Execute     is_xip /home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer.cpp 
-Execute     get_default_platform 
-Execute     source run_sim.tcl 
-Command     ap_source done; 1.45 sec.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-Command   csim_design done; 1.48 sec.
-Command ap_source done; 1.6 sec.
+Command   export_design done; 6.52 sec.
+Command ap_source done; 6.64 sec.
 Execute cleanup_all 

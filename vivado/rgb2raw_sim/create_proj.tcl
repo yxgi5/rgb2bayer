@@ -80,3 +80,4 @@ add_files -norecurse -fileset $obj $files
 generate_target all [get_files ./$project_name/$project_name.srcs/sources_1/bd/$BD_name/${BD_name}.bd]
 create_ip_run [get_files -of_objects [get_fileset sources_1] ./$project_name/$project_name.srcs/sources_1/bd/$BD_name/${BD_name}.bd]
 launch_runs -jobs 8 [get_runs $BD_name*synth_1]
+#launch_runs -jobs 8 video_crop_bd_rgb2bayer_0_0_synth_1

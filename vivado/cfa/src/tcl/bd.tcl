@@ -240,12 +240,24 @@ proc create_root_design { parentCell } {
 
   # Create instance: rgb2bayer_0, and set properties
   set rgb2bayer_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:rgb2bayer:1.0 rgb2bayer_0 ]
+  set_property -dict [ list \
+   CONFIG.MAXIMUM_NUMBER_OF_COLUMNS {480} \
+   CONFIG.MAXIMUM_NUMBER_OF_ROWS {640} \
+ ] $rgb2bayer_0
 
   # Create instance: v_demosaic_0, and set properties
   set v_demosaic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:v_demosaic:1.0 v_demosaic_0 ]
+  set_property -dict [ list \
+   CONFIG.MAX_DATA_WIDTH {8} \
+   CONFIG.SAMPLES_PER_CLOCK {1} \
+ ] $v_demosaic_0
 
   # Create instance: v_tpg_0, and set properties
   set v_tpg_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:v_tpg:8.0 v_tpg_0 ]
+  set_property -dict [ list \
+   CONFIG.MAX_DATA_WIDTH {8} \
+   CONFIG.SAMPLES_PER_CLOCK {1} \
+ ] $v_tpg_0
 
   # Create instance: xlconstant_0, and set properties
   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
@@ -265,14 +277,11 @@ proc create_root_design { parentCell } {
   connect_bd_net -net aclk_0_1 [get_bd_ports aclk_50MHz] [get_bd_pins axi_vip_0/aclk] [get_bd_pins axi_vip_1/aclk] [get_bd_pins axis_subset_converter_0/aclk] [get_bd_pins rgb2bayer_0/ap_clk] [get_bd_pins v_demosaic_0/ap_clk] [get_bd_pins v_tpg_0/ap_clk]
   connect_bd_net -net ap_start_1 [get_bd_ports ap_start]
   connect_bd_net -net aresetn_0_1 [get_bd_ports aresetn_0] [get_bd_pins axi_vip_0/aresetn] [get_bd_pins axi_vip_1/aresetn] [get_bd_pins axis_subset_converter_0/aresetn] [get_bd_pins rgb2bayer_0/ap_rst_n] [get_bd_pins v_demosaic_0/ap_rst_n] [get_bd_pins v_tpg_0/ap_rst_n]
-  connect_bd_net -net hsize_1 [get_bd_ports hsize] [get_bd_pins rgb2bayer_0/hsize_in]
   connect_bd_net -net tready_1 [get_bd_ports tready] [get_bd_pins v_demosaic_0/m_axis_video_TREADY]
   connect_bd_net -net v_demosaic_0_m_axis_video_TDATA [get_bd_ports tdata] [get_bd_pins v_demosaic_0/m_axis_video_TDATA]
   connect_bd_net -net v_demosaic_0_m_axis_video_TLAST [get_bd_ports tlast] [get_bd_pins v_demosaic_0/m_axis_video_TLAST]
   connect_bd_net -net v_demosaic_0_m_axis_video_TUSER [get_bd_ports tuser] [get_bd_pins v_demosaic_0/m_axis_video_TUSER]
   connect_bd_net -net v_demosaic_0_m_axis_video_TVALID [get_bd_ports tvalid] [get_bd_pins v_demosaic_0/m_axis_video_TVALID]
-  connect_bd_net -net vsize_1 [get_bd_ports vsize] [get_bd_pins rgb2bayer_0/vsize_in]
-  connect_bd_net -net xlconstant_0_dout [get_bd_pins rgb2bayer_0/pattern_V] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
   create_bd_addr_seg -range 0x00001000 -offset 0x00000000 [get_bd_addr_spaces axi_vip_0/Master_AXI] [get_bd_addr_segs v_tpg_0/s_axi_CTRL/Reg] SEG_v_tpg_0_Reg

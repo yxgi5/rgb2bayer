@@ -177,15 +177,39 @@
       },
       "rgb2bayer_0": {
         "vlnv": "xilinx.com:hls:rgb2bayer:1.0",
-        "xci_name": "video_crop_bd_rgb2bayer_0_0"
+        "xci_name": "video_crop_bd_rgb2bayer_0_0",
+        "parameters": {
+          "MAXIMUM_NUMBER_OF_COLUMNS": {
+            "value": "480"
+          },
+          "MAXIMUM_NUMBER_OF_ROWS": {
+            "value": "640"
+          }
+        }
       },
       "v_demosaic_0": {
         "vlnv": "xilinx.com:ip:v_demosaic:1.0",
-        "xci_name": "video_crop_bd_v_demosaic_0_0"
+        "xci_name": "video_crop_bd_v_demosaic_0_0",
+        "parameters": {
+          "MAX_DATA_WIDTH": {
+            "value": "8"
+          },
+          "SAMPLES_PER_CLOCK": {
+            "value": "1"
+          }
+        }
       },
       "v_tpg_0": {
         "vlnv": "xilinx.com:ip:v_tpg:8.0",
-        "xci_name": "video_crop_bd_v_tpg_0_0"
+        "xci_name": "video_crop_bd_v_tpg_0_0",
+        "parameters": {
+          "MAX_DATA_WIDTH": {
+            "value": "8"
+          },
+          "SAMPLES_PER_CLOCK": {
+            "value": "1"
+          }
+        }
       },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
@@ -201,10 +225,10 @@
       }
     },
     "interface_nets": {
-      "v_tpg_0_m_axis_video": {
+      "axi_vip_0_M_AXI": {
         "interface_ports": [
-          "rgb2bayer_0/s_axis_video",
-          "v_tpg_0/m_axis_video"
+          "axi_vip_0/M_AXI",
+          "v_tpg_0/s_axi_CTRL"
         ]
       },
       "rgb2bayer_0_m_axis_video": {
@@ -213,10 +237,10 @@
           "rgb2bayer_0/m_axis_video"
         ]
       },
-      "axi_vip_0_M_AXI": {
+      "axis_subset_converter_0_M_AXIS": {
         "interface_ports": [
-          "axi_vip_0/M_AXI",
-          "v_tpg_0/s_axi_CTRL"
+          "axis_subset_converter_0/M_AXIS",
+          "v_demosaic_0/s_axis_video"
         ]
       },
       "axi_vip_1_M_AXI": {
@@ -225,10 +249,10 @@
           "v_demosaic_0/s_axi_CTRL"
         ]
       },
-      "axis_subset_converter_0_M_AXIS": {
+      "v_tpg_0_m_axis_video": {
         "interface_ports": [
-          "axis_subset_converter_0/M_AXIS",
-          "v_demosaic_0/s_axis_video"
+          "rgb2bayer_0/s_axis_video",
+          "v_tpg_0/m_axis_video"
         ]
       }
     },
@@ -260,12 +284,6 @@
           "v_tpg_0/ap_rst_n"
         ]
       },
-      "hsize_1": {
-        "ports": [
-          "hsize",
-          "rgb2bayer_0/hsize_in"
-        ]
-      },
       "tready_1": {
         "ports": [
           "tready",
@@ -294,18 +312,6 @@
         "ports": [
           "v_demosaic_0/m_axis_video_TVALID",
           "tvalid"
-        ]
-      },
-      "vsize_1": {
-        "ports": [
-          "vsize",
-          "rgb2bayer_0/vsize_in"
-        ]
-      },
-      "xlconstant_0_dout": {
-        "ports": [
-          "xlconstant_0/dout",
-          "rgb2bayer_0/pattern_V"
         ]
       }
     },

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Aug  4 13:18:13 2021
+| Date         : Wed Aug  4 18:16:38 2021
 | Host         : Vostro-5880 running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_utilization -file video_crop_bd_rgb2bayer_0_0_utilization_synth.rpt -pb video_crop_bd_rgb2bayer_0_0_utilization_synth.pb
 | Design       : video_crop_bd_rgb2bayer_0_0
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  179 |     0 |     53200 |  0.34 |
-|   LUT as Logic          |  179 |     0 |     53200 |  0.34 |
+| Slice LUTs*             |  132 |     0 |     53200 |  0.25 |
+|   LUT as Logic          |  132 |     0 |     53200 |  0.25 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
-| Slice Registers         |  255 |     0 |    106400 |  0.24 |
-|   Register as Flip Flop |  255 |     0 |    106400 |  0.24 |
+| Slice Registers         |  221 |     0 |    106400 |  0.21 |
+|   Register as Flip Flop |  221 |     0 |    106400 |  0.21 |
 |   Register as Latch     |    0 |     0 |    106400 |  0.00 |
 | F7 Muxes                |    0 |     0 |     26600 |  0.00 |
 | F8 Muxes                |    0 |     0 |     13300 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 1     |          Yes |         Set |            - |
-| 254   |          Yes |       Reset |            - |
+| 220   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -80,8 +80,8 @@ Table of Contents
 +----------------+------+-------+-----------+-------+
 |    Site Type   | Used | Fixed | Available | Util% |
 +----------------+------+-------+-----------+-------+
-| DSPs           |    4 |     0 |       220 |  1.82 |
-|   DSP48E1 only |    4 |       |           |       |
+| DSPs           |    1 |     0 |       220 |  0.45 |
+|   DSP48E1 only |    1 |       |           |       |
 +----------------+------+-------+-----------+-------+
 
 
@@ -147,16 +147,16 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  254 |        Flop & Latch |
-| LUT2     |   51 |                 LUT |
-| LUT6     |   50 |                 LUT |
-| LUT4     |   50 |                 LUT |
-| CARRY4   |   46 |          CarryLogic |
-| LUT3     |   35 |                 LUT |
-| LUT5     |   25 |                 LUT |
-| DSP48E1  |    4 |    Block Arithmetic |
-| LUT1     |    2 |                 LUT |
+| FDRE     |  220 |        Flop & Latch |
+| LUT3     |   50 |                 LUT |
+| LUT6     |   38 |                 LUT |
+| CARRY4   |   34 |          CarryLogic |
+| LUT5     |   24 |                 LUT |
+| LUT4     |   21 |                 LUT |
+| LUT2     |   19 |                 LUT |
+| LUT1     |    5 |                 LUT |
 | FDSE     |    1 |        Flop & Latch |
+| DSP48E1  |    1 |    Block Arithmetic |
 +----------+------+---------------------+
 
 

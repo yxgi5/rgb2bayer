@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Wed Aug  4 13:17:44 2021
+//Date        : Wed Aug  4 18:16:10 2021
 //Host        : Vostro-5880 running 64-bit Ubuntu 18.04.4 LTS
 //Command     : generate_target video_crop_bd.bd
 //Design      : video_crop_bd
@@ -78,7 +78,6 @@ module video_crop_bd
   wire [0:0]axis_subset_converter_0_M_AXIS_TSTRB;
   wire [0:0]axis_subset_converter_0_M_AXIS_TUSER;
   wire axis_subset_converter_0_M_AXIS_TVALID;
-  wire [31:0]hsize_1;
   wire [7:0]rgb2bayer_0_m_axis_video_TDATA;
   wire [0:0]rgb2bayer_0_m_axis_video_TDEST;
   wire [0:0]rgb2bayer_0_m_axis_video_TID;
@@ -102,19 +101,15 @@ module video_crop_bd
   wire [2:0]v_tpg_0_m_axis_video_TSTRB;
   wire [0:0]v_tpg_0_m_axis_video_TUSER;
   wire v_tpg_0_m_axis_video_TVALID;
-  wire [31:0]vsize_1;
-  wire [1:0]xlconstant_0_dout;
 
   assign aclk_0_1 = aclk_50MHz;
   assign ap_start_1 = ap_start;
   assign aresetn_0_1 = aresetn_0;
-  assign hsize_1 = hsize[31:0];
   assign tdata[23:0] = v_demosaic_0_m_axis_video_TDATA;
   assign tlast[0] = v_demosaic_0_m_axis_video_TLAST;
   assign tready_1 = tready;
   assign tuser[0] = v_demosaic_0_m_axis_video_TUSER;
   assign tvalid = v_demosaic_0_m_axis_video_TVALID;
-  assign vsize_1 = vsize[31:0];
   video_crop_bd_axi_vip_0_0 axi_vip_0
        (.aclk(aclk_0_1),
         .aresetn(aresetn_0_1),
@@ -179,7 +174,6 @@ module video_crop_bd
   video_crop_bd_rgb2bayer_0_0 rgb2bayer_0
        (.ap_clk(aclk_0_1),
         .ap_rst_n(aresetn_0_1),
-        .hsize_in(hsize_1),
         .m_axis_video_TDATA(rgb2bayer_0_m_axis_video_TDATA),
         .m_axis_video_TDEST(rgb2bayer_0_m_axis_video_TDEST),
         .m_axis_video_TID(rgb2bayer_0_m_axis_video_TID),
@@ -189,7 +183,6 @@ module video_crop_bd
         .m_axis_video_TSTRB(rgb2bayer_0_m_axis_video_TSTRB),
         .m_axis_video_TUSER(rgb2bayer_0_m_axis_video_TUSER),
         .m_axis_video_TVALID(rgb2bayer_0_m_axis_video_TVALID),
-        .pattern_V(xlconstant_0_dout),
         .s_axis_video_TDATA(v_tpg_0_m_axis_video_TDATA),
         .s_axis_video_TDEST(v_tpg_0_m_axis_video_TDEST),
         .s_axis_video_TID(v_tpg_0_m_axis_video_TID),
@@ -198,8 +191,7 @@ module video_crop_bd
         .s_axis_video_TREADY(v_tpg_0_m_axis_video_TREADY),
         .s_axis_video_TSTRB(v_tpg_0_m_axis_video_TSTRB),
         .s_axis_video_TUSER(v_tpg_0_m_axis_video_TUSER),
-        .s_axis_video_TVALID(v_tpg_0_m_axis_video_TVALID),
-        .vsize_in(vsize_1));
+        .s_axis_video_TVALID(v_tpg_0_m_axis_video_TVALID));
   video_crop_bd_v_demosaic_0_0 v_demosaic_0
        (.ap_clk(aclk_0_1),
         .ap_rst_n(aresetn_0_1),
@@ -265,5 +257,5 @@ module video_crop_bd
         .s_axi_CTRL_WSTRB(axi_vip_0_M_AXI_WSTRB),
         .s_axi_CTRL_WVALID(axi_vip_0_M_AXI_WVALID));
   video_crop_bd_xlconstant_0_0 xlconstant_0
-       (.dout(xlconstant_0_dout));
+       ();
 endmodule

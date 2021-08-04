@@ -12,8 +12,7 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Port 'rgb2bayer/pattern_V' has no fanin or fanout and is left dangling.&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="rgb2bayer" solutionName="solution1" date="2021-08-04T10:37:36.789+0800" type="Warning"/>
-        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (src/cpp/rgb2bayer.cpp:24) in function 'rgb2bayer': cannot completely unroll a loop with a variable trip count." projectName="rgb2bayer" solutionName="solution1" date="2021-08-04T10:37:36.518+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (src/cpp/rgb2bayer.cpp:24) in function 'rgb2bayer': cannot completely unroll a loop with a variable trip count." projectName="rgb2bayer" solutionName="solution1" date="2021-08-04T11:09:29.337+0800" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

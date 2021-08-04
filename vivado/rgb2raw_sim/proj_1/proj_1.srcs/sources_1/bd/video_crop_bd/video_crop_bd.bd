@@ -137,7 +137,15 @@
       },
       "rgb2bayer_0": {
         "vlnv": "xilinx.com:hls:rgb2bayer:1.0",
-        "xci_name": "video_crop_bd_rgb2bayer_0_0"
+        "xci_name": "video_crop_bd_rgb2bayer_0_0",
+        "parameters": {
+          "MAXIMUM_NUMBER_OF_COLUMNS": {
+            "value": "480"
+          },
+          "MAXIMUM_NUMBER_OF_ROWS": {
+            "value": "640"
+          }
+        }
       },
       "v_tpg_0": {
         "vlnv": "xilinx.com:ip:v_tpg:8.0",
@@ -192,12 +200,6 @@
           "v_tpg_0/ap_rst_n"
         ]
       },
-      "hsize_1": {
-        "ports": [
-          "hsize",
-          "rgb2bayer_0/hsize_in"
-        ]
-      },
       "rgb2bayer_0_m_axis_video_TDATA": {
         "ports": [
           "rgb2bayer_0/m_axis_video_TDATA",
@@ -226,18 +228,6 @@
         "ports": [
           "tready",
           "rgb2bayer_0/m_axis_video_TREADY"
-        ]
-      },
-      "vsize_1": {
-        "ports": [
-          "vsize",
-          "rgb2bayer_0/vsize_in"
-        ]
-      },
-      "xlconstant_0_dout": {
-        "ports": [
-          "xlconstant_0/dout",
-          "rgb2bayer_0/pattern_V"
         ]
       }
     },

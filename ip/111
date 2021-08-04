@@ -1,0 +1,12 @@
+Samples per Clock	1 2 4 8
+Maximum Data Width	8 10 12 16
+Maximum Number of Columns	[64-8192]
+Maximum Number of Rows		[64-4320]
+Bayer Pattern		RGGB GRBG BGGR GBRG
+
+
+SAMPLES_PER_CLOCK
+MAXIMUM_DATA_WIDTH
+MAXIMUM_NUMBER_OF_COLUMNS
+MAXIMUM_NUMBER_OF_ROWS
+BAYER_PATTERN			

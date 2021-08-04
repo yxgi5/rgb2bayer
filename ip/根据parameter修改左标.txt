@@ -1,0 +1,19 @@
+
+parameter  S_AXIS_BYTES = ((SAMPLES_PER_CLOCK*MAXIMUM_DATA_WIDTH*NUM_VIDEO_COMPONENTS+7)/8);
+
+parameter  S_AXIS_WIDTH = ((SAMPLES_PER_CLOCK*MAXIMUM_DATA_WIDTH*NUM_VIDEO_COMPONENTS+7)/8)*8;
+
+
+
+<spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAXIMUM_DATA_WIDTH&apos;))*spirit:decode(id(&apos;PARAM_VALUE.NUM_VIDEO_COMPONENTS&apos;)))+7)/8)*8)-1)">39</spirit:left>
+
+<spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAXIMUM_DATA_WIDTH&apos;))*spirit:decode(id(&apos;PARAM_VALUE.NUM_VIDEO_COMPONENTS&apos;)))+7)/8)-1)">4</spirit:left>
+
+parameter  M_AXIS_BYTES = ((SAMPLES_PER_CLOCK*MAXIMUM_DATA_WIDTH+7)/8);
+
+parameter  M_AXIS_WIDTH = ((SAMPLES_PER_CLOCK*MAXIMUM_DATA_WIDTH+7)/8) * 8;
+
+
+<spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAXIMUM_DATA_WIDTH&apos;)))+7)/8)*8)-1)">15</spirit:left>
+
+<spirit:dependency="((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAXIMUM_DATA_WIDTH&apos;)))+7)/8)-1)">2</spirit:left>

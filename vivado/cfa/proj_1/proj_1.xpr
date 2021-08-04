@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.xpr">
+<Project Version="7" Minor="39" Path="/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="71fed312226a4748ba1ba5587f793115"/>
+    <Option Name="Id" Val="79b8587273cf44b1b4f51f906d9126c8"/>
     <Option Name="Part" Val="xc7z020clg484-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -66,20 +66,20 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="video_crop_bd.bd" FileRelPathName="ip/video_crop_bd_v_tpg_0_0/video_crop_bd_v_tpg_0_0.xci">
-          <Proxy FileSetName="video_crop_bd_v_tpg_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="video_crop_bd.bd" FileRelPathName="ip/video_crop_bd_rgb2bayer_0_0/video_crop_bd_rgb2bayer_0_0.xci">
           <Proxy FileSetName="video_crop_bd_rgb2bayer_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="video_crop_bd.bd" FileRelPathName="ip/video_crop_bd_axis_subset_converter_0_0/video_crop_bd_axis_subset_converter_0_0.xci">
           <Proxy FileSetName="video_crop_bd_axis_subset_converter_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="video_crop_bd.bd" FileRelPathName="ip/video_crop_bd_axi_vip_0_0/video_crop_bd_axi_vip_0_0.xci">
+          <Proxy FileSetName="video_crop_bd_axi_vip_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="video_crop_bd.bd" FileRelPathName="ip/video_crop_bd_v_demosaic_0_0/video_crop_bd_v_demosaic_0_0.xci">
           <Proxy FileSetName="video_crop_bd_v_demosaic_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="video_crop_bd.bd" FileRelPathName="ip/video_crop_bd_axi_vip_0_0/video_crop_bd_axi_vip_0_0.xci">
-          <Proxy FileSetName="video_crop_bd_axi_vip_0_0"/>
+        <CompFileExtendedInfo CompFileName="video_crop_bd.bd" FileRelPathName="ip/video_crop_bd_v_tpg_0_0/video_crop_bd_v_tpg_0_0.xci">
+          <Proxy FileSetName="video_crop_bd_v_tpg_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="video_crop_bd.bd" FileRelPathName="ip/video_crop_bd_axi_vip_1_0/video_crop_bd_axi_vip_1_0.xci">
           <Proxy FileSetName="video_crop_bd_axi_vip_1_0"/>
@@ -108,7 +108,7 @@
       <File Path="$PSRCDIR/sim_1/imports/sim/tb_video_crop.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../src/sim/tb_video_crop.sv"/>
-          <Attr Name="ImportTime" Val="1628043090"/>
+          <Attr Name="ImportTime" Val="1628058772"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -117,7 +117,7 @@
       <File Path="$PSRCDIR/sim_1/imports/sim/tb_video_crop_behav.wcfg">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../src/sim/tb_video_crop_behav.wcfg"/>
-          <Attr Name="ImportTime" Val="1541141816"/>
+          <Attr Name="ImportTime" Val="1628058772"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>

@@ -4,8 +4,32 @@
 	#include <hls_video.h>
 	//#include "ap_cint.h"
 
-	typedef hls::stream<ap_axiu<24,1,1,1> >		AXI_STREAM1;
-	typedef hls::stream<ap_axiu<8,1,1,1> >		AXI_STREAM2;
+#define MDW 8 // M Data width
+#define R_shift 8*2
+#define B_mask 0xff
+#define B_shift 8
+#define SDW 24 // S Data width
+
+//#define MDW 16 // M Data width
+//#define R_shift 10*2
+//#define B_mask 0x3ff
+//#define B_shift 10
+//#define SDW 32 // S Data width
+
+//#define MDW 16 // M Data width
+//#define R_shift 12*2
+//#define B_mask 0xfff
+//#define B_shift 12
+//#define SDW 40 // S Data width
+
+//#define MDW 16 // M Data width
+//#define R_shift 16*2
+//#define B_mask 0xffff
+//#define B_shift 16
+//#define SDW 48 // S Data width
+
+	typedef hls::stream<ap_axiu<SDW,1,1,1> >		AXI_STREAM1;
+	typedef hls::stream<ap_axiu<MDW,1,1,1> >		AXI_STREAM2;
 //	typedef hls::stream<ap_axis<24,1,1,1> >		AXI_STREAM1;
 //	typedef hls::stream<ap_axis<8,1,1,1> >		AXI_STREAM2;
 

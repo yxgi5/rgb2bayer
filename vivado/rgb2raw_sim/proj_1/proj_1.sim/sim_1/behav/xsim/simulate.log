@@ -7,4 +7,4 @@ WARNING: 70 ns tb_video_crop.UUT.video_crop_bd_i.axi_vip_0.inst.IF.ARREADY_one_c
 Image written
 Configured and output resolution match, test succeeded
 Executing Axi4 End Of Simulation checks
-$finish called at time : 6235030 ns : File "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" Line 3093
+$finish called at time : 6235030100 ps : File "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" Line 3093

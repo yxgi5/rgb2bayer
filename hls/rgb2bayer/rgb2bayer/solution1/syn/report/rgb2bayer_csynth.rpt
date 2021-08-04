@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'rgb2bayer'
 ================================================================
-* Date:           Wed Aug  4 10:37:36 2021
+* Date:           Wed Aug  4 11:09:29 2021
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        rgb2bayer
@@ -54,14 +54,14 @@
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
 +-----------------+---------+-------+--------+-------+
 |DSP              |        -|      -|       -|      -|
-|Expression       |        -|      4|       0|    386|
+|Expression       |        -|      4|       0|    464|
 |FIFO             |        -|      -|       -|      -|
 |Instance         |        -|      -|       -|      -|
 |Memory           |        -|      -|       -|      -|
-|Multiplexer      |        -|      -|       -|    312|
+|Multiplexer      |        -|      -|       -|    333|
 |Register         |        -|      -|     349|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |        0|      4|     349|    698|
+|Total            |        0|      4|     349|    797|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
@@ -85,15 +85,16 @@
     +----------------------------------------+----------+-------+---+----+------------+------------+
     |              Variable Name             | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------------------+----------+-------+---+----+------------+------------+
-    |bound_fu_184_p2                         |     *    |      4|  0|  20|          32|          32|
-    |i_op_fu_302_p2                          |     +    |      0|  0|  38|           1|          31|
-    |indvar_flatten_next_fu_204_p2           |     +    |      0|  0|  71|          64|           1|
-    |j_s_fu_210_p2                           |     +    |      0|  0|  38|           1|          31|
+    |bound_fu_204_p2                         |     *    |      4|  0|  20|          32|          32|
+    |i_op_fu_482_p2                          |     +    |      0|  0|  38|          31|           1|
+    |indvar_flatten_next_fu_224_p2           |     +    |      0|  0|  71|          64|           1|
+    |j_s_fu_230_p2                           |     +    |      0|  0|  38|           1|          31|
     |ap_block_pp0_stage0_01001               |    and   |      0|  0|   2|           1|           1|
     |ap_block_state2_pp0_stage0_iter0        |    and   |      0|  0|   2|           1|           1|
     |ap_block_state3_io                      |    and   |      0|  0|   2|           1|           1|
     |ap_block_state4_io                      |    and   |      0|  0|   2|           1|           1|
-    |i_cast1_mid2_fu_232_p2                  |    and   |      0|  0|   2|           1|           1|
+    |ap_condition_901                        |    and   |      0|  0|   2|           1|           1|
+    |i_cast4_mid2_fu_252_p2                  |    and   |      0|  0|   2|           1|           1|
     |m_axis_video_V_data_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
     |m_axis_video_V_data_V_1_load_B          |    and   |      0|  0|   2|           1|           1|
     |m_axis_video_V_last_V_1_load_A          |    and   |      0|  0|   2|           1|           1|
@@ -106,26 +107,34 @@
     |s_axis_video_V_last_V_0_load_B          |    and   |      0|  0|   2|           1|           1|
     |s_axis_video_V_user_V_0_load_A          |    and   |      0|  0|   2|           1|           1|
     |s_axis_video_V_user_V_0_load_B          |    and   |      0|  0|   2|           1|           1|
-    |exitcond_flatten_fu_199_p2              |   icmp   |      0|  0|  29|          64|          64|
+    |exitcond_flatten_fu_219_p2              |   icmp   |      0|  0|  29|          64|          64|
     |m_axis_video_V_data_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |m_axis_video_V_last_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |m_axis_video_V_user_V_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |s_axis_video_V_data_V_0_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |s_axis_video_V_last_V_0_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
     |s_axis_video_V_user_V_0_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
-    |tmp_3_fu_194_p2                         |   icmp   |      0|  0|  18|          32|          32|
+    |tmp_4_fu_214_p2                         |   icmp   |      0|  0|  18|          32|          32|
     |ap_block_pp0_stage0_11001               |    or    |      0|  0|   2|           1|           1|
     |ap_block_state5                         |    or    |      0|  0|   2|           1|           1|
-    |tmp_1_fu_274_p2                         |    or    |      0|  0|   2|           1|           1|
-    |i_1_fu_308_p3                           |  select  |      0|  0|  31|           1|          31|
-    |j_cast1_mid2_v_fu_216_p3                |  select  |      0|  0|  31|           1|          31|
-    |newSel8_fu_286_p3                       |  select  |      0|  0|   8|           1|           8|
-    |video_o_data_V_fu_294_p3                |  select  |      0|  0|   8|           1|           8|
+    |i_1_fu_488_p3                           |  select  |      0|  0|  31|           1|          31|
+    |j_cast5_mid2_v_fu_236_p3                |  select  |      0|  0|  31|           1|          31|
+    |tmp_11_fu_408_p3                        |  select  |      0|  0|   8|           1|           8|
+    |tmp_14_fu_337_p3                        |  select  |      0|  0|   8|           1|           8|
+    |tmp_16_fu_355_p3                        |  select  |      0|  0|   8|           1|           8|
+    |tmp_19_fu_284_p3                        |  select  |      0|  0|   8|           1|           8|
+    |tmp_21_fu_302_p3                        |  select  |      0|  0|   8|           1|           8|
+    |tmp_2_fu_443_p3                         |  select  |      0|  0|   8|           1|           8|
+    |tmp_6_fu_461_p3                         |  select  |      0|  0|   8|           1|           8|
+    |tmp_s_fu_390_p3                         |  select  |      0|  0|   8|           1|           8|
+    |video_o_data_V_1_fu_416_p3              |  select  |      0|  0|   8|           1|           8|
+    |video_o_data_V_2_fu_363_p3              |  select  |      0|  0|   8|           1|           8|
+    |video_o_data_V_3_fu_310_p3              |  select  |      0|  0|   8|           1|           8|
+    |video_o_data_V_fu_469_p3                |  select  |      0|  0|   8|           1|           8|
     |ap_enable_pp0                           |    xor   |      0|  0|   2|           1|           2|
     |ap_enable_reg_pp0_iter1                 |    xor   |      0|  0|   2|           2|           1|
-    |or_cond_fu_280_p2                       |    xor   |      0|  0|   2|           1|           1|
     +----------------------------------------+----------+-------+---+----+------------+------------+
-    |Total                                   |          |      4|  0| 386|         234|         299|
+    |Total                                   |          |      4|  0| 464|         273|         348|
     +----------------------------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
@@ -135,10 +144,10 @@
     |ap_NS_fsm                         |  21|          4|    1|          4|
     |ap_enable_reg_pp0_iter1           |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter2           |   9|          2|    1|          2|
-    |ap_phi_mux_j_phi_fu_158_p4        |   9|          2|   31|         62|
-    |i_reg_165                         |   9|          2|   31|         62|
-    |indvar_flatten_reg_143            |   9|          2|   64|        128|
-    |j_reg_154                         |   9|          2|   31|         62|
+    |ap_phi_mux_j_phi_fu_178_p4        |   9|          2|   31|         62|
+    |i_reg_185                         |   9|          2|   31|         62|
+    |indvar_flatten_reg_163            |   9|          2|   64|        128|
+    |j_reg_174                         |   9|          2|   31|         62|
     |m_axis_video_TDATA_blk_n          |   9|          2|    1|          2|
     |m_axis_video_V_data_V_1_data_out  |   9|          2|    8|         16|
     |m_axis_video_V_data_V_1_state     |  15|          3|    2|          6|
@@ -158,8 +167,9 @@
     |s_axis_video_V_last_V_0_state     |  15|          3|    2|          6|
     |s_axis_video_V_user_V_0_data_out  |   9|          2|    1|          2|
     |s_axis_video_V_user_V_0_state     |  15|          3|    2|          6|
+    |tmp_data_V_fu_94                  |  21|          4|    8|         32|
     +----------------------------------+----+-----------+-----+-----------+
-    |Total                             | 312|         65|  220|        464|
+    |Total                             | 333|         69|  228|        496|
     +----------------------------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -170,13 +180,13 @@
     |ap_enable_reg_pp0_iter0                 |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter1                 |   1|   0|    1|          0|
     |ap_enable_reg_pp0_iter2                 |   1|   0|    1|          0|
-    |bound_reg_321                           |  64|   0|   64|          0|
-    |exitcond_flatten_reg_326                |   1|   0|    1|          0|
-    |exitcond_flatten_reg_326_pp0_iter1_reg  |   1|   0|    1|          0|
-    |i_reg_165                               |  31|   0|   31|          0|
-    |indvar_flatten_reg_143                  |  64|   0|   64|          0|
-    |j_cast1_mid2_v_reg_335                  |  31|   0|   31|          0|
-    |j_reg_154                               |  31|   0|   31|          0|
+    |bound_reg_518                           |  64|   0|   64|          0|
+    |exitcond_flatten_reg_523                |   1|   0|    1|          0|
+    |exitcond_flatten_reg_523_pp0_iter1_reg  |   1|   0|    1|          0|
+    |i_reg_185                               |  31|   0|   31|          0|
+    |indvar_flatten_reg_163                  |  64|   0|   64|          0|
+    |j_cast5_mid2_v_reg_532                  |  31|   0|   31|          0|
+    |j_reg_174                               |  31|   0|   31|          0|
     |m_axis_video_V_data_V_1_payload_A       |   8|   0|    8|          0|
     |m_axis_video_V_data_V_1_payload_B       |   8|   0|    8|          0|
     |m_axis_video_V_data_V_1_sel_rd          |   1|   0|    1|          0|
@@ -216,9 +226,9 @@
     |s_axis_video_V_user_V_0_sel_rd          |   1|   0|    1|          0|
     |s_axis_video_V_user_V_0_sel_wr          |   1|   0|    1|          0|
     |s_axis_video_V_user_V_0_state           |   2|   0|    2|          0|
-    |tmp_last_V_reg_345                      |   1|   0|    1|          0|
-    |tmp_user_V_reg_340                      |   1|   0|    1|          0|
-    |video_o_data_V_reg_350                  |   8|   0|    8|          0|
+    |tmp_data_V_fu_94                        |   8|   0|    8|          0|
+    |tmp_last_V_reg_542                      |   1|   0|    1|          0|
+    |tmp_user_V_reg_537                      |   1|   0|    1|          0|
     +----------------------------------------+----+----+-----+-----------+
     |Total                                   | 349|   0|  349|          0|
     +----------------------------------------+----+----+-----+-----------+

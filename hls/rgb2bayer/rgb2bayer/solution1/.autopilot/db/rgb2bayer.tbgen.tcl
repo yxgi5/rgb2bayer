@@ -28,7 +28,7 @@ set C_modelArgList {
 	{ m_axis_video_V_dest_V int 1 regular {axi_s 1 volatile  { m_axis_video Dest } }  }
 	{ hsize_in int 32 regular  }
 	{ vsize_in int 32 regular  }
-	{ pattern_V int 2 unused  }
+	{ pattern_V int 2 regular  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "s_axis_video_V_data_V", "interface" : "axis", "bitwidth" : 24, "direction" : "READONLY", "bitSlice":[{"low":0,"up":23,"cElement": [{"cName": "s_axis_video.V.data.V","cData": "uint24","bit_use": { "low": 0,"up": 23},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
@@ -156,7 +156,7 @@ set ArgLastReadFirstWriteLatency {
 		m_axis_video_V_dest_V {Type O LastRead -1 FirstWrite 2}
 		hsize_in {Type I LastRead 0 FirstWrite -1}
 		vsize_in {Type I LastRead 0 FirstWrite -1}
-		pattern_V {Type I LastRead -1 FirstWrite -1}}}
+		pattern_V {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 

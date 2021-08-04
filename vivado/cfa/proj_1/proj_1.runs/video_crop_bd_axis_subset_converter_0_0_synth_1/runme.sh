@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1'
+HD_PWD='/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

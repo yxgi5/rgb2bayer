@@ -44,19 +44,19 @@ switch pattern
         g(:,2:2:col)=Bayer(2:2:row,2:2:col);
         b=Bayer(2:2:row,1:2:col);
     case 3
-        % B  Gb
-        % Gr R
-        r=Bayer(2:2:row,2:2:col);
-        g(:,2:2:col)=Bayer(2:2:row,1:2:col);
-        g(:,1:2:col)=Bayer(1:2:row,2:2:col);
-        b=Bayer(1:2:row,1:2:col);
-    case 4
         % Gb B
         % R  Gr
         r=Bayer(2:2:row,1:2:col);
         g(:,1:2:col)=Bayer(2:2:row,2:2:col);
         g(:,2:2:col)=Bayer(1:2:row,1:2:col);
         b=Bayer(1:2:row,2:2:col);
+    case 4
+        % B  Gb
+        % Gr R
+        r=Bayer(2:2:row,2:2:col);
+        g(:,2:2:col)=Bayer(2:2:row,1:2:col);
+        g(:,1:2:col)=Bayer(1:2:row,2:2:col);
+        b=Bayer(1:2:row,1:2:col);
     otherwise
         errordlg('CFA patterns select err','err');
 end
@@ -68,16 +68,16 @@ end
 R=imresize(r,[row col],'bicubic');
 G=imresize(g,[row col],'bicubic');
 B=imresize(b,[row col],'bicubic');
-I_color(:,:,1)=R;%¾ØÕó×ª,¸³Öµ¸øµÚÒ»²ãÆ½Ãæ
-I_color(:,:,2)=G;%¾ØÕó×ª£¬¸³Öµ¸øµÚ¶ş²ãÆ½Ãæ
-I_color(:,:,3)=B;%¾ØÕó×ª£¬¸³Öµ¸øµÚÈı²ãÆ½Ãæ
+I_color(:,:,1)=R;%çŸ©é˜µè½¬,èµ‹å€¼ç»™ç¬¬ä¸€å±‚å¹³é¢
+I_color(:,:,2)=G;%çŸ©é˜µè½¬ï¼Œèµ‹å€¼ç»™ç¬¬äºŒå±‚å¹³é¢
+I_color(:,:,3)=B;%çŸ©é˜µè½¬ï¼Œèµ‹å€¼ç»™ç¬¬ä¸‰å±‚å¹³é¢
 
 % R=imresize(r,[col row],'bicubic');
 % G=imresize(g,[col row],'bicubic');
 % B=imresize(b,[col row],'bicubic');
-% I_color(:,:,1)=R';%¾ØÕó×ª,¸³Öµ¸øµÚÒ»²ãÆ½Ãæ
-% I_color(:,:,2)=G';%¾ØÕó×ª£¬¸³Öµ¸øµÚ¶ş²ãÆ½Ãæ
-% I_color(:,:,3)=B';%¾ØÕó×ª£¬¸³Öµ¸øµÚÈı²ãÆ½Ãæ
+% I_color(:,:,1)=R';%çŸ©é˜µè½¬,èµ‹å€¼ç»™ç¬¬ä¸€å±‚å¹³é¢
+% I_color(:,:,2)=G';%çŸ©é˜µè½¬ï¼Œèµ‹å€¼ç»™ç¬¬äºŒå±‚å¹³é¢
+% I_color(:,:,3)=B';%çŸ©é˜µè½¬ï¼Œèµ‹å€¼ç»™ç¬¬ä¸‰å±‚å¹³é¢
 
 
 figure(2);
@@ -89,16 +89,16 @@ imwrite(I_color,fileOut);
 
 % subplot(2,2,1)
 % imshow(I_color)
-% title('Ô­Í¼');
+% title('åŸå›¾');
 % I_color_c=imresize(I_color,[row col],'bicubic');
 % I_color_c2=imresize(I_color,[row col],'nearest');
 % I_color_c3=imresize(I_color,[row col],'bilinear');
 % subplot(2,2,2)
 % imshow(I_color_c)
-% title('ÓÃË«Èı´Î²åÖµÊä³öcol*rowÍ¼');
+% title('ç”¨åŒä¸‰æ¬¡æ’å€¼è¾“å‡ºcol*rowå›¾');
 % subplot(2,2,3)
 % imshow(I_color_c2)
-% title('ÓÃ×î½üÁÚ²åÖµÊä³öcol*rowÍ¼');
+% title('ç”¨æœ€è¿‘é‚»æ’å€¼è¾“å‡ºcol*rowå›¾');
 % subplot(2,2,4)
 % imshow(I_color_c3)
-% title('ÓÃË«ÏßĞÔ²åÖµÊä³öcol*rowÍ¼');
+% title('ç”¨åŒçº¿æ€§æ’å€¼è¾“å‡ºcol*rowå›¾');

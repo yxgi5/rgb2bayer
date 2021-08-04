@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="video_crop_bd" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1628054255"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1628054255"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1628054255"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1628054255"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1628072160"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1628072160"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1628072160"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1628072160"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/video_crop_bd_axi_vip_0_0/video_crop_bd_axi_vip_0_0.xci" Type="IP">
         <Instance HierarchyPath="axi_vip_0"/>

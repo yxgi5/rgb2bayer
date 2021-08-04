@@ -348,7 +348,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3412a43c</spirit:value>
+            <spirit:value>2021f639</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -364,7 +364,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b3b741e3</spirit:value>
+            <spirit:value>da696bd9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -380,7 +380,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1f3c4708</spirit:value>
+            <spirit:value>daa873fa</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -396,7 +396,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>dab7635b</spirit:value>
+            <spirit:value>4a315b00</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -432,7 +432,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d03ecd59</spirit:value>
+            <spirit:value>0f3023aa</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -884,7 +884,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
       <spirit:file>
         <spirit:name>hdl/vhdl/rgb2bayer.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_dab7635b</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_4a315b00</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -971,13 +971,13 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
       </xilinx:taxonomies>
       <xilinx:displayName>Rgb2bayer</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2108041037</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-08-04T02:37:49Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2108041110</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-08-04T03:10:25Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="78edac3b"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="edbd42c4"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ba99dd56"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="ca5454c7"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="bb7bdb14"/>
     </xilinx:packagingInfo>

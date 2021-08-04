@@ -10,45 +10,69 @@
 
 source video_crop_bd_rgb2bayer_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/src/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/src/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
 Command: synth_design -top video_crop_bd_rgb2bayer_0_0 -part xc7z020clg484-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15990 
+INFO: Helper process launched with PID 8371 
+WARNING: [Synth 8-2507] parameter declaration becomes local in rgb2bayer with formal parameter declaration list [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer.v:74]
+WARNING: [Synth 8-2507] parameter declaration becomes local in rgb2bayer with formal parameter declaration list [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer.v:75]
+WARNING: [Synth 8-2507] parameter declaration becomes local in rgb2bayer with formal parameter declaration list [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer.v:76]
+WARNING: [Synth 8-2507] parameter declaration becomes local in rgb2bayer with formal parameter declaration list [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer.v:77]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1467.242 ; gain = 78.723 ; free physical = 2469 ; free virtual = 19562
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1479.289 ; gain = 92.223 ; free physical = 5275 ; free virtual = 22221
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'video_crop_bd_rgb2bayer_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/synth/video_crop_bd_rgb2bayer_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'rgb2bayer' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8eb5/hdl/verilog/rgb2bayer.v:12]
+INFO: [Synth 8-6157] synthesizing module 'video_crop_bd_rgb2bayer_0_0' [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/synth/video_crop_bd_rgb2bayer_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'rgb2bayer' [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer.v:3]
+	Parameter NUM_VIDEO_COMPONENTS bound to: 3 - type: integer 
+	Parameter SAMPLES_PER_CLOCK bound to: 1 - type: integer 
+	Parameter MAXIMUM_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter MAXIMUM_NUMBER_OF_COLUMNS bound to: 480 - type: integer 
+	Parameter MAXIMUM_NUMBER_OF_ROWS bound to: 640 - type: integer 
+	Parameter BAYER_PATTERN bound to: RGGB - type: string 
+	Parameter S_AXIS_BYTES bound to: 3 - type: integer 
+	Parameter S_AXIS_WIDTH bound to: 24 - type: integer 
+	Parameter M_AXIS_BYTES bound to: 1 - type: integer 
+	Parameter M_AXIS_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2bayer_8bit_1spc' [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:12]
 	Parameter ap_ST_fsm_state1 bound to: 3'b001 
 	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
 	Parameter ap_ST_fsm_state5 bound to: 3'b100 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8eb5/hdl/verilog/rgb2bayer.v:187]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8eb5/hdl/verilog/rgb2bayer.v:1045]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8eb5/hdl/verilog/rgb2bayer.v:1055]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8eb5/hdl/verilog/rgb2bayer.v:1157]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8eb5/hdl/verilog/rgb2bayer.v:1221]
-WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_dest_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8eb5/hdl/verilog/rgb2bayer.v:363]
-WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_id_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8eb5/hdl/verilog/rgb2bayer.v:389]
-WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_keep_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8eb5/hdl/verilog/rgb2bayer.v:415]
-WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_strb_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8eb5/hdl/verilog/rgb2bayer.v:477]
-INFO: [Synth 8-6155] done synthesizing module 'rgb2bayer' (1#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8eb5/hdl/verilog/rgb2bayer.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'video_crop_bd_rgb2bayer_0_0' (2#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/synth/video_crop_bd_rgb2bayer_0_0.v:58]
-WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[2]
-WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[1]
-WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[0]
-WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[2]
-WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[1]
-WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[0]
-WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TID[0]
-WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TDEST[0]
-WARNING: [Synth 8-3331] design rgb2bayer has unconnected port pattern_V[1]
-WARNING: [Synth 8-3331] design rgb2bayer has unconnected port pattern_V[0]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:187]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1081]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1091]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1243]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1249]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1253]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1259]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1265]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1267]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1275]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1285]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1287]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1289]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1291]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1293]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_dest_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:382]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_id_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:408]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_keep_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:434]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_strb_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:496]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2bayer_8bit_1spc' (1#1) [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2bayer' (2#1) [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'video_crop_bd_rgb2bayer_0_0' (3#1) [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/synth/video_crop_bd_rgb2bayer_0_0.v:58]
+WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TKEEP[2]
+WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TKEEP[1]
+WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TKEEP[0]
+WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TSTRB[2]
+WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TSTRB[1]
+WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TSTRB[0]
+WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TID[0]
+WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TDEST[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1512.992 ; gain = 124.473 ; free physical = 2450 ; free virtual = 19545
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1513.414 ; gain = 126.348 ; free physical = 5257 ; free virtual = 22205
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -61,48 +85,48 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1512.992 ; gain = 124.473 ; free physical = 2415 ; free virtual = 19510
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1513.414 ; gain = 126.348 ; free physical = 5209 ; free virtual = 22156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1512.992 ; gain = 124.473 ; free physical = 2415 ; free virtual = 19510
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1513.414 ; gain = 126.348 ; free physical = 5209 ; free virtual = 22156
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/constraints/rgb2bayer_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/constraints/rgb2bayer_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/constraints/rgb2bayer_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/constraints/rgb2bayer_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1900.102 ; gain = 0.000 ; free physical = 1753 ; free virtual = 18851
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1901.531 ; gain = 0.000 ; free physical = 4514 ; free virtual = 21463
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1900.102 ; gain = 0.000 ; free physical = 1752 ; free virtual = 18850
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1900.102 ; gain = 0.000 ; free physical = 1751 ; free virtual = 18849
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1901.531 ; gain = 0.000 ; free physical = 4514 ; free virtual = 21463
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1901.531 ; gain = 0.000 ; free physical = 4511 ; free virtual = 21460
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 1162 ; free virtual = 18259
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 4312 ; free virtual = 21263
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 1158 ; free virtual = 18255
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 4311 ; free virtual = 21261
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 1157 ; free virtual = 18253
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 4311 ; free virtual = 21262
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 1010 ; free virtual = 18108
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 4269 ; free virtual = 21223
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -116,8 +140,6 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     31 Bit       Adders := 2     
-+---XORs : 
-	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               64 Bit    Registers := 1     
 	               31 Bit    Registers := 2     
@@ -132,7 +154,8 @@ Detailed RTL Component Info :
 	   3 Input     31 Bit        Muxes := 1     
 	   2 Input     31 Bit        Muxes := 1     
 	   2 Input     24 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 9     
+	   4 Input      8 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 29    
 	   4 Input      2 Bit        Muxes := 5     
@@ -144,12 +167,10 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module rgb2bayer 
+Module rgb2bayer_8bit_1spc 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     31 Bit       Adders := 2     
-+---XORs : 
-	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               64 Bit    Registers := 1     
 	               31 Bit    Registers := 2     
@@ -164,7 +185,8 @@ Detailed RTL Component Info :
 	   3 Input     31 Bit        Muxes := 1     
 	   2 Input     31 Bit        Muxes := 1     
 	   2 Input     24 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 9     
+	   4 Input      8 Bit        Muxes := 1     
 	   7 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 29    
 	   4 Input      2 Bit        Muxes := 5     
@@ -185,21 +207,9 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8eb5/hdl/verilog/rgb2bayer.v:1041]
-DSP Report: Generating DSP bound_fu_184_p2, operation Mode is: A*B.
-DSP Report: operator bound_fu_184_p2 is absorbed into DSP bound_fu_184_p2.
-DSP Report: operator bound_fu_184_p2 is absorbed into DSP bound_fu_184_p2.
-DSP Report: Generating DSP bound_reg_321_reg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: register bound_reg_321_reg is absorbed into DSP bound_reg_321_reg.
-DSP Report: operator bound_fu_184_p2 is absorbed into DSP bound_reg_321_reg.
-DSP Report: operator bound_fu_184_p2 is absorbed into DSP bound_reg_321_reg.
-DSP Report: Generating DSP bound_fu_184_p2, operation Mode is: A*B.
-DSP Report: operator bound_fu_184_p2 is absorbed into DSP bound_fu_184_p2.
-DSP Report: operator bound_fu_184_p2 is absorbed into DSP bound_fu_184_p2.
-DSP Report: Generating DSP bound_reg_321_reg, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: register bound_reg_321_reg is absorbed into DSP bound_reg_321_reg.
-DSP Report: operator bound_fu_184_p2 is absorbed into DSP bound_reg_321_reg.
-DSP Report: operator bound_fu_184_p2 is absorbed into DSP bound_reg_321_reg.
+DSP Report: Generating DSP rgb2bayer_inst/bound_reg_518_reg, operation Mode is: ((A:0x280)*(B:0x1e0))'.
+DSP Report: register rgb2bayer_inst/bound_reg_518_reg is absorbed into DSP rgb2bayer_inst/bound_reg_518_reg.
+DSP Report: operator rgb2bayer_inst/bound_fu_204_p2 is absorbed into DSP rgb2bayer_inst/bound_reg_518_reg.
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[2]
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[1]
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[0]
@@ -208,86 +218,19 @@ WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[0]
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TID[0]
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TDEST[0]
-WARNING: [Synth 8-3331] design rgb2bayer has unconnected port pattern_V[1]
-WARNING: [Synth 8-3331] design rgb2bayer has unconnected port pattern_V[0]
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[47]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[46]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[45]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[44]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[43]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[42]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[41]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[40]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[39]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[38]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[37]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[36]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[35]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[34]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[33]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[32]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[31]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[30]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[29]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[28]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[27]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[26]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[25]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[24]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[23]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[22]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[21]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[20]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[19]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[18]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[17]) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[47]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[46]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[45]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[44]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[43]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[42]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[41]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[40]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[39]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[38]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[37]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[36]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[35]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[34]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[33]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[32]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[31]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[30]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[29]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[28]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[27]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[26]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[25]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[24]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[23]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[22]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[21]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[20]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[19]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[18]__0) is unused and will be removed from module rgb2bayer.
-WARNING: [Synth 8-3332] Sequential element (bound_reg_321_reg[17]__0) is unused and will be removed from module rgb2bayer.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 760 ; free virtual = 17859
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 4111 ; free virtual = 21067
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping  Report (see note below)
-+------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|rgb2bayer   | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|rgb2bayer   | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
-|rgb2bayer   | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|rgb2bayer   | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
-+------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|rgb2bayer   | ((A:0x280)*(B:0x1e0))' | 10     | 9      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -303,13 +246,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 542 ; free virtual = 16817
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 3222 ; free virtual = 20179
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1901.117 ; gain = 512.598 ; free physical = 900 ; free virtual = 17172
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 3112 ; free virtual = 20070
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -321,7 +264,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1901.117 ; gain = 512.598 ; free physical = 792 ; free virtual = 17066
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 3013 ; free virtual = 19970
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -345,7 +288,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1901.117 ; gain = 512.598 ; free physical = 832 ; free virtual = 17106
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 2644 ; free virtual = 19601
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -358,7 +301,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1901.117 ; gain = 512.598 ; free physical = 831 ; free virtual = 17105
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 2643 ; free virtual = 19601
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -370,25 +313,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1901.117 ; gain = 512.598 ; free physical = 829 ; free virtual = 17103
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 2636 ; free virtual = 19593
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1901.117 ; gain = 512.598 ; free physical = 829 ; free virtual = 17103
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 2635 ; free virtual = 19593
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1901.117 ; gain = 512.598 ; free physical = 827 ; free virtual = 17101
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 2631 ; free virtual = 19589
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1901.117 ; gain = 512.598 ; free physical = 827 ; free virtual = 17101
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 2629 ; free virtual = 19587
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -404,53 +347,54 @@ Report Cell Usage:
 +------+----------+------+
 |      |Cell      |Count |
 +------+----------+------+
-|1     |CARRY4    |    46|
-|2     |DSP48E1   |     2|
-|3     |DSP48E1_1 |     2|
-|4     |LUT1      |     2|
-|5     |LUT2      |    51|
-|6     |LUT3      |    35|
-|7     |LUT4      |    50|
-|8     |LUT5      |    25|
-|9     |LUT6      |    50|
-|10    |FDRE      |   254|
-|11    |FDSE      |     1|
+|1     |CARRY4    |    34|
+|2     |DSP48E1_1 |     1|
+|3     |LUT1      |     5|
+|4     |LUT2      |    19|
+|5     |LUT3      |    50|
+|6     |LUT4      |    21|
+|7     |LUT5      |    24|
+|8     |LUT6      |    38|
+|9     |FDRE      |   220|
+|10    |FDSE      |     1|
 +------+----------+------+
 
 Report Instance Areas: 
-+------+---------+----------+------+
-|      |Instance |Module    |Cells |
-+------+---------+----------+------+
-|1     |top      |          |   518|
-|2     |  inst   |rgb2bayer |   518|
-+------+---------+----------+------+
++------+-------------------+--------------------+------+
+|      |Instance           |Module              |Cells |
++------+-------------------+--------------------+------+
+|1     |top                |                    |   413|
+|2     |  inst             |rgb2bayer           |   413|
+|3     |    rgb2bayer_inst |rgb2bayer_8bit_1spc |   413|
++------+-------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1901.117 ; gain = 512.598 ; free physical = 826 ; free virtual = 17100
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 2629 ; free virtual = 19586
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 72 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1901.117 ; gain = 125.488 ; free physical = 856 ; free virtual = 17129
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1901.125 ; gain = 512.598 ; free physical = 856 ; free virtual = 17129
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1901.531 ; gain = 126.348 ; free physical = 2659 ; free virtual = 19617
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1901.531 ; gain = 514.465 ; free physical = 2659 ; free virtual = 19616
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1933.133 ; gain = 0.000 ; free physical = 651 ; free virtual = 16925
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1926.570 ; gain = 0.000 ; free physical = 2365 ; free virtual = 19325
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-21 Infos, 90 Warnings, 0 Critical Warnings and 0 Errors encountered.
+22 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1933.133 ; gain = 556.344 ; free physical = 727 ; free virtual = 17001
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1933.133 ; gain = 0.000 ; free physical = 725 ; free virtual = 16999
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1926.570 ; gain = 539.781 ; free physical = 2417 ; free virtual = 19376
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1926.570 ; gain = 0.000 ; free physical = 2417 ; free virtual = 19376
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/video_crop_bd_rgb2bayer_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_crop_bd_rgb2bayer_0_0, cache-ID = 057d20d7d26768ef
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1957.145 ; gain = 0.000 ; free physical = 518 ; free virtual = 16793
+INFO: [Common 17-1381] The checkpoint '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/video_crop_bd_rgb2bayer_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_crop_bd_rgb2bayer_0_0, cache-ID = 0983f1ac4b1cc1fa
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1950.582 ; gain = 0.000 ; free physical = 2517 ; free virtual = 19477
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/video_crop_bd_rgb2bayer_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/video_crop_bd_rgb2bayer_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file video_crop_bd_rgb2bayer_0_0_utilization_synth.rpt -pb video_crop_bd_rgb2bayer_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Aug  4 13:18:02 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  4 18:16:26 2021...

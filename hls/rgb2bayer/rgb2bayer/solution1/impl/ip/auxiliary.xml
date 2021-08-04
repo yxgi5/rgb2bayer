@@ -18,5 +18,5 @@
   <xd:arg xd:name="vsize_in" xd:originalName="vsize_in" xd:direction="in" xd:interfaceRef="vsize_in" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
   <xd:arg xd:name="pattern" xd:originalName="pattern" xd:direction="in" xd:interfaceRef="pattern_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="2" xd:firstOut="2"/>
   <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="698" xd:FF="349" xd:BRAM="0" xd:DSP="4"/>
+  <xd:resourceEstimates xd:LUT="797" xd:FF="349" xd:BRAM="0" xd:DSP="4"/>
 </xd:acceleratorMap>

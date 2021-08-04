@@ -12,9 +12,10 @@
     "Package": "clg484",
     "Speed": "-1"
   },
-  "HlsSolution": {
-    
-  },
+  "HlsSolution": {"Config": [
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog"
+    ]},
   "ClockInfo": {
     "ClockName": "ap_clk",
     "ClockPeriod": "10",
@@ -394,7 +395,7 @@
         "Area": {
           "DSP48E": "4",
           "FF": "349",
-          "LUT": "698",
+          "LUT": "797",
           "BRAM_18K": "0"
         }
       }}
@@ -409,7 +410,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2021-08-04 10:37:37 CST",
+    "Time": "2021-08-04 11:09:30 CST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }
