@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Aug  4 12:54:43 2021" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Aug  4 13:17:35 2021" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="video_crop_bd" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -11,11 +11,7 @@
         <CONNECTION INSTANCE="v_tpg_0" PORT="ap_clk"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="ap_start" SIGIS="undef" SIGNAME="External_Ports_ap_start">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="rgb2bayer_0" PORT="ap_start"/>
-      </CONNECTIONS>
-    </PORT>
+    <PORT DIR="I" NAME="ap_start" SIGIS="undef"/>
     <PORT DIR="I" NAME="aresetn_0" SIGIS="rst" SIGNAME="External_Ports_aresetn_0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="axi_vip_0" PORT="aresetn"/>
@@ -282,7 +278,7 @@
         <PERIPHERAL INSTANCE="v_tpg_0"/>
       </PERIPHERALS>
     </MODULE>
-    <MODULE COREREVISION="2108041247" FULLNAME="/rgb2bayer_0" HWVERSION="1.0" INSTANCE="rgb2bayer_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2bayer" VLNV="xilinx.com:hls:rgb2bayer:1.0">
+    <MODULE COREREVISION="2108041037" FULLNAME="/rgb2bayer_0" HWVERSION="1.0" INSTANCE="rgb2bayer_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2bayer" VLNV="xilinx.com:hls:rgb2bayer:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="video_crop_bd_rgb2bayer_0_0"/>
@@ -304,14 +300,6 @@
             <CONNECTION INSTANCE="External_Ports" PORT="aresetn_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="ap_start" SIGIS="undef" SIGNAME="External_Ports_ap_start">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="ap_start"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="ap_done" SIGIS="undef"/>
-        <PORT DIR="O" NAME="ap_idle" SIGIS="undef"/>
-        <PORT DIR="O" NAME="ap_ready" SIGIS="undef"/>
         <PORT DIR="I" NAME="s_axis_video_TVALID" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TVALID"/>
@@ -403,15 +391,6 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="ap_ctrl" TYPE="TARGET" VLNV="xilinx.com:interface:acc_handshake:1.0">
-          <PARAMETER NAME="LAYERED_METADATA" VALUE="xilinx.com:interface:datatypes:1.0 {start {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} done {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} idle {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}} ready {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}"/>
-          <PORTMAPS>
-            <PORTMAP LOGICAL="start" PHYSICAL="ap_start"/>
-            <PORTMAP LOGICAL="done" PHYSICAL="ap_done"/>
-            <PORTMAP LOGICAL="idle" PHYSICAL="ap_idle"/>
-            <PORTMAP LOGICAL="ready" PHYSICAL="ap_ready"/>
-          </PORTMAPS>
-        </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="v_tpg_0_m_axis_video" NAME="s_axis_video" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="1"/>

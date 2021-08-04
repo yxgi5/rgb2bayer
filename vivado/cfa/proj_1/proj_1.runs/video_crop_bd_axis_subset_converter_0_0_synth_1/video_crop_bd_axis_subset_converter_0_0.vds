@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Aug  4 12:55:39 2021
-# Process ID: 9162
+# Start of session at: Wed Aug  4 13:17:46 2021
+# Process ID: 16350
 # Current directory: /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1
 # Command line: vivado -log video_crop_bd_axis_subset_converter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_crop_bd_axis_subset_converter_0_0.tcl
 # Log file: /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/video_crop_bd_axis_subset_converter_0_0.vds
@@ -18,9 +18,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9403 
+INFO: Helper process launched with PID 16543 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1472.238 ; gain = 83.723 ; free physical = 298 ; free virtual = 19003
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1472.238 ; gain = 83.723 ; free physical = 549 ; free virtual = 17209
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'video_crop_bd_axis_subset_converter_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/synth/video_crop_bd_axis_subset_converter_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'top_video_crop_bd_axis_subset_converter_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/top_video_crop_bd_axis_subset_converter_0_0.v:60]
@@ -228,7 +228,7 @@ WARNING: [Synth 8-3331] design axis_subset_converter_v1_1_18_core has unconnecte
 WARNING: [Synth 8-3331] design axis_subset_converter_v1_1_18_core has unconnected port aresetn
 WARNING: [Synth 8-3331] design axis_subset_converter_v1_1_18_core has unconnected port aclken
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.988 ; gain = 129.473 ; free physical = 403 ; free virtual = 18987
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.988 ; gain = 129.473 ; free physical = 450 ; free virtual = 17115
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -241,10 +241,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.988 ; gain = 129.473 ; free physical = 350 ; free virtual = 18933
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.988 ; gain = 129.473 ; free physical = 413 ; free virtual = 17078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.988 ; gain = 129.473 ; free physical = 350 ; free virtual = 18933
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1517.988 ; gain = 129.473 ; free physical = 413 ; free virtual = 17078
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -257,31 +257,31 @@ Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/pro
 Finished Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.090 ; gain = 0.000 ; free physical = 305 ; free virtual = 18137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.090 ; gain = 0.000 ; free physical = 717 ; free virtual = 16991
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.090 ; gain = 0.000 ; free physical = 307 ; free virtual = 18138
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1804.090 ; gain = 0.000 ; free physical = 329 ; free virtual = 18161
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1804.090 ; gain = 0.000 ; free physical = 721 ; free virtual = 16994
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1804.090 ; gain = 0.000 ; free physical = 722 ; free virtual = 16995
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1804.090 ; gain = 415.574 ; free physical = 290 ; free virtual = 17872
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1804.090 ; gain = 415.574 ; free physical = 543 ; free virtual = 16819
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1804.090 ; gain = 415.574 ; free physical = 289 ; free virtual = 17871
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1804.090 ; gain = 415.574 ; free physical = 542 ; free virtual = 16818
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1804.090 ; gain = 415.574 ; free physical = 287 ; free virtual = 17869
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1804.090 ; gain = 415.574 ; free physical = 542 ; free virtual = 16819
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1804.090 ; gain = 415.574 ; free physical = 275 ; free virtual = 17857
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1804.090 ; gain = 415.574 ; free physical = 546 ; free virtual = 16823
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -320,7 +320,7 @@ WARNING: [Synth 8-3331] design top_video_crop_bd_axis_subset_converter_0_0 has u
 WARNING: [Synth 8-3331] design top_video_crop_bd_axis_subset_converter_0_0 has unconnected port aresetn
 WARNING: [Synth 8-3331] design top_video_crop_bd_axis_subset_converter_0_0 has unconnected port aclken
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1804.090 ; gain = 415.574 ; free physical = 236 ; free virtual = 17821
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1804.090 ; gain = 415.574 ; free physical = 486 ; free virtual = 16764
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -332,13 +332,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1815.074 ; gain = 426.559 ; free physical = 690 ; free virtual = 18171
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1815.074 ; gain = 426.559 ; free physical = 444 ; free virtual = 16728
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1815.074 ; gain = 426.559 ; free physical = 689 ; free virtual = 18170
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1815.074 ; gain = 426.559 ; free physical = 443 ; free virtual = 16726
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -350,7 +350,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 681 ; free virtual = 18162
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 439 ; free virtual = 16723
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -374,7 +374,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 1250 ; free virtual = 18733
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 356 ; free virtual = 16640
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -387,7 +387,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 1251 ; free virtual = 18735
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 353 ; free virtual = 16637
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -399,25 +399,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 1254 ; free virtual = 18737
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 352 ; free virtual = 16635
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 1256 ; free virtual = 18740
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 351 ; free virtual = 16635
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 1257 ; free virtual = 18741
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 350 ; free virtual = 16634
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 1259 ; free virtual = 18742
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 350 ; free virtual = 16633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -443,30 +443,30 @@ Report Instance Areas:
 |2     |  inst   |top_video_crop_bd_axis_subset_converter_0_0 |     0|
 +------+---------+--------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 1263 ; free virtual = 18746
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.090 ; gain = 436.574 ; free physical = 349 ; free virtual = 16632
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1825.090 ; gain = 150.473 ; free physical = 1352 ; free virtual = 18836
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.098 ; gain = 436.574 ; free physical = 1352 ; free virtual = 18836
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1825.090 ; gain = 150.473 ; free physical = 393 ; free virtual = 16677
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1825.098 ; gain = 436.574 ; free physical = 392 ; free virtual = 16676
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1831.090 ; gain = 0.000 ; free physical = 1132 ; free virtual = 18616
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1831.090 ; gain = 0.000 ; free physical = 857 ; free virtual = 17143
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 32 Infos, 90 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1835.090 ; gain = 458.305 ; free physical = 1257 ; free virtual = 18742
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1835.090 ; gain = 0.000 ; free physical = 1257 ; free virtual = 18742
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1835.090 ; gain = 458.305 ; free physical = 939 ; free virtual = 17225
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1835.090 ; gain = 0.000 ; free physical = 939 ; free virtual = 17225
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/video_crop_bd_axis_subset_converter_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_crop_bd_axis_subset_converter_0_0, cache-ID = 4cbe7560ba30b98f
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1835.090 ; gain = 0.000 ; free physical = 1204 ; free virtual = 18692
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1835.090 ; gain = 0.000 ; free physical = 884 ; free virtual = 17172
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1/video_crop_bd_axis_subset_converter_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file video_crop_bd_axis_subset_converter_0_0_utilization_synth.rpt -pb video_crop_bd_axis_subset_converter_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Aug  4 12:56:01 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  4 13:18:08 2021...

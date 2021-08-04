@@ -261,7 +261,7 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net aclk_0_1 [get_bd_ports aclk_50MHz] [get_bd_pins axi_vip_0/aclk] [get_bd_pins axi_vip_1/aclk] [get_bd_pins axis_subset_converter_0/aclk] [get_bd_pins rgb2bayer_0/ap_clk] [get_bd_pins v_demosaic_0/ap_clk] [get_bd_pins v_tpg_0/ap_clk]
-  connect_bd_net -net ap_start_1 [get_bd_ports ap_start] [get_bd_pins rgb2bayer_0/ap_start]
+  connect_bd_net -net ap_start_1 [get_bd_ports ap_start]
   connect_bd_net -net aresetn_0_1 [get_bd_ports aresetn_0] [get_bd_pins axi_vip_0/aresetn] [get_bd_pins axi_vip_1/aresetn] [get_bd_pins axis_subset_converter_0/aresetn] [get_bd_pins rgb2bayer_0/ap_rst_n] [get_bd_pins v_demosaic_0/ap_rst_n] [get_bd_pins v_tpg_0/ap_rst_n]
   connect_bd_net -net hsize_1 [get_bd_ports hsize] [get_bd_pins rgb2bayer_0/hsize_in]
   connect_bd_net -net tready_1 [get_bd_ports tready] [get_bd_pins v_demosaic_0/m_axis_video_TREADY]

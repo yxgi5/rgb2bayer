@@ -12,10 +12,9 @@
     "Package": "clg484",
     "Speed": "-1"
   },
-  "HlsSolution": {"Config": [
-      "config_export -format=ip_catalog",
-      "config_export -rtl=verilog"
-    ]},
+  "HlsSolution": {
+    
+  },
   "ClockInfo": {
     "ClockName": "ap_clk",
     "ClockPeriod": "10",
@@ -41,7 +40,7 @@
     "Vhdl": ["impl\/vhdl\/rgb2bayer.vhd"],
     "Verilog": ["impl\/verilog\/rgb2bayer.v"],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/home\/andreas\/workdir\/figkey\/HLS\/repo\/loop_repo\/hls\/rgb2bayer\/rgb2bayer\/solution1\/.autopilot\/db\/rgb2bayer.design.xml"
+    "DesignXml": "\/home\/andreas\/workdir\/figkey\/HLS\/repo\/loop\/hls\/rgb2bayer\/rgb2bayer\/solution1\/.autopilot\/db\/rgb2bayer.design.xml"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -54,16 +53,6 @@
       "ctype": {"CLK": {"Type": "bool"}},
       "buses": "s_axis_video m_axis_video",
       "reset": "ap_rst_n"
-    },
-    "ap_ctrl": {
-      "type": "ap_ctrl",
-      "ctrl_ports": "ap_start ap_done ap_idle ap_ready",
-      "ctype": {
-        "start": {"Type": "bool"},
-        "done": {"Type": "bool"},
-        "idle": {"Type": "bool"},
-        "ready": {"Type": "bool"}
-      }
     },
     "ap_rst_n": {
       "type": "reset",
@@ -201,22 +190,6 @@
       "dir": "in",
       "width": "1"
     },
-    "ap_start": {
-      "dir": "in",
-      "width": "1"
-    },
-    "ap_done": {
-      "dir": "out",
-      "width": "1"
-    },
-    "ap_idle": {
-      "dir": "out",
-      "width": "1"
-    },
-    "ap_ready": {
-      "dir": "out",
-      "width": "1"
-    },
     "s_axis_video_TDATA": {
       "dir": "in",
       "width": "24"
@@ -313,10 +286,6 @@
     }
   },
   "CPorts": {
-    "ap_ctrl": {
-      "interfaceRef": "ap_ctrl",
-      "dir": "out"
-    },
     "s_axis_video_V_data_V": {
       "interfaceRef": "s_axis_video",
       "dir": "in"
@@ -440,7 +409,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2021-08-04 12:46:55 CST",
+    "Time": "2021-08-04 10:37:37 CST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

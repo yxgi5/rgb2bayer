@@ -6,7 +6,7 @@
 <Project Version="7" Minor="39" Path="/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="8cfd951716a443d3895cd4201b05c261"/>
+    <Option Name="Id" Val="ec137680f5a147af9602d09fcbef1758"/>
     <Option Name="Part" Val="xc7z020clg484-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -66,11 +66,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="video_crop_bd.bd" FileRelPathName="ip/video_crop_bd_v_tpg_0_0/video_crop_bd_v_tpg_0_0.xci">
-          <Proxy FileSetName="video_crop_bd_v_tpg_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="video_crop_bd.bd" FileRelPathName="ip/video_crop_bd_rgb2bayer_0_0/video_crop_bd_rgb2bayer_0_0.xci">
           <Proxy FileSetName="video_crop_bd_rgb2bayer_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="video_crop_bd.bd" FileRelPathName="ip/video_crop_bd_v_tpg_0_0/video_crop_bd_v_tpg_0_0.xci">
+          <Proxy FileSetName="video_crop_bd_v_tpg_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="video_crop_bd.bd" FileRelPathName="ip/video_crop_bd_axi_vip_0_0/video_crop_bd_axi_vip_0_0.xci">
           <Proxy FileSetName="video_crop_bd_axi_vip_0_0"/>

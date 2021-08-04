@@ -6,6 +6,7 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
 {
 #pragma HLS INTERFACE axis register both port=s_axis_video
 #pragma HLS INTERFACE axis register both port=m_axis_video
+#pragma HLS interface ap_ctrl_none port=return
 	
 	ap_axiu<24, 1, 1, 1> video_i;
 	ap_axiu<8, 1, 1, 1> video_o;

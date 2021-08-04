@@ -25,7 +25,7 @@ set current_vivado_version [version -short]
 
 if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
    puts ""
-   catch {common::send_gid_msg -ssname BD::TCL -id 2041 -severity "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
+   catch {common::send_msg_id "BD_TCL-109" "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
 
    return 1
 }
@@ -34,8 +34,22 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 # START
 ################################################################
 
+# To test this script, run the following commands from Vivado Tcl console:
+# source video_crop_bd_script.tcl
+
+# If there is no project opened, this script will create a
+# project, but make sure you do not have an existing project
+# <./myproj/project_1.xpr> in the current working folder.
+
+set list_projs [get_projects -quiet]
+if { $list_projs eq "" } {
+   create_project project_1 myproj -part xc7z020clg484-1
+}
+
+
+# CHANGE DESIGN NAME HERE
 variable design_name
-set design_name $BD_name
+set design_name video_crop_bd
 
 # If you do not already have an existing IP Integrator design open,
 # you can create a design using the following command:
@@ -124,14 +138,14 @@ proc create_root_design { parentCell } {
   # Get object for parentCell
   set parentObj [get_bd_cells $parentCell]
   if { $parentObj == "" } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2090 -severity "ERROR" "Unable to find parent cell <$parentCell>!"}
+     catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
      return
   }
 
   # Make sure parentObj is hier blk
   set parentType [get_property TYPE $parentObj]
   if { $parentType ne "hier" } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2091 -severity "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+     catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
      return
   }
 
@@ -249,7 +263,7 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net aclk_0_1 [get_bd_ports aclk_50MHz] [get_bd_pins axi_vip_0/aclk] [get_bd_pins axi_vip_1/aclk] [get_bd_pins axis_subset_converter_0/aclk] [get_bd_pins rgb2bayer_0/ap_clk] [get_bd_pins v_demosaic_0/ap_clk] [get_bd_pins v_tpg_0/ap_clk]
-  connect_bd_net -net ap_start_1 [get_bd_ports ap_start] [get_bd_pins rgb2bayer_0/ap_start]
+  connect_bd_net -net ap_start_1 [get_bd_ports ap_start]
   connect_bd_net -net aresetn_0_1 [get_bd_ports aresetn_0] [get_bd_pins axi_vip_0/aresetn] [get_bd_pins axi_vip_1/aresetn] [get_bd_pins axis_subset_converter_0/aresetn] [get_bd_pins rgb2bayer_0/ap_rst_n] [get_bd_pins v_demosaic_0/ap_rst_n] [get_bd_pins v_tpg_0/ap_rst_n]
   connect_bd_net -net hsize_1 [get_bd_ports hsize] [get_bd_pins rgb2bayer_0/hsize_in]
   connect_bd_net -net tready_1 [get_bd_ports tready] [get_bd_pins v_demosaic_0/m_axis_video_TREADY]

@@ -116,41 +116,6 @@ if { $nRet != 0 } {
    return $nRet
 }
 
-set bCheckIPsPassed 1
-##################################################################
-# CHECK IPs
-##################################################################
-set bCheckIPs 1
-if { $bCheckIPs == 1 } {
-   set list_check_ips "\ 
-xilinx.com:ip:axi_vip:1.1\
-xilinx.com:hls:rgb2bayer:1.0\
-xilinx.com:ip:v_tpg:8.0\
-xilinx.com:ip:xlconstant:1.1\
-"
-
-   set list_ips_missing ""
-   common::send_msg_id "BD_TCL-006" "INFO" "Checking if the following IPs exist in the project's IP catalog: $list_check_ips ."
-
-   foreach ip_vlnv $list_check_ips {
-      set ip_obj [get_ipdefs -all $ip_vlnv]
-      if { $ip_obj eq "" } {
-         lappend list_ips_missing $ip_vlnv
-      }
-   }
-
-   if { $list_ips_missing ne "" } {
-      catch {common::send_msg_id "BD_TCL-115" "ERROR" "The following IPs are not found in the IP Catalog:\n  $list_ips_missing\n\nResolution: Please add the repository containing the IP(s) to the project." }
-      set bCheckIPsPassed 0
-   }
-
-}
-
-if { $bCheckIPsPassed != 1 } {
-  common::send_msg_id "BD_TCL-1003" "WARNING" "Will not continue with creation of design due to the error(s) above."
-  return 3
-}
-
 ##################################################################
 # DESIGN PROCs
 ##################################################################
@@ -259,7 +224,7 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net aclk_0_1 [get_bd_ports aclk_50MHz] [get_bd_pins axi_vip_0/aclk] [get_bd_pins rgb2bayer_0/ap_clk] [get_bd_pins v_tpg_0/ap_clk]
-  connect_bd_net -net ap_start_1 [get_bd_ports ap_start] [get_bd_pins rgb2bayer_0/ap_start]
+  connect_bd_net -net ap_start_1 [get_bd_ports ap_start]
   connect_bd_net -net aresetn_0_1 [get_bd_ports aresetn_0] [get_bd_pins axi_vip_0/aresetn] [get_bd_pins rgb2bayer_0/ap_rst_n] [get_bd_pins v_tpg_0/ap_rst_n]
   connect_bd_net -net hsize_1 [get_bd_ports hsize] [get_bd_pins rgb2bayer_0/hsize_in]
   connect_bd_net -net rgb2bayer_0_m_axis_video_TDATA [get_bd_ports tdata] [get_bd_pins rgb2bayer_0/m_axis_video_TDATA]

@@ -23,17 +23,13 @@
     <clock name="default" period="10"/>
   </clockList>
   <config>
-                
-    
-    <config_compile blackbox=""/>
-                
-    
-    <schedule model="rgb2bayer"/>
-                
-    
-    <config_export format="ip_catalog" rtl="verilog"/>
             
-  
+    <config_compile blackbox=""/>
+            
+    <schedule model="rgb2bayer"/>
+            
+    <config_export format="ip_catalog" rtl="verilog"/>
+        
   </config>
   <UIConfigurations>
     <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">

@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Wed Aug  4 12:55:37 2021
+//Date        : Wed Aug  4 13:17:44 2021
 //Host        : Vostro-5880 running 64-bit Ubuntu 18.04.4 LTS
 //Command     : generate_target video_crop_bd.bd
 //Design      : video_crop_bd
@@ -179,7 +179,6 @@ module video_crop_bd
   video_crop_bd_rgb2bayer_0_0 rgb2bayer_0
        (.ap_clk(aclk_0_1),
         .ap_rst_n(aresetn_0_1),
-        .ap_start(ap_start_1),
         .hsize_in(hsize_1),
         .m_axis_video_TDATA(rgb2bayer_0_m_axis_video_TDATA),
         .m_axis_video_TDEST(rgb2bayer_0_m_axis_video_TDEST),

@@ -34199,10 +34199,11 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
 {
 _ssdm_op_SpecInterface(&s_axis_video, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(&m_axis_video, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(0, "ap_ctrl_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 
  ap_axiu<24, 1, 1, 1> video_i;
  ap_axiu<8, 1, 1, 1> video_o;
-# 20 "src/cpp/rgb2bayer.cpp"
+# 21 "src/cpp/rgb2bayer.cpp"
  for(int j = 0; j < vsize_in ; j ++)
  {
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
@@ -34210,7 +34211,7 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
   {
 
    s_axis_video >> video_i;
-# 39 "src/cpp/rgb2bayer.cpp"
+# 40 "src/cpp/rgb2bayer.cpp"
    if(j%2==0)
    {
     if(i%2==0)
@@ -34240,7 +34241,7 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
 
    video_o.user = video_i.user;
    video_o.last = video_i.last;
-# 178 "src/cpp/rgb2bayer.cpp"
+# 179 "src/cpp/rgb2bayer.cpp"
    m_axis_video << video_o;
   }
  }

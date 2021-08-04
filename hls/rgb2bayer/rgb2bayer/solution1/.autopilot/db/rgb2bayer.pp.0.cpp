@@ -34199,10 +34199,11 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
 {
 #pragma HLS INTERFACE axis register both port=&s_axis_video
 #pragma HLS INTERFACE axis register both port=&m_axis_video
+#pragma HLS interface ap_ctrl_none port=return
 
  ap_axiu<24, 1, 1, 1> video_i;
  ap_axiu<8, 1, 1, 1> video_o;
-# 20 "src/cpp/rgb2bayer.cpp"
+# 21 "src/cpp/rgb2bayer.cpp"
  for(int j = 0; j < vsize_in ; j ++)
  {
 #pragma HLS PIPELINE
@@ -34210,7 +34211,7 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
   {
 
    s_axis_video >> video_i;
-# 39 "src/cpp/rgb2bayer.cpp"
+# 40 "src/cpp/rgb2bayer.cpp"
    if(j%2==0)
    {
     if(i%2==0)
@@ -34240,7 +34241,7 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
 
    video_o.user = video_i.user;
    video_o.last = video_i.last;
-# 178 "src/cpp/rgb2bayer.cpp"
+# 179 "src/cpp/rgb2bayer.cpp"
    m_axis_video << video_o;
   }
  }

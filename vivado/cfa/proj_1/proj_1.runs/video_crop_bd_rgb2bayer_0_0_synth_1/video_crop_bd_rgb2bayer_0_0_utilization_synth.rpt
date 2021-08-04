@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Aug  4 12:56:05 2021
+| Date         : Wed Aug  4 13:18:13 2021
 | Host         : Vostro-5880 running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_utilization -file video_crop_bd_rgb2bayer_0_0_utilization_synth.rpt -pb video_crop_bd_rgb2bayer_0_0_utilization_synth.pb
 | Design       : video_crop_bd_rgb2bayer_0_0
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  181 |     0 |     53200 |  0.34 |
-|   LUT as Logic          |  181 |     0 |     53200 |  0.34 |
+| Slice LUTs*             |  179 |     0 |     53200 |  0.34 |
+|   LUT as Logic          |  179 |     0 |     53200 |  0.34 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
 | Slice Registers         |  255 |     0 |    106400 |  0.24 |
 |   Register as Flip Flop |  255 |     0 |    106400 |  0.24 |
@@ -148,12 +148,12 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     |  254 |        Flop & Latch |
-| LUT6     |   51 |                 LUT |
+| LUT2     |   51 |                 LUT |
+| LUT6     |   50 |                 LUT |
 | LUT4     |   50 |                 LUT |
-| LUT2     |   50 |                 LUT |
 | CARRY4   |   46 |          CarryLogic |
 | LUT3     |   35 |                 LUT |
-| LUT5     |   26 |                 LUT |
+| LUT5     |   25 |                 LUT |
 | DSP48E1  |    4 |    Block Arithmetic |
 | LUT1     |    2 |                 LUT |
 | FDSE     |    1 |        Flop & Latch |

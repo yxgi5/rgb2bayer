@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Wed Aug  4 12:56:00 2021
+-- Date        : Wed Aug  4 13:18:07 2021
 -- Host        : Vostro-5880 running 64-bit Ubuntu 18.04.4 LTS
 -- Command     : write_vhdl -force -mode synth_stub -rename_top video_crop_bd_axi_vip_1_0 -prefix
 --               video_crop_bd_axi_vip_1_0_ video_crop_bd_axi_vip_0_0_stub.vhdl

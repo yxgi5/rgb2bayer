@@ -201,22 +201,10 @@
       }
     },
     "interface_nets": {
-      "axi_vip_0_M_AXI": {
-        "interface_ports": [
-          "axi_vip_0/M_AXI",
-          "v_tpg_0/s_axi_CTRL"
-        ]
-      },
       "v_tpg_0_m_axis_video": {
         "interface_ports": [
           "rgb2bayer_0/s_axis_video",
           "v_tpg_0/m_axis_video"
-        ]
-      },
-      "axis_subset_converter_0_M_AXIS": {
-        "interface_ports": [
-          "axis_subset_converter_0/M_AXIS",
-          "v_demosaic_0/s_axis_video"
         ]
       },
       "rgb2bayer_0_m_axis_video": {
@@ -225,10 +213,22 @@
           "rgb2bayer_0/m_axis_video"
         ]
       },
+      "axi_vip_0_M_AXI": {
+        "interface_ports": [
+          "axi_vip_0/M_AXI",
+          "v_tpg_0/s_axi_CTRL"
+        ]
+      },
       "axi_vip_1_M_AXI": {
         "interface_ports": [
           "axi_vip_1/M_AXI",
           "v_demosaic_0/s_axi_CTRL"
+        ]
+      },
+      "axis_subset_converter_0_M_AXIS": {
+        "interface_ports": [
+          "axis_subset_converter_0/M_AXIS",
+          "v_demosaic_0/s_axis_video"
         ]
       }
     },
@@ -246,8 +246,7 @@
       },
       "ap_start_1": {
         "ports": [
-          "ap_start",
-          "rgb2bayer_0/ap_start"
+          "ap_start"
         ]
       },
       "aresetn_0_1": {

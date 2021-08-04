@@ -181,8 +181,7 @@
       },
       "ap_start_1": {
         "ports": [
-          "ap_start",
-          "rgb2bayer_0/ap_start"
+          "ap_start"
         ]
       },
       "aresetn_0_1": {
