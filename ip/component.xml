@@ -143,19 +143,19 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDATA_NUM_BYTES">3</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDATA_NUM_BYTES">3</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TDEST_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDEST_WIDTH">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDEST_WIDTH">1</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TID_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TID_WIDTH">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TID_WIDTH">1</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TUSER_WIDTH">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TUSER_WIDTH">1</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>LAYERED_METADATA</spirit:name>
@@ -246,19 +246,19 @@ resolve_type immediate dependency {} format string minimum {} maximum {}} value 
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TDATA_NUM_BYTES">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TDATA_NUM_BYTES">1</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TDEST_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TDEST_WIDTH">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TDEST_WIDTH">1</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TID_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TID_WIDTH">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TID_WIDTH">1</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TUSER_WIDTH</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TUSER_WIDTH">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TUSER_WIDTH">1</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>LAYERED_METADATA</spirit:name>
@@ -282,7 +282,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>48803676</spirit:value>
+            <spirit:value>3361336b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -332,7 +332,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f7e008e4</spirit:value>
+            <spirit:value>a2434bf9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -346,7 +346,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>55811829</spirit:value>
+            <spirit:value>0f05e113</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -723,11 +723,9 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
       <spirit:enumeration>GBRG</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
-      <spirit:name>choice_list_dd2843c6</spirit:name>
+      <spirit:name>choice_list_8aad6ae4</spirit:name>
       <spirit:enumeration>1</spirit:enumeration>
       <spirit:enumeration>2</spirit:enumeration>
-      <spirit:enumeration>4</spirit:enumeration>
-      <spirit:enumeration>8</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_f1407c6a</spirit:name>
@@ -746,6 +744,11 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/rgb2bayer.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/rgb2bayer_8bit_1spc.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
@@ -756,8 +759,9 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/rgb2bayer.v</spirit:name>
+        <spirit:name>hdl/rgb2bayer_10bit_1spc.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_13d4d5ed</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
@@ -766,9 +770,24 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/rgb2bayer_10bit_1spc.v</spirit:name>
+        <spirit:name>hdl/rgb2bayer_8bit_2spc.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_13d4d5ed</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/rgb2bayer_10bit_2spc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/rgb2bayer_12bit_2spc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/rgb2bayer_16bit_2spc.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_b2df6044</spirit:userFileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
@@ -809,10 +828,6 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:userFileType>image</spirit:userFileType>
         <spirit:userFileType>LOGO</spirit:userFileType>
       </spirit:file>
-      <spirit:file>
-        <spirit:name>gui/rgb2bayer_v1_0.gtcl</spirit:name>
-        <spirit:userFileType>GTCL</spirit:userFileType>
-      </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
   <spirit:description>An IP generated by Vivado HLS</spirit:description>
@@ -849,7 +864,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
     <spirit:parameter>
       <spirit:name>SAMPLES_PER_CLOCK</spirit:name>
       <spirit:displayName>Samples Per Clock</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SAMPLES_PER_CLOCK" spirit:choiceRef="choice_list_dd2843c6">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SAMPLES_PER_CLOCK" spirit:choiceRef="choice_list_8aad6ae4">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MAXIMUM_DATA_WIDTH</spirit:name>
@@ -876,14 +891,35 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
     <xilinx:coreExtensions>
       <xilinx:supportedFamilies>
         <xilinx:family xilinx:lifeCycle="Pre-Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">kintexu</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">zynquplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">kintexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">virtexu</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">virtexuplus58g</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">virtexuplusHBM</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Beta">azynq</xilinx:family>
       </xilinx:supportedFamilies>
       <xilinx:taxonomies>
         <xilinx:taxonomy>/VIVADO_HLS_IP</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>Rgb2bayer</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2108021761</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-08-04T09:57:45Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2108021763</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-08-05T01:38:55Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@4de67230_ARCHIVE_LOCATION">/home/andreas/workdir/figkey/HLS/myprojects/cfa/src/ip_repo/rgb2bayer</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@d428524_ARCHIVE_LOCATION">/home/andreas/workdir/figkey/HLS/myprojects/cfa/src/ip_repo/rgb2bayer</xilinx:tag>
@@ -1244,15 +1280,30 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2153e186_ARCHIVE_LOCATION">/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/ip</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@74ba01ea_ARCHIVE_LOCATION">/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/ip</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@49fe1139_ARCHIVE_LOCATION">/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e7e41f3_ARCHIVE_LOCATION">/home/andy/workdir/figkey/HLS/repo/head/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30d53104_ARCHIVE_LOCATION">/home/andy/workdir/figkey/HLS/repo/head/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7413eb06_ARCHIVE_LOCATION">/home/andy/workdir/figkey/HLS/repo/head/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43e975a0_ARCHIVE_LOCATION">/home/andy/workdir/figkey/HLS/repo/head/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a96014_ARCHIVE_LOCATION">/home/andy/workdir/figkey/HLS/repo/head/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bff00fb_ARCHIVE_LOCATION">/home/andy/workdir/figkey/HLS/repo/head/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b90cc8f_ARCHIVE_LOCATION">/home/andy/workdir/figkey/HLS/repo/head/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73624524_ARCHIVE_LOCATION">/home/andy/workdir/figkey/HLS/repo/head/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f195dcd_ARCHIVE_LOCATION">/home/andy/workdir/figkey/HLS/repo/head/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43b09f3_ARCHIVE_LOCATION">/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d574d2e_ARCHIVE_LOCATION">/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ec4111f_ARCHIVE_LOCATION">/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@167245b3_ARCHIVE_LOCATION">/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b87e9c9_ARCHIVE_LOCATION">/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32027547_ARCHIVE_LOCATION">/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/ip</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="5c94e650"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d95289b0"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="dffccf35"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="39d64e18"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="32e998b8"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="eaad7efd"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="4736b091"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

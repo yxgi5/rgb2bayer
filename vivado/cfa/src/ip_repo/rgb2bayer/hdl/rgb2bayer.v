@@ -225,6 +225,114 @@ generate
             .vsize_in (MAXIMUM_NUMBER_OF_ROWS),
             .pattern_V (pattern)
         );
+        
+    if(MAXIMUM_DATA_WIDTH==8 && SAMPLES_PER_CLOCK==2)
+        rgb2bayer_8bit_2spc rgb2bayer_inst(
+            .ap_clk (ap_clk),
+            .ap_rst_n (ap_rst_n),
+            .s_axis_video_TDATA (s_axis_video_TDATA),
+            .s_axis_video_TVALID (s_axis_video_TVALID),
+            .s_axis_video_TREADY (s_axis_video_TREADY),
+            .s_axis_video_TKEEP (s_axis_video_TKEEP),
+            .s_axis_video_TSTRB (s_axis_video_TSTRB),
+            .s_axis_video_TUSER (s_axis_video_TUSER),
+            .s_axis_video_TLAST (s_axis_video_TLAST),
+            .s_axis_video_TID (s_axis_video_TID),
+            .s_axis_video_TDEST (s_axis_video_TDEST),
+            .m_axis_video_TDATA (m_axis_video_TDATA),
+            .m_axis_video_TVALID (m_axis_video_TVALID),
+            .m_axis_video_TREADY (m_axis_video_TREADY),
+            .m_axis_video_TKEEP (m_axis_video_TKEEP),
+            .m_axis_video_TSTRB (m_axis_video_TSTRB),
+            .m_axis_video_TUSER (m_axis_video_TUSER),
+            .m_axis_video_TLAST (m_axis_video_TLAST),
+            .m_axis_video_TID (m_axis_video_TID),
+            .m_axis_video_TDEST (m_axis_video_TDEST),
+            .hsize_in (MAXIMUM_NUMBER_OF_COLUMNS),
+            .vsize_in (MAXIMUM_NUMBER_OF_ROWS),
+            .pattern_V (pattern)
+        );
+
+    else if (MAXIMUM_DATA_WIDTH==10 && SAMPLES_PER_CLOCK==2)
+        rgb2bayer_10bit_2spc rgb2bayer_inst(
+            .ap_clk (ap_clk),
+            .ap_rst_n (ap_rst_n),
+            .s_axis_video_TDATA (s_axis_video_TDATA),
+            .s_axis_video_TVALID (s_axis_video_TVALID),
+            .s_axis_video_TREADY (s_axis_video_TREADY),
+            .s_axis_video_TKEEP (s_axis_video_TKEEP),
+            .s_axis_video_TSTRB (s_axis_video_TSTRB),
+            .s_axis_video_TUSER (s_axis_video_TUSER),
+            .s_axis_video_TLAST (s_axis_video_TLAST),
+            .s_axis_video_TID (s_axis_video_TID),
+            .s_axis_video_TDEST (s_axis_video_TDEST),
+            .m_axis_video_TDATA (m_axis_video_TDATA),
+            .m_axis_video_TVALID (m_axis_video_TVALID),
+            .m_axis_video_TREADY (m_axis_video_TREADY),
+            .m_axis_video_TKEEP (m_axis_video_TKEEP),
+            .m_axis_video_TSTRB (m_axis_video_TSTRB),
+            .m_axis_video_TUSER (m_axis_video_TUSER),
+            .m_axis_video_TLAST (m_axis_video_TLAST),
+            .m_axis_video_TID (m_axis_video_TID),
+            .m_axis_video_TDEST (m_axis_video_TDEST),
+            .hsize_in (MAXIMUM_NUMBER_OF_COLUMNS),
+            .vsize_in (MAXIMUM_NUMBER_OF_ROWS),
+            .pattern_V (pattern)           
+        );
+
+    else if (MAXIMUM_DATA_WIDTH==12 && SAMPLES_PER_CLOCK==2)
+        rgb2bayer_12bit_2spc rgb2bayer_inst(
+            .ap_clk (ap_clk),
+            .ap_rst_n (ap_rst_n),
+            .s_axis_video_TDATA (s_axis_video_TDATA),
+            .s_axis_video_TVALID (s_axis_video_TVALID),
+            .s_axis_video_TREADY (s_axis_video_TREADY),
+            .s_axis_video_TKEEP (s_axis_video_TKEEP),
+            .s_axis_video_TSTRB (s_axis_video_TSTRB),
+            .s_axis_video_TUSER (s_axis_video_TUSER),
+            .s_axis_video_TLAST (s_axis_video_TLAST),
+            .s_axis_video_TID (s_axis_video_TID),
+            .s_axis_video_TDEST (s_axis_video_TDEST),
+            .m_axis_video_TDATA (m_axis_video_TDATA),
+            .m_axis_video_TVALID (m_axis_video_TVALID),
+            .m_axis_video_TREADY (m_axis_video_TREADY),
+            .m_axis_video_TKEEP (m_axis_video_TKEEP),
+            .m_axis_video_TSTRB (m_axis_video_TSTRB),
+            .m_axis_video_TUSER (m_axis_video_TUSER),
+            .m_axis_video_TLAST (m_axis_video_TLAST),
+            .m_axis_video_TID (m_axis_video_TID),
+            .m_axis_video_TDEST (m_axis_video_TDEST),
+            .hsize_in (MAXIMUM_NUMBER_OF_COLUMNS),
+            .vsize_in (MAXIMUM_NUMBER_OF_ROWS),
+            .pattern_V (pattern)   
+        );
+
+    else if (MAXIMUM_DATA_WIDTH==16 && SAMPLES_PER_CLOCK==2)
+        rgb2bayer_16bit_2spc rgb2bayer_inst(
+            .ap_clk (ap_clk),
+            .ap_rst_n (ap_rst_n),
+            .s_axis_video_TDATA (s_axis_video_TDATA),
+            .s_axis_video_TVALID (s_axis_video_TVALID),
+            .s_axis_video_TREADY (s_axis_video_TREADY),
+            .s_axis_video_TKEEP (s_axis_video_TKEEP),
+            .s_axis_video_TSTRB (s_axis_video_TSTRB),
+            .s_axis_video_TUSER (s_axis_video_TUSER),
+            .s_axis_video_TLAST (s_axis_video_TLAST),
+            .s_axis_video_TID (s_axis_video_TID),
+            .s_axis_video_TDEST (s_axis_video_TDEST),
+            .m_axis_video_TDATA (m_axis_video_TDATA),
+            .m_axis_video_TVALID (m_axis_video_TVALID),
+            .m_axis_video_TREADY (m_axis_video_TREADY),
+            .m_axis_video_TKEEP (m_axis_video_TKEEP),
+            .m_axis_video_TSTRB (m_axis_video_TSTRB),
+            .m_axis_video_TUSER (m_axis_video_TUSER),
+            .m_axis_video_TLAST (m_axis_video_TLAST),
+            .m_axis_video_TID (m_axis_video_TID),
+            .m_axis_video_TDEST (m_axis_video_TDEST),
+            .hsize_in (MAXIMUM_NUMBER_OF_COLUMNS),
+            .vsize_in (MAXIMUM_NUMBER_OF_ROWS),
+            .pattern_V (pattern)
+        );
 
 endgenerate
 

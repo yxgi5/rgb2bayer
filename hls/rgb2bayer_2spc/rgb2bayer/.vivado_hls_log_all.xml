@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened." projectName="rgb2bayer" solutionName="solution1" date="2021-08-04T20:17:26.665+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (src/cpp/rgb2bayer.cpp:21:15) in function 'rgb2bayer' : &#xA;&#xA;&#xA;the outer loop is not a perfect loop because either the parent loop or the sub loop has no computeable trip count." projectName="rgb2bayer" solutionName="solution1" date="2021-08-04T20:17:26.622+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (src/cpp/rgb2bayer.cpp:24) in function 'rgb2bayer' completely: variable loop bound." projectName="rgb2bayer" solutionName="solution1" date="2021-08-04T20:17:26.312+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

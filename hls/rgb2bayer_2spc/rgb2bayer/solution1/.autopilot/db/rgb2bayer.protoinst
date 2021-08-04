@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"rgb2bayer": {
+			"proto_instances": {
+			}
+		}
+	}
+}
