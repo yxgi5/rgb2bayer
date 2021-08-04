@@ -143,7 +143,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDATA_NUM_BYTES">3</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDATA_NUM_BYTES">6</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TDEST_WIDTH</spirit:name>
@@ -159,7 +159,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>LAYERED_METADATA</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 24} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TUSER {datatype {name {attribs {
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 48} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TUSER {datatype {name {attribs {
 resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
@@ -246,7 +246,7 @@ resolve_type immediate dependency {} format string minimum {} maximum {}} value 
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TDATA_NUM_BYTES">1</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TDATA_NUM_BYTES">2</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TDEST_WIDTH</spirit:name>
@@ -262,8 +262,8 @@ resolve_type immediate dependency {} format string minimum {} maximum {}} value 
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>LAYERED_METADATA</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TUSER {datatype {name {attribs {r
-esolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.LAYERED_METADATA">xilinx.com:interface:datatypes:1.0 {TDATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} TUSER {datatype {name {attribs {
+resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}</spirit:value>
         </spirit:parameter>
       </spirit:parameters>
     </spirit:busInterface>
@@ -348,7 +348,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2021f639</spirit:value>
+            <spirit:value>6e4147eb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -364,7 +364,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>da696bd9</spirit:value>
+            <spirit:value>4d7163d1</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -380,7 +380,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>daa873fa</spirit:value>
+            <spirit:value>cdc85d4a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -396,7 +396,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>4a315b00</spirit:value>
+            <spirit:value>ec8fc032</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -432,7 +432,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>0f3023aa</spirit:value>
+            <spirit:value>e2792f29</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -523,7 +523,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">23</spirit:left>
+            <spirit:left spirit:format="long">47</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -560,7 +560,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:left spirit:format="long">5</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -571,7 +571,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
-            <spirit:defaultValue spirit:format="long">7</spirit:defaultValue>
+            <spirit:defaultValue spirit:format="long">63</spirit:defaultValue>
           </spirit:driver>
         </spirit:wire>
       </spirit:port>
@@ -580,7 +580,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:left spirit:format="long">5</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -591,7 +591,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
-            <spirit:defaultValue spirit:format="long">7</spirit:defaultValue>
+            <spirit:defaultValue spirit:format="long">63</spirit:defaultValue>
           </spirit:driver>
         </spirit:wire>
       </spirit:port>
@@ -686,7 +686,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">7</spirit:left>
+            <spirit:left spirit:format="long">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -720,7 +720,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">0</spirit:left>
+            <spirit:left spirit:format="long">1</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -737,7 +737,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">0</spirit:left>
+            <spirit:left spirit:format="long">1</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -884,7 +884,7 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
       <spirit:file>
         <spirit:name>hdl/vhdl/rgb2bayer.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_4a315b00</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_ec8fc032</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -971,14 +971,14 @@ esolve_type immediate dependency {} format string minimum {} maximum {}} value {
       </xilinx:taxonomies>
       <xilinx:displayName>Rgb2bayer</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2108041110</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-08-04T03:10:25Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2108041354</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-08-04T05:54:40Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="78edac3b"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ba99dd56"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="ca5454c7"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="6b9232c9"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="c8158922"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="62821548"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="bb7bdb14"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

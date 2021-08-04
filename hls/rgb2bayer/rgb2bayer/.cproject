@@ -55,6 +55,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
@@ -88,6 +90,8 @@
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include"/>
                                     									
@@ -173,13 +177,13 @@
                                 								
                                 <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
                                 								
+                                <listOptionValue builtIn="false" value="/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer"/>
+                                								
                                 <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                 								
                                 <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
-                                								
-                                <listOptionValue builtIn="false" value="/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer"/>
                                 							
                             </option>
                             							
@@ -257,6 +261,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
@@ -280,6 +286,8 @@
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer"/>
                                     									
                                     <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include"/>
                                     									
@@ -355,13 +363,13 @@
                                 								
                                 <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
                                 								
+                                <listOptionValue builtIn="false" value="/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer"/>
+                                								
                                 <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                 								
                                 <listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2018.3/include/etc"/>
-                                								
-                                <listOptionValue builtIn="false" value="/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer"/>
                                 							
                             </option>
                             							

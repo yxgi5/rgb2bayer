@@ -29,57 +29,57 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/.apc/.src</location>
+			<location>/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/rgb2bayer/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/.apc/.tb</location>
+			<location>/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/rgb2bayer/.apc/.tb</location>
 		</link>
 		<link>
 			<name>.reference/rgb2bayer.h</name>
 			<type>1</type>
-			<location>/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer.h</location>
+			<location>/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/src/cpp/rgb2bayer.h</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/.tcls</location>
+			<location>/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/rgb2bayer/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/rgb2bayer.cpp</name>
 			<type>1</type>
-			<location>/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer.cpp</location>
+			<location>/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/src/cpp/rgb2bayer.cpp</location>
 		</link>
 		<link>
 			<name>testbench/in.png</name>
 			<type>1</type>
-			<location>/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/in.png</location>
+			<location>/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/src/img/in.png</location>
 		</link>
 		<link>
 			<name>testbench/rgb2bayer_tb.cpp</name>
 			<type>1</type>
-			<location>/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/cpp/rgb2bayer_tb.cpp</location>
+			<location>/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/src/cpp/rgb2bayer_tb.cpp</location>
 		</link>
 		<link>
 			<name>testbench/test.png</name>
 			<type>1</type>
-			<location>/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/src/img/test.png</location>
+			<location>/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/src/img/test.png</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/solution1.directive</location>
+			<location>/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/rgb2bayer/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/directives.tcl</location>
+			<location>/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/rgb2bayer/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/home/andreas/workdir/figkey/HLS/repo/loop/hls/rgb2bayer/rgb2bayer/solution1/script.tcl</location>
+			<location>/home/andreas/workdir/figkey/HLS/repo/loop_repo/hls/rgb2bayer/rgb2bayer/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

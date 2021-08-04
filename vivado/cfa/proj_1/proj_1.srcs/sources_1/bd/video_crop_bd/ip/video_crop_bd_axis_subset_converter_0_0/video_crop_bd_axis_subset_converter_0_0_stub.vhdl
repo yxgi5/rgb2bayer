@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
--- Date        : Wed Aug  4 18:16:35 2021
+-- Date        : Wed Aug  4 14:09:30 2021
 -- Host        : Vostro-5880 running 64-bit Ubuntu 18.04.4 LTS
 -- Command     : write_vhdl -force -mode synth_stub
---               /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/video_crop_bd_axis_subset_converter_0_0_stub.vhdl
+--               /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/video_crop_bd_axis_subset_converter_0_0_stub.vhdl
 -- Design      : video_crop_bd_axis_subset_converter_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1
@@ -18,18 +18,18 @@ entity video_crop_bd_axis_subset_converter_0_0 is
     aresetn : in STD_LOGIC;
     s_axis_tvalid : in STD_LOGIC;
     s_axis_tready : out STD_LOGIC;
-    s_axis_tdata : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    s_axis_tstrb : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axis_tkeep : in STD_LOGIC_VECTOR ( 0 to 0 );
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    s_axis_tstrb : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    s_axis_tkeep : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axis_tlast : in STD_LOGIC;
     s_axis_tid : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tdest : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tvalid : out STD_LOGIC;
     m_axis_tready : in STD_LOGIC;
-    m_axis_tdata : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    m_axis_tstrb : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axis_tkeep : out STD_LOGIC_VECTOR ( 0 to 0 );
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    m_axis_tstrb : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    m_axis_tkeep : out STD_LOGIC_VECTOR ( 1 downto 0 );
     m_axis_tlast : out STD_LOGIC;
     m_axis_tid : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tdest : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -42,7 +42,7 @@ architecture stub of video_crop_bd_axis_subset_converter_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "aclk,aresetn,s_axis_tvalid,s_axis_tready,s_axis_tdata[7:0],s_axis_tstrb[0:0],s_axis_tkeep[0:0],s_axis_tlast,s_axis_tid[0:0],s_axis_tdest[0:0],s_axis_tuser[0:0],m_axis_tvalid,m_axis_tready,m_axis_tdata[7:0],m_axis_tstrb[0:0],m_axis_tkeep[0:0],m_axis_tlast,m_axis_tid[0:0],m_axis_tdest[0:0],m_axis_tuser[0:0]";
+attribute black_box_pad_pin of stub : architecture is "aclk,aresetn,s_axis_tvalid,s_axis_tready,s_axis_tdata[15:0],s_axis_tstrb[1:0],s_axis_tkeep[1:0],s_axis_tlast,s_axis_tid[0:0],s_axis_tdest[0:0],s_axis_tuser[0:0],m_axis_tvalid,m_axis_tready,m_axis_tdata[15:0],m_axis_tstrb[1:0],m_axis_tkeep[1:0],m_axis_tlast,m_axis_tid[0:0],m_axis_tdest[0:0],m_axis_tuser[0:0]";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "top_video_crop_bd_axis_subset_converter_0_0,Vivado 2018.3";
 begin

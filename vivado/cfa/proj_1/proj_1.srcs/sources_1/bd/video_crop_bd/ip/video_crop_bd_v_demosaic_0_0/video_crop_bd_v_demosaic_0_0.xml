@@ -615,7 +615,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDATA_NUM_BYTES">1</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDATA_NUM_BYTES">2</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -814,7 +814,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TDATA_NUM_BYTES">3</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TDATA_NUM_BYTES">6</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -968,11 +968,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 04 10:16:11 UTC 2021</spirit:value>
+            <spirit:value>Wed Aug 04 06:09:09 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f8cd66b7</spirit:value>
+            <spirit:value>9:34546ce3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -987,11 +987,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 04 10:16:11 UTC 2021</spirit:value>
+            <spirit:value>Wed Aug 04 06:09:09 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f8cd66b7</spirit:value>
+            <spirit:value>9:34546ce3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1005,11 +1005,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 04 10:16:11 UTC 2021</spirit:value>
+            <spirit:value>Wed Aug 04 06:09:09 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f8cd66b7</spirit:value>
+            <spirit:value>9:34546ce3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1025,11 +1025,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 04 10:16:11 UTC 2021</spirit:value>
+            <spirit:value>Wed Aug 04 06:09:09 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f8cd66b7</spirit:value>
+            <spirit:value>9:34546ce3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1044,11 +1044,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 04 10:16:11 UTC 2021</spirit:value>
+            <spirit:value>Wed Aug 04 06:09:09 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:aae3b285</spirit:value>
+            <spirit:value>9:b23c89f4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1064,11 +1064,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 04 10:16:11 UTC 2021</spirit:value>
+            <spirit:value>Wed Aug 04 06:09:09 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:aae3b285</spirit:value>
+            <spirit:value>9:b23c89f4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1082,7 +1082,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f8cd66b7</spirit:value>
+            <spirit:value>9:34546ce3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1097,11 +1097,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 04 10:17:12 UTC 2021</spirit:value>
+            <spirit:value>Wed Aug 04 06:10:21 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f8cd66b7</spirit:value>
+            <spirit:value>9:34546ce3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1116,11 +1116,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Aug 04 10:17:12 UTC 2021</spirit:value>
+            <spirit:value>Wed Aug 04 06:10:21 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:b5ca5183</spirit:value>
+            <spirit:value>9:5b400522</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1448,7 +1448,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAX_DATA_WIDTH&apos;))*1)+7)/8)*8)-1)">7</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAX_DATA_WIDTH&apos;))*1)+7)/8)*8)-1)">15</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1465,7 +1465,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAX_DATA_WIDTH&apos;))*1)+7)/8)-1)">0</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAX_DATA_WIDTH&apos;))*1)+7)/8)-1)">1</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1485,7 +1485,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAX_DATA_WIDTH&apos;))*1)+7)/8)-1)">0</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAX_DATA_WIDTH&apos;))*1)+7)/8)-1)">1</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1611,7 +1611,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAX_DATA_WIDTH&apos;))*3)+7)/8)*8)-1)">23</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAX_DATA_WIDTH&apos;))*3)+7)/8)*8)-1)">47</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1628,7 +1628,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAX_DATA_WIDTH&apos;))*3)+7)/8)-1)">2</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAX_DATA_WIDTH&apos;))*3)+7)/8)-1)">5</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1645,7 +1645,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAX_DATA_WIDTH&apos;))*3)+7)/8)-1)">2</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((((spirit:decode(id(&apos;PARAM_VALUE.SAMPLES_PER_CLOCK&apos;))*spirit:decode(id(&apos;PARAM_VALUE.MAX_DATA_WIDTH&apos;))*3)+7)/8)-1)">5</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1877,7 +1877,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_veriloghlssynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/verilog/video_crop_bd_v_demosaic_0_0_AXIvideo2MultiBayer2.v</spirit:name>
+        <spirit:name>hdl/verilog/video_crop_bd_v_demosaic_0_0_AXIvideo2MultiBayer3.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1996,7 +1996,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_veriloghlssimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/verilog/video_crop_bd_v_demosaic_0_0_AXIvideo2MultiBayer2.v</spirit:name>
+        <spirit:name>hdl/verilog/video_crop_bd_v_demosaic_0_0_AXIvideo2MultiBayer3.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2123,7 +2123,7 @@
     <spirit:parameter>
       <spirit:name>SAMPLES_PER_CLOCK</spirit:name>
       <spirit:displayName>Samples per Clock</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SAMPLES_PER_CLOCK" spirit:choiceRef="choice_list_dd2843c6" spirit:order="10000" spirit:configGroups="Page 0 UnGrouped comboBox">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SAMPLES_PER_CLOCK" spirit:choiceRef="choice_list_dd2843c6" spirit:order="10000" spirit:configGroups="Page 0 UnGrouped comboBox">2</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MAX_COLS</spirit:name>
@@ -2182,7 +2182,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VIDEO.HAS_TLAST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VIDEO.HAS_TREADY" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VIDEO.HAS_TSTRB" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDATA_NUM_BYTES" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDATA_NUM_BYTES" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDEST_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>

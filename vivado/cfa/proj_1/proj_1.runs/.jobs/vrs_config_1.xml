@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
-	<Run Id="video_crop_bd_axi_vip_0_0_synth_1" LaunchDir="/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axi_vip_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="video_crop_bd_axi_vip_1_0_synth_1" LaunchDir="/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axi_vip_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+	<Run Id="video_crop_bd_axi_vip_0_0_synth_1" LaunchDir="/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axi_vip_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_crop_bd_axi_vip_1_0_synth_1" LaunchDir="/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axi_vip_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
 		<Parent Id="video_crop_bd_axi_vip_0_0_synth_1"/>
 	</Run>
-	<Run Id="video_crop_bd_axis_subset_converter_0_0_synth_1" LaunchDir="/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="video_crop_bd_rgb2bayer_0_0_synth_1" LaunchDir="/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="video_crop_bd_v_demosaic_0_0_synth_1" LaunchDir="/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_v_demosaic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="video_crop_bd_v_tpg_0_0_synth_1" LaunchDir="/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_crop_bd_axis_subset_converter_0_0_synth_1" LaunchDir="/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_axis_subset_converter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_crop_bd_rgb2bayer_0_0_synth_1" LaunchDir="/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_crop_bd_v_demosaic_0_0_synth_1" LaunchDir="/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_v_demosaic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_crop_bd_v_tpg_0_0_synth_1" LaunchDir="/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
 	<Parameters>
 		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
 	</Parameters>

@@ -145,18 +145,18 @@ input wire s_axis_video_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TREADY" *)
 output wire s_axis_video_TREADY;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TDATA" *)
-input wire [7 : 0] s_axis_video_TDATA;
+input wire [15 : 0] s_axis_video_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TKEEP" *)
-input wire [0 : 0] s_axis_video_TKEEP;
+input wire [1 : 0] s_axis_video_TKEEP;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TSTRB" *)
-input wire [0 : 0] s_axis_video_TSTRB;
+input wire [1 : 0] s_axis_video_TSTRB;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TUSER" *)
 input wire [0 : 0] s_axis_video_TUSER;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TLAST" *)
 input wire [0 : 0] s_axis_video_TLAST;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TID" *)
 input wire [0 : 0] s_axis_video_TID;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_video, TDATA_NUM_BYTES 1, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN video_crop_bd_aclk_50MHz, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_video, TDATA_NUM_BYTES 2, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN video_crop_bd_aclk_50MHz, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TDEST" *)
 input wire [0 : 0] s_axis_video_TDEST;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TVALID" *)
@@ -164,18 +164,18 @@ output wire m_axis_video_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TREADY" *)
 input wire m_axis_video_TREADY;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TDATA" *)
-output wire [23 : 0] m_axis_video_TDATA;
+output wire [47 : 0] m_axis_video_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TKEEP" *)
-output wire [2 : 0] m_axis_video_TKEEP;
+output wire [5 : 0] m_axis_video_TKEEP;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TSTRB" *)
-output wire [2 : 0] m_axis_video_TSTRB;
+output wire [5 : 0] m_axis_video_TSTRB;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TUSER" *)
 output wire [0 : 0] m_axis_video_TUSER;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TLAST" *)
 output wire [0 : 0] m_axis_video_TLAST;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TID" *)
 output wire [0 : 0] m_axis_video_TID;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_video, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN video_crop_bd_aclk_50MHz, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_video, TDATA_NUM_BYTES 6, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.000, CLK_DOMAIN video_crop_bd_aclk_50MHz, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TDEST" *)
 output wire [0 : 0] m_axis_video_TDEST;
 

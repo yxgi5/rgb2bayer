@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Aug  4 18:16:11 2021" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Aug  4 14:09:09 2021" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="video_crop_bd" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -25,8 +25,12 @@
         <CONNECTION INSTANCE="v_tpg_0" PORT="ap_rst_n"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="31" NAME="hsize" RIGHT="0" SIGIS="data"/>
-    <PORT DIR="O" LEFT="23" NAME="tdata" RIGHT="0" SIGIS="undef" SIGNAME="v_demosaic_0_m_axis_video_TDATA">
+    <PORT DIR="I" LEFT="31" NAME="hsize" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_hsize">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2bayer_0" PORT="hsize_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="47" NAME="tdata" RIGHT="0" SIGIS="undef" SIGNAME="v_demosaic_0_m_axis_video_TDATA">
       <CONNECTIONS>
         <CONNECTION INSTANCE="v_demosaic_0" PORT="m_axis_video_TDATA"/>
       </CONNECTIONS>
@@ -51,7 +55,11 @@
         <CONNECTION INSTANCE="v_demosaic_0" PORT="m_axis_video_TVALID"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="31" NAME="vsize" RIGHT="0" SIGIS="data"/>
+    <PORT DIR="I" LEFT="31" NAME="vsize" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_vsize">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="rgb2bayer_0" PORT="vsize_in"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES/>
@@ -501,19 +509,19 @@
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
-        <PARAMETER NAME="C_S_AXIS_TDATA_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_S_AXIS_TDATA_WIDTH" VALUE="16"/>
         <PARAMETER NAME="C_S_AXIS_TID_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_S_AXIS_TDEST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_S_AXIS_TUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_S_AXIS_SIGNAL_SET" VALUE="0b00000000000000000000000011111111"/>
-        <PARAMETER NAME="C_M_AXIS_TDATA_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_M_AXIS_TDATA_WIDTH" VALUE="16"/>
         <PARAMETER NAME="C_M_AXIS_TID_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_M_AXIS_TDEST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_M_AXIS_SIGNAL_SET" VALUE="0b00000000000000000000000011111111"/>
         <PARAMETER NAME="C_M_AXIS_TUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_DEFAULT_TLAST" VALUE="0"/>
-        <PARAMETER NAME="S_TDATA_NUM_BYTES" VALUE="1"/>
-        <PARAMETER NAME="M_TDATA_NUM_BYTES" VALUE="1"/>
+        <PARAMETER NAME="S_TDATA_NUM_BYTES" VALUE="2"/>
+        <PARAMETER NAME="M_TDATA_NUM_BYTES" VALUE="2"/>
         <PARAMETER NAME="S_TID_WIDTH" VALUE="1"/>
         <PARAMETER NAME="M_TID_WIDTH" VALUE="1"/>
         <PARAMETER NAME="S_TDEST_WIDTH" VALUE="1"/>
@@ -530,12 +538,12 @@
         <PARAMETER NAME="M_HAS_TLAST" VALUE="1"/>
         <PARAMETER NAME="HAS_ACLKEN" VALUE="0"/>
         <PARAMETER NAME="DEFAULT_TLAST" VALUE="0"/>
-        <PARAMETER NAME="TDATA_REMAP" VALUE="tdata[7:0]"/>
+        <PARAMETER NAME="TDATA_REMAP" VALUE="tdata[15:0]"/>
         <PARAMETER NAME="TUSER_REMAP" VALUE="tuser[0:0]"/>
         <PARAMETER NAME="TID_REMAP" VALUE="tid[0:0]"/>
         <PARAMETER NAME="TDEST_REMAP" VALUE="tdest[0:0]"/>
-        <PARAMETER NAME="TKEEP_REMAP" VALUE="tkeep[0:0]"/>
-        <PARAMETER NAME="TSTRB_REMAP" VALUE="tstrb[0:0]"/>
+        <PARAMETER NAME="TKEEP_REMAP" VALUE="tkeep[1:0]"/>
+        <PARAMETER NAME="TSTRB_REMAP" VALUE="tstrb[1:0]"/>
         <PARAMETER NAME="TLAST_REMAP" VALUE="tlast[0]"/>
         <PARAMETER NAME="Component_Name" VALUE="video_crop_bd_axis_subset_converter_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
@@ -561,17 +569,17 @@
             <CONNECTION INSTANCE="rgb2bayer_0" PORT="m_axis_video_TREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tdata">
+        <PORT DIR="I" LEFT="15" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2bayer_0" PORT="m_axis_video_TDATA"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="s_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tstrb">
+        <PORT DIR="I" LEFT="1" NAME="s_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tstrb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2bayer_0" PORT="m_axis_video_TSTRB"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="s_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tkeep">
+        <PORT DIR="I" LEFT="1" NAME="s_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tkeep">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2bayer_0" PORT="m_axis_video_TKEEP"/>
           </CONNECTIONS>
@@ -606,17 +614,17 @@
             <CONNECTION INSTANCE="v_demosaic_0" PORT="s_axis_video_TREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="7" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_m_axis_tdata">
+        <PORT DIR="O" LEFT="15" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_m_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_demosaic_0" PORT="s_axis_video_TDATA"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="m_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_m_axis_tstrb">
+        <PORT DIR="O" LEFT="1" NAME="m_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_m_axis_tstrb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_demosaic_0" PORT="s_axis_video_TSTRB"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="m_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_m_axis_tkeep">
+        <PORT DIR="O" LEFT="1" NAME="m_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_m_axis_tkeep">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_demosaic_0" PORT="s_axis_video_TKEEP"/>
           </CONNECTIONS>
@@ -644,7 +652,7 @@
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="rgb2bayer_0_m_axis_video" NAME="S_AXIS" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="1"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
@@ -670,7 +678,7 @@
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="axis_subset_converter_0_M_AXIS" NAME="M_AXIS" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="1"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
@@ -697,15 +705,9 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="2108021761" FULLNAME="/rgb2bayer_0" HWVERSION="1.0" INSTANCE="rgb2bayer_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2bayer" VLNV="xilinx.com:hls:rgb2bayer:1.0">
+    <MODULE COREREVISION="2108041354" FULLNAME="/rgb2bayer_0" HWVERSION="1.0" INSTANCE="rgb2bayer_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2bayer" VLNV="xilinx.com:hls:rgb2bayer:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="NUM_VIDEO_COMPONENTS" VALUE="3"/>
-        <PARAMETER NAME="SAMPLES_PER_CLOCK" VALUE="1"/>
-        <PARAMETER NAME="MAXIMUM_DATA_WIDTH" VALUE="8"/>
-        <PARAMETER NAME="MAXIMUM_NUMBER_OF_COLUMNS" VALUE="480"/>
-        <PARAMETER NAME="MAXIMUM_NUMBER_OF_ROWS" VALUE="640"/>
-        <PARAMETER NAME="BAYER_PATTERN" VALUE="RGGB"/>
         <PARAMETER NAME="Component_Name" VALUE="video_crop_bd_rgb2bayer_0_0"/>
         <PARAMETER NAME="clk_period" VALUE="10"/>
         <PARAMETER NAME="machine" VALUE="64"/>
@@ -725,11 +727,6 @@
             <CONNECTION INSTANCE="External_Ports" PORT="aresetn_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="23" NAME="s_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TDATA">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TDATA"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="s_axis_video_TVALID" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TVALID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TVALID"/>
@@ -740,12 +737,22 @@
             <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="2" NAME="s_axis_video_TKEEP" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TKEEP">
+        <PORT DIR="I" LEFT="47" NAME="s_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="s_axis_video_TDEST" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TDEST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TDEST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="5" NAME="s_axis_video_TKEEP" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TKEEP">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TKEEP"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="2" NAME="s_axis_video_TSTRB" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TSTRB">
+        <PORT DIR="I" LEFT="5" NAME="s_axis_video_TSTRB" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TSTRB">
           <CONNECTIONS>
             <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TSTRB"/>
           </CONNECTIONS>
@@ -765,16 +772,6 @@
             <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="s_axis_video_TDEST" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TDEST">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="v_tpg_0" PORT="m_axis_video_TDEST"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="7" NAME="m_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_subset_converter_0" PORT="s_axis_tdata"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="O" NAME="m_axis_video_TVALID" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axis_subset_converter_0" PORT="s_axis_tvalid"/>
@@ -785,12 +782,22 @@
             <CONNECTION INSTANCE="axis_subset_converter_0" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TKEEP" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tkeep">
+        <PORT DIR="O" LEFT="15" NAME="m_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_subset_converter_0" PORT="s_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TDEST" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tdest">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_subset_converter_0" PORT="s_axis_tdest"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m_axis_video_TKEEP" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tkeep">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axis_subset_converter_0" PORT="s_axis_tkeep"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TSTRB" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tstrb">
+        <PORT DIR="O" LEFT="1" NAME="m_axis_video_TSTRB" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tstrb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axis_subset_converter_0" PORT="s_axis_tstrb"/>
           </CONNECTIONS>
@@ -810,17 +817,25 @@
             <CONNECTION INSTANCE="axis_subset_converter_0" PORT="s_axis_tid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="m_axis_video_TDEST" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_s_axis_tdest">
+        <PORT DIR="I" LEFT="31" NAME="hsize_in" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_hsize">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_subset_converter_0" PORT="s_axis_tdest"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="hsize"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="hsize" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="31" NAME="vsize" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="vsize_in" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_vsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="vsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="pattern_V" RIGHT="0" SIGIS="data" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="v_tpg_0_m_axis_video" NAME="s_axis_video" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
@@ -846,7 +861,7 @@
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="rgb2bayer_0_m_axis_video" NAME="m_axis_video" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="1"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
@@ -884,7 +899,7 @@
         <PARAMETER NAME="C_S_AXI_CTRL_ADDR_WIDTH" VALUE="6"/>
         <PARAMETER NAME="C_S_AXI_CTRL_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="Component_Name" VALUE="video_crop_bd_v_demosaic_0_0"/>
-        <PARAMETER NAME="SAMPLES_PER_CLOCK" VALUE="1"/>
+        <PARAMETER NAME="SAMPLES_PER_CLOCK" VALUE="2"/>
         <PARAMETER NAME="MAX_COLS" VALUE="3840"/>
         <PARAMETER NAME="MAX_ROWS" VALUE="2160"/>
         <PARAMETER NAME="MAX_DATA_WIDTH" VALUE="8"/>
@@ -1002,17 +1017,17 @@
             <CONNECTION INSTANCE="axis_subset_converter_0" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="s_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_m_axis_tdata">
+        <PORT DIR="I" LEFT="15" NAME="s_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_m_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axis_subset_converter_0" PORT="m_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="s_axis_video_TKEEP" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_m_axis_tkeep">
+        <PORT DIR="I" LEFT="1" NAME="s_axis_video_TKEEP" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_m_axis_tkeep">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axis_subset_converter_0" PORT="m_axis_tkeep"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="s_axis_video_TSTRB" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_m_axis_tstrb">
+        <PORT DIR="I" LEFT="1" NAME="s_axis_video_TSTRB" RIGHT="0" SIGIS="undef" SIGNAME="axis_subset_converter_0_m_axis_tstrb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axis_subset_converter_0" PORT="m_axis_tstrb"/>
           </CONNECTIONS>
@@ -1047,13 +1062,13 @@
             <CONNECTION INSTANCE="External_Ports" PORT="tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="23" NAME="m_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="v_demosaic_0_m_axis_video_TDATA">
+        <PORT DIR="O" LEFT="47" NAME="m_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="v_demosaic_0_m_axis_video_TDATA">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="m_axis_video_TKEEP" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="2" NAME="m_axis_video_TSTRB" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="5" NAME="m_axis_video_TKEEP" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="5" NAME="m_axis_video_TSTRB" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" LEFT="0" NAME="m_axis_video_TUSER" RIGHT="0" SIGIS="undef" SIGNAME="v_demosaic_0_m_axis_video_TUSER">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="tuser"/>
@@ -1121,7 +1136,7 @@
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="axis_subset_converter_0_M_AXIS" NAME="s_axis_video" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="1"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
@@ -1147,7 +1162,7 @@
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="m_axis_video" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
@@ -1185,7 +1200,7 @@
         <PARAMETER NAME="C_S_AXI_CTRL_ADDR_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_S_AXI_CTRL_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="Component_Name" VALUE="video_crop_bd_v_tpg_0_0"/>
-        <PARAMETER NAME="SAMPLES_PER_CLOCK" VALUE="1"/>
+        <PARAMETER NAME="SAMPLES_PER_CLOCK" VALUE="2"/>
         <PARAMETER NAME="MAX_COLS" VALUE="4096"/>
         <PARAMETER NAME="MAX_ROWS" VALUE="2160"/>
         <PARAMETER NAME="MAX_DATA_WIDTH" VALUE="8"/>
@@ -1311,17 +1326,17 @@
             <CONNECTION INSTANCE="rgb2bayer_0" PORT="s_axis_video_TREADY"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="23" NAME="m_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TDATA">
+        <PORT DIR="O" LEFT="47" NAME="m_axis_video_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TDATA">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2bayer_0" PORT="s_axis_video_TDATA"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="m_axis_video_TKEEP" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TKEEP">
+        <PORT DIR="O" LEFT="5" NAME="m_axis_video_TKEEP" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TKEEP">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2bayer_0" PORT="s_axis_video_TKEEP"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="m_axis_video_TSTRB" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TSTRB">
+        <PORT DIR="O" LEFT="5" NAME="m_axis_video_TSTRB" RIGHT="0" SIGIS="undef" SIGNAME="rgb2bayer_0_s_axis_video_TSTRB">
           <CONNECTIONS>
             <CONNECTION INSTANCE="rgb2bayer_0" PORT="s_axis_video_TSTRB"/>
           </CONNECTIONS>
@@ -1401,7 +1416,7 @@
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="v_tpg_0_m_axis_video" NAME="m_axis_video" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="6"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
@@ -1437,7 +1452,11 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" LEFT="1" NAME="dout" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="1" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rgb2bayer_0" PORT="pattern_V"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'rgb2bayer'" level="0">
-<item name = "Date">Wed Aug  4 11:09:29 2021
+<item name = "Date">Wed Aug  4 13:52:41 2021
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">rgb2bayer</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.510, 1.25</column>
+<column name="ap_clk">10.00, 3.466, 1.25</column>
 </table>
 </item>
 </section>
@@ -35,7 +35,8 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">?, ?, 3, 1, 1, ?, yes</column>
+<column name="- Loop 1">?, ?, ?, -, -, ?, no</column>
+<column name=" + Loop 1.1">?, ?, 2, -, -, ?, no</column>
 </table>
 </item>
 </section>

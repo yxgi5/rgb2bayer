@@ -378,3 +378,4 @@ c_accum_v12_0_12=$RDI_DATADIR/xsim/ip/c_accum_v12_0_12
 amm_axi_bridge_v1_0_4=$RDI_DATADIR/xsim/ip/amm_axi_bridge_v1_0_4
 rst_vip_v1_0_2=$RDI_DATADIR/xsim/ip/rst_vip_v1_0_2
 xsdbm_v2_0_0=$RDI_DATADIR/xsim/ip/xsdbm_v2_0_0
+xil_defaultlib=xsim.dir/xil_defaultlib

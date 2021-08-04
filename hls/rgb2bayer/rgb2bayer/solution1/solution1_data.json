@@ -41,7 +41,7 @@
     "Vhdl": ["impl\/vhdl\/rgb2bayer.vhd"],
     "Verilog": ["impl\/verilog\/rgb2bayer.v"],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/home\/andreas\/workdir\/figkey\/HLS\/repo\/loop\/hls\/rgb2bayer\/rgb2bayer\/solution1\/.autopilot\/db\/rgb2bayer.design.xml"
+    "DesignXml": "\/home\/andreas\/workdir\/figkey\/HLS\/repo\/loop_repo\/hls\/rgb2bayer\/rgb2bayer\/solution1\/.autopilot\/db\/rgb2bayer.design.xml"
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -77,7 +77,7 @@
       "ctype": {
         "TDATA": {
           "Type": "integer unsigned",
-          "Width": "8"
+          "Width": "16"
         },
         "TREADY": {"Type": "bool"},
         "TVALID": {"Type": "bool"},
@@ -87,11 +87,11 @@
         },
         "TKEEP": {
           "Type": "integer unsigned",
-          "Width": "1"
+          "Width": "2"
         },
         "TSTRB": {
           "Type": "integer unsigned",
-          "Width": "1"
+          "Width": "2"
         },
         "TUSER": {
           "Type": "integer unsigned",
@@ -107,12 +107,12 @@
         }
       },
       "port_width": {
-        "TDATA": "8",
+        "TDATA": "16",
         "TDEST": "1",
         "TID": "1",
-        "TKEEP": "1",
+        "TKEEP": "2",
         "TLAST": "1",
-        "TSTRB": "1",
+        "TSTRB": "2",
         "TUSER": "1"
       }
     },
@@ -133,7 +133,7 @@
       "ctype": {
         "TDATA": {
           "Type": "integer unsigned",
-          "Width": "24"
+          "Width": "48"
         },
         "TVALID": {"Type": "bool"},
         "TREADY": {"Type": "bool"},
@@ -143,11 +143,11 @@
         },
         "TKEEP": {
           "Type": "integer unsigned",
-          "Width": "3"
+          "Width": "6"
         },
         "TSTRB": {
           "Type": "integer unsigned",
-          "Width": "3"
+          "Width": "6"
         },
         "TUSER": {
           "Type": "integer unsigned",
@@ -163,12 +163,12 @@
         }
       },
       "port_width": {
-        "TDATA": "24",
+        "TDATA": "48",
         "TDEST": "1",
         "TID": "1",
-        "TKEEP": "3",
+        "TKEEP": "6",
         "TLAST": "1",
-        "TSTRB": "3",
+        "TSTRB": "6",
         "TUSER": "1"
       }
     },
@@ -193,7 +193,7 @@
     },
     "s_axis_video_TDATA": {
       "dir": "in",
-      "width": "24"
+      "width": "48"
     },
     "s_axis_video_TVALID": {
       "dir": "in",
@@ -210,11 +210,11 @@
     },
     "s_axis_video_TKEEP": {
       "dir": "in",
-      "width": "3"
+      "width": "6"
     },
     "s_axis_video_TSTRB": {
       "dir": "in",
-      "width": "3"
+      "width": "6"
     },
     "s_axis_video_TUSER": {
       "dir": "in",
@@ -233,7 +233,7 @@
     },
     "m_axis_video_TDATA": {
       "dir": "out",
-      "width": "8"
+      "width": "16"
     },
     "m_axis_video_TREADY": {
       "dir": "in",
@@ -250,13 +250,11 @@
     },
     "m_axis_video_TKEEP": {
       "dir": "out",
-      "width": "1",
-      "isVector": "true"
+      "width": "2"
     },
     "m_axis_video_TSTRB": {
       "dir": "out",
-      "width": "1",
-      "isVector": "true"
+      "width": "2"
     },
     "m_axis_video_TUSER": {
       "dir": "out",
@@ -383,20 +381,27 @@
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "1.25",
-          "Estimate": "8.510"
+          "Estimate": "3.466"
         },
         "Loops": [{
             "Name": "Loop 1",
             "TripCount": "",
             "Latency": "",
-            "PipelineII": "1",
-            "PipelineDepth": "3"
+            "PipelineII": "",
+            "PipelineDepth": "",
+            "Loops": [{
+                "Name": "Loop 1.1",
+                "TripCount": "",
+                "Latency": "",
+                "PipelineII": "",
+                "PipelineDepth": "2"
+              }]
           }],
         "Area": {
-          "DSP48E": "4",
-          "FF": "349",
-          "LUT": "797",
-          "BRAM_18K": "0"
+          "FF": "363",
+          "LUT": "823",
+          "BRAM_18K": "0",
+          "DSP48E": "0"
         }
       }}
   },
@@ -410,7 +415,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2021-08-04 11:09:30 CST",
+    "Time": "2021-08-04 13:52:42 CST",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

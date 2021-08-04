@@ -14,9 +14,10 @@ namespace ap_rtl {
 
 const sc_logic rgb2bayer::ap_const_logic_1 = sc_dt::Log_1;
 const sc_logic rgb2bayer::ap_const_logic_0 = sc_dt::Log_0;
-const sc_lv<3> rgb2bayer::ap_ST_fsm_state1 = "1";
-const sc_lv<3> rgb2bayer::ap_ST_fsm_pp0_stage0 = "10";
-const sc_lv<3> rgb2bayer::ap_ST_fsm_state5 = "100";
+const sc_lv<4> rgb2bayer::ap_ST_fsm_state1 = "1";
+const sc_lv<4> rgb2bayer::ap_ST_fsm_state2 = "10";
+const sc_lv<4> rgb2bayer::ap_ST_fsm_state3 = "100";
+const sc_lv<4> rgb2bayer::ap_ST_fsm_state4 = "1000";
 const bool rgb2bayer::ap_const_boolean_1 = true;
 const sc_lv<1> rgb2bayer::ap_const_lv1_0 = "0";
 const sc_lv<1> rgb2bayer::ap_const_lv1_1 = "1";
@@ -24,18 +25,22 @@ const sc_lv<2> rgb2bayer::ap_const_lv2_0 = "00";
 const sc_lv<2> rgb2bayer::ap_const_lv2_2 = "10";
 const sc_lv<2> rgb2bayer::ap_const_lv2_3 = "11";
 const sc_lv<2> rgb2bayer::ap_const_lv2_1 = "1";
-const sc_lv<32> rgb2bayer::ap_const_lv32_1 = "1";
-const bool rgb2bayer::ap_const_boolean_0 = false;
+const sc_lv<32> rgb2bayer::ap_const_lv32_2 = "10";
+const sc_lv<32> rgb2bayer::ap_const_lv32_3 = "11";
 const sc_lv<32> rgb2bayer::ap_const_lv32_0 = "00000000000000000000000000000000";
-const sc_lv<64> rgb2bayer::ap_const_lv64_0 = "0000000000000000000000000000000000000000000000000000000000000000";
+const sc_lv<32> rgb2bayer::ap_const_lv32_1 = "1";
 const sc_lv<31> rgb2bayer::ap_const_lv31_0 = "0000000000000000000000000000000";
-const sc_lv<64> rgb2bayer::ap_const_lv64_1 = "1";
 const sc_lv<31> rgb2bayer::ap_const_lv31_1 = "1";
+const sc_lv<32> rgb2bayer::ap_const_lv32_1F = "11111";
+const sc_lv<32> rgb2bayer::ap_const_lv32_FFFFFFFF = "11111111111111111111111111111111";
 const sc_lv<32> rgb2bayer::ap_const_lv32_10 = "10000";
-const sc_lv<32> rgb2bayer::ap_const_lv32_17 = "10111";
+const sc_lv<32> rgb2bayer::ap_const_lv32_20 = "100000";
+const sc_lv<32> rgb2bayer::ap_const_lv32_27 = "100111";
+const sc_lv<32> rgb2bayer::ap_const_lv32_28 = "101000";
+const sc_lv<32> rgb2bayer::ap_const_lv32_2F = "101111";
 const sc_lv<32> rgb2bayer::ap_const_lv32_8 = "1000";
 const sc_lv<32> rgb2bayer::ap_const_lv32_F = "1111";
-const sc_lv<32> rgb2bayer::ap_const_lv32_2 = "10";
+const sc_lv<32> rgb2bayer::ap_const_lv32_18 = "11000";
 
 rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
 
@@ -43,57 +48,19 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     dont_initialize();
     sensitive << ( ap_clk.pos() );
 
-    SC_METHOD(thread_ap_CS_fsm_pp0_stage0);
-    sensitive << ( ap_CS_fsm );
-
     SC_METHOD(thread_ap_CS_fsm_state1);
     sensitive << ( ap_CS_fsm );
 
-    SC_METHOD(thread_ap_CS_fsm_state5);
+    SC_METHOD(thread_ap_CS_fsm_state2);
     sensitive << ( ap_CS_fsm );
 
-    SC_METHOD(thread_ap_block_pp0_stage0);
+    SC_METHOD(thread_ap_CS_fsm_state3);
+    sensitive << ( ap_CS_fsm );
 
-    SC_METHOD(thread_ap_block_pp0_stage0_01001);
-    sensitive << ( s_axis_video_V_data_V_0_vld_out );
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( exitcond_flatten_fu_219_p2 );
+    SC_METHOD(thread_ap_CS_fsm_state4);
+    sensitive << ( ap_CS_fsm );
 
-    SC_METHOD(thread_ap_block_pp0_stage0_11001);
-    sensitive << ( s_axis_video_V_data_V_0_vld_out );
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( exitcond_flatten_fu_219_p2 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( ap_enable_reg_pp0_iter2 );
-    sensitive << ( ap_block_state3_io );
-    sensitive << ( ap_block_state4_io );
-
-    SC_METHOD(thread_ap_block_pp0_stage0_subdone);
-    sensitive << ( s_axis_video_V_data_V_0_vld_out );
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( exitcond_flatten_fu_219_p2 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( ap_enable_reg_pp0_iter2 );
-    sensitive << ( ap_block_state3_io );
-    sensitive << ( ap_block_state4_io );
-
-    SC_METHOD(thread_ap_block_state2_pp0_stage0_iter0);
-    sensitive << ( s_axis_video_V_data_V_0_vld_out );
-    sensitive << ( exitcond_flatten_fu_219_p2 );
-
-    SC_METHOD(thread_ap_block_state3_io);
-    sensitive << ( m_axis_video_V_data_V_1_ack_in );
-    sensitive << ( exitcond_flatten_reg_523 );
-
-    SC_METHOD(thread_ap_block_state3_pp0_stage0_iter1);
-
-    SC_METHOD(thread_ap_block_state4_io);
-    sensitive << ( m_axis_video_V_data_V_1_ack_in );
-    sensitive << ( exitcond_flatten_reg_523_pp0_iter1_reg );
-
-    SC_METHOD(thread_ap_block_state4_pp0_stage0_iter2);
-
-    SC_METHOD(thread_ap_block_state5);
+    SC_METHOD(thread_ap_block_state2);
     sensitive << ( m_axis_video_V_data_V_1_ack_in );
     sensitive << ( m_axis_video_V_keep_V_1_ack_in );
     sensitive << ( m_axis_video_V_strb_V_1_ack_in );
@@ -102,95 +69,37 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( m_axis_video_V_id_V_1_ack_in );
     sensitive << ( m_axis_video_V_dest_V_1_ack_in );
 
-    SC_METHOD(thread_ap_condition_901);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( exitcond_flatten_fu_219_p2 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
+    SC_METHOD(thread_ap_block_state3);
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( tmp_10_fu_379_p2 );
 
-    SC_METHOD(thread_ap_condition_pp0_exit_iter0_state2);
-    sensitive << ( exitcond_flatten_fu_219_p2 );
-
-    SC_METHOD(thread_ap_enable_pp0);
-    sensitive << ( ap_idle_pp0 );
-
-    SC_METHOD(thread_ap_idle_pp0);
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( ap_enable_reg_pp0_iter2 );
-
-    SC_METHOD(thread_ap_phi_mux_j_phi_fu_178_p4);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_block_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( exitcond_flatten_reg_523 );
-    sensitive << ( j_reg_174 );
-    sensitive << ( j_cast5_mid2_v_reg_532 );
+    SC_METHOD(thread_ap_block_state3_io);
+    sensitive << ( m_axis_video_V_data_V_1_ack_in );
+    sensitive << ( tmp_10_fu_379_p2 );
 
     SC_METHOD(thread_ap_rst_n_inv);
     sensitive << ( ap_rst_n );
 
-    SC_METHOD(thread_bound_fu_204_p0);
-    sensitive << ( ap_CS_fsm_state1 );
-    sensitive << ( bound_fu_204_p00 );
-
-    SC_METHOD(thread_bound_fu_204_p00);
+    SC_METHOD(thread_hsize_in_op_op_fu_311_p2);
     sensitive << ( hsize_in );
 
-    SC_METHOD(thread_bound_fu_204_p1);
-    sensitive << ( ap_CS_fsm_state1 );
-    sensitive << ( bound_fu_204_p10 );
+    SC_METHOD(thread_i_1_fu_536_p2);
+    sensitive << ( i_reg_204 );
 
-    SC_METHOD(thread_bound_fu_204_p10);
-    sensitive << ( vsize_in );
+    SC_METHOD(thread_j_1_fu_248_p2);
+    sensitive << ( j_reg_193 );
 
-    SC_METHOD(thread_bound_fu_204_p2);
-    sensitive << ( bound_fu_204_p0 );
-    sensitive << ( bound_fu_204_p1 );
-
-    SC_METHOD(thread_exitcond_flatten_fu_219_p2);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( indvar_flatten_reg_163 );
-    sensitive << ( bound_reg_518 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
-
-    SC_METHOD(thread_i_1_fu_488_p3);
-    sensitive << ( tmp_4_fu_214_p2 );
-    sensitive << ( i_op_fu_482_p2 );
-
-    SC_METHOD(thread_i_cast4_mid2_fu_252_p2);
-    sensitive << ( tmp_4_fu_214_p2 );
-    sensitive << ( tmp_3_fu_248_p1 );
-
-    SC_METHOD(thread_i_cast_fu_210_p1);
-    sensitive << ( i_reg_185 );
-
-    SC_METHOD(thread_i_op_fu_482_p2);
-    sensitive << ( i_reg_185 );
-
-    SC_METHOD(thread_indvar_flatten_next_fu_224_p2);
-    sensitive << ( indvar_flatten_reg_163 );
-
-    SC_METHOD(thread_j_cast5_mid2_v_fu_236_p3);
-    sensitive << ( ap_phi_mux_j_phi_fu_178_p4 );
-    sensitive << ( tmp_4_fu_214_p2 );
-    sensitive << ( j_s_fu_230_p2 );
-
-    SC_METHOD(thread_j_s_fu_230_p2);
-    sensitive << ( ap_phi_mux_j_phi_fu_178_p4 );
+    SC_METHOD(thread_j_cast_fu_239_p1);
+    sensitive << ( j_reg_193 );
 
     SC_METHOD(thread_m_axis_video_TDATA);
     sensitive << ( m_axis_video_V_data_V_1_data_out );
 
     SC_METHOD(thread_m_axis_video_TDATA_blk_n);
     sensitive << ( m_axis_video_V_data_V_1_state );
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_block_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( exitcond_flatten_reg_523 );
-    sensitive << ( ap_enable_reg_pp0_iter2 );
-    sensitive << ( exitcond_flatten_reg_523_pp0_iter1_reg );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_CS_fsm_state4 );
 
     SC_METHOD(thread_m_axis_video_TDEST);
     sensitive << ( m_axis_video_V_dest_V_1_data_out );
@@ -239,10 +148,10 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( m_axis_video_V_data_V_1_state );
 
     SC_METHOD(thread_m_axis_video_V_data_V_1_vld_in);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( exitcond_flatten_reg_523 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_block_state3_io );
 
     SC_METHOD(thread_m_axis_video_V_data_V_1_vld_out);
     sensitive << ( m_axis_video_V_data_V_1_state );
@@ -260,10 +169,10 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( m_axis_video_V_dest_V_1_sel_rd );
 
     SC_METHOD(thread_m_axis_video_V_dest_V_1_vld_in);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( exitcond_flatten_reg_523 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_block_state3_io );
 
     SC_METHOD(thread_m_axis_video_V_dest_V_1_vld_out);
     sensitive << ( m_axis_video_V_dest_V_1_state );
@@ -281,10 +190,10 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( m_axis_video_V_id_V_1_sel_rd );
 
     SC_METHOD(thread_m_axis_video_V_id_V_1_vld_in);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( exitcond_flatten_reg_523 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_block_state3_io );
 
     SC_METHOD(thread_m_axis_video_V_id_V_1_vld_out);
     sensitive << ( m_axis_video_V_id_V_1_state );
@@ -302,10 +211,10 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( m_axis_video_V_keep_V_1_sel_rd );
 
     SC_METHOD(thread_m_axis_video_V_keep_V_1_vld_in);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( exitcond_flatten_reg_523 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_block_state3_io );
 
     SC_METHOD(thread_m_axis_video_V_keep_V_1_vld_out);
     sensitive << ( m_axis_video_V_keep_V_1_state );
@@ -336,10 +245,10 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( m_axis_video_V_last_V_1_state );
 
     SC_METHOD(thread_m_axis_video_V_last_V_1_vld_in);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( exitcond_flatten_reg_523 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_block_state3_io );
 
     SC_METHOD(thread_m_axis_video_V_last_V_1_vld_out);
     sensitive << ( m_axis_video_V_last_V_1_state );
@@ -357,10 +266,10 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( m_axis_video_V_strb_V_1_sel_rd );
 
     SC_METHOD(thread_m_axis_video_V_strb_V_1_vld_in);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( exitcond_flatten_reg_523 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_block_state3_io );
 
     SC_METHOD(thread_m_axis_video_V_strb_V_1_vld_out);
     sensitive << ( m_axis_video_V_strb_V_1_state );
@@ -391,24 +300,54 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( m_axis_video_V_user_V_1_state );
 
     SC_METHOD(thread_m_axis_video_V_user_V_1_vld_in);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( exitcond_flatten_reg_523 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_block_state3_io );
 
     SC_METHOD(thread_m_axis_video_V_user_V_1_vld_out);
     sensitive << ( m_axis_video_V_user_V_1_state );
 
-    SC_METHOD(thread_pattern_V_read_read_fu_98_p2);
-    sensitive << ( pattern_V );
-    sensitive << ( ap_CS_fsm_state1 );
+    SC_METHOD(thread_p_Result_1_fu_425_p3);
+    sensitive << ( p_Result_6_fu_415_p4 );
+    sensitive << ( tmp_11_fu_411_p1 );
+
+    SC_METHOD(thread_p_Result_2_fu_451_p4);
+    sensitive << ( s_axis_video_V_data_V_0_data_out );
+
+    SC_METHOD(thread_p_Result_3_fu_461_p4);
+    sensitive << ( s_axis_video_V_data_V_0_data_out );
+
+    SC_METHOD(thread_p_Result_4_fu_443_p3);
+    sensitive << ( tmp_11_fu_411_p1 );
+    sensitive << ( p_Result_s_7_fu_433_p4 );
+
+    SC_METHOD(thread_p_Result_5_fu_471_p3);
+    sensitive << ( p_Result_3_fu_461_p4 );
+    sensitive << ( p_Result_2_fu_451_p4 );
+
+    SC_METHOD(thread_p_Result_6_fu_415_p4);
+    sensitive << ( s_axis_video_V_data_V_0_data_out );
+
+    SC_METHOD(thread_p_Result_s_7_fu_433_p4);
+    sensitive << ( s_axis_video_V_data_V_0_data_out );
+
+    SC_METHOD(thread_p_Result_s_fu_401_p4);
+    sensitive << ( s_axis_video_V_data_V_0_data_out );
+
+    SC_METHOD(thread_p_lshr_fu_329_p4);
+    sensitive << ( p_neg_fu_324_p2 );
+
+    SC_METHOD(thread_p_neg_fu_324_p2);
+    sensitive << ( hsize_in );
+
+    SC_METHOD(thread_p_neg_t_fu_339_p2);
+    sensitive << ( p_lshr_fu_329_p4 );
 
     SC_METHOD(thread_s_axis_video_TDATA_blk_n);
     sensitive << ( s_axis_video_V_data_V_0_state );
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( ap_block_pp0_stage0 );
-    sensitive << ( exitcond_flatten_fu_219_p2 );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
 
     SC_METHOD(thread_s_axis_video_TREADY);
     sensitive << ( s_axis_video_V_dest_V_0_state );
@@ -417,10 +356,10 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( s_axis_video_V_data_V_0_state );
 
     SC_METHOD(thread_s_axis_video_V_data_V_0_ack_out);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( exitcond_flatten_fu_219_p2 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_block_state3_io );
 
     SC_METHOD(thread_s_axis_video_V_data_V_0_data_out);
     sensitive << ( s_axis_video_V_data_V_0_payload_A );
@@ -448,10 +387,10 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( s_axis_video_V_data_V_0_state );
 
     SC_METHOD(thread_s_axis_video_V_dest_V_0_ack_out);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( exitcond_flatten_fu_219_p2 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_block_state3_io );
 
     SC_METHOD(thread_s_axis_video_V_dest_V_0_vld_in);
     sensitive << ( s_axis_video_TVALID );
@@ -460,10 +399,10 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( s_axis_video_V_last_V_0_state );
 
     SC_METHOD(thread_s_axis_video_V_last_V_0_ack_out);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( exitcond_flatten_fu_219_p2 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_block_state3_io );
 
     SC_METHOD(thread_s_axis_video_V_last_V_0_data_out);
     sensitive << ( s_axis_video_V_last_V_0_payload_A );
@@ -494,10 +433,10 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( s_axis_video_V_user_V_0_state );
 
     SC_METHOD(thread_s_axis_video_V_user_V_0_ack_out);
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( exitcond_flatten_fu_219_p2 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_block_state3_io );
 
     SC_METHOD(thread_s_axis_video_V_user_V_0_data_out);
     sensitive << ( s_axis_video_V_user_V_0_payload_A );
@@ -524,116 +463,146 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     SC_METHOD(thread_s_axis_video_V_user_V_0_vld_out);
     sensitive << ( s_axis_video_V_user_V_0_state );
 
-    SC_METHOD(thread_tmp_10_fu_398_p4);
+    SC_METHOD(thread_sel_tmp10_fu_294_p2);
+    sensitive << ( sel_tmp3_reg_583 );
+    sensitive << ( tmp_3_fu_258_p2 );
+
+    SC_METHOD(thread_sel_tmp11_fu_299_p2);
+    sensitive << ( sel_tmp3_reg_583 );
+    sensitive << ( tmp_2_fu_254_p1 );
+
+    SC_METHOD(thread_sel_tmp1_fu_264_p2);
+    sensitive << ( sel_tmp_reg_565 );
+    sensitive << ( tmp_3_fu_258_p2 );
+
+    SC_METHOD(thread_sel_tmp2_fu_279_p2);
+    sensitive << ( sel_tmp7_reg_571 );
+    sensitive << ( tmp_2_fu_254_p1 );
+
+    SC_METHOD(thread_sel_tmp3_fu_233_p2);
+    sensitive << ( pattern_V );
+    sensitive << ( ap_CS_fsm_state1 );
+
+    SC_METHOD(thread_sel_tmp4_fu_227_p2);
+    sensitive << ( pattern_V );
+    sensitive << ( ap_CS_fsm_state1 );
+
+    SC_METHOD(thread_sel_tmp5_fu_269_p2);
+    sensitive << ( sel_tmp_reg_565 );
+    sensitive << ( tmp_2_fu_254_p1 );
+
+    SC_METHOD(thread_sel_tmp6_fu_284_p2);
+    sensitive << ( sel_tmp4_reg_577 );
+    sensitive << ( tmp_3_fu_258_p2 );
+
+    SC_METHOD(thread_sel_tmp7_fu_221_p2);
+    sensitive << ( pattern_V );
+    sensitive << ( ap_CS_fsm_state1 );
+
+    SC_METHOD(thread_sel_tmp8_fu_274_p2);
+    sensitive << ( sel_tmp7_reg_571 );
+    sensitive << ( tmp_3_fu_258_p2 );
+
+    SC_METHOD(thread_sel_tmp9_fu_289_p2);
+    sensitive << ( sel_tmp4_reg_577 );
+    sensitive << ( tmp_2_fu_254_p1 );
+
+    SC_METHOD(thread_sel_tmp_fu_215_p2);
+    sensitive << ( pattern_V );
+    sensitive << ( ap_CS_fsm_state1 );
+
+    SC_METHOD(thread_tmp_10_fu_379_p2);
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( tmp_9_reg_637 );
+    sensitive << ( ap_block_state3_io );
+    sensitive << ( i_reg_204 );
+
+    SC_METHOD(thread_tmp_11_fu_411_p1);
     sensitive << ( s_axis_video_V_data_V_0_data_out );
 
-    SC_METHOD(thread_tmp_11_fu_408_p3);
-    sensitive << ( i_cast4_mid2_fu_252_p2 );
-    sensitive << ( tmp_8_fu_376_p1 );
-    sensitive << ( tmp_10_fu_398_p4 );
+    SC_METHOD(thread_tmp_1_fu_243_p2);
+    sensitive << ( m_axis_video_V_data_V_1_ack_in );
+    sensitive << ( m_axis_video_V_keep_V_1_ack_in );
+    sensitive << ( m_axis_video_V_strb_V_1_ack_in );
+    sensitive << ( m_axis_video_V_user_V_1_ack_in );
+    sensitive << ( m_axis_video_V_last_V_1_ack_in );
+    sensitive << ( m_axis_video_V_id_V_1_ack_in );
+    sensitive << ( m_axis_video_V_dest_V_1_ack_in );
+    sensitive << ( vsize_in );
+    sensitive << ( ap_CS_fsm_state2 );
+    sensitive << ( j_cast_fu_239_p1 );
 
-    SC_METHOD(thread_tmp_12_fu_323_p4);
-    sensitive << ( s_axis_video_V_data_V_0_data_out );
+    SC_METHOD(thread_tmp_2_fu_254_p1);
+    sensitive << ( j_reg_193 );
 
-    SC_METHOD(thread_tmp_13_fu_333_p1);
-    sensitive << ( s_axis_video_V_data_V_0_data_out );
+    SC_METHOD(thread_tmp_3_fu_258_p2);
+    sensitive << ( tmp_2_fu_254_p1 );
 
-    SC_METHOD(thread_tmp_14_fu_337_p3);
-    sensitive << ( i_cast4_mid2_fu_252_p2 );
-    sensitive << ( tmp_12_fu_323_p4 );
-    sensitive << ( tmp_13_fu_333_p1 );
-
-    SC_METHOD(thread_tmp_15_fu_345_p4);
-    sensitive << ( s_axis_video_V_data_V_0_data_out );
-
-    SC_METHOD(thread_tmp_16_fu_355_p3);
-    sensitive << ( i_cast4_mid2_fu_252_p2 );
-    sensitive << ( tmp_13_fu_333_p1 );
-    sensitive << ( tmp_15_fu_345_p4 );
-
-    SC_METHOD(thread_tmp_17_fu_270_p1);
-    sensitive << ( s_axis_video_V_data_V_0_data_out );
-
-    SC_METHOD(thread_tmp_18_fu_274_p4);
-    sensitive << ( s_axis_video_V_data_V_0_data_out );
-
-    SC_METHOD(thread_tmp_19_fu_284_p3);
-    sensitive << ( i_cast4_mid2_fu_252_p2 );
-    sensitive << ( tmp_17_fu_270_p1 );
-    sensitive << ( tmp_18_fu_274_p4 );
-
-    SC_METHOD(thread_tmp_1_fu_244_p1);
-    sensitive << ( j_cast5_mid2_v_fu_236_p3 );
-
-    SC_METHOD(thread_tmp_20_fu_292_p4);
-    sensitive << ( s_axis_video_V_data_V_0_data_out );
-
-    SC_METHOD(thread_tmp_21_fu_302_p3);
-    sensitive << ( i_cast4_mid2_fu_252_p2 );
-    sensitive << ( tmp_17_fu_270_p1 );
-    sensitive << ( tmp_20_fu_292_p4 );
-
-    SC_METHOD(thread_tmp_2_fu_443_p3);
-    sensitive << ( i_cast4_mid2_fu_252_p2 );
-    sensitive << ( tmp_fu_429_p4 );
-    sensitive << ( tmp_7_fu_439_p1 );
-
-    SC_METHOD(thread_tmp_3_fu_248_p1);
-    sensitive << ( i_reg_185 );
-
-    SC_METHOD(thread_tmp_4_fu_214_p2);
+    SC_METHOD(thread_tmp_4_fu_304_p3);
     sensitive << ( hsize_in );
-    sensitive << ( ap_CS_fsm_pp0_stage0 );
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( ap_block_pp0_stage0_11001 );
-    sensitive << ( i_cast_fu_210_p1 );
 
-    SC_METHOD(thread_tmp_5_fu_451_p4);
-    sensitive << ( s_axis_video_V_data_V_0_data_out );
+    SC_METHOD(thread_tmp_5_fu_316_p3);
+    sensitive << ( hsize_in_op_op_fu_311_p2 );
 
-    SC_METHOD(thread_tmp_6_fu_461_p3);
-    sensitive << ( i_cast4_mid2_fu_252_p2 );
-    sensitive << ( tmp_7_fu_439_p1 );
-    sensitive << ( tmp_5_fu_451_p4 );
+    SC_METHOD(thread_tmp_6_fu_345_p4);
+    sensitive << ( hsize_in_op_op_fu_311_p2 );
 
-    SC_METHOD(thread_tmp_7_fu_439_p1);
-    sensitive << ( s_axis_video_V_data_V_0_data_out );
+    SC_METHOD(thread_tmp_7_fu_355_p3);
+    sensitive << ( tmp_5_fu_316_p3 );
+    sensitive << ( p_neg_t_fu_339_p2 );
+    sensitive << ( tmp_6_fu_345_p4 );
 
-    SC_METHOD(thread_tmp_8_fu_376_p1);
-    sensitive << ( s_axis_video_V_data_V_0_data_out );
+    SC_METHOD(thread_tmp_8_fu_363_p3);
+    sensitive << ( tmp_4_fu_304_p3 );
+    sensitive << ( tmp_7_fu_355_p3 );
 
-    SC_METHOD(thread_tmp_9_fu_380_p4);
-    sensitive << ( s_axis_video_V_data_V_0_data_out );
+    SC_METHOD(thread_tmp_9_fu_371_p3);
+    sensitive << ( tmp_8_fu_363_p3 );
 
-    SC_METHOD(thread_tmp_fu_429_p4);
-    sensitive << ( s_axis_video_V_data_V_0_data_out );
+    SC_METHOD(thread_video_o_data_V_11_fu_521_p3);
+    sensitive << ( sel_tmp10_reg_627 );
+    sensitive << ( p_Result_1_fu_425_p3 );
+    sensitive << ( video_o_data_V_9_fu_514_p3 );
 
-    SC_METHOD(thread_tmp_s_fu_390_p3);
-    sensitive << ( i_cast4_mid2_fu_252_p2 );
-    sensitive << ( tmp_8_fu_376_p1 );
-    sensitive << ( tmp_9_fu_380_p4 );
+    SC_METHOD(thread_video_o_data_V_4_fu_479_p3);
+    sensitive << ( sel_tmp1_reg_597 );
+    sensitive << ( p_Val2_s_fu_124 );
+    sensitive << ( p_Result_s_fu_401_p4 );
 
-    SC_METHOD(thread_video_o_data_V_1_fu_416_p3);
-    sensitive << ( tmp_1_fu_244_p1 );
-    sensitive << ( tmp_s_fu_390_p3 );
-    sensitive << ( tmp_11_fu_408_p3 );
+    SC_METHOD(thread_video_o_data_V_5_fu_486_p3);
+    sensitive << ( sel_tmp5_reg_602 );
+    sensitive << ( p_Result_1_fu_425_p3 );
+    sensitive << ( video_o_data_V_4_fu_479_p3 );
 
-    SC_METHOD(thread_video_o_data_V_2_fu_363_p3);
-    sensitive << ( tmp_1_fu_244_p1 );
-    sensitive << ( tmp_14_fu_337_p3 );
-    sensitive << ( tmp_16_fu_355_p3 );
+    SC_METHOD(thread_video_o_data_V_6_fu_493_p3);
+    sensitive << ( sel_tmp8_reg_607 );
+    sensitive << ( p_Result_4_fu_443_p3 );
+    sensitive << ( video_o_data_V_5_fu_486_p3 );
 
-    SC_METHOD(thread_video_o_data_V_3_fu_310_p3);
-    sensitive << ( tmp_1_fu_244_p1 );
-    sensitive << ( tmp_19_fu_284_p3 );
-    sensitive << ( tmp_21_fu_302_p3 );
+    SC_METHOD(thread_video_o_data_V_7_fu_500_p3);
+    sensitive << ( sel_tmp2_reg_612 );
+    sensitive << ( p_Result_5_fu_471_p3 );
+    sensitive << ( video_o_data_V_6_fu_493_p3 );
 
-    SC_METHOD(thread_video_o_data_V_fu_469_p3);
-    sensitive << ( tmp_1_fu_244_p1 );
-    sensitive << ( tmp_2_fu_443_p3 );
-    sensitive << ( tmp_6_fu_461_p3 );
+    SC_METHOD(thread_video_o_data_V_8_fu_507_p3);
+    sensitive << ( sel_tmp6_reg_617 );
+    sensitive << ( p_Result_5_fu_471_p3 );
+    sensitive << ( video_o_data_V_7_fu_500_p3 );
+
+    SC_METHOD(thread_video_o_data_V_9_fu_514_p3);
+    sensitive << ( sel_tmp9_reg_622 );
+    sensitive << ( p_Result_4_fu_443_p3 );
+    sensitive << ( video_o_data_V_8_fu_507_p3 );
+
+    SC_METHOD(thread_video_o_data_V_fu_528_p3);
+    sensitive << ( sel_tmp11_reg_632 );
+    sensitive << ( p_Result_s_fu_401_p4 );
+    sensitive << ( video_o_data_V_11_fu_521_p3 );
 
     SC_METHOD(thread_ap_NS_fsm);
+    sensitive << ( s_axis_video_V_data_V_0_vld_out );
     sensitive << ( m_axis_video_V_data_V_1_ack_in );
     sensitive << ( m_axis_video_V_data_V_1_state );
     sensitive << ( m_axis_video_V_keep_V_1_ack_in );
@@ -649,12 +618,12 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sensitive << ( m_axis_video_V_dest_V_1_ack_in );
     sensitive << ( m_axis_video_V_dest_V_1_state );
     sensitive << ( ap_CS_fsm );
-    sensitive << ( ap_enable_reg_pp0_iter0 );
-    sensitive << ( exitcond_flatten_fu_219_p2 );
-    sensitive << ( ap_enable_reg_pp0_iter1 );
-    sensitive << ( ap_enable_reg_pp0_iter2 );
-    sensitive << ( ap_block_pp0_stage0_subdone );
-    sensitive << ( ap_CS_fsm_state5 );
+    sensitive << ( ap_CS_fsm_state3 );
+    sensitive << ( tmp_10_fu_379_p2 );
+    sensitive << ( ap_CS_fsm_state4 );
+    sensitive << ( ap_CS_fsm_state2 );
+    sensitive << ( tmp_1_fu_243_p2 );
+    sensitive << ( ap_block_state3_io );
 
     SC_THREAD(thread_hdltv_gen);
     sensitive << ( ap_clk.pos() );
@@ -686,10 +655,7 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     m_axis_video_V_id_V_1_state = "00";
     m_axis_video_V_dest_V_1_sel_rd = SC_LOGIC_0;
     m_axis_video_V_dest_V_1_state = "00";
-    ap_CS_fsm = "001";
-    ap_enable_reg_pp0_iter0 = SC_LOGIC_0;
-    ap_enable_reg_pp0_iter1 = SC_LOGIC_0;
-    ap_enable_reg_pp0_iter2 = SC_LOGIC_0;
+    ap_CS_fsm = "0001";
     static int apTFileNum = 0;
     stringstream apTFilenSS;
     apTFilenSS << "rgb2bayer_sc_trace_" << apTFileNum ++;
@@ -845,80 +811,79 @@ rgb2bayer::rgb2bayer(sc_module_name name) : sc_module(name), mVcdFile(0) {
     sc_trace(mVcdFile, m_axis_video_V_dest_V_1_state, "m_axis_video_V_dest_V_1_state");
     sc_trace(mVcdFile, s_axis_video_TDATA_blk_n, "s_axis_video_TDATA_blk_n");
     sc_trace(mVcdFile, ap_CS_fsm, "ap_CS_fsm");
-    sc_trace(mVcdFile, ap_CS_fsm_pp0_stage0, "ap_CS_fsm_pp0_stage0");
-    sc_trace(mVcdFile, ap_enable_reg_pp0_iter0, "ap_enable_reg_pp0_iter0");
-    sc_trace(mVcdFile, ap_block_pp0_stage0, "ap_block_pp0_stage0");
-    sc_trace(mVcdFile, exitcond_flatten_fu_219_p2, "exitcond_flatten_fu_219_p2");
+    sc_trace(mVcdFile, ap_CS_fsm_state3, "ap_CS_fsm_state3");
+    sc_trace(mVcdFile, tmp_10_fu_379_p2, "tmp_10_fu_379_p2");
     sc_trace(mVcdFile, m_axis_video_TDATA_blk_n, "m_axis_video_TDATA_blk_n");
-    sc_trace(mVcdFile, ap_enable_reg_pp0_iter1, "ap_enable_reg_pp0_iter1");
-    sc_trace(mVcdFile, exitcond_flatten_reg_523, "exitcond_flatten_reg_523");
-    sc_trace(mVcdFile, ap_enable_reg_pp0_iter2, "ap_enable_reg_pp0_iter2");
-    sc_trace(mVcdFile, exitcond_flatten_reg_523_pp0_iter1_reg, "exitcond_flatten_reg_523_pp0_iter1_reg");
-    sc_trace(mVcdFile, indvar_flatten_reg_163, "indvar_flatten_reg_163");
-    sc_trace(mVcdFile, j_reg_174, "j_reg_174");
-    sc_trace(mVcdFile, i_reg_185, "i_reg_185");
-    sc_trace(mVcdFile, pattern_V_read_read_fu_98_p2, "pattern_V_read_read_fu_98_p2");
+    sc_trace(mVcdFile, ap_CS_fsm_state4, "ap_CS_fsm_state4");
     sc_trace(mVcdFile, ap_CS_fsm_state1, "ap_CS_fsm_state1");
-    sc_trace(mVcdFile, bound_fu_204_p2, "bound_fu_204_p2");
-    sc_trace(mVcdFile, bound_reg_518, "bound_reg_518");
-    sc_trace(mVcdFile, ap_block_state2_pp0_stage0_iter0, "ap_block_state2_pp0_stage0_iter0");
-    sc_trace(mVcdFile, ap_block_state3_pp0_stage0_iter1, "ap_block_state3_pp0_stage0_iter1");
+    sc_trace(mVcdFile, sel_tmp_fu_215_p2, "sel_tmp_fu_215_p2");
+    sc_trace(mVcdFile, sel_tmp_reg_565, "sel_tmp_reg_565");
+    sc_trace(mVcdFile, sel_tmp7_fu_221_p2, "sel_tmp7_fu_221_p2");
+    sc_trace(mVcdFile, sel_tmp7_reg_571, "sel_tmp7_reg_571");
+    sc_trace(mVcdFile, sel_tmp4_fu_227_p2, "sel_tmp4_fu_227_p2");
+    sc_trace(mVcdFile, sel_tmp4_reg_577, "sel_tmp4_reg_577");
+    sc_trace(mVcdFile, sel_tmp3_fu_233_p2, "sel_tmp3_fu_233_p2");
+    sc_trace(mVcdFile, sel_tmp3_reg_583, "sel_tmp3_reg_583");
+    sc_trace(mVcdFile, j_1_fu_248_p2, "j_1_fu_248_p2");
+    sc_trace(mVcdFile, j_1_reg_592, "j_1_reg_592");
+    sc_trace(mVcdFile, ap_CS_fsm_state2, "ap_CS_fsm_state2");
+    sc_trace(mVcdFile, ap_block_state2, "ap_block_state2");
+    sc_trace(mVcdFile, sel_tmp1_fu_264_p2, "sel_tmp1_fu_264_p2");
+    sc_trace(mVcdFile, sel_tmp1_reg_597, "sel_tmp1_reg_597");
+    sc_trace(mVcdFile, tmp_1_fu_243_p2, "tmp_1_fu_243_p2");
+    sc_trace(mVcdFile, sel_tmp5_fu_269_p2, "sel_tmp5_fu_269_p2");
+    sc_trace(mVcdFile, sel_tmp5_reg_602, "sel_tmp5_reg_602");
+    sc_trace(mVcdFile, sel_tmp8_fu_274_p2, "sel_tmp8_fu_274_p2");
+    sc_trace(mVcdFile, sel_tmp8_reg_607, "sel_tmp8_reg_607");
+    sc_trace(mVcdFile, sel_tmp2_fu_279_p2, "sel_tmp2_fu_279_p2");
+    sc_trace(mVcdFile, sel_tmp2_reg_612, "sel_tmp2_reg_612");
+    sc_trace(mVcdFile, sel_tmp6_fu_284_p2, "sel_tmp6_fu_284_p2");
+    sc_trace(mVcdFile, sel_tmp6_reg_617, "sel_tmp6_reg_617");
+    sc_trace(mVcdFile, sel_tmp9_fu_289_p2, "sel_tmp9_fu_289_p2");
+    sc_trace(mVcdFile, sel_tmp9_reg_622, "sel_tmp9_reg_622");
+    sc_trace(mVcdFile, sel_tmp10_fu_294_p2, "sel_tmp10_fu_294_p2");
+    sc_trace(mVcdFile, sel_tmp10_reg_627, "sel_tmp10_reg_627");
+    sc_trace(mVcdFile, sel_tmp11_fu_299_p2, "sel_tmp11_fu_299_p2");
+    sc_trace(mVcdFile, sel_tmp11_reg_632, "sel_tmp11_reg_632");
+    sc_trace(mVcdFile, tmp_9_fu_371_p3, "tmp_9_fu_371_p3");
+    sc_trace(mVcdFile, tmp_9_reg_637, "tmp_9_reg_637");
+    sc_trace(mVcdFile, ap_block_state3, "ap_block_state3");
     sc_trace(mVcdFile, ap_block_state3_io, "ap_block_state3_io");
-    sc_trace(mVcdFile, ap_block_state4_pp0_stage0_iter2, "ap_block_state4_pp0_stage0_iter2");
-    sc_trace(mVcdFile, ap_block_state4_io, "ap_block_state4_io");
-    sc_trace(mVcdFile, ap_block_pp0_stage0_11001, "ap_block_pp0_stage0_11001");
-    sc_trace(mVcdFile, indvar_flatten_next_fu_224_p2, "indvar_flatten_next_fu_224_p2");
-    sc_trace(mVcdFile, j_cast5_mid2_v_fu_236_p3, "j_cast5_mid2_v_fu_236_p3");
-    sc_trace(mVcdFile, j_cast5_mid2_v_reg_532, "j_cast5_mid2_v_reg_532");
-    sc_trace(mVcdFile, tmp_user_V_reg_537, "tmp_user_V_reg_537");
-    sc_trace(mVcdFile, tmp_last_V_reg_542, "tmp_last_V_reg_542");
-    sc_trace(mVcdFile, i_1_fu_488_p3, "i_1_fu_488_p3");
-    sc_trace(mVcdFile, ap_block_pp0_stage0_subdone, "ap_block_pp0_stage0_subdone");
-    sc_trace(mVcdFile, ap_condition_pp0_exit_iter0_state2, "ap_condition_pp0_exit_iter0_state2");
-    sc_trace(mVcdFile, ap_phi_mux_j_phi_fu_178_p4, "ap_phi_mux_j_phi_fu_178_p4");
-    sc_trace(mVcdFile, tmp_data_V_fu_94, "tmp_data_V_fu_94");
-    sc_trace(mVcdFile, video_o_data_V_3_fu_310_p3, "video_o_data_V_3_fu_310_p3");
-    sc_trace(mVcdFile, video_o_data_V_2_fu_363_p3, "video_o_data_V_2_fu_363_p3");
-    sc_trace(mVcdFile, video_o_data_V_1_fu_416_p3, "video_o_data_V_1_fu_416_p3");
-    sc_trace(mVcdFile, video_o_data_V_fu_469_p3, "video_o_data_V_fu_469_p3");
-    sc_trace(mVcdFile, ap_block_pp0_stage0_01001, "ap_block_pp0_stage0_01001");
-    sc_trace(mVcdFile, bound_fu_204_p0, "bound_fu_204_p0");
-    sc_trace(mVcdFile, bound_fu_204_p1, "bound_fu_204_p1");
-    sc_trace(mVcdFile, i_cast_fu_210_p1, "i_cast_fu_210_p1");
-    sc_trace(mVcdFile, tmp_4_fu_214_p2, "tmp_4_fu_214_p2");
-    sc_trace(mVcdFile, j_s_fu_230_p2, "j_s_fu_230_p2");
-    sc_trace(mVcdFile, tmp_3_fu_248_p1, "tmp_3_fu_248_p1");
-    sc_trace(mVcdFile, i_cast4_mid2_fu_252_p2, "i_cast4_mid2_fu_252_p2");
-    sc_trace(mVcdFile, tmp_17_fu_270_p1, "tmp_17_fu_270_p1");
-    sc_trace(mVcdFile, tmp_18_fu_274_p4, "tmp_18_fu_274_p4");
-    sc_trace(mVcdFile, tmp_20_fu_292_p4, "tmp_20_fu_292_p4");
-    sc_trace(mVcdFile, tmp_1_fu_244_p1, "tmp_1_fu_244_p1");
-    sc_trace(mVcdFile, tmp_19_fu_284_p3, "tmp_19_fu_284_p3");
-    sc_trace(mVcdFile, tmp_21_fu_302_p3, "tmp_21_fu_302_p3");
-    sc_trace(mVcdFile, tmp_12_fu_323_p4, "tmp_12_fu_323_p4");
-    sc_trace(mVcdFile, tmp_13_fu_333_p1, "tmp_13_fu_333_p1");
-    sc_trace(mVcdFile, tmp_15_fu_345_p4, "tmp_15_fu_345_p4");
-    sc_trace(mVcdFile, tmp_14_fu_337_p3, "tmp_14_fu_337_p3");
-    sc_trace(mVcdFile, tmp_16_fu_355_p3, "tmp_16_fu_355_p3");
-    sc_trace(mVcdFile, tmp_8_fu_376_p1, "tmp_8_fu_376_p1");
-    sc_trace(mVcdFile, tmp_9_fu_380_p4, "tmp_9_fu_380_p4");
-    sc_trace(mVcdFile, tmp_10_fu_398_p4, "tmp_10_fu_398_p4");
-    sc_trace(mVcdFile, tmp_s_fu_390_p3, "tmp_s_fu_390_p3");
-    sc_trace(mVcdFile, tmp_11_fu_408_p3, "tmp_11_fu_408_p3");
-    sc_trace(mVcdFile, tmp_fu_429_p4, "tmp_fu_429_p4");
-    sc_trace(mVcdFile, tmp_7_fu_439_p1, "tmp_7_fu_439_p1");
-    sc_trace(mVcdFile, tmp_5_fu_451_p4, "tmp_5_fu_451_p4");
-    sc_trace(mVcdFile, tmp_2_fu_443_p3, "tmp_2_fu_443_p3");
-    sc_trace(mVcdFile, tmp_6_fu_461_p3, "tmp_6_fu_461_p3");
-    sc_trace(mVcdFile, i_op_fu_482_p2, "i_op_fu_482_p2");
+    sc_trace(mVcdFile, video_o_data_V_fu_528_p3, "video_o_data_V_fu_528_p3");
+    sc_trace(mVcdFile, i_1_fu_536_p2, "i_1_fu_536_p2");
+    sc_trace(mVcdFile, i_1_reg_660, "i_1_reg_660");
+    sc_trace(mVcdFile, j_reg_193, "j_reg_193");
+    sc_trace(mVcdFile, i_reg_204, "i_reg_204");
+    sc_trace(mVcdFile, p_Val2_s_fu_124, "p_Val2_s_fu_124");
+    sc_trace(mVcdFile, j_cast_fu_239_p1, "j_cast_fu_239_p1");
+    sc_trace(mVcdFile, tmp_2_fu_254_p1, "tmp_2_fu_254_p1");
+    sc_trace(mVcdFile, tmp_3_fu_258_p2, "tmp_3_fu_258_p2");
+    sc_trace(mVcdFile, hsize_in_op_op_fu_311_p2, "hsize_in_op_op_fu_311_p2");
+    sc_trace(mVcdFile, p_neg_fu_324_p2, "p_neg_fu_324_p2");
+    sc_trace(mVcdFile, p_lshr_fu_329_p4, "p_lshr_fu_329_p4");
+    sc_trace(mVcdFile, tmp_5_fu_316_p3, "tmp_5_fu_316_p3");
+    sc_trace(mVcdFile, p_neg_t_fu_339_p2, "p_neg_t_fu_339_p2");
+    sc_trace(mVcdFile, tmp_6_fu_345_p4, "tmp_6_fu_345_p4");
+    sc_trace(mVcdFile, tmp_4_fu_304_p3, "tmp_4_fu_304_p3");
+    sc_trace(mVcdFile, tmp_7_fu_355_p3, "tmp_7_fu_355_p3");
+    sc_trace(mVcdFile, tmp_8_fu_363_p3, "tmp_8_fu_363_p3");
+    sc_trace(mVcdFile, p_Result_6_fu_415_p4, "p_Result_6_fu_415_p4");
+    sc_trace(mVcdFile, tmp_11_fu_411_p1, "tmp_11_fu_411_p1");
+    sc_trace(mVcdFile, p_Result_s_7_fu_433_p4, "p_Result_s_7_fu_433_p4");
+    sc_trace(mVcdFile, p_Result_3_fu_461_p4, "p_Result_3_fu_461_p4");
+    sc_trace(mVcdFile, p_Result_2_fu_451_p4, "p_Result_2_fu_451_p4");
+    sc_trace(mVcdFile, p_Result_s_fu_401_p4, "p_Result_s_fu_401_p4");
+    sc_trace(mVcdFile, p_Result_1_fu_425_p3, "p_Result_1_fu_425_p3");
+    sc_trace(mVcdFile, video_o_data_V_4_fu_479_p3, "video_o_data_V_4_fu_479_p3");
+    sc_trace(mVcdFile, p_Result_4_fu_443_p3, "p_Result_4_fu_443_p3");
+    sc_trace(mVcdFile, video_o_data_V_5_fu_486_p3, "video_o_data_V_5_fu_486_p3");
+    sc_trace(mVcdFile, p_Result_5_fu_471_p3, "p_Result_5_fu_471_p3");
+    sc_trace(mVcdFile, video_o_data_V_6_fu_493_p3, "video_o_data_V_6_fu_493_p3");
+    sc_trace(mVcdFile, video_o_data_V_7_fu_500_p3, "video_o_data_V_7_fu_500_p3");
+    sc_trace(mVcdFile, video_o_data_V_8_fu_507_p3, "video_o_data_V_8_fu_507_p3");
+    sc_trace(mVcdFile, video_o_data_V_9_fu_514_p3, "video_o_data_V_9_fu_514_p3");
+    sc_trace(mVcdFile, video_o_data_V_11_fu_521_p3, "video_o_data_V_11_fu_521_p3");
     sc_trace(mVcdFile, ap_NS_fsm, "ap_NS_fsm");
-    sc_trace(mVcdFile, ap_CS_fsm_state5, "ap_CS_fsm_state5");
-    sc_trace(mVcdFile, ap_block_state5, "ap_block_state5");
-    sc_trace(mVcdFile, ap_idle_pp0, "ap_idle_pp0");
-    sc_trace(mVcdFile, ap_enable_pp0, "ap_enable_pp0");
-    sc_trace(mVcdFile, bound_fu_204_p00, "bound_fu_204_p00");
-    sc_trace(mVcdFile, bound_fu_204_p10, "bound_fu_204_p10");
-    sc_trace(mVcdFile, ap_condition_901, "ap_condition_901");
 #endif
 
     }
@@ -942,60 +907,21 @@ void rgb2bayer::thread_ap_clk_no_reset_() {
     } else {
         ap_CS_fsm = ap_NS_fsm.read();
     }
-    if ( ap_rst_n_inv.read() == ap_const_logic_1) {
-        ap_enable_reg_pp0_iter0 = ap_const_logic_0;
-    } else {
-        if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-             esl_seteq<1,1,1>(ap_block_pp0_stage0_subdone.read(), ap_const_boolean_0) && 
-             esl_seteq<1,1,1>(ap_const_logic_1, ap_condition_pp0_exit_iter0_state2.read()))) {
-            ap_enable_reg_pp0_iter0 = ap_const_logic_0;
-        } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) {
-            ap_enable_reg_pp0_iter0 = ap_const_logic_1;
-        }
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()) && 
+         esl_seteq<1,1,1>(m_axis_video_V_data_V_1_ack_in.read(), ap_const_logic_1))) {
+        i_reg_204 = i_1_reg_660.read();
+    } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && 
+                !(esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_keep_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_strb_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_user_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_last_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_id_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_dest_V_1_ack_in.read())) && 
+                esl_seteq<1,1,1>(ap_const_lv1_1, tmp_1_fu_243_p2.read()))) {
+        i_reg_204 = ap_const_lv32_0;
     }
-    if ( ap_rst_n_inv.read() == ap_const_logic_1) {
-        ap_enable_reg_pp0_iter1 = ap_const_logic_0;
-    } else {
-        if (esl_seteq<1,1,1>(ap_block_pp0_stage0_subdone.read(), ap_const_boolean_0)) {
-            if (esl_seteq<1,1,1>(ap_const_logic_1, ap_condition_pp0_exit_iter0_state2.read())) {
-                ap_enable_reg_pp0_iter1 = (ap_condition_pp0_exit_iter0_state2.read() ^ ap_const_logic_1);
-            } else if (esl_seteq<1,1,1>(ap_const_boolean_1, ap_const_boolean_1)) {
-                ap_enable_reg_pp0_iter1 = ap_enable_reg_pp0_iter0.read();
-            }
-        }
-    }
-    if ( ap_rst_n_inv.read() == ap_const_logic_1) {
-        ap_enable_reg_pp0_iter2 = ap_const_logic_0;
-    } else {
-        if (esl_seteq<1,1,1>(ap_block_pp0_stage0_subdone.read(), ap_const_boolean_0)) {
-            ap_enable_reg_pp0_iter2 = ap_enable_reg_pp0_iter1.read();
-        } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) {
-            ap_enable_reg_pp0_iter2 = ap_const_logic_0;
-        }
-    }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
-        i_reg_185 = i_1_fu_488_p3.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())) && 
+         esl_seteq<1,1,1>(ap_const_lv1_1, tmp_10_fu_379_p2.read()))) {
+        j_reg_193 = j_1_reg_592.read();
     } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) {
-        i_reg_185 = ap_const_lv31_0;
-    }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
-        indvar_flatten_reg_163 = indvar_flatten_next_fu_224_p2.read();
-    } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) {
-        indvar_flatten_reg_163 = ap_const_lv64_0;
-    }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter1.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
-        j_reg_174 = j_cast5_mid2_v_reg_532.read();
-    } else if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) {
-        j_reg_174 = ap_const_lv31_0;
+        j_reg_193 = ap_const_lv31_0;
     }
     if ( ap_rst_n_inv.read() == ap_const_logic_1) {
         m_axis_video_V_data_V_1_sel_rd = ap_const_logic_0;
@@ -1422,44 +1348,31 @@ void rgb2bayer::thread_ap_clk_no_reset_() {
             s_axis_video_V_user_V_0_state = ap_const_lv2_2;
         }
     }
-    if (esl_seteq<1,1,1>(ap_condition_901.read(), ap_const_boolean_1)) {
-        if (esl_seteq<1,2,2>(ap_const_lv2_0, pattern_V_read_read_fu_98_p2.read())) {
-            tmp_data_V_fu_94 = video_o_data_V_fu_469_p3.read();
-        } else if (esl_seteq<1,2,2>(ap_const_lv2_1, pattern_V_read_read_fu_98_p2.read())) {
-            tmp_data_V_fu_94 = video_o_data_V_1_fu_416_p3.read();
-        } else if (esl_seteq<1,2,2>(ap_const_lv2_2, pattern_V_read_read_fu_98_p2.read())) {
-            tmp_data_V_fu_94 = video_o_data_V_2_fu_363_p3.read();
-        } else if (esl_seteq<1,2,2>(ap_const_lv2_3, pattern_V_read_read_fu_98_p2.read())) {
-            tmp_data_V_fu_94 = video_o_data_V_3_fu_310_p3.read();
-        }
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
+        i_1_reg_660 = i_1_fu_536_p2.read();
+        p_Val2_s_fu_124 = video_o_data_V_fu_528_p3.read();
     }
-    if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) {
-        bound_reg_518 = bound_fu_204_p2.read();
-    }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
-        exitcond_flatten_reg_523 = exitcond_flatten_fu_219_p2.read();
-        exitcond_flatten_reg_523_pp0_iter1_reg = exitcond_flatten_reg_523.read();
-    }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
-        j_cast5_mid2_v_reg_532 = j_cast5_mid2_v_fu_236_p3.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && !(esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_keep_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_strb_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_user_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_last_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_id_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_dest_V_1_ack_in.read())))) {
+        j_1_reg_592 = j_1_fu_248_p2.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, m_axis_video_V_data_V_1_load_A.read())) {
-        m_axis_video_V_data_V_1_payload_A = tmp_data_V_fu_94.read();
+        m_axis_video_V_data_V_1_payload_A = video_o_data_V_fu_528_p3.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, m_axis_video_V_data_V_1_load_B.read())) {
-        m_axis_video_V_data_V_1_payload_B = tmp_data_V_fu_94.read();
+        m_axis_video_V_data_V_1_payload_B = video_o_data_V_fu_528_p3.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, m_axis_video_V_last_V_1_load_A.read())) {
-        m_axis_video_V_last_V_1_payload_A = tmp_last_V_reg_542.read();
+        m_axis_video_V_last_V_1_payload_A = s_axis_video_V_last_V_0_data_out.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, m_axis_video_V_last_V_1_load_B.read())) {
-        m_axis_video_V_last_V_1_payload_B = tmp_last_V_reg_542.read();
+        m_axis_video_V_last_V_1_payload_B = s_axis_video_V_last_V_0_data_out.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, m_axis_video_V_user_V_1_load_A.read())) {
-        m_axis_video_V_user_V_1_payload_A = tmp_user_V_reg_537.read();
+        m_axis_video_V_user_V_1_payload_A = s_axis_video_V_user_V_0_data_out.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, m_axis_video_V_user_V_1_load_B.read())) {
-        m_axis_video_V_user_V_1_payload_B = tmp_user_V_reg_537.read();
+        m_axis_video_V_user_V_1_payload_B = s_axis_video_V_user_V_0_data_out.read();
     }
     if (esl_seteq<1,1,1>(ap_const_logic_1, s_axis_video_V_data_V_0_load_A.read())) {
         s_axis_video_V_data_V_0_payload_A = s_axis_video_TDATA.read();
@@ -1479,163 +1392,71 @@ void rgb2bayer::thread_ap_clk_no_reset_() {
     if (esl_seteq<1,1,1>(ap_const_logic_1, s_axis_video_V_user_V_0_load_B.read())) {
         s_axis_video_V_user_V_0_payload_B = s_axis_video_TUSER.read();
     }
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
-        tmp_last_V_reg_542 = s_axis_video_V_last_V_0_data_out.read();
-        tmp_user_V_reg_537 = s_axis_video_V_user_V_0_data_out.read();
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && !(esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_keep_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_strb_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_user_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_last_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_id_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_dest_V_1_ack_in.read())) && esl_seteq<1,1,1>(ap_const_lv1_1, tmp_1_fu_243_p2.read()))) {
+        sel_tmp10_reg_627 = sel_tmp10_fu_294_p2.read();
+        sel_tmp11_reg_632 = sel_tmp11_fu_299_p2.read();
+        sel_tmp1_reg_597 = sel_tmp1_fu_264_p2.read();
+        sel_tmp2_reg_612 = sel_tmp2_fu_279_p2.read();
+        sel_tmp5_reg_602 = sel_tmp5_fu_269_p2.read();
+        sel_tmp6_reg_617 = sel_tmp6_fu_284_p2.read();
+        sel_tmp8_reg_607 = sel_tmp8_fu_274_p2.read();
+        sel_tmp9_reg_622 = sel_tmp9_fu_289_p2.read();
+        tmp_9_reg_637 = tmp_9_fu_371_p3.read();
     }
-}
-
-void rgb2bayer::thread_ap_CS_fsm_pp0_stage0() {
-    ap_CS_fsm_pp0_stage0 = ap_CS_fsm.read()[1];
+    if (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read())) {
+        sel_tmp3_reg_583 = sel_tmp3_fu_233_p2.read();
+        sel_tmp4_reg_577 = sel_tmp4_fu_227_p2.read();
+        sel_tmp7_reg_571 = sel_tmp7_fu_221_p2.read();
+        sel_tmp_reg_565 = sel_tmp_fu_215_p2.read();
+    }
 }
 
 void rgb2bayer::thread_ap_CS_fsm_state1() {
     ap_CS_fsm_state1 = ap_CS_fsm.read()[0];
 }
 
-void rgb2bayer::thread_ap_CS_fsm_state5() {
-    ap_CS_fsm_state5 = ap_CS_fsm.read()[2];
+void rgb2bayer::thread_ap_CS_fsm_state2() {
+    ap_CS_fsm_state2 = ap_CS_fsm.read()[1];
 }
 
-void rgb2bayer::thread_ap_block_pp0_stage0() {
-    ap_block_pp0_stage0 = !esl_seteq<1,1,1>(ap_const_boolean_1, ap_const_boolean_1);
+void rgb2bayer::thread_ap_CS_fsm_state3() {
+    ap_CS_fsm_state3 = ap_CS_fsm.read()[2];
 }
 
-void rgb2bayer::thread_ap_block_pp0_stage0_01001() {
-    ap_block_pp0_stage0_01001 = (esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read()));
+void rgb2bayer::thread_ap_CS_fsm_state4() {
+    ap_CS_fsm_state4 = ap_CS_fsm.read()[3];
 }
 
-void rgb2bayer::thread_ap_block_pp0_stage0_11001() {
-    ap_block_pp0_stage0_11001 = ((esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && 
-  esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && 
-  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || (esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter1.read()) && 
-  esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())) || (esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter2.read()) && 
-  esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state4_io.read())));
+void rgb2bayer::thread_ap_block_state2() {
+    ap_block_state2 = (esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_keep_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_strb_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_user_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_last_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_id_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_dest_V_1_ack_in.read()));
 }
 
-void rgb2bayer::thread_ap_block_pp0_stage0_subdone() {
-    ap_block_pp0_stage0_subdone = ((esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && 
-  esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && 
-  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || (esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter1.read()) && 
-  esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())) || (esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter2.read()) && 
-  esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state4_io.read())));
-}
-
-void rgb2bayer::thread_ap_block_state2_pp0_stage0_iter0() {
-    ap_block_state2_pp0_stage0_iter0 = (esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read()));
+void rgb2bayer::thread_ap_block_state3() {
+    ap_block_state3 = (esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read()));
 }
 
 void rgb2bayer::thread_ap_block_state3_io() {
-    ap_block_state3_io = (esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523.read()) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_ack_in.read()));
-}
-
-void rgb2bayer::thread_ap_block_state3_pp0_stage0_iter1() {
-    ap_block_state3_pp0_stage0_iter1 = !esl_seteq<1,1,1>(ap_const_boolean_1, ap_const_boolean_1);
-}
-
-void rgb2bayer::thread_ap_block_state4_io() {
-    ap_block_state4_io = (esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523_pp0_iter1_reg.read()) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_ack_in.read()));
-}
-
-void rgb2bayer::thread_ap_block_state4_pp0_stage0_iter2() {
-    ap_block_state4_pp0_stage0_iter2 = !esl_seteq<1,1,1>(ap_const_boolean_1, ap_const_boolean_1);
-}
-
-void rgb2bayer::thread_ap_block_state5() {
-    ap_block_state5 = (esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_keep_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_strb_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_user_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_last_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_id_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_dest_V_1_ack_in.read()));
-}
-
-void rgb2bayer::thread_ap_condition_901() {
-    ap_condition_901 = (esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0));
-}
-
-void rgb2bayer::thread_ap_condition_pp0_exit_iter0_state2() {
-    if (esl_seteq<1,1,1>(ap_const_lv1_1, exitcond_flatten_fu_219_p2.read())) {
-        ap_condition_pp0_exit_iter0_state2 = ap_const_logic_1;
-    } else {
-        ap_condition_pp0_exit_iter0_state2 = ap_const_logic_0;
-    }
-}
-
-void rgb2bayer::thread_ap_enable_pp0() {
-    ap_enable_pp0 = (ap_idle_pp0.read() ^ ap_const_logic_1);
-}
-
-void rgb2bayer::thread_ap_idle_pp0() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter1.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_0, ap_enable_reg_pp0_iter2.read()))) {
-        ap_idle_pp0 = ap_const_logic_1;
-    } else {
-        ap_idle_pp0 = ap_const_logic_0;
-    }
-}
-
-void rgb2bayer::thread_ap_phi_mux_j_phi_fu_178_p4() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0.read(), ap_const_boolean_0) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter1.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523.read()))) {
-        ap_phi_mux_j_phi_fu_178_p4 = j_cast5_mid2_v_reg_532.read();
-    } else {
-        ap_phi_mux_j_phi_fu_178_p4 = j_reg_174.read();
-    }
+    ap_block_state3_io = (esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_ack_in.read()));
 }
 
 void rgb2bayer::thread_ap_rst_n_inv() {
     ap_rst_n_inv =  (sc_logic) (~ap_rst_n.read());
 }
 
-void rgb2bayer::thread_bound_fu_204_p0() {
-    bound_fu_204_p0 =  (sc_lv<32>) (bound_fu_204_p00.read());
+void rgb2bayer::thread_hsize_in_op_op_fu_311_p2() {
+    hsize_in_op_op_fu_311_p2 = (!ap_const_lv32_1.is_01() || !hsize_in.read().is_01())? sc_lv<32>(): (sc_biguint<32>(ap_const_lv32_1) + sc_biguint<32>(hsize_in.read()));
 }
 
-void rgb2bayer::thread_bound_fu_204_p00() {
-    bound_fu_204_p00 = esl_zext<64,32>(hsize_in.read());
+void rgb2bayer::thread_i_1_fu_536_p2() {
+    i_1_fu_536_p2 = (!ap_const_lv32_2.is_01() || !i_reg_204.read().is_01())? sc_lv<32>(): (sc_biguint<32>(ap_const_lv32_2) + sc_biguint<32>(i_reg_204.read()));
 }
 
-void rgb2bayer::thread_bound_fu_204_p1() {
-    bound_fu_204_p1 =  (sc_lv<32>) (bound_fu_204_p10.read());
+void rgb2bayer::thread_j_1_fu_248_p2() {
+    j_1_fu_248_p2 = (!j_reg_193.read().is_01() || !ap_const_lv31_1.is_01())? sc_lv<31>(): (sc_biguint<31>(j_reg_193.read()) + sc_biguint<31>(ap_const_lv31_1));
 }
 
-void rgb2bayer::thread_bound_fu_204_p10() {
-    bound_fu_204_p10 = esl_zext<64,32>(vsize_in.read());
-}
-
-void rgb2bayer::thread_bound_fu_204_p2() {
-    bound_fu_204_p2 = (!bound_fu_204_p0.read().is_01() || !bound_fu_204_p1.read().is_01())? sc_lv<64>(): sc_biguint<32>(bound_fu_204_p0.read()) * sc_biguint<32>(bound_fu_204_p1.read());
-}
-
-void rgb2bayer::thread_exitcond_flatten_fu_219_p2() {
-    exitcond_flatten_fu_219_p2 = (!indvar_flatten_reg_163.read().is_01() || !bound_reg_518.read().is_01())? sc_lv<1>(): sc_lv<1>(indvar_flatten_reg_163.read() == bound_reg_518.read());
-}
-
-void rgb2bayer::thread_i_1_fu_488_p3() {
-    i_1_fu_488_p3 = (!tmp_4_fu_214_p2.read()[0].is_01())? sc_lv<31>(): ((tmp_4_fu_214_p2.read()[0].to_bool())? i_op_fu_482_p2.read(): ap_const_lv31_1);
-}
-
-void rgb2bayer::thread_i_cast4_mid2_fu_252_p2() {
-    i_cast4_mid2_fu_252_p2 = (tmp_4_fu_214_p2.read() & tmp_3_fu_248_p1.read());
-}
-
-void rgb2bayer::thread_i_cast_fu_210_p1() {
-    i_cast_fu_210_p1 = esl_zext<32,31>(i_reg_185.read());
-}
-
-void rgb2bayer::thread_i_op_fu_482_p2() {
-    i_op_fu_482_p2 = (!i_reg_185.read().is_01() || !ap_const_lv31_1.is_01())? sc_lv<31>(): (sc_biguint<31>(i_reg_185.read()) + sc_biguint<31>(ap_const_lv31_1));
-}
-
-void rgb2bayer::thread_indvar_flatten_next_fu_224_p2() {
-    indvar_flatten_next_fu_224_p2 = (!indvar_flatten_reg_163.read().is_01() || !ap_const_lv64_1.is_01())? sc_lv<64>(): (sc_biguint<64>(indvar_flatten_reg_163.read()) + sc_biguint<64>(ap_const_lv64_1));
-}
-
-void rgb2bayer::thread_j_cast5_mid2_v_fu_236_p3() {
-    j_cast5_mid2_v_fu_236_p3 = (!tmp_4_fu_214_p2.read()[0].is_01())? sc_lv<31>(): ((tmp_4_fu_214_p2.read()[0].to_bool())? ap_phi_mux_j_phi_fu_178_p4.read(): j_s_fu_230_p2.read());
-}
-
-void rgb2bayer::thread_j_s_fu_230_p2() {
-    j_s_fu_230_p2 = (!ap_const_lv31_1.is_01() || !ap_phi_mux_j_phi_fu_178_p4.read().is_01())? sc_lv<31>(): (sc_biguint<31>(ap_const_lv31_1) + sc_biguint<31>(ap_phi_mux_j_phi_fu_178_p4.read()));
+void rgb2bayer::thread_j_cast_fu_239_p1() {
+    j_cast_fu_239_p1 = esl_zext<32,31>(j_reg_193.read());
 }
 
 void rgb2bayer::thread_m_axis_video_TDATA() {
@@ -1643,13 +1464,9 @@ void rgb2bayer::thread_m_axis_video_TDATA() {
 }
 
 void rgb2bayer::thread_m_axis_video_TDATA_blk_n() {
-    if (((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-          esl_seteq<1,1,1>(ap_block_pp0_stage0.read(), ap_const_boolean_0) && 
-          esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter1.read()) && 
-          esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523.read())) || 
-         (esl_seteq<1,1,1>(ap_block_pp0_stage0.read(), ap_const_boolean_0) && 
-          esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter2.read()) && 
-          esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523_pp0_iter1_reg.read())))) {
+    if (((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+          esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read())) || 
+         esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()))) {
         m_axis_video_TDATA_blk_n = m_axis_video_V_data_V_1_state.read()[1];
     } else {
         m_axis_video_TDATA_blk_n = ap_const_logic_1;
@@ -1717,10 +1534,10 @@ void rgb2bayer::thread_m_axis_video_V_data_V_1_state_cmp_full() {
 }
 
 void rgb2bayer::thread_m_axis_video_V_data_V_1_vld_in() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter1.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+         !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
         m_axis_video_V_data_V_1_vld_in = ap_const_logic_1;
     } else {
         m_axis_video_V_data_V_1_vld_in = ap_const_logic_0;
@@ -1748,10 +1565,10 @@ void rgb2bayer::thread_m_axis_video_V_dest_V_1_sel() {
 }
 
 void rgb2bayer::thread_m_axis_video_V_dest_V_1_vld_in() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter1.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+         !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
         m_axis_video_V_dest_V_1_vld_in = ap_const_logic_1;
     } else {
         m_axis_video_V_dest_V_1_vld_in = ap_const_logic_0;
@@ -1779,10 +1596,10 @@ void rgb2bayer::thread_m_axis_video_V_id_V_1_sel() {
 }
 
 void rgb2bayer::thread_m_axis_video_V_id_V_1_vld_in() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter1.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+         !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
         m_axis_video_V_id_V_1_vld_in = ap_const_logic_1;
     } else {
         m_axis_video_V_id_V_1_vld_in = ap_const_logic_0;
@@ -1802,7 +1619,7 @@ void rgb2bayer::thread_m_axis_video_V_keep_V_1_ack_out() {
 }
 
 void rgb2bayer::thread_m_axis_video_V_keep_V_1_data_out() {
-    m_axis_video_V_keep_V_1_data_out = ap_const_lv1_0;
+    m_axis_video_V_keep_V_1_data_out = ap_const_lv2_0;
 }
 
 void rgb2bayer::thread_m_axis_video_V_keep_V_1_sel() {
@@ -1810,10 +1627,10 @@ void rgb2bayer::thread_m_axis_video_V_keep_V_1_sel() {
 }
 
 void rgb2bayer::thread_m_axis_video_V_keep_V_1_vld_in() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter1.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+         !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
         m_axis_video_V_keep_V_1_vld_in = ap_const_logic_1;
     } else {
         m_axis_video_V_keep_V_1_vld_in = ap_const_logic_0;
@@ -1857,10 +1674,10 @@ void rgb2bayer::thread_m_axis_video_V_last_V_1_state_cmp_full() {
 }
 
 void rgb2bayer::thread_m_axis_video_V_last_V_1_vld_in() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter1.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+         !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
         m_axis_video_V_last_V_1_vld_in = ap_const_logic_1;
     } else {
         m_axis_video_V_last_V_1_vld_in = ap_const_logic_0;
@@ -1880,7 +1697,7 @@ void rgb2bayer::thread_m_axis_video_V_strb_V_1_ack_out() {
 }
 
 void rgb2bayer::thread_m_axis_video_V_strb_V_1_data_out() {
-    m_axis_video_V_strb_V_1_data_out = ap_const_lv1_0;
+    m_axis_video_V_strb_V_1_data_out = ap_const_lv2_0;
 }
 
 void rgb2bayer::thread_m_axis_video_V_strb_V_1_sel() {
@@ -1888,10 +1705,10 @@ void rgb2bayer::thread_m_axis_video_V_strb_V_1_sel() {
 }
 
 void rgb2bayer::thread_m_axis_video_V_strb_V_1_vld_in() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter1.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+         !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
         m_axis_video_V_strb_V_1_vld_in = ap_const_logic_1;
     } else {
         m_axis_video_V_strb_V_1_vld_in = ap_const_logic_0;
@@ -1935,10 +1752,10 @@ void rgb2bayer::thread_m_axis_video_V_user_V_1_state_cmp_full() {
 }
 
 void rgb2bayer::thread_m_axis_video_V_user_V_1_vld_in() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter1.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_reg_523.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+         !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
         m_axis_video_V_user_V_1_vld_in = ap_const_logic_1;
     } else {
         m_axis_video_V_user_V_1_vld_in = ap_const_logic_0;
@@ -1949,15 +1766,53 @@ void rgb2bayer::thread_m_axis_video_V_user_V_1_vld_out() {
     m_axis_video_V_user_V_1_vld_out = m_axis_video_V_user_V_1_state.read()[0];
 }
 
-void rgb2bayer::thread_pattern_V_read_read_fu_98_p2() {
-    pattern_V_read_read_fu_98_p2 = pattern_V.read();
+void rgb2bayer::thread_p_Result_1_fu_425_p3() {
+    p_Result_1_fu_425_p3 = esl_concat<8,8>(p_Result_6_fu_415_p4.read(), tmp_11_fu_411_p1.read());
+}
+
+void rgb2bayer::thread_p_Result_2_fu_451_p4() {
+    p_Result_2_fu_451_p4 = s_axis_video_V_data_V_0_data_out.read().range(15, 8);
+}
+
+void rgb2bayer::thread_p_Result_3_fu_461_p4() {
+    p_Result_3_fu_461_p4 = s_axis_video_V_data_V_0_data_out.read().range(31, 24);
+}
+
+void rgb2bayer::thread_p_Result_4_fu_443_p3() {
+    p_Result_4_fu_443_p3 = esl_concat<8,8>(p_Result_s_7_fu_433_p4.read(), tmp_11_fu_411_p1.read());
+}
+
+void rgb2bayer::thread_p_Result_5_fu_471_p3() {
+    p_Result_5_fu_471_p3 = esl_concat<8,8>(p_Result_3_fu_461_p4.read(), p_Result_2_fu_451_p4.read());
+}
+
+void rgb2bayer::thread_p_Result_6_fu_415_p4() {
+    p_Result_6_fu_415_p4 = s_axis_video_V_data_V_0_data_out.read().range(39, 32);
+}
+
+void rgb2bayer::thread_p_Result_s_7_fu_433_p4() {
+    p_Result_s_7_fu_433_p4 = s_axis_video_V_data_V_0_data_out.read().range(47, 40);
+}
+
+void rgb2bayer::thread_p_Result_s_fu_401_p4() {
+    p_Result_s_fu_401_p4 = s_axis_video_V_data_V_0_data_out.read().range(31, 16);
+}
+
+void rgb2bayer::thread_p_lshr_fu_329_p4() {
+    p_lshr_fu_329_p4 = p_neg_fu_324_p2.read().range(31, 1);
+}
+
+void rgb2bayer::thread_p_neg_fu_324_p2() {
+    p_neg_fu_324_p2 = (hsize_in.read() ^ ap_const_lv32_FFFFFFFF);
+}
+
+void rgb2bayer::thread_p_neg_t_fu_339_p2() {
+    p_neg_t_fu_339_p2 = (!ap_const_lv31_0.is_01() || !p_lshr_fu_329_p4.read().is_01())? sc_lv<31>(): (sc_biguint<31>(ap_const_lv31_0) - sc_biguint<31>(p_lshr_fu_329_p4.read()));
 }
 
 void rgb2bayer::thread_s_axis_video_TDATA_blk_n() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0.read(), ap_const_boolean_0) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()))) {
         s_axis_video_TDATA_blk_n = s_axis_video_V_data_V_0_state.read()[0];
     } else {
         s_axis_video_TDATA_blk_n = ap_const_logic_1;
@@ -1973,10 +1828,10 @@ void rgb2bayer::thread_s_axis_video_V_data_V_0_ack_in() {
 }
 
 void rgb2bayer::thread_s_axis_video_V_data_V_0_ack_out() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+         !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
         s_axis_video_V_data_V_0_ack_out = ap_const_logic_1;
     } else {
         s_axis_video_V_data_V_0_ack_out = ap_const_logic_0;
@@ -2016,10 +1871,10 @@ void rgb2bayer::thread_s_axis_video_V_data_V_0_vld_out() {
 }
 
 void rgb2bayer::thread_s_axis_video_V_dest_V_0_ack_out() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+         !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
         s_axis_video_V_dest_V_0_ack_out = ap_const_logic_1;
     } else {
         s_axis_video_V_dest_V_0_ack_out = ap_const_logic_0;
@@ -2035,10 +1890,10 @@ void rgb2bayer::thread_s_axis_video_V_last_V_0_ack_in() {
 }
 
 void rgb2bayer::thread_s_axis_video_V_last_V_0_ack_out() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+         !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
         s_axis_video_V_last_V_0_ack_out = ap_const_logic_1;
     } else {
         s_axis_video_V_last_V_0_ack_out = ap_const_logic_0;
@@ -2082,10 +1937,10 @@ void rgb2bayer::thread_s_axis_video_V_user_V_0_ack_in() {
 }
 
 void rgb2bayer::thread_s_axis_video_V_user_V_0_ack_out() {
-    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_pp0_stage0.read()) && 
-         esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && 
-         esl_seteq<1,1,1>(ap_const_lv1_0, exitcond_flatten_fu_219_p2.read()) && 
-         esl_seteq<1,1,1>(ap_block_pp0_stage0_11001.read(), ap_const_boolean_0))) {
+    if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && 
+         esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+         !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
         s_axis_video_V_user_V_0_ack_out = ap_const_logic_1;
     } else {
         s_axis_video_V_user_V_0_ack_out = ap_const_logic_0;
@@ -2124,142 +1979,164 @@ void rgb2bayer::thread_s_axis_video_V_user_V_0_vld_out() {
     s_axis_video_V_user_V_0_vld_out = s_axis_video_V_user_V_0_state.read()[0];
 }
 
-void rgb2bayer::thread_tmp_10_fu_398_p4() {
-    tmp_10_fu_398_p4 = s_axis_video_V_data_V_0_data_out.read().range(23, 16);
+void rgb2bayer::thread_sel_tmp10_fu_294_p2() {
+    sel_tmp10_fu_294_p2 = (sel_tmp3_reg_583.read() & tmp_3_fu_258_p2.read());
 }
 
-void rgb2bayer::thread_tmp_11_fu_408_p3() {
-    tmp_11_fu_408_p3 = (!i_cast4_mid2_fu_252_p2.read()[0].is_01())? sc_lv<8>(): ((i_cast4_mid2_fu_252_p2.read()[0].to_bool())? tmp_10_fu_398_p4.read(): tmp_8_fu_376_p1.read());
+void rgb2bayer::thread_sel_tmp11_fu_299_p2() {
+    sel_tmp11_fu_299_p2 = (sel_tmp3_reg_583.read() & tmp_2_fu_254_p1.read());
 }
 
-void rgb2bayer::thread_tmp_12_fu_323_p4() {
-    tmp_12_fu_323_p4 = s_axis_video_V_data_V_0_data_out.read().range(23, 16);
+void rgb2bayer::thread_sel_tmp1_fu_264_p2() {
+    sel_tmp1_fu_264_p2 = (sel_tmp_reg_565.read() & tmp_3_fu_258_p2.read());
 }
 
-void rgb2bayer::thread_tmp_13_fu_333_p1() {
-    tmp_13_fu_333_p1 = s_axis_video_V_data_V_0_data_out.read().range(8-1, 0);
+void rgb2bayer::thread_sel_tmp2_fu_279_p2() {
+    sel_tmp2_fu_279_p2 = (sel_tmp7_reg_571.read() & tmp_2_fu_254_p1.read());
 }
 
-void rgb2bayer::thread_tmp_14_fu_337_p3() {
-    tmp_14_fu_337_p3 = (!i_cast4_mid2_fu_252_p2.read()[0].is_01())? sc_lv<8>(): ((i_cast4_mid2_fu_252_p2.read()[0].to_bool())? tmp_12_fu_323_p4.read(): tmp_13_fu_333_p1.read());
+void rgb2bayer::thread_sel_tmp3_fu_233_p2() {
+    sel_tmp3_fu_233_p2 = (!pattern_V.read().is_01() || !ap_const_lv2_3.is_01())? sc_lv<1>(): sc_lv<1>(pattern_V.read() == ap_const_lv2_3);
 }
 
-void rgb2bayer::thread_tmp_15_fu_345_p4() {
-    tmp_15_fu_345_p4 = s_axis_video_V_data_V_0_data_out.read().range(15, 8);
+void rgb2bayer::thread_sel_tmp4_fu_227_p2() {
+    sel_tmp4_fu_227_p2 = (!pattern_V.read().is_01() || !ap_const_lv2_2.is_01())? sc_lv<1>(): sc_lv<1>(pattern_V.read() == ap_const_lv2_2);
 }
 
-void rgb2bayer::thread_tmp_16_fu_355_p3() {
-    tmp_16_fu_355_p3 = (!i_cast4_mid2_fu_252_p2.read()[0].is_01())? sc_lv<8>(): ((i_cast4_mid2_fu_252_p2.read()[0].to_bool())? tmp_13_fu_333_p1.read(): tmp_15_fu_345_p4.read());
+void rgb2bayer::thread_sel_tmp5_fu_269_p2() {
+    sel_tmp5_fu_269_p2 = (sel_tmp_reg_565.read() & tmp_2_fu_254_p1.read());
 }
 
-void rgb2bayer::thread_tmp_17_fu_270_p1() {
-    tmp_17_fu_270_p1 = s_axis_video_V_data_V_0_data_out.read().range(8-1, 0);
+void rgb2bayer::thread_sel_tmp6_fu_284_p2() {
+    sel_tmp6_fu_284_p2 = (sel_tmp4_reg_577.read() & tmp_3_fu_258_p2.read());
 }
 
-void rgb2bayer::thread_tmp_18_fu_274_p4() {
-    tmp_18_fu_274_p4 = s_axis_video_V_data_V_0_data_out.read().range(23, 16);
+void rgb2bayer::thread_sel_tmp7_fu_221_p2() {
+    sel_tmp7_fu_221_p2 = (!pattern_V.read().is_01() || !ap_const_lv2_1.is_01())? sc_lv<1>(): sc_lv<1>(pattern_V.read() == ap_const_lv2_1);
 }
 
-void rgb2bayer::thread_tmp_19_fu_284_p3() {
-    tmp_19_fu_284_p3 = (!i_cast4_mid2_fu_252_p2.read()[0].is_01())? sc_lv<8>(): ((i_cast4_mid2_fu_252_p2.read()[0].to_bool())? tmp_17_fu_270_p1.read(): tmp_18_fu_274_p4.read());
+void rgb2bayer::thread_sel_tmp8_fu_274_p2() {
+    sel_tmp8_fu_274_p2 = (sel_tmp7_reg_571.read() & tmp_3_fu_258_p2.read());
 }
 
-void rgb2bayer::thread_tmp_1_fu_244_p1() {
-    tmp_1_fu_244_p1 = j_cast5_mid2_v_fu_236_p3.read().range(1-1, 0);
+void rgb2bayer::thread_sel_tmp9_fu_289_p2() {
+    sel_tmp9_fu_289_p2 = (sel_tmp4_reg_577.read() & tmp_2_fu_254_p1.read());
 }
 
-void rgb2bayer::thread_tmp_20_fu_292_p4() {
-    tmp_20_fu_292_p4 = s_axis_video_V_data_V_0_data_out.read().range(15, 8);
+void rgb2bayer::thread_sel_tmp_fu_215_p2() {
+    sel_tmp_fu_215_p2 = (!pattern_V.read().is_01() || !ap_const_lv2_0.is_01())? sc_lv<1>(): sc_lv<1>(pattern_V.read() == ap_const_lv2_0);
 }
 
-void rgb2bayer::thread_tmp_21_fu_302_p3() {
-    tmp_21_fu_302_p3 = (!i_cast4_mid2_fu_252_p2.read()[0].is_01())? sc_lv<8>(): ((i_cast4_mid2_fu_252_p2.read()[0].to_bool())? tmp_20_fu_292_p4.read(): tmp_17_fu_270_p1.read());
+void rgb2bayer::thread_tmp_10_fu_379_p2() {
+    tmp_10_fu_379_p2 = (!i_reg_204.read().is_01() || !tmp_9_reg_637.read().is_01())? sc_lv<1>(): sc_lv<1>(i_reg_204.read() == tmp_9_reg_637.read());
 }
 
-void rgb2bayer::thread_tmp_2_fu_443_p3() {
-    tmp_2_fu_443_p3 = (!i_cast4_mid2_fu_252_p2.read()[0].is_01())? sc_lv<8>(): ((i_cast4_mid2_fu_252_p2.read()[0].to_bool())? tmp_fu_429_p4.read(): tmp_7_fu_439_p1.read());
+void rgb2bayer::thread_tmp_11_fu_411_p1() {
+    tmp_11_fu_411_p1 = s_axis_video_V_data_V_0_data_out.read().range(8-1, 0);
 }
 
-void rgb2bayer::thread_tmp_3_fu_248_p1() {
-    tmp_3_fu_248_p1 = i_reg_185.read().range(1-1, 0);
+void rgb2bayer::thread_tmp_1_fu_243_p2() {
+    tmp_1_fu_243_p2 = (!j_cast_fu_239_p1.read().is_01() || !vsize_in.read().is_01())? sc_lv<1>(): (sc_bigint<32>(j_cast_fu_239_p1.read()) < sc_bigint<32>(vsize_in.read()));
 }
 
-void rgb2bayer::thread_tmp_4_fu_214_p2() {
-    tmp_4_fu_214_p2 = (!i_cast_fu_210_p1.read().is_01() || !hsize_in.read().is_01())? sc_lv<1>(): (sc_bigint<32>(i_cast_fu_210_p1.read()) < sc_bigint<32>(hsize_in.read()));
+void rgb2bayer::thread_tmp_2_fu_254_p1() {
+    tmp_2_fu_254_p1 = j_reg_193.read().range(1-1, 0);
 }
 
-void rgb2bayer::thread_tmp_5_fu_451_p4() {
-    tmp_5_fu_451_p4 = s_axis_video_V_data_V_0_data_out.read().range(23, 16);
+void rgb2bayer::thread_tmp_3_fu_258_p2() {
+    tmp_3_fu_258_p2 = (tmp_2_fu_254_p1.read() ^ ap_const_lv1_1);
 }
 
-void rgb2bayer::thread_tmp_6_fu_461_p3() {
-    tmp_6_fu_461_p3 = (!i_cast4_mid2_fu_252_p2.read()[0].is_01())? sc_lv<8>(): ((i_cast4_mid2_fu_252_p2.read()[0].to_bool())? tmp_7_fu_439_p1.read(): tmp_5_fu_451_p4.read());
+void rgb2bayer::thread_tmp_4_fu_304_p3() {
+    tmp_4_fu_304_p3 = hsize_in.read().range(31, 31);
 }
 
-void rgb2bayer::thread_tmp_7_fu_439_p1() {
-    tmp_7_fu_439_p1 = s_axis_video_V_data_V_0_data_out.read().range(8-1, 0);
+void rgb2bayer::thread_tmp_5_fu_316_p3() {
+    tmp_5_fu_316_p3 = hsize_in_op_op_fu_311_p2.read().range(31, 31);
 }
 
-void rgb2bayer::thread_tmp_8_fu_376_p1() {
-    tmp_8_fu_376_p1 = s_axis_video_V_data_V_0_data_out.read().range(8-1, 0);
+void rgb2bayer::thread_tmp_6_fu_345_p4() {
+    tmp_6_fu_345_p4 = hsize_in_op_op_fu_311_p2.read().range(31, 1);
 }
 
-void rgb2bayer::thread_tmp_9_fu_380_p4() {
-    tmp_9_fu_380_p4 = s_axis_video_V_data_V_0_data_out.read().range(15, 8);
+void rgb2bayer::thread_tmp_7_fu_355_p3() {
+    tmp_7_fu_355_p3 = (!tmp_5_fu_316_p3.read()[0].is_01())? sc_lv<31>(): ((tmp_5_fu_316_p3.read()[0].to_bool())? p_neg_t_fu_339_p2.read(): tmp_6_fu_345_p4.read());
 }
 
-void rgb2bayer::thread_tmp_fu_429_p4() {
-    tmp_fu_429_p4 = s_axis_video_V_data_V_0_data_out.read().range(15, 8);
+void rgb2bayer::thread_tmp_8_fu_363_p3() {
+    tmp_8_fu_363_p3 = (!tmp_4_fu_304_p3.read()[0].is_01())? sc_lv<31>(): ((tmp_4_fu_304_p3.read()[0].to_bool())? ap_const_lv31_0: tmp_7_fu_355_p3.read());
 }
 
-void rgb2bayer::thread_tmp_s_fu_390_p3() {
-    tmp_s_fu_390_p3 = (!i_cast4_mid2_fu_252_p2.read()[0].is_01())? sc_lv<8>(): ((i_cast4_mid2_fu_252_p2.read()[0].to_bool())? tmp_8_fu_376_p1.read(): tmp_9_fu_380_p4.read());
+void rgb2bayer::thread_tmp_9_fu_371_p3() {
+    tmp_9_fu_371_p3 = esl_concat<31,1>(tmp_8_fu_363_p3.read(), ap_const_lv1_0);
 }
 
-void rgb2bayer::thread_video_o_data_V_1_fu_416_p3() {
-    video_o_data_V_1_fu_416_p3 = (!tmp_1_fu_244_p1.read()[0].is_01())? sc_lv<8>(): ((tmp_1_fu_244_p1.read()[0].to_bool())? tmp_s_fu_390_p3.read(): tmp_11_fu_408_p3.read());
+void rgb2bayer::thread_video_o_data_V_11_fu_521_p3() {
+    video_o_data_V_11_fu_521_p3 = (!sel_tmp10_reg_627.read()[0].is_01())? sc_lv<16>(): ((sel_tmp10_reg_627.read()[0].to_bool())? p_Result_1_fu_425_p3.read(): video_o_data_V_9_fu_514_p3.read());
 }
 
-void rgb2bayer::thread_video_o_data_V_2_fu_363_p3() {
-    video_o_data_V_2_fu_363_p3 = (!tmp_1_fu_244_p1.read()[0].is_01())? sc_lv<8>(): ((tmp_1_fu_244_p1.read()[0].to_bool())? tmp_14_fu_337_p3.read(): tmp_16_fu_355_p3.read());
+void rgb2bayer::thread_video_o_data_V_4_fu_479_p3() {
+    video_o_data_V_4_fu_479_p3 = (!sel_tmp1_reg_597.read()[0].is_01())? sc_lv<16>(): ((sel_tmp1_reg_597.read()[0].to_bool())? p_Result_s_fu_401_p4.read(): p_Val2_s_fu_124.read());
 }
 
-void rgb2bayer::thread_video_o_data_V_3_fu_310_p3() {
-    video_o_data_V_3_fu_310_p3 = (!tmp_1_fu_244_p1.read()[0].is_01())? sc_lv<8>(): ((tmp_1_fu_244_p1.read()[0].to_bool())? tmp_19_fu_284_p3.read(): tmp_21_fu_302_p3.read());
+void rgb2bayer::thread_video_o_data_V_5_fu_486_p3() {
+    video_o_data_V_5_fu_486_p3 = (!sel_tmp5_reg_602.read()[0].is_01())? sc_lv<16>(): ((sel_tmp5_reg_602.read()[0].to_bool())? p_Result_1_fu_425_p3.read(): video_o_data_V_4_fu_479_p3.read());
 }
 
-void rgb2bayer::thread_video_o_data_V_fu_469_p3() {
-    video_o_data_V_fu_469_p3 = (!tmp_1_fu_244_p1.read()[0].is_01())? sc_lv<8>(): ((tmp_1_fu_244_p1.read()[0].to_bool())? tmp_2_fu_443_p3.read(): tmp_6_fu_461_p3.read());
+void rgb2bayer::thread_video_o_data_V_6_fu_493_p3() {
+    video_o_data_V_6_fu_493_p3 = (!sel_tmp8_reg_607.read()[0].is_01())? sc_lv<16>(): ((sel_tmp8_reg_607.read()[0].to_bool())? p_Result_4_fu_443_p3.read(): video_o_data_V_5_fu_486_p3.read());
+}
+
+void rgb2bayer::thread_video_o_data_V_7_fu_500_p3() {
+    video_o_data_V_7_fu_500_p3 = (!sel_tmp2_reg_612.read()[0].is_01())? sc_lv<16>(): ((sel_tmp2_reg_612.read()[0].to_bool())? p_Result_5_fu_471_p3.read(): video_o_data_V_6_fu_493_p3.read());
+}
+
+void rgb2bayer::thread_video_o_data_V_8_fu_507_p3() {
+    video_o_data_V_8_fu_507_p3 = (!sel_tmp6_reg_617.read()[0].is_01())? sc_lv<16>(): ((sel_tmp6_reg_617.read()[0].to_bool())? p_Result_5_fu_471_p3.read(): video_o_data_V_7_fu_500_p3.read());
+}
+
+void rgb2bayer::thread_video_o_data_V_9_fu_514_p3() {
+    video_o_data_V_9_fu_514_p3 = (!sel_tmp9_reg_622.read()[0].is_01())? sc_lv<16>(): ((sel_tmp9_reg_622.read()[0].to_bool())? p_Result_4_fu_443_p3.read(): video_o_data_V_8_fu_507_p3.read());
+}
+
+void rgb2bayer::thread_video_o_data_V_fu_528_p3() {
+    video_o_data_V_fu_528_p3 = (!sel_tmp11_reg_632.read()[0].is_01())? sc_lv<16>(): ((sel_tmp11_reg_632.read()[0].to_bool())? p_Result_s_fu_401_p4.read(): video_o_data_V_11_fu_521_p3.read());
 }
 
 void rgb2bayer::thread_ap_NS_fsm() {
     switch (ap_CS_fsm.read().to_uint64()) {
         case 1 : 
-            ap_NS_fsm = ap_ST_fsm_pp0_stage0;
+            ap_NS_fsm = ap_ST_fsm_state2;
             break;
         case 2 : 
-            if ((!(esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter2.read()) && esl_seteq<1,1,1>(ap_block_pp0_stage0_subdone.read(), ap_const_boolean_0) && esl_seteq<1,1,1>(ap_enable_reg_pp0_iter1.read(), ap_const_logic_0)) && !(esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && esl_seteq<1,1,1>(ap_block_pp0_stage0_subdone.read(), ap_const_boolean_0) && esl_seteq<1,1,1>(ap_const_lv1_1, exitcond_flatten_fu_219_p2.read()) && esl_seteq<1,1,1>(ap_enable_reg_pp0_iter1.read(), ap_const_logic_0)))) {
-                ap_NS_fsm = ap_ST_fsm_pp0_stage0;
-            } else if (((esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter2.read()) && 
-  esl_seteq<1,1,1>(ap_block_pp0_stage0_subdone.read(), ap_const_boolean_0) && 
-  esl_seteq<1,1,1>(ap_enable_reg_pp0_iter1.read(), ap_const_logic_0)) || (esl_seteq<1,1,1>(ap_const_logic_1, ap_enable_reg_pp0_iter0.read()) && 
-  esl_seteq<1,1,1>(ap_block_pp0_stage0_subdone.read(), ap_const_boolean_0) && 
-  esl_seteq<1,1,1>(ap_const_lv1_1, exitcond_flatten_fu_219_p2.read()) && 
-  esl_seteq<1,1,1>(ap_enable_reg_pp0_iter1.read(), ap_const_logic_0)))) {
-                ap_NS_fsm = ap_ST_fsm_state5;
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && !(esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_keep_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_strb_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_user_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_last_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_id_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_dest_V_1_ack_in.read())) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_keep_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_strb_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_user_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_last_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_id_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_dest_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_lv1_0, tmp_1_fu_243_p2.read()))) {
+                ap_NS_fsm = ap_ST_fsm_state1;
+            } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state2.read()) && !(esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_keep_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_strb_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_user_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_last_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_id_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_dest_V_1_ack_in.read())) && esl_seteq<1,1,1>(ap_const_lv1_1, tmp_1_fu_243_p2.read()))) {
+                ap_NS_fsm = ap_ST_fsm_state3;
             } else {
-                ap_NS_fsm = ap_ST_fsm_pp0_stage0;
+                ap_NS_fsm = ap_ST_fsm_state2;
             }
             break;
         case 4 : 
-            if ((esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_keep_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_strb_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_user_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_last_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_id_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_dest_V_1_state.read()[0]) && esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state5.read()) && !(esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_data_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_keep_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_strb_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_user_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_last_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_id_V_1_ack_in.read()) || esl_seteq<1,1,1>(ap_const_logic_0, m_axis_video_V_dest_V_1_ack_in.read())))) {
-                ap_NS_fsm = ap_ST_fsm_state1;
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())) && esl_seteq<1,1,1>(ap_const_lv1_1, tmp_10_fu_379_p2.read()))) {
+                ap_NS_fsm = ap_ST_fsm_state2;
+            } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state3.read()) && esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && !((esl_seteq<1,1,1>(ap_const_lv1_0, tmp_10_fu_379_p2.read()) && 
+  esl_seteq<1,1,1>(ap_const_logic_0, s_axis_video_V_data_V_0_vld_out.read())) || esl_seteq<1,1,1>(ap_const_boolean_1, ap_block_state3_io.read())))) {
+                ap_NS_fsm = ap_ST_fsm_state4;
             } else {
-                ap_NS_fsm = ap_ST_fsm_state5;
+                ap_NS_fsm = ap_ST_fsm_state3;
+            }
+            break;
+        case 8 : 
+            if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state4.read()) && esl_seteq<1,1,1>(m_axis_video_V_data_V_1_ack_in.read(), ap_const_logic_1))) {
+                ap_NS_fsm = ap_ST_fsm_state3;
+            } else {
+                ap_NS_fsm = ap_ST_fsm_state4;
             }
             break;
         default : 
-            ap_NS_fsm = "XXX";
+            ap_NS_fsm = "XXXX";
             break;
     }
 }

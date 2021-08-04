@@ -21,7 +21,7 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
 	for(int j = 0; j < vsize_in ; j ++)
 	{
 #pragma HLS PIPELINE
-		for(int i = 0; i < hsize_in ; i ++)
+		for(int i = 0; i < hsize_in ; i+=2) //SPC
 		{
 
 			s_axis_video >> video_i;
@@ -34,29 +34,13 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
 		    	case 0b00://uint2     RGGB
 				if(j%2==0)
 				{
-					if(i%2==0)
-					{
-//						video_o.data = video_i.data(23,16);
-						video_o.data = video_i.data >> R_shift;
-					}
-					else
-					{
-//						video_o.data = video_i.data(7,0);
-						video_o.data = video_i.data;
-					}
+					video_o.data(7,0) = video_i.data(23,16); // 8bit, R0
+					video_o.data(15,8) = video_i.data(31,24); // 8bit, G1
 				}
 				else
 				{
-					if(i%2==0)
-					{
-//					    video_o.data = video_i.data(7,0);
-						video_o.data = video_i.data;
-					}
-					else
-					{
-//						video_o.data = video_i.data(15,8);
-						video_o.data = (video_i.data >> B_shift)&B_mask;
-					}
+					video_o.data(7,0) = video_i.data(7,0); // 8bit, G0
+					video_o.data(15,8) = video_i.data(39,32); // 8bit, B1
 				}
 
 				break;
@@ -64,25 +48,13 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
 		    	case 0b01://uint2     GRBG
 				if(j%2==0)
 				{
-					if(i%2==0)
-					{
-						video_o.data = video_i.data;
-					}
-					else
-					{
-						video_o.data = video_i.data >> R_shift;
-					}
+					video_o.data(7,0) = video_i.data(7,0); // 8bit, G0
+					video_o.data(15,8) = video_i.data(47,40); // 8bit, R1
 				}
 				else
 				{
-					if(i%2==0)
-					{
-						video_o.data = (video_i.data >> B_shift)&B_mask;
-					}
-					else
-					{
-						video_o.data = video_i.data;
-					}
+					video_o.data(7,0) = video_i.data(15,8); // 8bit, B0
+					video_o.data(15,8) = video_i.data(31,24); // 8bit, G1
 				}
 
 				break;
@@ -91,25 +63,13 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
 		    	case 0b10://uint2     BGGR
 				if(j%2==0)
 				{
-					if(i%2==0)
-					{
-						video_o.data = (video_i.data >> B_shift)&B_mask;
-					}
-					else
-					{
-						video_o.data = video_i.data;
-					}
+					video_o.data(7,0) = video_i.data(15,8); // 8bit, B0
+					video_o.data(15,8) = video_i.data(31,24); // 8bit, G1
 				}
 				else
 				{
-					if(i%2==0)
-					{
-						video_o.data = video_i.data;
-					}
-					else
-					{
-						video_o.data = video_i.data >> R_shift;
-					}
+					video_o.data(7,0) = video_i.data(7,0); // 8bit, G0
+					video_o.data(15,8) = video_i.data(47,40); // 8bit, R1
 				}
 
 				break;
@@ -118,25 +78,13 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
 		    	case 0b11://uint2     GBRG
 				if(j%2==0)
 				{
-					if(i%2==0)
-					{
-						video_o.data = video_i.data;
-					}
-					else
-					{
-						video_o.data = (video_i.data >> B_shift)&B_mask;
-					}
+					video_o.data(7,0) = video_i.data(7,0); // 8bit, G0
+					video_o.data(15,8) = video_i.data(39,32); // 8bit, B1
 				}
 				else
 				{
-					if(i%2==0)
-					{
-						video_o.data = video_i.data >> R_shift;
-					}
-					else
-					{
-						video_o.data = video_i.data;
-					}
+					video_o.data(7,0) = video_i.data(23,16); // 8bit, R0
+					video_o.data(15,8) = video_i.data(31,24); // 8bit, G1
 				}
 
 				break;

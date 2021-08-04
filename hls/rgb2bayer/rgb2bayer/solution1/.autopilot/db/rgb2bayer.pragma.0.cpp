@@ -34183,9 +34183,9 @@ _ssdm_op_SpecDataflowPipeline(-1, 0, "");
 }
 # 70 "/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_video.h" 2
 # 5 "src/cpp/rgb2bayer.h" 2
-# 31 "src/cpp/rgb2bayer.h"
- typedef hls::stream<ap_axiu<24,1,1,1> > AXI_STREAM1;
- typedef hls::stream<ap_axiu<8,1,1,1> > AXI_STREAM2;
+# 44 "src/cpp/rgb2bayer.h"
+ typedef hls::stream<ap_axiu<48,1,1,1> > AXI_STREAM1;
+ typedef hls::stream<ap_axiu<16,1,1,1> > AXI_STREAM2;
 
 
 
@@ -34200,13 +34200,13 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
 #pragma HLS INTERFACE axis register both port=&m_axis_video
 #pragma HLS interface ap_ctrl_none port=return
 
- ap_axiu<24, 1, 1, 1> video_i;
- ap_axiu<8, 1, 1, 1> video_o;
+ ap_axiu<48, 1, 1, 1> video_i;
+ ap_axiu<16, 1, 1, 1> video_o;
 # 21 "src/cpp/rgb2bayer.cpp"
  for(int j = 0; j < vsize_in ; j ++)
  {
 #pragma HLS PIPELINE
- for(int i = 0; i < hsize_in ; i ++)
+ for(int i = 0; i < hsize_in ; i+=2)
   {
 
    s_axis_video >> video_i;
@@ -34219,29 +34219,13 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
        case 0b00:
     if(j%2==0)
     {
-     if(i%2==0)
-     {
-
-      video_o.data = video_i.data >> 8*2;
-     }
-     else
-     {
-
-      video_o.data = video_i.data;
-     }
+     video_o.data(7,0) = video_i.data(23,16);
+     video_o.data(15,8) = video_i.data(31,24);
     }
     else
     {
-     if(i%2==0)
-     {
-
-      video_o.data = video_i.data;
-     }
-     else
-     {
-
-      video_o.data = (video_i.data >> 8)&0xff;
-     }
+     video_o.data(7,0) = video_i.data(7,0);
+     video_o.data(15,8) = video_i.data(39,32);
     }
 
     break;
@@ -34249,25 +34233,13 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
        case 0b01:
     if(j%2==0)
     {
-     if(i%2==0)
-     {
-      video_o.data = video_i.data;
-     }
-     else
-     {
-      video_o.data = video_i.data >> 8*2;
-     }
+     video_o.data(7,0) = video_i.data(7,0);
+     video_o.data(15,8) = video_i.data(47,40);
     }
     else
     {
-     if(i%2==0)
-     {
-      video_o.data = (video_i.data >> 8)&0xff;
-     }
-     else
-     {
-      video_o.data = video_i.data;
-     }
+     video_o.data(7,0) = video_i.data(15,8);
+     video_o.data(15,8) = video_i.data(31,24);
     }
 
     break;
@@ -34276,25 +34248,13 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
        case 0b10:
     if(j%2==0)
     {
-     if(i%2==0)
-     {
-      video_o.data = (video_i.data >> 8)&0xff;
-     }
-     else
-     {
-      video_o.data = video_i.data;
-     }
+     video_o.data(7,0) = video_i.data(15,8);
+     video_o.data(15,8) = video_i.data(31,24);
     }
     else
     {
-     if(i%2==0)
-     {
-      video_o.data = video_i.data;
-     }
-     else
-     {
-      video_o.data = video_i.data >> 8*2;
-     }
+     video_o.data(7,0) = video_i.data(7,0);
+     video_o.data(15,8) = video_i.data(47,40);
     }
 
     break;
@@ -34303,25 +34263,13 @@ void rgb2bayer(AXI_STREAM1& s_axis_video,AXI_STREAM2& m_axis_video, int hsize_in
        case 0b11:
     if(j%2==0)
     {
-     if(i%2==0)
-     {
-      video_o.data = video_i.data;
-     }
-     else
-     {
-      video_o.data = (video_i.data >> 8)&0xff;
-     }
+     video_o.data(7,0) = video_i.data(7,0);
+     video_o.data(15,8) = video_i.data(39,32);
     }
     else
     {
-     if(i%2==0)
-     {
-      video_o.data = video_i.data >> 8*2;
-     }
-     else
-     {
-      video_o.data = video_i.data;
-     }
+     video_o.data(7,0) = video_i.data(23,16);
+     video_o.data(15,8) = video_i.data(31,24);
     }
 
     break;

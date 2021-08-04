@@ -78,7 +78,7 @@ bit aclk = 0, aresetn = 0;
 xil_axi_resp_t 	resp;
 // Signals corresponding to the TPG AXI4-Stream interface
 bit tready = 1, tuser, tvalid, tlast;
-bit [7:0] tdata;
+bit [15:0] tdata;
 //Signal for the video crop IP
 bit vid_crop_start = 0;
 // Test Bench variables
@@ -252,9 +252,9 @@ initial begin
                 if(tuser == 1)
                     img_start=1;
                 
-                $fwrite(output_file,"%0d\n",int'(tdata[7:0]));
-                $fwrite(output_file2,"%c",tdata[7:0]);
-                $fwrite(output_file3,"%c",tdata[7:0]);
+                $fwrite(output_file,"%0d\n%0d\n",int'(tdata[7:0]),int'(tdata[15:8]));
+                $fwrite(output_file2,"%c%c",tdata[7:0],int'(tdata[15:8]));
+                $fwrite(output_file3,"%c%c",tdata[7:0],int'(tdata[15:8]));
             end
          end
     end

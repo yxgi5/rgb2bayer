@@ -6,104 +6,104 @@
 
 source /opt/Xilinx/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'andreas' on host 'Vostro-5880' (Linux_x86_64 version 5.4.0-80-generic) on Wed Aug 04 18:16:09 CST 2021
+INFO: [HLS 200-10] For user 'andreas' on host 'Vostro-5880' (Linux_x86_64 version 5.4.0-80-generic) on Wed Aug 04 14:18:51 CST 2021
 INFO: [HLS 200-10] On os Ubuntu 18.04.4 LTS
-INFO: [HLS 200-10] In directory '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1'
-INFO: [HLS 200-10] Creating and opening project '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1/video_crop_bd_v_tpg_0_0'.
-INFO: [HLS 200-10] Adding design file '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg_config.h' to the project
-INFO: [HLS 200-10] Adding design file '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp' to the project
-INFO: [HLS 200-10] Adding design file '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.h' to the project
-INFO: [HLS 200-10] Adding design file '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg_zoneplate.h' to the project
-INFO: [HLS 200-10] Creating and opening solution '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1/video_crop_bd_v_tpg_0_0/prj'.
+INFO: [HLS 200-10] In directory '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1'
+INFO: [HLS 200-10] Creating and opening project '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1/video_crop_bd_v_tpg_0_0'.
+INFO: [HLS 200-10] Adding design file '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg_config.h' to the project
+INFO: [HLS 200-10] Adding design file '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp' to the project
+INFO: [HLS 200-10] Adding design file '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.h' to the project
+INFO: [HLS 200-10] Adding design file '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg_zoneplate.h' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.runs/video_crop_bd_v_tpg_0_0_synth_1/video_crop_bd_v_tpg_0_0/prj'.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
 INFO: [SYN 201-201] Setting up clock 'ap_clk' with a period of 20ns.
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 569.609 ; gain = 128.000 ; free physical = 2833 ; free virtual = 19789
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 569.609 ; gain = 128.000 ; free physical = 2832 ; free virtual = 19788
+INFO: [HLS 200-10] Analyzing design file '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 569.609 ; gain = 128.000 ; free physical = 1817 ; free virtual = 18614
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 569.609 ; gain = 128.000 ; free physical = 1816 ; free virtual = 18613
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 569.609 ; gain = 128.000 ; free physical = 3141 ; free virtual = 20099
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 569.609 ; gain = 128.000 ; free physical = 2406 ; free virtual = 19204
 INFO: [HLS 200-10] Checking synthesizability ...
-WARNING: [SYNCHK 200-23] /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:943: variable-indexed range selection may cause suboptimal QoR.
+WARNING: [SYNCHK 200-23] /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:943: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 633.609 ; gain = 192.000 ; free physical = 2594 ; free virtual = 19552
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 633.609 ; gain = 192.000 ; free physical = 2406 ; free virtual = 19208
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternZonePlate'.
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternVerticalRamp'.
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternVerticalHorizontalRamp'.
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternTemporalRamp' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1008).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternTemporalRamp' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1008).
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternTartanColorBars'.
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternSolidWhite'.
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternSolidRed'.
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternSolidGreen'.
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternSolidBlue'.
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternSolidBlack'.
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternRainbow' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1134).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternRainbow' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1134).
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternMask'.
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternHorizontalRamp' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:965).
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternDPColorSquare' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1558).
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternDPColorRamp' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1443).
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternDPBlackWhiteVerticalLine' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1541).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternHorizontalRamp' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:965).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternDPColorSquare' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1558).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternDPColorRamp' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1443).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternDPBlackWhiteVerticalLine' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1541).
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternCrossHatch'.
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternCrossHair'.
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternColorBars' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1101).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternColorBars' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1101).
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternCheckerBoard'.
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPatternBox'.
 INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'tpgPRBS'.
 INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'tpgForeground' for pipelining.
 INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'tpgBackground' for pipelining.
-INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:882) in function 'MultiPixStream2AXIvideo' for pipelining.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternZonePlate' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternVerticalRamp' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternVerticalHorizontalRamp' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1009) in function 'tpgPatternTemporalRamp' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternTartanColorBars' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternSolidWhite' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternSolidRed' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternSolidGreen' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternSolidBlue' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternSolidBlack' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1136) in function 'tpgPatternRainbow' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternMask' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2' in function 'tpgPatternMask' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:970) in function 'tpgPatternHorizontalRamp' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1583) in function 'tpgPatternDPColorSquare' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1457) in function 'tpgPatternDPColorRamp' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1545) in function 'tpgPatternDPBlackWhiteVerticalLine' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternCrossHatch' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternCrossHair' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1107) in function 'tpgPatternColorBars' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternCheckerBoard' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternBox' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPRBS' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'tpgForeground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' in function 'tpgForeground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' in function 'tpgForeground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4' in function 'tpgForeground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.5' in function 'tpgForeground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.6' in function 'tpgForeground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.7' in function 'tpgForeground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.5' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.6' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.7' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.8' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.9' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.10' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.11' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.12' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.13' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.14' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.15' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.16' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.17' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.18' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.19' in function 'tpgBackground' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:180) in function 'MultiPixStream2AXIvideo' completely with a factor of 3.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:931) in function 'MultiPixStream2AXIvideo' completely with a factor of 1.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:933) in function 'MultiPixStream2AXIvideo' completely with a factor of 3.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:882) in function 'MultiPixStream2AXIvideo' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternZonePlate' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternVerticalRamp' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternVerticalHorizontalRamp' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1009) in function 'tpgPatternTemporalRamp' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternTartanColorBars' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternSolidWhite' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternSolidRed' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternSolidGreen' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternSolidBlue' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternSolidBlack' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1136) in function 'tpgPatternRainbow' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternMask' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' in function 'tpgPatternMask' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:970) in function 'tpgPatternHorizontalRamp' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1583) in function 'tpgPatternDPColorSquare' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1457) in function 'tpgPatternDPColorRamp' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1545) in function 'tpgPatternDPBlackWhiteVerticalLine' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternCrossHatch' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternCrossHair' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1107) in function 'tpgPatternColorBars' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternCheckerBoard' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPatternBox' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' in function 'tpgPRBS' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'tpgForeground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' in function 'tpgForeground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' in function 'tpgForeground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4' in function 'tpgForeground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.5' in function 'tpgForeground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.6' in function 'tpgForeground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.7' in function 'tpgForeground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.5' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.6' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.7' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.8' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.9' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.10' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.11' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.12' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.13' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.14' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.15' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.16' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.17' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.18' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.19' in function 'tpgBackground' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (/opt/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:180) in function 'MultiPixStream2AXIvideo' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:931) in function 'MultiPixStream2AXIvideo' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2.1' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:933) in function 'MultiPixStream2AXIvideo' completely with a factor of 3.
 INFO: [XFORM 203-102] Partitioning array 'xCount.V.3' automatically.
 INFO: [XFORM 203-102] Partitioning array 'xCount.V.2' automatically.
 INFO: [XFORM 203-102] Partitioning array 'xCount.V.1' automatically.
@@ -115,43 +115,48 @@ INFO: [XFORM 203-102] Partitioning array 'hBarSel.3' automatically.
 INFO: [XFORM 203-102] Partitioning array 'hBarSel' automatically.
 INFO: [XFORM 203-102] Automatically partitioning streamed array 'bckgndYUV.V.val.V' .
 INFO: [XFORM 203-102] Automatically partitioning streamed array 'ovrlayYUV.V.val.V' .
-INFO: [XFORM 203-101] Partitioning array 'tmp.val.V' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1443) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'pix.val.V' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:834) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmp.val.V' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1443) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmp.val.V' in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:834) in dimension 1 completely.
 INFO: [XFORM 203-101] Partitioning array 'tmp.val.V'  in dimension 1 completely.
 INFO: [XFORM 203-712] Applying dataflow to function 'v_tpg' , detected/extracted 3 process function(s): 
 	 'tpgBackground'
 	 'tpgForeground'
 	 'MultiPixStream2AXIvideo'.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternVerticalHorizontalRamp'... converting 3 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternTartanColorBars'... converting 13 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternTartanColorBars'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternTartanColorBars'... converting 12 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternSolidWhite'... converting 5 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternSolidRed'... converting 5 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternSolidGreen'... converting 5 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternSolidBlue'... converting 5 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternSolidBlack'... converting 5 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1131:46) to (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1179:5) in function 'tpgPatternRainbow'... converting 10 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1628:5) in function 'tpgPatternDPColorSquare'... converting 14 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1440:43) to (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1535:5) in function 'tpgPatternDPColorRamp'... converting 11 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1131:46) to (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1179:5) in function 'tpgPatternRainbow'... converting 19 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1585:9) in function 'tpgPatternDPColorSquare'... converting 14 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1628:5) in function 'tpgPatternDPColorSquare'... converting 14 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1440:43) to (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1535:5) in function 'tpgPatternDPColorRamp'... converting 14 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternCrossHatch'... converting 12 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternCrossHair'... converting 7 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1124:9) to (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1128:5) in function 'tpgPatternColorBars'... converting 13 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternCheckerBoard'... converting 13 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternBox'... converting 5 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPRBS'... converting 6 basic blocks.
-INFO: [XFORM 203-11] Balancing expressions in function 'tpgPatternRainbow' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1131)...3 expression(s) balanced.
-INFO: [XFORM 203-11] Balancing expressions in function 'tpgPatternBox'...3 expression(s) balanced.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 633.609 ; gain = 192.000 ; free physical = 3215 ; free virtual = 20174
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternCrossHatch'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternCrossHair'... converting 14 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1124:9) to (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1109:9) in function 'tpgPatternColorBars'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1124:9) to (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1128:5) in function 'tpgPatternColorBars'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternCheckerBoard'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternCheckerBoard'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPatternBox'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'tpgPRBS'... converting 4 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'tpgPatternRainbow' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1131)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 633.609 ; gain = 192.000 ; free physical = 3031 ; free virtual = 19835
 WARNING: [XFORM 203-631] Renaming function 'tpgPatternVerticalRamp' to 'tpgPatternVerticalRa' 
 WARNING: [XFORM 203-631] Renaming function 'tpgPatternVerticalHorizontalRamp' to 'tpgPatternVerticalHo' 
-WARNING: [XFORM 203-631] Renaming function 'tpgPatternTemporalRamp' to 'tpgPatternTemporalRa' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1012:5)
+WARNING: [XFORM 203-631] Renaming function 'tpgPatternTemporalRamp' to 'tpgPatternTemporalRa' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1012:5)
 WARNING: [XFORM 203-631] Renaming function 'tpgPatternTartanColorBars' to 'tpgPatternTartanColo' 
-WARNING: [XFORM 203-631] Renaming function 'tpgPatternHorizontalRamp' to 'tpgPatternHorizontal' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:967:5)
-WARNING: [XFORM 203-631] Renaming function 'tpgPatternDPColorSquare' to 'tpgPatternDPColorSqu' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1568:13)
-WARNING: [XFORM 203-631] Renaming function 'tpgPatternDPColorRamp' to 'tpgPatternDPColorRam' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1451:5)
-WARNING: [XFORM 203-631] Renaming function 'tpgPatternDPBlackWhiteVerticalLine' to 'tpgPatternDPBlackWhi' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1547:5)
+WARNING: [XFORM 203-631] Renaming function 'tpgPatternHorizontalRamp' to 'tpgPatternHorizontal' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:967:5)
+WARNING: [XFORM 203-631] Renaming function 'tpgPatternDPColorSquare' to 'tpgPatternDPColorSqu' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1568:13)
+WARNING: [XFORM 203-631] Renaming function 'tpgPatternDPColorRamp' to 'tpgPatternDPColorRam' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1451:5)
+WARNING: [XFORM 203-631] Renaming function 'tpgPatternDPBlackWhiteVerticalLine' to 'tpgPatternDPBlackWhi' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1547:5)
 WARNING: [XFORM 203-631] Renaming function 'tpgPatternCheckerBoard' to 'tpgPatternCheckerBoa' 
-WARNING: [XFORM 203-631] Renaming function 'MultiPixStream2AXIvideo' to 'MultiPixStream2AXIvi' (/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:180:53)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1017.609 ; gain = 576.000 ; free physical = 2713 ; free virtual = 19679
+WARNING: [XFORM 203-631] Renaming function 'MultiPixStream2AXIvideo' to 'MultiPixStream2AXIvi' (/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:180:53)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1017.609 ; gain = 576.000 ; free physical = 2696 ; free virtual = 19496
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'v_tpg' ...
 WARNING: [SYN 201-103] Legalizing function name 'reg<ap_uint<10> >' to 'reg_ap_uint_10_s'.
@@ -163,7 +168,7 @@ INFO: [HLS 200-42] -- Implementing module 'tpgPatternDPColorSqu'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 7	0	11	100	22	2	3	1.9	2	14	0
+####	 10	0	18	161	36	2	3	1.9	2	28	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -194,19 +199,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 23.1 seconds; current allocated memory: 555.294 MB.
+INFO: [HLS 200-111]  Elapsed time: 20.28 seconds; current allocated memory: 561.130 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.39 seconds; current allocated memory: 555.809 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.56 seconds; current allocated memory: 561.906 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternDPBlackWhi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 1	0	0	6	0	-nan	0	-nan	0	0	0
+####	 1	0	1	11	2	2	2	2	2	1	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -237,19 +242,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.54 seconds; current allocated memory: 555.904 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.66 seconds; current allocated memory: 562.057 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 555.949 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 562.120 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternDPColorRam' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 6	0	4	28	10	2.5	3	2.5	3	6	0
+####	 7	0	6	42	16	2.7	4	2.5	3	10	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -280,19 +285,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 556.133 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 562.318 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 556.298 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 562.564 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPRBS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 6	0	1	21	4	4	4	4	4	1	0
+####	 10	0	2	31	8	4	5	3.5	4	2	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -323,19 +328,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 556.436 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 562.778 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 556.605 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 563.027 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternCheckerBoa' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 9	0	5	80	12	2.4	3	2.4	3	7	0
+####	 12	0	9	125	21	2.3	3	2.3	3	14	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -366,19 +371,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 556.922 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 563.527 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 557.311 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.62 seconds; current allocated memory: 564.054 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternVerticalHo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 1	0	0	16	0	-nan	0	-nan	0	0	0
+####	 1	0	0	21	0	-nan	0	-nan	0	0	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -409,55 +414,91 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 557.396 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 564.138 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 557.476 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 564.229 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternRainbow' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SYN 201-351] The following objects are mapped to a DSP48.
-   a  'select' operation ('b', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1141)
+   a  'select' operation ('b_1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1141)
    b  constant -21
-   c  'mul' operation ('tmp_207_cast', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1155)
+   c  'mul' operation ('tmp_207_1_cast', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1155)
+  DSP48 Expression: tmp10 = tmp_207_1_cast + -21 * tmp_195_1_cast_cast_s
+WARNING: [SYN 201-303] Root Node tmp_207_1_cast mapped to expression  {mul a b}, but failed in bitwidth check.
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'select' operation ('p_tmp_176_1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1139)
+   b  constant -43
+   c  'add' operation ('tmp8', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1154)
+  DSP48 Expression: tmp_204_1 = tmp8 + -43 * tmp_191_1_cast5_cast
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  constant -85
+   b  'select' operation ('g_s', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1140)
+   c  constant -32640
+  DSP48 Expression: tmp8 = -32640 + -85 * tmp_193_1_cast
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'select' operation ('b_1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1141)
+   b  constant 29
+   c  'add' operation ('tmp_198_1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1153)
+  DSP48 Expression: tmp_199_1 = 29 * tmp_195_1_cast_cast_s + tmp_198_1_cast
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  constant 150
+   b  'select' operation ('g_s', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1140)
+   c  'add' operation ('tmp_197_1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1153)
+  DSP48 Expression: tmp_198_1 = 150 * tmp_193_1_cast + tmp_197_1_cast
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'select' operation ('p_tmp_176_1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1139)
+   b  constant 77
+   c  constant 4224
+  DSP48 Expression: tmp_197_1 = 4224 + 77 * tmp_191_1_cast5_cast
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'select' operation ('b', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1141)
+   b  constant -21
+   c  'mul' operation ('tmp_207_cast', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1155)
   DSP48 Expression: tmp4 = tmp_207_cast + -21 * tmp_195_cast_cast_ca
 WARNING: [SYN 201-303] Root Node tmp_207_cast mapped to expression  {mul a b}, but failed in bitwidth check.
 INFO: [SYN 201-351] The following objects are mapped to a DSP48.
-   a  'select' operation ('p_tmp_s', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1139)
+   a  'select' operation ('p_tmp_s', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1139)
    b  constant -43
-   c  'add' operation ('tmp2', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1154)
-  DSP48 Expression: tmp_67 = tmp2 + -43 * tmp_191_cast5_cast1
+   c  'add' operation ('tmp2', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1154)
+  DSP48 Expression: tmp_60 = tmp2 + -43 * tmp_191_cast_cast1
 INFO: [SYN 201-351] The following objects are mapped to a DSP48.
    a  constant -85
-   b  'select' operation ('g', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1140)
+   b  'select' operation ('g', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1140)
    c  constant -32640
   DSP48 Expression: tmp2 = -32640 + -85 * tmp_193_cast
 INFO: [SYN 201-351] The following objects are mapped to a DSP48.
-   a  'select' operation ('b', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1141)
+   a  'select' operation ('b', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1141)
    b  constant 29
-   c  'add' operation ('tmp_63', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1153)
-  DSP48 Expression: tmp_64 = 29 * tmp_195_cast_cast_ca + tmp_198_cast
+   c  'add' operation ('tmp_56', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1153)
+  DSP48 Expression: tmp_57 = 29 * tmp_195_cast_cast_ca + tmp_198_cast
 INFO: [SYN 201-351] The following objects are mapped to a DSP48.
    a  constant 150
-   b  'select' operation ('g', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1140)
-   c  'add' operation ('tmp_62', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1153)
-  DSP48 Expression: tmp_63 = 150 * tmp_193_cast + tmp_197_cast
+   b  'select' operation ('g', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1140)
+   c  'add' operation ('tmp_55', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1153)
+  DSP48 Expression: tmp_56 = 150 * tmp_193_cast + tmp_197_cast
 INFO: [SYN 201-351] The following objects are mapped to a DSP48.
-   a  'select' operation ('p_tmp_s', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1139)
+   a  'select' operation ('p_tmp_s', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1139)
    b  constant 77
    c  constant 4224
-  DSP48 Expression: tmp_62 = 4224 + 77 * tmp_191_cast5_cast1
+  DSP48 Expression: tmp_55 = 4224 + 77 * tmp_191_cast_cast1
 INFO: [SYN 201-351] The following objects are mapped to a ternary adder tree.
-   a  'add' operation of DSP[64] ('tmp4', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1155)
+   a  'add' operation of DSP[150] ('tmp10', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1155)
    b  constant 32896
-   c  'bitconcatenate' operation ('tmp_69', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1155)
+   c  'bitconcatenate' operation ('tmp_206_1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1155)
+
+INFO: [SYN 201-351] The following objects are mapped to a ternary adder tree.
+   a  'add' operation of DSP[64] ('tmp4', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1155)
+   b  constant 32896
+   c  'bitconcatenate' operation ('tmp_62', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1155)
 
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 14	0	10	61	22	2.2	3	2.1	3	16	0
+####	 25	0	18	117	40	2.2	3	2.1	3	32	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -488,13 +529,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 557.997 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 565.104 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.97 seconds; current allocated memory: 558.401 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.49 seconds; current allocated memory: 565.818 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_ap_uint_10_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -531,19 +572,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.02 seconds; current allocated memory: 558.500 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.6 seconds; current allocated memory: 565.970 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 558.536 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 566.010 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternCrossHatch' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 10	0	4	79	11	2.8	3	2	2	8	1
+####	 12	0	5	115	12	2.4	3	2	2	8	2
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -574,19 +615,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 558.855 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 566.440 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 559.175 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 566.906 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternTartanColo' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 9	0	5	78	12	2.4	3	2.4	3	7	0
+####	 12	0	9	122	21	2.3	3	2.3	3	14	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -617,13 +658,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 559.538 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.65 seconds; current allocated memory: 567.361 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 559.885 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 567.915 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_int_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -660,30 +701,39 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 559.930 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 567.960 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 559.973 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 568.000 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternZonePlate' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SYN 201-351] The following objects are mapped to a DSP48.
-   a  'load' operation ('tpgSinTableArray_loa', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1215) on array 'tpgSinTableArray'
+   a  'load' operation ('tpgSinTableArray_loa_1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1215) on array 'tpgSinTableArray'
+   b  constant 221
+  DSP48 Expression: tmp_32_tr_1 = 221 * tmp_22
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  wire read on port 'Zplate_Hor_Control_D'
+   b  wire read on port 'x'
+   c  'add' operation ('tmp2', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1213)
+  DSP48 Expression: tmp_28_1 = tmp2 + Zplate_Hor_Control_D_1 * x_read
+INFO: [SYN 201-351] The following objects are mapped to a DSP48.
+   a  'load' operation ('tpgSinTableArray_loa', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1215) on array 'tpgSinTableArray'
    b  constant 221
   DSP48 Expression: tmp_32_tr = 221 * tmp_17
 INFO: [SYN 201-351] The following objects are mapped to a DSP48.
    a  wire read on port 'Zplate_Hor_Control_D'
-   b  'call' operation ('tmp_11', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1209) to 'reg<int>'
-   c  'add' operation ('tmp1', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1213)
-  DSP48 Expression: tmp_14 = tmp1 + Zplate_Hor_Control_D_1 * tmp_22
+   b  'call' operation ('tmp_11', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1209) to 'reg<int>'
+   c  'add' operation ('tmp1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1213)
+  DSP48 Expression: tmp_14 = tmp1 + Zplate_Hor_Control_D_1 * tmp_27
 INFO: [SYN 201-351] The following objects are mapped to a DSP48.
    a  wire read on port 'Zplate_Hor_Control_S'
    b  wire read on port 'x'
-   c  'phi' operation ('zonePlateVAddr_loc_1', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1195) with incoming values : ('zonePlateVAddr_load', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1204) ('tmp_5', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1204) ('tmp_2', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1195)
+   c  'phi' operation ('zonePlateVAddr_loc_1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1195) with incoming values : ('zonePlateVAddr_load', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1204) ('tmp_5', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1204) ('tmp_2', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1195)
   DSP48 Expression: tmp1 = Zplate_Hor_Control_S_1 * x_read + zonePlateVAddr_loc_1
 INFO: [SYN 201-351] The following objects are mapped to a DSP48.
    a  constant -1
@@ -691,7 +741,7 @@ INFO: [SYN 201-351] The following objects are mapped to a DSP48.
    d  wire read on port 'x'
   DSP48 Expression: tmp_8 = (-1 + tmp_7_cast) * tmp_7
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 4	0	2	46	4	2	2	2	2	1	0
+####	 7	0	3	60	6	2	2	2	2	2	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -720,26 +770,40 @@ INFO: [SCHED 204-11] Finished checking consistency.
 INFO: [SCHED 204-11] Start scheduling optimization (solving LP) ...
 INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
+WARNING: [SCHED 204-21] Estimated clock period (17.751ns) exceeds the target (target clock period: 20ns, clock uncertainty: 2.5ns, effective delay budget: 17.5ns).
+WARNING: [SCHED 204-21] The critical path in module 'tpgPatternZonePlate' consists of the following:
+	'mul' operation of DSP[54] ('tmp_9', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1209) [45]  (3.36 ns)
+	'add' operation of DSP[54] ('tmp1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1213) [54]  (3.02 ns)
+	'add' operation of DSP[55] ('tmp_14', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1213) [55]  (3.02 ns)
+	'add' operation ('tmp2', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1213) [72]  (2.08 ns)
+	'add' operation of DSP[73] ('tmp_28_1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1213) [73]  (3.02 ns)
+	'getelementptr' operation ('tpgSinTableArray_add_1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1215) [76]  (0 ns)
+	'load' operation ('tpgSinTableArray_loa_1', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1215) on array 'tpgSinTableArray' [77]  (3.25 ns)
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 560.203 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 568.308 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 560.437 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 568.615 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternColorBars' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SYN 201-351] The following objects are mapped to a ternary adder tree.
-   a  'load' operation ('xBar_V_0_load', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1114) on static variable 'xBar_V_0'
-   b  constant 1
-   c  'partselect' operation ('barWidth.V', /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1105)
+   a  'load' operation ('xBar_V_0_load', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1114) on static variable 'xBar_V_0'
+   b  constant 2
+   c  'partselect' operation ('barWidth.V', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1105)
+
+INFO: [SYN 201-351] The following objects are mapped to a ternary adder tree.
+   a  'load' operation ('xBar_V_1_load', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1114) on static variable 'xBar_V_1'
+   b  constant 2
+   c  'partselect' operation ('barWidth.V', /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/src/v_tpg.cpp:1105)
 
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 5	0	4	52	10	2.5	3	2.5	3	7	0
+####	 9	0	8	96	19	2.4	3	2.4	3	14	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -770,19 +834,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 560.661 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 568.982 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.62 seconds; current allocated memory: 560.904 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.9 seconds; current allocated memory: 569.397 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternSolidWhite' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 2	0	1	14	3	3	3	2	2	2	0
+####	 3	0	2	20	4	2	2	2	2	2	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -813,19 +877,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.7 seconds; current allocated memory: 561.015 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.02 seconds; current allocated memory: 569.542 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 561.102 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 569.649 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternSolidBlack' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 1	0	1	14	3	3	3	2	2	2	0
+####	 2	0	2	20	4	2	2	2	2	2	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -856,19 +920,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 561.220 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 569.774 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 561.306 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 569.877 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternSolidBlue' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 1	0	1	16	3	3	3	2	2	2	0
+####	 2	0	2	25	6	3	4	2.5	3	3	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -899,19 +963,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 561.400 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 569.991 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 561.491 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 570.109 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternSolidGreen' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 1	0	1	16	3	3	3	2	2	2	0
+####	 2	0	2	24	5	2.5	3	2	2	3	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -942,19 +1006,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 561.581 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 570.212 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 561.676 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 570.328 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternSolidRed' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 2	0	2	17	5	2.5	3	2	2	3	0
+####	 3	0	3	25	7	2.3	3	2	2	4	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -985,19 +1049,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 561.755 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 570.447 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 561.847 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 570.602 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternTemporalRa' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 0	0	0	8	0	-nan	0	-nan	0	0	0
+####	 0	0	0	11	0	-nan	0	-nan	0	0	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -1028,19 +1092,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 561.890 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 570.655 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 561.945 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 570.720 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternVerticalRa' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 1	0	1	22	2	2	2	2	2	0	0
+####	 1	0	1	25	2	2	2	2	2	0	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -1071,19 +1135,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 562.026 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 570.805 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 562.115 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 570.904 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternHorizontal' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 0	0	0	14	0	-nan	0	-nan	0	0	0
+####	 0	0	0	19	0	-nan	0	-nan	0	0	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -1114,19 +1178,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 562.177 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 570.991 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 562.268 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 571.085 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgBackground' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 0	0	0	182	0	-nan	0	-nan	0	0	0
+####	 0	0	0	297	0	-nan	0	-nan	0	0	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -1157,19 +1221,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 563.405 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 572.865 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.72 seconds; current allocated memory: 566.186 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.4 seconds; current allocated memory: 576.495 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternBox' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 8	0	5	74	12	2.4	5	2	3	4	1
+####	 13	0	9	91	18	2	3	1.8	2	7	1
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -1200,19 +1264,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.1 seconds; current allocated memory: 566.464 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.33 seconds; current allocated memory: 576.817 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 566.778 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 577.243 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternCrossHair' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 3	0	3	27	7	2.3	3	2	2	6	0
+####	 6	0	3	43	6	2	2	2	2	6	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -1243,19 +1307,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 566.906 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 577.430 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 567.044 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 577.639 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgPatternMask' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 3	0	3	16	6	2	2	2	2	3	0
+####	 3	0	0	25	0	-nan	0	-nan	0	0	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -1286,19 +1350,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 567.117 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 577.747 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 567.199 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 577.865 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'tpgForeground' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 0	0	0	54	0	-nan	0	-nan	0	0	0
+####	 0	0	0	72	0	-nan	0	-nan	0	0	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -1329,13 +1393,13 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 567.403 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.31 seconds; current allocated memory: 578.109 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.37 seconds; current allocated memory: 568.881 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 579.768 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1370,19 +1434,19 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 568.925 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 579.810 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 568.968 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 579.853 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 ###	 Num	NTree	NLUT	EssAll	EssLUT	Size	MSize	Lev	MLev	Sel	Phy 
-####	 2	0	0	60	0	-nan	0	-nan	0	0	0
+####	 1	0	0	78	0	-nan	0	-nan	0	0	0
 INFO: [SCHED 204-11] Generating True dependence constraints ... 
 INFO: [SCHED 204-11] Generating Auxiliary dependence constraints ... 
 INFO: [SCHED 204-11] Generating Ternary mapping constraints ... 
@@ -1413,14 +1477,14 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 569.292 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 580.296 MB.
 INFO: [HLS 200-434] Only 1 loops out of a total 2 loops have been pipelined in this design.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.89 seconds; current allocated memory: 562.759 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.98 seconds; current allocated memory: 573.893 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'v_tpg' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1455,33 +1519,35 @@ INFO: [SCHED 204-11] Finished scheduling optimization.
 INFO: [SCHED 204-11] Start constructing STG ...
 INFO: [SCHED 204-11] Finished constructing STG.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.04 seconds; current allocated memory: 563.058 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.11 seconds; current allocated memory: 574.208 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.06 seconds; current allocated memory: 564.261 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.2 seconds; current allocated memory: 575.757 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternDPColorSqu' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'vBarSel_1' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'yCount_V_4' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'hBarSel_5_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hBarSel_5_1' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'xCount_V_2_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'xCount_V_2_1' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternDPColorSqu'.
-INFO: [HLS 200-111]  Elapsed time: 0.77 seconds; current allocated memory: 565.413 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.68 seconds; current allocated memory: 577.396 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternDPBlackWhi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternDPBlackWhi'.
-INFO: [HLS 200-111]  Elapsed time: 1.37 seconds; current allocated memory: 567.558 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.75 seconds; current allocated memory: 580.620 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternDPColorRam' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'rampVal_2' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternDPColorRam'.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 568.094 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 581.381 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPRBS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1489,7 +1555,7 @@ WARNING: [RTGEN 206-101] Register 'rSerie_V' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'gSerie_V' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'bSerie_V' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPRBS'.
-INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 569.009 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 582.809 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1498,9 +1564,11 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'vBarSel_2' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'yCount_V' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'hBarSel_3_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hBarSel_3_1' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'xCount_V_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'xCount_V_1' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternCheckerBoa'.
-INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 560.578 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 574.687 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1508,33 +1576,34 @@ INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternVerticalHo'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'hdata' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternVerticalHo'.
-INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 560.815 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.65 seconds; current allocated memory: 575.034 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternRainbow' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_6ns_8ns_16ns_17_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_6s_8ns_16s_16_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_7s_8ns_16s_16_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_8ns_8ns_14ns_15_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_8s_8ns_16s_16_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_9ns_8ns_15ns_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_6ns_8ns_16ns_17_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_6s_8ns_16s_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_7s_8ns_16s_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_8ns_8ns_14ns_15_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_8s_8ns_16s_16_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_9ns_8ns_15ns_16_1_1': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternRainbow'.
-INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 561.675 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 576.429 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_ap_uint_10_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_ap_uint_10_s'.
-INFO: [HLS 200-111]  Elapsed time: 1.05 seconds; current allocated memory: 563.293 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.62 seconds; current allocated memory: 579.289 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternCrossHatch' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'yCount_V_5' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'vHatch' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'xCount_V_1_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'xCount_V_1_1' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternCrossHatch'.
-INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 564.087 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 580.408 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1543,82 +1612,86 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'vBarSel' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'yCount_V_3' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'hBarSel_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hBarSel_1' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'xCount_V_3_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'xCount_V_3_1' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternTartanColo'.
-INFO: [HLS 200-111]  Elapsed time: 0.65 seconds; current allocated memory: 564.829 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.68 seconds; current allocated memory: 581.429 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_int_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_int_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.52 seconds; current allocated memory: 564.977 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.65 seconds; current allocated memory: 581.617 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternZonePlate' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'zonePlateVAddr' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'zonePlateVDelta' is power-on initialization.
 INFO: [RTGEN 206-100] Generating core module 'v_tpg_am_addmul_1s_16ns_16ns_32_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_16s_16s_16ns_16_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_16s_16s_16ns_16_1_1': 2 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'v_tpg_mac_muladd_16s_16s_16s_16_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'v_tpg_mul_mul_9ns_20s_28_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_tpg_mul_mul_9ns_20s_28_1_1': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternZonePlate'.
-INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 565.672 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 582.465 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternColorBars' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'hBarSel_4_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'hBarSel_4_1' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'xBar_V_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'xBar_V_1' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternColorBars'.
-INFO: [HLS 200-111]  Elapsed time: 0.38 seconds; current allocated memory: 566.253 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 583.314 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternSolidWhite' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternSolidWhite'.
-INFO: [HLS 200-111]  Elapsed time: 0.78 seconds; current allocated memory: 567.519 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.08 seconds; current allocated memory: 585.344 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternSolidBlack' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternSolidBlack'.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 567.880 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 585.766 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternSolidBlue' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternSolidBlue'.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 568.212 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 586.225 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternSolidGreen' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternSolidGreen'.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 568.560 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 586.720 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternSolidRed' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternSolidRed'.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 568.882 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 587.156 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternTemporalRa' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternTemporalRa'.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 569.043 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 587.414 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternVerticalRa' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'rampVal' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternVerticalRa'.
-INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 569.446 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 587.915 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1626,13 +1699,13 @@ INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternHorizontal'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'rampVal_1' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternHorizontal'.
-INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 569.711 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 588.261 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgBackground' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 WARNING: [RTGEN 206-101] Register 'rampStart' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgBackground'.
-INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 572.325 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 592.274 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1643,40 +1716,40 @@ WARNING: [RTGEN 206-101] Register 'boxVCoord' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'hDir' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'vDir' is power-on initialization.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternBox'.
-INFO: [HLS 200-111]  Elapsed time: 1.01 seconds; current allocated memory: 572.848 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.27 seconds; current allocated memory: 593.023 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternCrossHair' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternCrossHair'.
-INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 573.247 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 593.611 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgPatternMask' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgPatternMask'.
-INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 573.485 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 593.948 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'tpgForeground' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'tpgForeground'.
-INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 574.378 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.18 seconds; current allocated memory: 595.184 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 574.553 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 595.382 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvi' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvi'.
-INFO: [HLS 200-111]  Elapsed time: 0.11 seconds; current allocated memory: 575.759 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 596.818 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'v_tpg' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -1712,7 +1785,7 @@ INFO: [RTGEN 206-500] Setting interface mode on port 'v_tpg/fid' to 'ap_vld'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'v_tpg' to 's_axilite & ap_ctrl_hs'.
 INFO: [RTGEN 206-100] Bundling port 'height', 'width', 'bckgndId', 'ovrlayId', 'maskId', 'motionSpeed', 'colorFormat', 'crossHairX', 'crossHairY', 'ZplateHorContStart', 'ZplateHorContDelta', 'ZplateVerContStart', 'ZplateVerContDelta', 'boxSize', 'boxColorR', 'boxColorG', 'boxColorB', 'dpDynamicRange', 'dpYUVCoef', 'field_id' and 'return' to AXI-Lite port CTRL.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'v_tpg'.
-INFO: [HLS 200-111]  Elapsed time: 1.17 seconds; current allocated memory: 577.928 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.27 seconds; current allocated memory: 599.645 MB.
 INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
 INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
 INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarArray_rom' using distributed ROMs.
@@ -1729,9 +1802,9 @@ INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternDPCo
 INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_u_rom' using distributed ROMs.
 INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_v_rom' using distributed ROMs.
 INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgCheckerBoardArray_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_y353_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_v349_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_u351_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_y400_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_u398_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_v396_rom' using distributed ROMs.
 INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternRainbow_tpgSinTableArray_9bi_rom' using block ROMs.
 INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch_whiYuv_1_rom' using distributed ROMs.
 INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch_blkYuv_1_rom' using distributed ROMs.
@@ -1744,12 +1817,18 @@ INFO: [RTMG 210-279] Implementing memory 'video_crop_bd_v_tpg_0_0_tpgPatternCros
 INFO: [RTMG 210-285] Implementing FIFO 'bckgndYUV_V_val_0_V_U(video_crop_bd_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'bckgndYUV_V_val_1_V_U(video_crop_bd_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'bckgndYUV_V_val_2_V_U(video_crop_bd_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bckgndYUV_V_val_3_V_U(video_crop_bd_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bckgndYUV_V_val_4_V_U(video_crop_bd_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bckgndYUV_V_val_5_V_U(video_crop_bd_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'ovrlayYUV_V_val_0_V_U(video_crop_bd_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'ovrlayYUV_V_val_1_V_U(video_crop_bd_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'ovrlayYUV_V_val_2_V_U(video_crop_bd_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ovrlayYUV_V_val_3_V_U(video_crop_bd_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ovrlayYUV_V_val_4_V_U(video_crop_bd_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'ovrlayYUV_V_val_5_V_U(video_crop_bd_v_tpg_0_0_fifo_w8_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_tpgForeground_U0_U(video_crop_bd_v_tpg_0_0_start_for_tpgForeground_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPixStream2AXIvi_U0_U(video_crop_bd_v_tpg_0_0_start_for_MultiPixStream2AXIvi_U0)' using Shift Registers.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1081.609 ; gain = 640.000 ; free physical = 4054 ; free virtual = 20843
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1033.613 ; gain = 592.004 ; free physical = 2964 ; free virtual = 19770
 INFO: [SYSC 207-301] Generating SystemC RTL for v_tpg with prefix video_crop_bd_v_tpg_0_0_.
 INFO: [VHDL 208-304] Generating VHDL RTL for v_tpg with prefix video_crop_bd_v_tpg_0_0_.
 INFO: [VLOG 209-307] Generating Verilog RTL for v_tpg with prefix video_crop_bd_v_tpg_0_0_.
@@ -1764,6 +1843,6 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Wed Aug  4 18:17:19 2021...
-INFO: [HLS 200-112] Total elapsed time: 70.66 seconds; peak allocated memory: 577.928 MB.
-INFO: [Common 17-206] Exiting vivado_hls at Wed Aug  4 18:17:19 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  4 14:20:04 2021...
+INFO: [HLS 200-112] Total elapsed time: 73.33 seconds; peak allocated memory: 599.645 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Wed Aug  4 14:20:04 2021...

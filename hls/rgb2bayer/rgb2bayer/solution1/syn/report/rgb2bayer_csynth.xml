@@ -17,7 +17,7 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>8.510</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.466</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -31,18 +31,22 @@
 <Loop1>
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
-<PipelineII>1</PipelineII>
-<PipelineDepth>3</PipelineDepth>
+<IterationLatency>undef</IterationLatency>
+<Loop1.1>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>2</IterationLatency>
+</Loop1.1>
 </Loop1>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<DSP48E>4</DSP48E>
-<FF>349</FF>
-<LUT>797</LUT>
+<FF>363</FF>
+<LUT>823</LUT>
 <BRAM_18K>0</BRAM_18K>
+<DSP48E>0</DSP48E>
 </Resources>
 <AvailableResources>
 <BRAM_18K>280</BRAM_18K>
@@ -83,7 +87,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>in</Dir>
-<Bits>24</Bits>
+<Bits>48</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -131,7 +135,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>in</Dir>
-<Bits>3</Bits>
+<Bits>6</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -143,7 +147,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>in</Dir>
-<Bits>3</Bits>
+<Bits>6</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -191,7 +195,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>16</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -239,7 +243,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>out</Dir>
-<Bits>1</Bits>
+<Bits>2</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>
@@ -251,7 +255,7 @@
 <IOProtocol>axis</IOProtocol>
 <IOConfig>register, both mode</IOConfig>
 <Dir>out</Dir>
-<Bits>1</Bits>
+<Bits>2</Bits>
 <Attribute>data</Attribute>
 <CType>int</CType>
 </RtlPorts>

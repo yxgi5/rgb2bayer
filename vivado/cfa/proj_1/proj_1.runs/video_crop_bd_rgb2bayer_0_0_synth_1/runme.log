@@ -10,69 +10,56 @@
 
 source video_crop_bd_rgb2bayer_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/src/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/src/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
 Command: synth_design -top video_crop_bd_rgb2bayer_0_0 -part xc7z020clg484-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8912 
-WARNING: [Synth 8-2507] parameter declaration becomes local in rgb2bayer with formal parameter declaration list [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer.v:74]
-WARNING: [Synth 8-2507] parameter declaration becomes local in rgb2bayer with formal parameter declaration list [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer.v:75]
-WARNING: [Synth 8-2507] parameter declaration becomes local in rgb2bayer with formal parameter declaration list [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer.v:76]
-WARNING: [Synth 8-2507] parameter declaration becomes local in rgb2bayer with formal parameter declaration list [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer.v:77]
+INFO: Helper process launched with PID 28750 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1480.742 ; gain = 92.223 ; free physical = 2640 ; free virtual = 19595
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1470.219 ; gain = 81.723 ; free physical = 2284 ; free virtual = 18992
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'video_crop_bd_rgb2bayer_0_0' [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/synth/video_crop_bd_rgb2bayer_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'rgb2bayer' [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer.v:3]
-	Parameter NUM_VIDEO_COMPONENTS bound to: 3 - type: integer 
-	Parameter SAMPLES_PER_CLOCK bound to: 1 - type: integer 
-	Parameter MAXIMUM_DATA_WIDTH bound to: 8 - type: integer 
-	Parameter MAXIMUM_NUMBER_OF_COLUMNS bound to: 480 - type: integer 
-	Parameter MAXIMUM_NUMBER_OF_ROWS bound to: 640 - type: integer 
-	Parameter BAYER_PATTERN bound to: RGGB - type: string 
-	Parameter S_AXIS_BYTES bound to: 3 - type: integer 
-	Parameter S_AXIS_WIDTH bound to: 24 - type: integer 
-	Parameter M_AXIS_BYTES bound to: 1 - type: integer 
-	Parameter M_AXIS_WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'rgb2bayer_8bit_1spc' [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:12]
-	Parameter ap_ST_fsm_state1 bound to: 3'b001 
-	Parameter ap_ST_fsm_pp0_stage0 bound to: 3'b010 
-	Parameter ap_ST_fsm_state5 bound to: 3'b100 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:187]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1081]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1091]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1243]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1249]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1253]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1259]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1265]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1267]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1275]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1285]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1287]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1289]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1291]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:1293]
-WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_dest_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:382]
-WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_id_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:408]
-WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_keep_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:434]
-WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_strb_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:496]
-INFO: [Synth 8-6155] done synthesizing module 'rgb2bayer_8bit_1spc' (1#1) [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer_8bit_1spc.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'rgb2bayer' (2#1) [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/b3cd/hdl/rgb2bayer.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'video_crop_bd_rgb2bayer_0_0' (3#1) [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/synth/video_crop_bd_rgb2bayer_0_0.v:58]
-WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TKEEP[2]
-WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TKEEP[1]
-WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TKEEP[0]
-WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TSTRB[2]
-WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TSTRB[1]
-WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TSTRB[0]
-WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TID[0]
-WARNING: [Synth 8-3331] design rgb2bayer_8bit_1spc has unconnected port s_axis_video_TDEST[0]
+INFO: [Synth 8-6157] synthesizing module 'video_crop_bd_rgb2bayer_0_0' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/synth/video_crop_bd_rgb2bayer_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'rgb2bayer' [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:188]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:1189]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:1191]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:1195]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:1197]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:1199]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:1201]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:1203]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:1205]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:1207]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:1209]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_dest_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:341]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_id_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:367]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_keep_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:393]
+WARNING: [Synth 8-6014] Unused sequential element m_axis_video_V_strb_V_1_sel_rd_reg was removed.  [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:455]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2bayer' (1#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'video_crop_bd_rgb2bayer_0_0' (2#1) [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/synth/video_crop_bd_rgb2bayer_0_0.v:58]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[5]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[4]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[3]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[2]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[1]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[0]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[5]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[4]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[3]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[2]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[1]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[0]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TID[0]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TDEST[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1515.992 ; gain = 127.473 ; free physical = 3253 ; free virtual = 20210
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1516.969 ; gain = 128.473 ; free physical = 2286 ; free virtual = 18993
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -85,48 +72,82 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1515.992 ; gain = 127.473 ; free physical = 3223 ; free virtual = 20180
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1516.969 ; gain = 128.473 ; free physical = 2228 ; free virtual = 18935
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1515.992 ; gain = 127.473 ; free physical = 3223 ; free virtual = 20180
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1516.969 ; gain = 128.473 ; free physical = 2228 ; free virtual = 18935
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/constraints/rgb2bayer_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/constraints/rgb2bayer_ooc.xdc] for cell 'inst'
-Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/constraints/rgb2bayer_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/constraints/rgb2bayer_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1900.102 ; gain = 0.000 ; free physical = 3220 ; free virtual = 20179
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1900.078 ; gain = 0.000 ; free physical = 1522 ; free virtual = 18228
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1900.102 ; gain = 0.000 ; free physical = 3219 ; free virtual = 20178
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1900.102 ; gain = 0.000 ; free physical = 3216 ; free virtual = 20175
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1900.078 ; gain = 0.000 ; free physical = 1522 ; free virtual = 18228
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1900.078 ; gain = 0.000 ; free physical = 1519 ; free virtual = 18225
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 2914 ; free virtual = 19877
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 1219 ; free virtual = 17929
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 2914 ; free virtual = 19876
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 1219 ; free virtual = 17929
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 2913 ; free virtual = 19875
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 1218 ; free virtual = 17928
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "sel_tmp3_fu_233_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sel_tmp4_fu_227_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sel_tmp7_fu_221_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sel_tmp_fu_215_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sel_tmp3_fu_233_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sel_tmp4_fu_227_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sel_tmp7_fu_221_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sel_tmp_fu_215_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_data_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_data_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_dest_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_dest_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_id_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_id_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_keep_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_keep_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_last_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_last_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_strb_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_strb_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_user_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "m_axis_video_V_user_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axis_video_V_data_V_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axis_video_V_data_V_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axis_video_V_dest_V_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axis_video_V_dest_V_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axis_video_V_last_V_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axis_video_V_last_V_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axis_video_V_user_V_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axis_video_V_user_V_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 2633 ; free virtual = 19596
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 1151 ; free virtual = 17861
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -139,27 +160,28 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 2     
 	   2 Input     31 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               64 Bit    Registers := 1     
-	               31 Bit    Registers := 2     
-	               24 Bit    Registers := 2     
-	                8 Bit    Registers := 3     
-	                3 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               31 Bit    Registers := 3     
+	               16 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
 	                2 Bit    Registers := 11    
-	                1 Bit    Registers := 27    
-+---Multipliers : 
-	                32x32  Multipliers := 1     
+	                1 Bit    Registers := 33    
 +---Muxes : 
-	   3 Input     31 Bit        Muxes := 1     
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input     24 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 9     
-	   4 Input      8 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 29    
-	   4 Input      2 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 20    
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   4 Input      2 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 19    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -167,30 +189,31 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module rgb2bayer_8bit_1spc 
+Module rgb2bayer 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 2     
 	   2 Input     31 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               64 Bit    Registers := 1     
-	               31 Bit    Registers := 2     
-	               24 Bit    Registers := 2     
-	                8 Bit    Registers := 3     
-	                3 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               32 Bit    Registers := 2     
+	               31 Bit    Registers := 3     
+	               16 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
 	                2 Bit    Registers := 11    
-	                1 Bit    Registers := 27    
-+---Multipliers : 
-	                32x32  Multipliers := 1     
+	                1 Bit    Registers := 33    
 +---Muxes : 
-	   3 Input     31 Bit        Muxes := 1     
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input     24 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 9     
-	   4 Input      8 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 29    
-	   4 Input      2 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 20    
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   4 Input      2 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 19    
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -207,34 +230,23 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-DSP Report: Generating DSP rgb2bayer_inst/bound_reg_518_reg, operation Mode is: ((A:0x280)*(B:0x1e0))'.
-DSP Report: register rgb2bayer_inst/bound_reg_518_reg is absorbed into DSP rgb2bayer_inst/bound_reg_518_reg.
-DSP Report: operator rgb2bayer_inst/bound_fu_204_p2 is absorbed into DSP rgb2bayer_inst/bound_reg_518_reg.
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[5]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[4]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[3]
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[2]
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[1]
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TKEEP[0]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[5]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[4]
+WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[3]
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[2]
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[1]
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TSTRB[0]
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TID[0]
 WARNING: [Synth 8-3331] design rgb2bayer has unconnected port s_axis_video_TDEST[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_9_reg_637_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 2968 ; free virtual = 19933
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-DSP: Preliminary Mapping  Report (see note below)
-+------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|rgb2bayer   | ((A:0x280)*(B:0x1e0))' | 10     | 9      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 1    | 0    | 
-+------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-
-Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 1572 ; free virtual = 18288
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -246,13 +258,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 3725 ; free virtual = 20696
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 1318 ; free virtual = 18038
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 3830 ; free virtual = 20802
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 1288 ; free virtual = 18008
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -264,7 +276,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 3825 ; free virtual = 20797
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 1268 ; free virtual = 17987
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -288,7 +300,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 3767 ; free virtual = 20740
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 2599 ; free virtual = 19317
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -301,7 +313,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 3767 ; free virtual = 20739
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 2599 ; free virtual = 19316
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -313,25 +325,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 3765 ; free virtual = 20738
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 2596 ; free virtual = 19313
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 3765 ; free virtual = 20737
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 2596 ; free virtual = 19313
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 3764 ; free virtual = 20737
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 2594 ; free virtual = 19311
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 3764 ; free virtual = 20736
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 2594 ; free virtual = 19311
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -344,57 +356,54 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+----------+------+
-|      |Cell      |Count |
-+------+----------+------+
-|1     |CARRY4    |    34|
-|2     |DSP48E1_1 |     1|
-|3     |LUT1      |     5|
-|4     |LUT2      |    19|
-|5     |LUT3      |    50|
-|6     |LUT4      |    21|
-|7     |LUT5      |    24|
-|8     |LUT6      |    38|
-|9     |FDRE      |   220|
-|10    |FDSE      |     1|
-+------+----------+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    39|
+|2     |LUT1   |     3|
+|3     |LUT2   |    14|
+|4     |LUT3   |    32|
+|5     |LUT4   |    97|
+|6     |LUT5   |    19|
+|7     |LUT6   |    68|
+|8     |FDRE   |   358|
+|9     |FDSE   |     1|
++------+-------+------+
 
 Report Instance Areas: 
-+------+-------------------+--------------------+------+
-|      |Instance           |Module              |Cells |
-+------+-------------------+--------------------+------+
-|1     |top                |                    |   413|
-|2     |  inst             |rgb2bayer           |   413|
-|3     |    rgb2bayer_inst |rgb2bayer_8bit_1spc |   413|
-+------+-------------------+--------------------+------+
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |   631|
+|2     |  inst   |rgb2bayer |   631|
++------+---------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 3764 ; free virtual = 20736
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 2594 ; free virtual = 19311
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1900.102 ; gain = 127.473 ; free physical = 3824 ; free virtual = 20797
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1900.102 ; gain = 511.582 ; free physical = 3824 ; free virtual = 20797
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1900.078 ; gain = 128.473 ; free physical = 2644 ; free virtual = 19362
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1900.078 ; gain = 511.582 ; free physical = 2644 ; free virtual = 19361
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1925.141 ; gain = 0.000 ; free physical = 3641 ; free virtual = 20616
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1900.078 ; gain = 0.000 ; free physical = 2496 ; free virtual = 19214
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-22 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+55 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1925.141 ; gain = 548.352 ; free physical = 3698 ; free virtual = 20672
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1925.141 ; gain = 0.000 ; free physical = 3698 ; free virtual = 20672
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1900.078 ; gain = 511.859 ; free physical = 2546 ; free virtual = 19263
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1900.078 ; gain = 0.000 ; free physical = 2546 ; free virtual = 19263
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/video_crop_bd_rgb2bayer_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_crop_bd_rgb2bayer_0_0, cache-ID = 0983f1ac4b1cc1fa
-INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1949.152 ; gain = 0.000 ; free physical = 3673 ; free virtual = 20649
+INFO: [Common 17-1381] The checkpoint '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/video_crop_bd_rgb2bayer_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_crop_bd_rgb2bayer_0_0, cache-ID = 419b49d5581e8e20
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1924.090 ; gain = 0.000 ; free physical = 2467 ; free virtual = 19186
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/video_crop_bd_rgb2bayer_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.runs/video_crop_bd_rgb2bayer_0_0_synth_1/video_crop_bd_rgb2bayer_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file video_crop_bd_rgb2bayer_0_0_utilization_synth.rpt -pb video_crop_bd_rgb2bayer_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Aug  4 18:16:39 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  4 14:09:32 2021...

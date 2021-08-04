@@ -2,37 +2,36 @@
 <Messages>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;src/cpp/rgb2bayer.cpp&apos; ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 441.895 ; gain = 0.277 ; free physical = 5656 ; free virtual = 24939"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 441.895 ; gain = 0.277 ; free physical = 5656 ; free virtual = 24939"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 441.891 ; gain = 0.277 ; free physical = 4350 ; free virtual = 20945"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 441.891 ; gain = 0.277 ; free physical = 4350 ; free virtual = 20945"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 571.441 ; gain = 129.824 ; free physical = 5609 ; free virtual = 24899"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 571.426 ; gain = 129.812 ; free physical = 4302 ; free virtual = 20905"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 571.441 ; gain = 129.824 ; free physical = 5573 ; free virtual = 24866"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 571.426 ; gain = 129.812 ; free physical = 4266 ; free virtual = 20872"/>
 	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;Loop-1&apos; (src/cpp/rgb2bayer.cpp:21) in function &apos;rgb2bayer&apos; for pipelining."/>
-	<Message severity="WARNING" prefix="[XFORM 203-503]" key="XFORM_UNROLL_INVALID_321" tag="LOOP,SDX_LOOP" content="Cannot unroll loop &apos;Loop-1.1&apos; (src/cpp/rgb2bayer.cpp:24) in function &apos;rgb2bayer&apos;: cannot completely unroll a loop with a variable trip count."/>
-	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (src/cpp/rgb2bayer.cpp:37:6) to (src/cpp/rgb2bayer.cpp:62:5) in function &apos;rgb2bayer&apos;... converting 4 basic blocks."/>
-	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (src/cpp/rgb2bayer.cpp:67:6) to (src/cpp/rgb2bayer.cpp:88:5) in function &apos;rgb2bayer&apos;... converting 4 basic blocks."/>
-	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (src/cpp/rgb2bayer.cpp:94:6) to (src/cpp/rgb2bayer.cpp:115:5) in function &apos;rgb2bayer&apos;... converting 4 basic blocks."/>
-	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (src/cpp/rgb2bayer.cpp:121:6) to (src/cpp/rgb2bayer.cpp:142:5) in function &apos;rgb2bayer&apos;... converting 4 basic blocks."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 635.328 ; gain = 193.711 ; free physical = 5515 ; free virtual = 24813"/>
-	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1&apos; (src/cpp/rgb2bayer.cpp:21:15) in function &apos;rgb2bayer&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 635.328 ; gain = 193.711 ; free physical = 5504 ; free virtual = 24803"/>
+	<Message severity="WARNING" prefix="[XFORM 203-503]" key="XFORM_UNROLL_INVALID_314" tag="LOOP,SDX_LOOP" content="Cannot unroll loop &apos;Loop-1.1&apos; (src/cpp/rgb2bayer.cpp:24) in function &apos;rgb2bayer&apos; completely: variable loop bound."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (src/cpp/rgb2bayer.cpp:27:4) to (src/cpp/rgb2bayer.cpp:24:32) in function &apos;rgb2bayer&apos;... converting 14 basic blocks."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 635.316 ; gain = 193.703 ; free physical = 4208 ; free virtual = 20819"/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-1&apos; (src/cpp/rgb2bayer.cpp:21:15) in function &apos;rgb2bayer&apos; : 
+
+the outer loop is not a perfect loop because either the parent loop or the sub loop has no computeable trip count."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 635.316 ; gain = 193.703 ; free physical = 4196 ; free virtual = 20808"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;rgb2bayer&apos; ..."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;rgb2bayer&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
-	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
-	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="WARNING" prefix="[SCHED 204-65]" key="SCHED_PIPELINE_REPORT_FAILURE_1080" tag="SCHEDULE" content="Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened."/>
 	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 30.86 seconds; current allocated memory: 181.614 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 30.43 seconds; current allocated memory: 181.053 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 0 loops out of a total 2 loops have been pipelined in this design."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
 	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
 	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.04 seconds; current allocated memory: 181.985 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.03 seconds; current allocated memory: 181.583 MB."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;rgb2bayer&apos;"/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
@@ -55,10 +54,10 @@
 	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;rgb2bayer/pattern_V&apos; to &apos;ap_none&apos;."/>
 	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;rgb2bayer&apos; to &apos;ap_ctrl_none&apos;."/>
 	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;rgb2bayer&apos;."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.05 seconds; current allocated memory: 183.601 MB."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 635.328 ; gain = 193.711 ; free physical = 5500 ; free virtual = 24801"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.06 seconds; current allocated memory: 183.213 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 635.316 ; gain = 193.703 ; free physical = 4193 ; free virtual = 20807"/>
 	<Message severity="INFO" prefix="[SYSC 207-301]" key="SYSC_301_1065" tag="" content="Generating SystemC RTL for rgb2bayer."/>
 	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for rgb2bayer."/>
 	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for rgb2bayer."/>
-	<Message severity="INFO" prefix="[HLS 200-112]" key="HLS_112_964" tag="" content="Total elapsed time: 31.47 seconds; peak allocated memory: 183.601 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-112]" key="HLS_112_964" tag="" content="Total elapsed time: 31.08 seconds; peak allocated memory: 183.213 MB."/>
 </Messages>

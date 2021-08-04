@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_video_crop_behav/xsimk -simmode gui -wdb tb_video_crop_behav.wdb -simrunnum 0 -socket 38287
+Running: xsim.dir/tb_video_crop_behav/xsimk -simmode gui -wdb tb_video_crop_behav.wdb -simrunnum 0 -socket 36719
 Design successfully loaded
-Design Loading Memory Usage: 57200 KB (Peak: 57200 KB)
-Design Loading CPU Usage: 50 ms
+Design Loading Memory Usage: 57052 KB (Peak: 57052 KB)
+Design Loading CPU Usage: 20 ms
 Simulation completed
-Simulation Memory Usage: 479996 KB (Peak: 545532 KB)
-Simulation CPU Usage: 152800 ms
+Simulation Memory Usage: 414024 KB (Peak: 414024 KB)
+Simulation CPU Usage: 143290 ms

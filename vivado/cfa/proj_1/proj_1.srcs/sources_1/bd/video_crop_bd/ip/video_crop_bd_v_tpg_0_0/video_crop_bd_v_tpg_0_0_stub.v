@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Wed Aug  4 18:18:06 2021
+// Date        : Wed Aug  4 14:11:23 2021
 // Host        : Vostro-5880 running 64-bit Ubuntu 18.04.4 LTS
 // Command     : write_verilog -force -mode synth_stub
-//               /home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/video_crop_bd_v_tpg_0_0_stub.v
+//               /home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/cfa/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/video_crop_bd_v_tpg_0_0_stub.v
 // Design      : video_crop_bd_v_tpg_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1
@@ -22,7 +22,7 @@ module video_crop_bd_v_tpg_0_0(s_axi_CTRL_AWADDR, s_axi_CTRL_AWVALID,
   interrupt, m_axis_video_TVALID, m_axis_video_TREADY, m_axis_video_TDATA, 
   m_axis_video_TKEEP, m_axis_video_TSTRB, m_axis_video_TUSER, m_axis_video_TLAST, 
   m_axis_video_TID, m_axis_video_TDEST)
-/* synthesis syn_black_box black_box_pad_pin="s_axi_CTRL_AWADDR[7:0],s_axi_CTRL_AWVALID,s_axi_CTRL_AWREADY,s_axi_CTRL_WDATA[31:0],s_axi_CTRL_WSTRB[3:0],s_axi_CTRL_WVALID,s_axi_CTRL_WREADY,s_axi_CTRL_BRESP[1:0],s_axi_CTRL_BVALID,s_axi_CTRL_BREADY,s_axi_CTRL_ARADDR[7:0],s_axi_CTRL_ARVALID,s_axi_CTRL_ARREADY,s_axi_CTRL_RDATA[31:0],s_axi_CTRL_RRESP[1:0],s_axi_CTRL_RVALID,s_axi_CTRL_RREADY,ap_clk,ap_rst_n,fid[0:0],fid_in[0:0],interrupt,m_axis_video_TVALID,m_axis_video_TREADY,m_axis_video_TDATA[23:0],m_axis_video_TKEEP[2:0],m_axis_video_TSTRB[2:0],m_axis_video_TUSER[0:0],m_axis_video_TLAST[0:0],m_axis_video_TID[0:0],m_axis_video_TDEST[0:0]" */;
+/* synthesis syn_black_box black_box_pad_pin="s_axi_CTRL_AWADDR[7:0],s_axi_CTRL_AWVALID,s_axi_CTRL_AWREADY,s_axi_CTRL_WDATA[31:0],s_axi_CTRL_WSTRB[3:0],s_axi_CTRL_WVALID,s_axi_CTRL_WREADY,s_axi_CTRL_BRESP[1:0],s_axi_CTRL_BVALID,s_axi_CTRL_BREADY,s_axi_CTRL_ARADDR[7:0],s_axi_CTRL_ARVALID,s_axi_CTRL_ARREADY,s_axi_CTRL_RDATA[31:0],s_axi_CTRL_RRESP[1:0],s_axi_CTRL_RVALID,s_axi_CTRL_RREADY,ap_clk,ap_rst_n,fid[0:0],fid_in[0:0],interrupt,m_axis_video_TVALID,m_axis_video_TREADY,m_axis_video_TDATA[47:0],m_axis_video_TKEEP[5:0],m_axis_video_TSTRB[5:0],m_axis_video_TUSER[0:0],m_axis_video_TLAST[0:0],m_axis_video_TID[0:0],m_axis_video_TDEST[0:0]" */;
   input [7:0]s_axi_CTRL_AWADDR;
   input s_axi_CTRL_AWVALID;
   output s_axi_CTRL_AWREADY;
@@ -47,9 +47,9 @@ module video_crop_bd_v_tpg_0_0(s_axi_CTRL_AWADDR, s_axi_CTRL_AWVALID,
   output interrupt;
   output m_axis_video_TVALID;
   input m_axis_video_TREADY;
-  output [23:0]m_axis_video_TDATA;
-  output [2:0]m_axis_video_TKEEP;
-  output [2:0]m_axis_video_TSTRB;
+  output [47:0]m_axis_video_TDATA;
+  output [5:0]m_axis_video_TKEEP;
+  output [5:0]m_axis_video_TSTRB;
   output [0:0]m_axis_video_TUSER;
   output [0:0]m_axis_video_TLAST;
   output [0:0]m_axis_video_TID;

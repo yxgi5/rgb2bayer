@@ -1,198 +1,196 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_axi_vip_0_0/sim/video_crop_bd_axi_vip_0_0_pkg.sv" into library xil_defaultlib
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_axi_vip_0_0/sim/video_crop_bd_axi_vip_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_axi_vip_0_0/sim/video_crop_bd_axi_vip_0_0_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_axi_vip_0_0/sim/video_crop_bd_axi_vip_0_0.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_axi_vip_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/video_crop_bd_rgb2bayer_0_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rgb2bayer
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/sim/video_crop_bd_rgb2bayer_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_rgb2bayer_0_0
-INFO: [VRFC 10-311] analyzing module video_crop_bd_rgb2bayer_0_0_rgb2bayer
-INFO: [VRFC 10-311] analyzing module video_crop_bd_rgb2bayer_0_0_rgb2bayer_8bit_1spc
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_fifo_w8_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_fifo_w8_d2_A.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_fifo_w8_d2_A_shiftReg
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_fifo_w8_d2_A
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_MultiPixStream2AXIvi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_MultiPixStream2AXIvi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_MultiPixStream2AXIvi
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_reg_ap_uint_10_s.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_reg_ap_uint_10_s.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_reg_ap_uint_10_s
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_reg_int_s.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_reg_int_s.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_reg_int_s
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_reg_unsigned_short_s.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_reg_unsigned_short_s.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_reg_unsigned_short_s
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_start_for_MultiPixStream2AXIvi_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_start_for_MultiPixStream2AXIvi_U0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_start_for_MultiPixStream2AXIvi_U0_shiftReg
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_start_for_MultiPixStream2AXIvi_U0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_start_for_tpgForeground_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_start_for_tpgForeground_U0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_start_for_tpgForeground_U0_shiftReg
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_start_for_tpgForeground_U0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgBackground.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgBackground.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgBackground
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgForeground.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgForeground.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgForeground
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternBox.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternBox.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternBox
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_u351.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_u351_rom
-INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_u351
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_v349.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_v349_rom
-INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_v349
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_y353.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_y353_rom
-INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_y353
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgCheckerBoardArray.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_u398.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_u398_rom
+INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_u398
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_v396.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_v396_rom
+INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_v396
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_y400.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_y400_rom
+INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_y400
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgCheckerBoardArray.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgCheckerBoardArray_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgCheckerBoardArray
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternColorBars.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternColorBars.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternColorBars
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCrossHair.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCrossHair.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCrossHair
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCrossHair_whiYuv_2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCrossHair_whiYuv_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCrossHair_whiYuv_2_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCrossHair_whiYuv_2
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch_blkYuv_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch_blkYuv_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch_blkYuv_1_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch_blkYuv_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch_whiYuv_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch_whiYuv_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch_whiYuv_1_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternCrossHatch_whiYuv_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPBlackWhi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPBlackWhi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPBlackWhi
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorRam.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorRam.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorRam
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarArray.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarArray.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarArray_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarArray
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_CEA_b.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_CEA_b.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_CEA_b_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_CEA_b
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_CEA_g.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_CEA_g.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_CEA_g_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_CEA_g
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_CEA_r.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_CEA_r.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_CEA_r_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_CEA_r
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_VESA_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_VESA_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_VESA_1_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_VESA_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_VESA_2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_VESA_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_VESA_2_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_VESA_2
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_VESA_s.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_VESA_s.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_VESA_s_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelRgb_VESA_s
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_601_u.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_601_u.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_601_u_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_601_u
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_601_v.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_601_v.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_601_v_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_601_v
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_601_y.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_601_y.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_601_y_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_601_y
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_u.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_u.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_u_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_u
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_v.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_v.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_v_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_v
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_y.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_y.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_y_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternDPColorSqu_DPtpgBarSelYuv_709_y
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternHorizontal.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternHorizontal.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternHorizontal
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternMask.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternMask.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternMask
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternRainbow.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternRainbow.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternRainbow
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternRainbow_tpgSinTableArray_9bi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternRainbow_tpgSinTableArray_9bi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternRainbow_tpgSinTableArray_9bi_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternRainbow_tpgSinTableArray_9bi
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidBlack.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidBlack.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternSolidBlack
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidBlue.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidBlue.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternSolidBlue
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidBlue_bluYuv.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidBlue_bluYuv.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternSolidBlue_bluYuv_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternSolidBlue_bluYuv
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidGreen.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidGreen.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternSolidGreen
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidGreen_grnYuv.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidGreen_grnYuv.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternSolidGreen_grnYuv_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternSolidGreen_grnYuv
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidRed.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidRed.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternSolidRed
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidRed_redYuv.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidRed_redYuv.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternSolidRed_redYuv_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternSolidRed_redYuv
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidWhite.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternSolidWhite.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternSolidWhite
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternTartanColo.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternTartanColo.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternTartanColo
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternTartanColo_tpgTartanBarArray.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternTartanColo_tpgTartanBarArray.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternTartanColo_tpgTartanBarArray_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternTartanColo_tpgTartanBarArray
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternTemporalRa.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternTemporalRa.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternTemporalRa
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternVerticalHo.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternVerticalHo.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternVerticalHo
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternVerticalRa.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternVerticalRa.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternVerticalRa
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternZonePlate.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternZonePlate.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternZonePlate
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternZonePlate_tpgSinTableArray.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternZonePlate_tpgSinTableArray.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternZonePlate_tpgSinTableArray_rom
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPatternZonePlate_tpgSinTableArray
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPRBS.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPRBS.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_tpgPRBS
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_am_addmul_1s_16ns_16ns_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_am_addmul_1s_16ns_16ns_32_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_am_addmul_1s_16ns_16ns_32_1_1_DSP48_6
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_am_addmul_1s_16ns_16ns_32_1_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_CTRL_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_CTRL_s_axi.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_CTRL_s_axi
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_6ns_8ns_16ns_17_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_6ns_8ns_16ns_17_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_6ns_8ns_16ns_17_1_1_DSP48_2
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_6ns_8ns_16ns_17_1_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_6s_8ns_16s_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_6s_8ns_16s_16_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_6s_8ns_16s_16_1_1_DSP48_5
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_6s_8ns_16s_16_1_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_7s_8ns_16s_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_7s_8ns_16s_16_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_7s_8ns_16s_16_1_1_DSP48_3
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_7s_8ns_16s_16_1_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_8ns_8ns_14ns_15_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_8ns_8ns_14ns_15_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_8ns_8ns_14ns_15_1_1_DSP48_0
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_8ns_8ns_14ns_15_1_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_8s_8ns_16s_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_8s_8ns_16s_16_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_8s_8ns_16s_16_1_1_DSP48_4
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_8s_8ns_16s_16_1_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_9ns_8ns_15ns_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_9ns_8ns_15ns_16_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_9ns_8ns_15ns_16_1_1_DSP48_1
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_9ns_8ns_15ns_16_1_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16ns_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16ns_16_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16ns_16_1_1_DSP48_7
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16ns_16_1_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16s_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16s_16_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16s_16_1_1_DSP48_8
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mac_muladd_16s_16s_16s_16_1_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mul_mul_9ns_20s_28_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg_mul_mul_9ns_20s_28_1_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mul_mul_9ns_20s_28_1_1_DSP48_9
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg_mul_mul_9ns_20s_28_1_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_v_tpg.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0_v_tpg
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/sim/video_crop_bd_v_tpg_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/sim/video_crop_bd_v_tpg_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_v_tpg_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_xlconstant_0_0/sim/video_crop_bd_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_xlconstant_0_0/sim/video_crop_bd_xlconstant_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_xlconstant_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/sim/video_crop_bd.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.ip_user_files/bd/video_crop_bd/sim/video_crop_bd.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/hdl/video_crop_bd_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sources_1/bd/video_crop_bd/hdl/video_crop_bd_wrapper.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module video_crop_bd_wrapper
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sim_1/imports/sim/tb_video_crop.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.srcs/sim_1/imports/sim/tb_video_crop.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_video_crop
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/andreas/workdir/figkey/HLS/repo/loop_repo/vivado/rgb2raw_sim/proj_1/proj_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
-WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [/home/andreas/workdir/figkey/HLS/repo/rgb2bayer/vivado/rgb2raw_sim/proj_1/proj_1.sim/sim_1/behav/xsim/glbl.v:6]

@@ -15,8 +15,9 @@ verilog xil_defaultlib  --include "../../../../proj_1.srcs/sources_1/bd/video_cr
 "../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/tlast_video_crop_bd_axis_subset_converter_0_0.v" \
 "../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/hdl/top_video_crop_bd_axis_subset_converter_0_0.v" \
 "../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_axis_subset_converter_0_0/sim/video_crop_bd_axis_subset_converter_0_0.v" \
-"../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/video_crop_bd_rgb2bayer_0_0_sim_netlist.v" \
-"../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/hdl/verilog/video_crop_bd_v_demosaic_0_0_AXIvideo2MultiBayer2.v" \
+"../../../../proj_1.srcs/sources_1/bd/video_crop_bd/ipshared/8d7d/hdl/verilog/rgb2bayer.v" \
+"../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_rgb2bayer_0_0/sim/video_crop_bd_rgb2bayer_0_0.v" \
+"../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/hdl/verilog/video_crop_bd_v_demosaic_0_0_AXIvideo2MultiBayer3.v" \
 "../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/hdl/verilog/video_crop_bd_v_demosaic_0_0_Debayer.v" \
 "../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/hdl/verilog/video_crop_bd_v_demosaic_0_0_DebayerG.v" \
 "../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_demosaic_0_0/hdl/verilog/video_crop_bd_v_demosaic_0_0_DebayerG_DIV1_TABLE.v" \
@@ -55,9 +56,9 @@ verilog xil_defaultlib  --include "../../../../proj_1.srcs/sources_1/bd/video_cr
 "../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgForeground.v" \
 "../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternBox.v" \
 "../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa.v" \
-"../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_u351.v" \
-"../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_v349.v" \
-"../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_y353.v" \
+"../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_u398.v" \
+"../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_v396.v" \
+"../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgBarSelYuv_y400.v" \
 "../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCheckerBoa_tpgCheckerBoardArray.v" \
 "../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternColorBars.v" \
 "../../../../proj_1.ip_user_files/bd/video_crop_bd/ip/video_crop_bd_v_tpg_0_0/hdl/verilog/video_crop_bd_v_tpg_0_0_tpgPatternCrossHair.v" \

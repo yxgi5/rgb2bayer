@@ -9,7 +9,7 @@ ERROR: 70 ns tb_video_crop.UUT.video_crop_bd_i.axi_vip_1.inst.IF  : XILINX_RESET
 WARNING: 70 ns tb_video_crop.UUT.video_crop_bd_i.axi_vip_1.inst.IF.AWREADY_one_cycle_chk : XILINX_AWREADY_RESET: AWREADY must be low for the first clock edge that ARESETn goes high--PG101 XILINX_AWREADY_RESET. To downgrade, use <hierarchy_path to VIP>.IF.clr_xilinx_slave_ready_check().
 WARNING: 70 ns tb_video_crop.UUT.video_crop_bd_i.axi_vip_1.inst.IF.ARREADY_one_cycle_chk : XILINX_ARREADY_RESET: ARREADY must be low for the first clock edge that ARESETn goes high--PG101 XILINX_ARREADY_RESET. To downgrade, use <hierarchy_path to VIP>.IF.clr_xilinx_slave_ready_check().
 Image written
-Configured and output resolution match, test succeeded
+Configured and output resolution do not match, test failed
 Executing Axi4 End Of Simulation checks
 Executing Axi4 End Of Simulation checks
-$finish called at time : 6468250 ns : File "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" Line 3093
+$finish called at time : 6256190 ns : File "/wrk/2018.3/nightly/2018_12_06_2405991/packages/customer/vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" Line 3093

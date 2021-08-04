@@ -64,7 +64,7 @@ input                                                                    tlast,
 output [(C_M_AXIS_TDATA_WIDTH/8)-1:0 ] tkeep_out
 );
 
-assign tkeep_out = {tkeep[0:0]};
+assign tkeep_out = {tkeep[1:0]};
 
 endmodule
 

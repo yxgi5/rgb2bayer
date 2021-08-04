@@ -2,7 +2,7 @@
 #ifndef _V_DEMOSAIC_CONFIG_H_
 #define _V_DEMOSAIC_CONFIG_H_
 
-#define SAMPLES_PER_CLOCK       1
+#define SAMPLES_PER_CLOCK       2
 #define MAX_COLS                3840
 #define MAX_ROWS                2160
 #define MAX_DATA_WIDTH          8

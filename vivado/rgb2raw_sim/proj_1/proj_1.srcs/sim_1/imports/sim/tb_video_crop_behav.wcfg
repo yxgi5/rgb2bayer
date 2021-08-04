@@ -52,8 +52,8 @@
       <obj_property name="ObjectShortName">m_axis_video_TREADY</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_video_crop/UUT/video_crop_bd_i/v_tpg_0/m_axis_video_TDATA" type="array">
-      <obj_property name="ElementShortName">m_axis_video_TDATA[23:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_video_TDATA[23:0]</obj_property>
+      <obj_property name="ElementShortName">m_axis_video_TDATA[47:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_video_TDATA[47:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_video_crop/UUT/video_crop_bd_i/v_tpg_0/m_axis_video_TUSER" type="array">
       <obj_property name="ElementShortName">m_axis_video_TUSER[0:0]</obj_property>
@@ -76,8 +76,8 @@
       <obj_property name="ObjectShortName">m_axis_video_TREADY</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_video_crop/UUT/video_crop_bd_i/rgb2bayer_0/m_axis_video_TDATA" type="array">
-      <obj_property name="ElementShortName">m_axis_video_TDATA[23:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_video_TDATA[23:0]</obj_property>
+      <obj_property name="ElementShortName">m_axis_video_TDATA[47:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_video_TDATA[47:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_video_crop/UUT/video_crop_bd_i/rgb2bayer_0/m_axis_video_TUSER" type="array">
       <obj_property name="ElementShortName">m_axis_video_TUSER[0:0]</obj_property>
