@@ -20,9 +20,9 @@
 
 整合几个 hls 版本输出的 ip 为一个
 
-这里只整合了 8bit-1spc 10bit-1spc 12bit-1spc 16bit-1spc 四个
+这里只整合了 8bit-1spc 10bit-1spc 12bit-1spc 16bit-1spc 四个 和 2spc 的四个
 
-后续有时间可以把 2spc 4spc 8spc 几个都整合进来
+后续有时间可以把 4spc 8spc 几个都整合进来
 
 参数通过import, port如果import需要调整map
 
